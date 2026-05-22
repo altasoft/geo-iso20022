@@ -36,6 +36,7 @@ async function loadData() {
   let originalSchema = null;
   if (origRes.status === "fulfilled" && origRes.value.ok)
     originalSchema = await origRes.value.json().catch(() => null);
+  if (!originalSchema) originalSchema = window.__ORIGINAL_MODEL__ ?? null;
 
   let updatedSchema = null;
   if (schemaRes.status === "fulfilled" && schemaRes.value.ok)

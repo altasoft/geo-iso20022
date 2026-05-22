@@ -2,7 +2,7 @@
   "metadata": {
     "sourceFile": "GEO_pain.001.001.09.xsd",
     "targetNamespace": "urn:iso:std:iso:20022:tech:xsd:pain.001.001.09",
-    "generatedAt": "2026-05-22T07:48:23.063767+00:00",
+    "generatedAt": "2026-05-22T08:29:48.318420+00:00",
     "rootElement": "Document",
     "messageName": "pain.001.001.09",
     "warnings": []
@@ -24,7 +24,7 @@
       "isMandatory": true,
       "isRepeating": false,
       "isChoice": false,
-      "documentation": "Point to point reference, as assigned by the instructing party, and sent to the next party in the chain to unambiguously identify the message.\nUsage: The instructing party has to make sure that MessageIdentification is unique per instructed party for a pre-agreed period.",
+      "documentation": "Point to point reference, as assigned by the instructing party, and sent to the next party in the chain to unambiguously identify the message.\n\t\t\t\t\t\tUsage: The instructing party has to make sure that MessageIdentification is unique per instructed party for a pre-agreed period.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
         "minLength": "1",
@@ -145,7 +145,7 @@
       "isMandatory": false,
       "isRepeating": true,
       "isChoice": true,
-      "documentation": "User identification or any user key to be used to check whether the initiating party is allowed to initiate transactions from the account specified in the message.\n\nUsage: The content is not of a technical nature, but reflects the organisational structure at the initiating side.\nThe authorisation element can typically be used in relay scenarios, payment initiations, payment returns or payment reversals that are initiated on behalf of a party different from the initiating party.",
+      "documentation": "User identification or any user key to be used to check whether the initiating party is allowed to initiate transactions from the account specified in the message.\n\n\t\t\t\t\t\tUsage: The content is not of a technical nature, but reflects the organisational structure at the initiating side.\n\t\t\t\t\t\tThe authorisation element can typically be used in relay scenarios, payment initiations, payment returns or payment reversals that are initiated on behalf of a party different from the initiating party.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -206,7 +206,7 @@
       "isMandatory": false,
       "isRepeating": false,
       "isChoice": false,
-      "documentation": "Name of the account, as assigned by the account servicing institution, in agreement with the account owner in order to provide an additional means of identification of the account.\n\nUsage: The account name is different from the account owner name. The account name is used in certain user communities to provide a means of identifying the account, in addition to the account owner's identity and the account number.",
+      "documentation": "Name of the account, as assigned by the account servicing institution, in agreement with the account owner in order to provide an additional means of identification of the account.\n\n\t\t\t\t\t\tUsage: The account name is different from the account owner name. The account name is used in certain user communities to provide a means of identifying the account, in addition to the account owner's identity and the account number.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -1140,7 +1140,7 @@
       "isMandatory": true,
       "isRepeating": false,
       "isChoice": false,
-      "documentation": "Party that initiates the payment.\n\nUsage: This can either be the debtor or the party that initiates the credit transfer on behalf of the debtor.",
+      "documentation": "Party that initiates the payment.\n\n\t\t\t\t\t\tUsage: This can either be the debtor or the party that initiates the credit transfer on behalf of the debtor.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -1570,7 +1570,7 @@
       "isMandatory": false,
       "isRepeating": false,
       "isChoice": true,
-      "documentation": "User community specific instrument.\n\nUsage: This element is used to specify a local instrument, local clearing option and/or further qualify the service or service level.",
+      "documentation": "User community specific instrument.\n\n\t\t\t\t\t\tUsage: This element is used to specify a local instrument, local clearing option and/or further qualify the service or service level.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -1631,7 +1631,7 @@
       "isMandatory": false,
       "isRepeating": false,
       "isChoice": true,
-      "documentation": "Specifies the high level purpose of the instruction based on a set of pre-defined categories.\nUsage: This is used by the initiating party to provide information concerning the processing of the payment. It is likely to trigger special processing by any of the agents involved in the payment chain.",
+      "documentation": "Specifies the high level purpose of the instruction based on a set of pre-defined categories.\n\t\t\t\t\t\tUsage: This is used by the initiating party to provide information concerning the processing of the payment. It is likely to trigger special processing by any of the agents involved in the payment chain.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -1754,7 +1754,7 @@
       "isMandatory": true,
       "isRepeating": false,
       "isChoice": true,
-      "documentation": "Date at which the initiating party requests the clearing agent to process the payment. \nUsage: This is the date on which the debtor's account is to be debited. If payment by cheque, the date when the cheque must be generated by the bank.",
+      "documentation": "Date at which the initiating party requests the clearing agent to process the payment.\n\t\t\t\t\t\tUsage: This is the date on which the debtor's account is to be debited. If payment by cheque, the date when the cheque must be generated by the bank.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -1786,7 +1786,7 @@
       "isMandatory": false,
       "isRepeating": false,
       "isChoice": false,
-      "documentation": "Name of the account, as assigned by the account servicing institution, in agreement with the account owner in order to provide an additional means of identification of the account.\n\nUsage: The account name is different from the account owner name. The account name is used in certain user communities to provide a means of identifying the account, in addition to the account owner's identity and the account number.",
+      "documentation": "Name of the account, as assigned by the account servicing institution, in agreement with the account owner in order to provide an additional means of identification of the account.\n\n\t\t\t\t\t\tUsage: The account name is different from the account owner name. The account name is used in certain user communities to provide a means of identifying the account, in addition to the account owner's identity and the account number.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -2875,7 +2875,7 @@
       "isMandatory": false,
       "isRepeating": false,
       "isChoice": false,
-      "documentation": "Identification of the currency in which the account is held. \n\nUsage: Currency should only be used in case one and the same account number covers several currencies\nand the initiating party needs to identify which currency needs to be used for settlement on the account.",
+      "documentation": "Identification of the currency in which the account is held.\n\n\t\t\t\t\t\tUsage: Currency should only be used in case one and the same account number covers several currencies\n\t\t\t\t\t\tand the initiating party needs to identify which currency needs to be used for settlement on the account.",
       "restrictions": {
         "pattern": "[A-Z]{3,3}",
         "minLength": null,
@@ -2904,7 +2904,7 @@
       "isMandatory": false,
       "isRepeating": false,
       "isChoice": false,
-      "documentation": "Name of the account, as assigned by the account servicing institution, in agreement with the account owner in order to provide an additional means of identification of the account.\n\nUsage: The account name is different from the account owner name. The account name is used in certain user communities to provide a means of identifying the account, in addition to the account owner's identity and the account number.",
+      "documentation": "Name of the account, as assigned by the account servicing institution, in agreement with the account owner in order to provide an additional means of identification of the account.\n\n\t\t\t\t\t\tUsage: The account name is different from the account owner name. The account name is used in certain user communities to provide a means of identifying the account, in addition to the account owner's identity and the account number.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
         "minLength": "1",
@@ -3239,7 +3239,7 @@
       "isMandatory": false,
       "isRepeating": false,
       "isChoice": false,
-      "documentation": "Identification of the currency in which the account is held. \n\nUsage: Currency should only be used in case one and the same account number covers several currencies\nand the initiating party needs to identify which currency needs to be used for settlement on the account.",
+      "documentation": "Identification of the currency in which the account is held.\n\n\t\t\t\t\t\tUsage: Currency should only be used in case one and the same account number covers several currencies\n\t\t\t\t\t\tand the initiating party needs to identify which currency needs to be used for settlement on the account.",
       "restrictions": {
         "pattern": "[A-Z]{3,3}",
         "minLength": null,
@@ -3268,7 +3268,7 @@
       "isMandatory": false,
       "isRepeating": false,
       "isChoice": false,
-      "documentation": "Name of the account, as assigned by the account servicing institution, in agreement with the account owner in order to provide an additional means of identification of the account.\n\nUsage: The account name is different from the account owner name. The account name is used in certain user communities to provide a means of identifying the account, in addition to the account owner's identity and the account number.",
+      "documentation": "Name of the account, as assigned by the account servicing institution, in agreement with the account owner in order to provide an additional means of identification of the account.\n\n\t\t\t\t\t\tUsage: The account name is different from the account owner name. The account name is used in certain user communities to provide a means of identifying the account, in addition to the account owner's identity and the account number.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
         "minLength": "1",
@@ -3359,7 +3359,7 @@
       "isMandatory": false,
       "isRepeating": false,
       "isChoice": false,
-      "documentation": "Name of the account, as assigned by the account servicing institution, in agreement with the account owner in order to provide an additional means of identification of the account.\n\nUsage: The account name is different from the account owner name. The account name is used in certain user communities to provide a means of identifying the account, in addition to the account owner's identity and the account number.",
+      "documentation": "Name of the account, as assigned by the account servicing institution, in agreement with the account owner in order to provide an additional means of identification of the account.\n\n\t\t\t\t\t\tUsage: The account name is different from the account owner name. The account name is used in certain user communities to provide a means of identifying the account, in addition to the account owner's identity and the account number.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -4327,7 +4327,7 @@
       "isMandatory": false,
       "isRepeating": false,
       "isChoice": false,
-      "documentation": "Unique identification as assigned by an instructing party for an instructed party to unambiguously identify the instruction.\n\nUsage: The instruction identification is a point to point reference that can be used between the instructing party and the instructed party to refer to the individual instruction. It can be included in several messages related to the instruction.",
+      "documentation": "Unique identification as assigned by an instructing party for an instructed party to unambiguously identify the instruction.\n\n\t\t\t\t\t\tUsage: The instruction identification is a point to point reference that can be used between the instructing party and the instructed party to refer to the individual instruction. It can be included in several messages related to the instruction.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
         "minLength": "1",
@@ -4356,7 +4356,7 @@
       "isMandatory": true,
       "isRepeating": false,
       "isChoice": false,
-      "documentation": "Unique identification assigned by the initiating party to unambiguously identify the transaction. This identification is passed on, unchanged, throughout the entire end-to-end chain.\n\nUsage: The end-to-end identification can be used for reconciliation or to link tasks relating to the transaction. It can be included in several messages related to the transaction.",
+      "documentation": "Unique identification assigned by the initiating party to unambiguously identify the transaction. This identification is passed on, unchanged, throughout the entire end-to-end chain.\n\n\t\t\t\t\t\tUsage: The end-to-end identification can be used for reconciliation or to link tasks relating to the transaction. It can be included in several messages related to the transaction.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
         "minLength": "1",
@@ -4597,7 +4597,7 @@
       "isMandatory": false,
       "isRepeating": false,
       "isChoice": true,
-      "documentation": "User community specific instrument.\n\nUsage: This element is used to specify a local instrument, local clearing option and/or further qualify the service or service level.",
+      "documentation": "User community specific instrument.\n\n\t\t\t\t\t\tUsage: This element is used to specify a local instrument, local clearing option and/or further qualify the service or service level.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -4658,7 +4658,7 @@
       "isMandatory": false,
       "isRepeating": false,
       "isChoice": true,
-      "documentation": "Specifies the high level purpose of the instruction based on a set of pre-defined categories.\nUsage: This is used by the initiating party to provide information concerning the processing of the payment. It is likely to trigger special processing by any of the agents involved in the payment chain.",
+      "documentation": "Specifies the high level purpose of the instruction based on a set of pre-defined categories.\n\t\t\t\t\t\tUsage: This is used by the initiating party to provide information concerning the processing of the payment. It is likely to trigger special processing by any of the agents involved in the payment chain.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -4752,7 +4752,7 @@
       "isMandatory": true,
       "isRepeating": false,
       "isChoice": false,
-      "documentation": "Amount of money to be moved between the debtor and creditor, before deduction of charges, expressed in the currency as ordered by the initiating party.\n\nUsage: This amount has to be transported unchanged through the transaction chain.",
+      "documentation": "Amount of money to be moved between the debtor and creditor, before deduction of charges, expressed in the currency as ordered by the initiating party.\n\n\t\t\t\t\t\tUsage: This amount has to be transported unchanged through the transaction chain.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -5090,7 +5090,7 @@
       "isMandatory": false,
       "isRepeating": false,
       "isChoice": false,
-      "documentation": "Name of the account, as assigned by the account servicing institution, in agreement with the account owner in order to provide an additional means of identification of the account.\n\nUsage: The account name is different from the account owner name. The account name is used in certain user communities to provide a means of identifying the account, in addition to the account owner's identity and the account number.",
+      "documentation": "Name of the account, as assigned by the account servicing institution, in agreement with the account owner in order to provide an additional means of identification of the account.\n\n\t\t\t\t\t\tUsage: The account name is different from the account owner name. The account name is used in certain user communities to provide a means of identifying the account, in addition to the account owner's identity and the account number.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -6210,7 +6210,7 @@
       "isMandatory": false,
       "isRepeating": false,
       "isChoice": false,
-      "documentation": "Name of the account, as assigned by the account servicing institution, in agreement with the account owner in order to provide an additional means of identification of the account.\n\nUsage: The account name is different from the account owner name. The account name is used in certain user communities to provide a means of identifying the account, in addition to the account owner's identity and the account number.",
+      "documentation": "Name of the account, as assigned by the account servicing institution, in agreement with the account owner in order to provide an additional means of identification of the account.\n\n\t\t\t\t\t\tUsage: The account name is different from the account owner name. The account name is used in certain user communities to provide a means of identifying the account, in addition to the account owner's identity and the account number.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -7238,7 +7238,7 @@
       "isMandatory": false,
       "isRepeating": false,
       "isChoice": false,
-      "documentation": "Identification of the currency in which the account is held. \n\nUsage: Currency should only be used in case one and the same account number covers several currencies\nand the initiating party needs to identify which currency needs to be used for settlement on the account.",
+      "documentation": "Identification of the currency in which the account is held.\n\n\t\t\t\t\t\tUsage: Currency should only be used in case one and the same account number covers several currencies\n\t\t\t\t\t\tand the initiating party needs to identify which currency needs to be used for settlement on the account.",
       "restrictions": {
         "pattern": "[A-Z]{3,3}",
         "minLength": null,
@@ -7267,7 +7267,7 @@
       "isMandatory": false,
       "isRepeating": false,
       "isChoice": false,
-      "documentation": "Name of the account, as assigned by the account servicing institution, in agreement with the account owner in order to provide an additional means of identification of the account.\n\nUsage: The account name is different from the account owner name. The account name is used in certain user communities to provide a means of identifying the account, in addition to the account owner's identity and the account number.",
+      "documentation": "Name of the account, as assigned by the account servicing institution, in agreement with the account owner in order to provide an additional means of identification of the account.\n\n\t\t\t\t\t\tUsage: The account name is different from the account owner name. The account name is used in certain user communities to provide a means of identifying the account, in addition to the account owner's identity and the account number.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
         "minLength": "1",
@@ -7329,7 +7329,7 @@
       "isMandatory": false,
       "isRepeating": false,
       "isChoice": false,
-      "documentation": "Name of the account, as assigned by the account servicing institution, in agreement with the account owner in order to provide an additional means of identification of the account.\n\nUsage: The account name is different from the account owner name. The account name is used in certain user communities to provide a means of identifying the account, in addition to the account owner's identity and the account number.",
+      "documentation": "Name of the account, as assigned by the account servicing institution, in agreement with the account owner in order to provide an additional means of identification of the account.\n\n\t\t\t\t\t\tUsage: The account name is different from the account owner name. The account name is used in certain user communities to provide a means of identifying the account, in addition to the account owner's identity and the account number.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -8415,7 +8415,7 @@
       "isMandatory": false,
       "isRepeating": false,
       "isChoice": true,
-      "documentation": "Underlying reason for the payment transaction.\nUsage: Purpose is used by the end-customers, that is initiating party, (ultimate) debtor, (ultimate) creditor to provide information concerning the nature of the payment. Purpose is a content element, which is not used for processing by any of the agents involved in the payment chain.",
+      "documentation": "Underlying reason for the payment transaction.\n\t\t\t\t\t\tUsage: Purpose is used by the end-customers, that is initiating party, (ultimate) debtor, (ultimate) creditor to provide information concerning the nature of the payment. Purpose is a content element, which is not used for processing by any of the agents involved in the payment chain.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -8479,7 +8479,7 @@
       "isMandatory": false,
       "isRepeating": false,
       "isChoice": false,
-      "documentation": "Name of the account, as assigned by the account servicing institution, in agreement with the account owner in order to provide an additional means of identification of the account.\n\nUsage: The account name is different from the account owner name. The account name is used in certain user communities to provide a means of identifying the account, in addition to the account owner's identity and the account number.",
+      "documentation": "Name of the account, as assigned by the account servicing institution, in agreement with the account owner in order to provide an additional means of identification of the account.\n\n\t\t\t\t\t\tUsage: The account name is different from the account owner name. The account name is used in certain user communities to provide a means of identifying the account, in addition to the account owner's identity and the account number.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
         "minLength": "1",
@@ -8975,7 +8975,7 @@
     {
       "id": "f856e3cbca2e4d06",
       "parentId": "6813e158f512b24a",
-      "label": null,
+      "label": "CustomerCreditTransferInitiation",
       "name": "CstmrCdtTrfInitn",
       "xmlTag": "CstmrCdtTrfInitn",
       "xmlPath": "/Document/CstmrCdtTrfInitn",
@@ -8988,7 +8988,7 @@
       "isMandatory": true,
       "isRepeating": false,
       "isChoice": false,
-      "documentation": "Scope\nThe CustomerCreditTransferInitiation message is sent by the initiating party to the forwarding agent or debtor agent. It is used to request movement of funds from the debtor account to a creditor.\nUsage\nThe CustomerCreditTransferInitiation message can contain one or more customer credit transfer instructions.\nThe CustomerCreditTransferInitiation message is used to exchange:\n- One or more instances of a credit transfer initiation;\n- Payment transactions that result in book transfers at the debtor agent or payments to another financial institution;\n- Payment transactions that result in an electronic cash transfer to the creditor account or in the emission of a cheque.\nThe message can be used in a direct or a relay scenario:\n- In a direct scenario, the message is sent directly to the debtor agent. The debtor agent is the account servicer of the debtor.\n- In a relay scenario, the message is sent to a forwarding agent. The forwarding agent acts as a concentrating financial institution. It will forward the CustomerCreditTransferInitiation message to the debtor agent.\nThe message can also be used by an initiating party that has authority to send the message on behalf of the debtor. This caters for example for the scenario of a payments factory initiating all payments on behalf of a large corporate.\nThe CustomerCreditTransferInitiation message can be used in domestic and cross-border scenarios.\nThe CustomerCreditTransferInitiation message must not be used by the debtor agent to execute the credit transfer instruction(s). The FIToFICustomerCreditTransfer message must be used instead.",
+      "documentation": "Customer Credit Transfer Initiation message.",
       "restrictions": {
         "pattern": null,
         "minLength": null,

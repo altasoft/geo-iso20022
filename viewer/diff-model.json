@@ -2,15 +2,15 @@
   "metadata": {
     "oldSource": "pain.001.001.09.xsd",
     "newSource": "GEO_pain.001.001.09.xsd",
-    "generatedAt": "2026-05-22T07:48:23.306891+00:00"
+    "generatedAt": "2026-05-22T08:29:48.546434+00:00"
   },
   "summary": {
     "added": 0,
     "removed": 1299,
-    "changed": 746,
+    "changed": 450,
     "breaking": 0,
     "nonBreaking": 450,
-    "informational": 1595
+    "informational": 1299
   },
   "changes": [
     {
@@ -30,14 +30,6 @@
       "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/MsgId",
-      "oldValue": "",
-      "newValue": "Point to point reference, as assigned by the instructing party, and sent to the ",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/CreDtTm",
@@ -52,46 +44,6 @@
       "oldValue": "pattern=None",
       "newValue": "pattern=.*(\\+|-)((0[0-9])|(1[0-3])):[0-5][0-9]",
       "description": "Restriction pattern changed from None to '.*(\\\\+|-)((0[0-9])|(1[0-3])):[0-5][0-9]'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/CreDtTm",
-      "oldValue": "",
-      "newValue": "Date and time at which the message was created.",
-      "description": "Documentation text changed"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/Authstn/Cd",
-      "oldValue": "",
-      "newValue": "Name of the identification scheme, in a coded form as published in an external l",
-      "description": "Documentation text changed"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/Authstn/Prtry",
-      "oldValue": "",
-      "newValue": "Name of the identification scheme, in a free text form.",
-      "description": "Documentation text changed"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/Authstn",
-      "oldValue": "",
-      "newValue": "User identification or any user key to be used to check whether the initiating p",
-      "description": "Documentation text changed"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/NbOfTxs",
-      "oldValue": "",
-      "newValue": "Number of individual transactions contained in the message.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "RemovedNode",
@@ -116,14 +68,6 @@
       "oldValue": "pattern=None",
       "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/Nm",
-      "oldValue": "",
-      "newValue": "Name of the account, as assigned by the account servicing institution, in agreem",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "RemovedNode",
@@ -190,14 +134,6 @@
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/Dept",
-      "oldValue": "",
-      "newValue": "Identification of a division of a large organisation or building.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/SubDept",
@@ -214,14 +150,6 @@
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/SubDept",
-      "oldValue": "",
-      "newValue": "Identification of a sub-division of a large organisation or building.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/StrtNm",
@@ -236,14 +164,6 @@
       "oldValue": "pattern=None",
       "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/StrtNm",
-      "oldValue": "",
-      "newValue": "Name of a street or thoroughfare.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "TypeChanged",
@@ -260,14 +180,6 @@
       "oldValue": "pattern=None",
       "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/BldgNb",
-      "oldValue": "",
-      "newValue": "Number that identifies the position of a building on a street.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "TypeChanged",
@@ -286,14 +198,6 @@
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/BldgNm",
-      "oldValue": "",
-      "newValue": "Name of the building or house.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/Flr",
@@ -308,14 +212,6 @@
       "oldValue": "pattern=None",
       "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/Flr",
-      "oldValue": "",
-      "newValue": "Floor or storey within a building.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "TypeChanged",
@@ -334,14 +230,6 @@
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/PstBx",
-      "oldValue": "",
-      "newValue": "Numbered box in a post office, assigned to a person or organisation, where lette",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/Room",
@@ -358,14 +246,6 @@
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/Room",
-      "oldValue": "",
-      "newValue": "Building room number.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/PstCd",
@@ -380,14 +260,6 @@
       "oldValue": "pattern=None",
       "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/PstCd",
-      "oldValue": "",
-      "newValue": "Identifier consisting of a group of letters and/or numbers that is added to a po",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "MinOccursChanged",
@@ -414,14 +286,6 @@
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/TwnNm",
-      "oldValue": "",
-      "newValue": "Name of a built-up area, with defined boundaries, and a local government.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/TwnLctnNm",
@@ -436,14 +300,6 @@
       "oldValue": "pattern=None",
       "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/TwnLctnNm",
-      "oldValue": "",
-      "newValue": "Specific location name within the town.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "TypeChanged",
@@ -462,14 +318,6 @@
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/DstrctNm",
-      "oldValue": "",
-      "newValue": "Identifies a subdivision within a country sub-division.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/CtrySubDvsn",
@@ -484,14 +332,6 @@
       "oldValue": "pattern=None",
       "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/CtrySubDvsn",
-      "oldValue": "",
-      "newValue": "Identifies a subdivision of a country such as state, region, county.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "MinOccursChanged",
@@ -500,14 +340,6 @@
       "oldValue": "0",
       "newValue": "1",
       "description": "minOccurs changed from 0 to 1"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/Ctry",
-      "oldValue": "",
-      "newValue": "Nation with its own government.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "MaxOccursChanged",
@@ -542,28 +374,12 @@
       "description": "Restriction maxLength changed from '70' to '35'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/AdrLine",
-      "oldValue": "",
-      "newValue": "Information that locates and identifies a specific address, as defined by postal",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr",
       "oldValue": "PostalAddress24",
       "newValue": "GEO_PostalAddress24",
       "description": "Type changed from 'PostalAddress24' to 'GEO_PostalAddress24'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr",
-      "oldValue": "",
-      "newValue": "Information that locates and identifies a specific address, as defined by postal",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "RemovedNode",
@@ -598,22 +414,6 @@
       "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/Id/OrgId/Othr/Id",
-      "oldValue": "",
-      "newValue": "Unique and unambiguous identification for the account between the account owner ",
-      "description": "Documentation text changed"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/Id/OrgId/Othr/SchmeNm/Cd",
-      "oldValue": "",
-      "newValue": "Name of the identification scheme, in a coded form as published in an external l",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "RemovedNode",
       "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/Id/OrgId/Othr/SchmeNm/Prtry",
@@ -630,14 +430,6 @@
       "description": "Type changed from 'OrganisationIdentificationSchemeName1Choice' to 'GEO_OrganisationIdentificationSchemeName1Choice'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/Id/OrgId/Othr/SchmeNm",
-      "oldValue": "",
-      "newValue": "Name of the identification scheme.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/Id/OrgId/Othr/Issr",
@@ -652,14 +444,6 @@
       "oldValue": "pattern=None",
       "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
       "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/Id/OrgId/Othr/Issr",
-      "oldValue": "",
-      "newValue": "Entity that assigns the credit reference type.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "MinOccursChanged",
@@ -686,28 +470,12 @@
       "description": "Type changed from 'GenericOrganisationIdentification1' to 'GEO_GenericOrganisationIdentification1'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/Id/OrgId/Othr",
-      "oldValue": "",
-      "newValue": "Unique identification of an account, as assigned by the account servicer, using ",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/Id/OrgId",
       "oldValue": "OrganisationIdentification29",
       "newValue": "GEO_OrganisationIdentification29",
       "description": "Type changed from 'OrganisationIdentification29' to 'GEO_OrganisationIdentification29'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/Id/OrgId",
-      "oldValue": "",
-      "newValue": "Unique and unambiguous way to identify an organisation.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "RemovedNode",
@@ -766,22 +534,6 @@
       "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/Id/PrvtId/Othr/Id",
-      "oldValue": "",
-      "newValue": "Unique and unambiguous identification for the account between the account owner ",
-      "description": "Documentation text changed"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/Id/PrvtId/Othr/SchmeNm/Cd",
-      "oldValue": "",
-      "newValue": "Name of the identification scheme, in a coded form as published in an external l",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "RemovedNode",
       "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/Id/PrvtId/Othr/SchmeNm/Prtry",
@@ -798,14 +550,6 @@
       "description": "Type changed from 'PersonIdentificationSchemeName1Choice' to 'GEO_PersonIdentificationSchemeName1Choice'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/Id/PrvtId/Othr/SchmeNm",
-      "oldValue": "",
-      "newValue": "Name of the identification scheme.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/Id/PrvtId/Othr/Issr",
@@ -820,14 +564,6 @@
       "oldValue": "pattern=None",
       "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
       "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/Id/PrvtId/Othr/Issr",
-      "oldValue": "",
-      "newValue": "Entity that assigns the credit reference type.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "MinOccursChanged",
@@ -854,14 +590,6 @@
       "description": "Type changed from 'GenericPersonIdentification1' to 'GEO_GenericPersonIdentification1'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/Id/PrvtId/Othr",
-      "oldValue": "",
-      "newValue": "Unique identification of an account, as assigned by the account servicer, using ",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/Id/PrvtId",
@@ -870,36 +598,12 @@
       "description": "Type changed from 'PersonIdentification13' to 'GEO_PersonIdentification13'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/Id/PrvtId",
-      "oldValue": "",
-      "newValue": "Unique and unambiguous identification of a person, for example a passport.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/Id",
       "oldValue": "Party38Choice",
       "newValue": "GEO_Party38Choice",
       "description": "Type changed from 'Party38Choice' to 'GEO_Party38Choice'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/Id",
-      "oldValue": "",
-      "newValue": "Unique and unambiguous identification for the account between the account owner ",
-      "description": "Documentation text changed"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/CtryOfRes",
-      "oldValue": "",
-      "newValue": "Country in which a person resides (the place of a person's home). In the case of",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "RemovedNode",
@@ -1030,14 +734,6 @@
       "description": "Type changed from 'PartyIdentification135' to 'GEO_PartyIdentification135'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty",
-      "oldValue": "",
-      "newValue": "Party that initiates the payment.\n\nUsage: This can either be the debtor or the p",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "MinOccursChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/FwdgAgt/FinInstnId/BICFI",
@@ -1060,14 +756,6 @@
       "oldValue": "pattern=[A-Z0-9]{4,4}[A-Z]{2,2}[A-Z0-9]{2,2}([A-Z0-9]{3,3}){0,1}",
       "newValue": "pattern=[A-Z0-9]{4,4}GE[A-Z0-9]{2,2}([A-Z0-9]{3,3}){0,1}",
       "description": "Restriction pattern changed from '[A-Z0-9]{4,4}[A-Z]{2,2}[A-Z0-9]{2,2}([A-Z0-9]{3,3}){0,1}' to '[A-Z0-9]{4,4}GE[A-Z0-9]{2,2}([A-Z0-9]{3,3}){0,1}'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/FwdgAgt/FinInstnId/BICFI",
-      "oldValue": "",
-      "newValue": "Code allocated to a financial institution by the ISO 9362 Registration Authority",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "RemovedNode",
@@ -1126,28 +814,12 @@
       "description": "Restriction maxLength changed from '35' to None"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/FwdgAgt/FinInstnId/ClrSysMmbId/MmbId",
-      "oldValue": "",
-      "newValue": "Identification of a member of a clearing system.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/FwdgAgt/FinInstnId/ClrSysMmbId",
       "oldValue": "ClearingSystemMemberIdentification2",
       "newValue": "GEO_ClearingSystemMemberIdentification2",
       "description": "Type changed from 'ClearingSystemMemberIdentification2' to 'GEO_ClearingSystemMemberIdentification2'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/FwdgAgt/FinInstnId/ClrSysMmbId",
-      "oldValue": "",
-      "newValue": "Information used to identify a member within a clearing system.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "RemovedNode",
@@ -1398,14 +1070,6 @@
       "description": "Type changed from 'FinancialInstitutionIdentification18' to 'GEO_FinancialInstitutionIdentification18'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/FwdgAgt/FinInstnId",
-      "oldValue": "",
-      "newValue": "Unique and unambiguous identification of a financial institution, as assigned un",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "RemovedNode",
       "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/FwdgAgt/BrnchId/Id",
@@ -1622,28 +1286,12 @@
       "description": "Type changed from 'BranchAndFinancialInstitutionIdentification6' to 'GEO_BranchAndFinancialInstitutionIdentification6'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/FwdgAgt",
-      "oldValue": "",
-      "newValue": "Financial institution that receives the instruction from the initiating party an",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr",
       "oldValue": "GroupHeader85",
       "newValue": "GEO_GroupHeader85",
       "description": "Type changed from 'GroupHeader85' to 'GEO_GroupHeader85'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr",
-      "oldValue": "",
-      "newValue": "Set of characteristics shared by all individual transactions included in the mes",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "TypeChanged",
@@ -1662,14 +1310,6 @@
       "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/PmtInfId",
-      "oldValue": "",
-      "newValue": "Unique identification, as assigned by a sending party, to unambiguously identify",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "RemovedNode",
       "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/PmtMtd",
@@ -1686,36 +1326,12 @@
       "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/BtchBookg"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/NbOfTxs",
-      "oldValue": "",
-      "newValue": "Number of individual transactions contained in the message.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "RemovedNode",
       "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CtrlSum",
       "oldValue": "[0..1]",
       "newValue": null,
       "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/CtrlSum"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/PmtTpInf/InstrPrty",
-      "oldValue": "",
-      "newValue": "Urgency or order of importance that the originator would like the recipient of t",
-      "description": "Documentation text changed"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/PmtTpInf/SvcLvl/Cd",
-      "oldValue": "",
-      "newValue": "Name of the identification scheme, in a coded form as published in an external l",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "RemovedNode",
@@ -1742,22 +1358,6 @@
       "description": "Type changed from 'ServiceLevel8Choice' to 'GEO_ServiceLevel8Choice'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/PmtTpInf/SvcLvl",
-      "oldValue": "",
-      "newValue": "Agreement under which or rules under which the transaction should be processed.",
-      "description": "Documentation text changed"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/PmtTpInf/LclInstrm/Cd",
-      "oldValue": "",
-      "newValue": "Name of the identification scheme, in a coded form as published in an external l",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/PmtTpInf/LclInstrm/Prtry",
@@ -1774,36 +1374,12 @@
       "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/PmtTpInf/LclInstrm/Prtry",
-      "oldValue": "",
-      "newValue": "Name of the identification scheme, in a free text form.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/PmtTpInf/LclInstrm",
       "oldValue": "LocalInstrument2Choice",
       "newValue": "GEO_LocalInstrument2Choice",
       "description": "Type changed from 'LocalInstrument2Choice' to 'GEO_LocalInstrument2Choice'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/PmtTpInf/LclInstrm",
-      "oldValue": "",
-      "newValue": "User community specific instrument.\n\nUsage: This element is used to specify a lo",
-      "description": "Documentation text changed"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/PmtTpInf/CtgyPurp/Cd",
-      "oldValue": "",
-      "newValue": "Name of the identification scheme, in a coded form as published in an external l",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "RemovedNode",
@@ -1822,36 +1398,12 @@
       "description": "Type changed from 'CategoryPurpose1Choice' to 'GEO_CategoryPurpose1Choice'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/PmtTpInf/CtgyPurp",
-      "oldValue": "",
-      "newValue": "Specifies the high level purpose of the instruction based on a set of pre-define",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/PmtTpInf",
       "oldValue": "PaymentTypeInformation26",
       "newValue": "GEO_PaymentTypeInformation26",
       "description": "Type changed from 'PaymentTypeInformation26' to 'GEO_PaymentTypeInformation26'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/PmtTpInf",
-      "oldValue": "",
-      "newValue": "Set of elements used to further specify the type of transaction.",
-      "description": "Documentation text changed"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/ReqdExctnDt/Dt",
-      "oldValue": "",
-      "newValue": "Specified date.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "TypeChanged",
@@ -1868,22 +1420,6 @@
       "oldValue": "pattern=None",
       "newValue": "pattern=.*(\\+|-)((0[0-9])|(1[0-3])):[0-5][0-9]",
       "description": "Restriction pattern changed from None to '.*(\\\\+|-)((0[0-9])|(1[0-3])):[0-5][0-9]'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/ReqdExctnDt/DtTm",
-      "oldValue": "",
-      "newValue": "Specified date and time.",
-      "description": "Documentation text changed"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/ReqdExctnDt",
-      "oldValue": "",
-      "newValue": "Date at which the initiating party requests the clearing agent to process the pa",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "RemovedNode",
@@ -1908,14 +1444,6 @@
       "oldValue": "pattern=None",
       "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/Nm",
-      "oldValue": "",
-      "newValue": "Name of the account, as assigned by the account servicing institution, in agreem",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "RemovedNode",
@@ -1982,14 +1510,6 @@
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/Dept",
-      "oldValue": "",
-      "newValue": "Identification of a division of a large organisation or building.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/SubDept",
@@ -2006,14 +1526,6 @@
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/SubDept",
-      "oldValue": "",
-      "newValue": "Identification of a sub-division of a large organisation or building.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/StrtNm",
@@ -2028,14 +1540,6 @@
       "oldValue": "pattern=None",
       "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/StrtNm",
-      "oldValue": "",
-      "newValue": "Name of a street or thoroughfare.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "TypeChanged",
@@ -2052,14 +1556,6 @@
       "oldValue": "pattern=None",
       "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/BldgNb",
-      "oldValue": "",
-      "newValue": "Number that identifies the position of a building on a street.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "TypeChanged",
@@ -2078,14 +1574,6 @@
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/BldgNm",
-      "oldValue": "",
-      "newValue": "Name of the building or house.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/Flr",
@@ -2100,14 +1588,6 @@
       "oldValue": "pattern=None",
       "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/Flr",
-      "oldValue": "",
-      "newValue": "Floor or storey within a building.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "TypeChanged",
@@ -2126,14 +1606,6 @@
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/PstBx",
-      "oldValue": "",
-      "newValue": "Numbered box in a post office, assigned to a person or organisation, where lette",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/Room",
@@ -2150,14 +1622,6 @@
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/Room",
-      "oldValue": "",
-      "newValue": "Building room number.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/PstCd",
@@ -2172,14 +1636,6 @@
       "oldValue": "pattern=None",
       "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/PstCd",
-      "oldValue": "",
-      "newValue": "Identifier consisting of a group of letters and/or numbers that is added to a po",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "MinOccursChanged",
@@ -2206,14 +1662,6 @@
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/TwnNm",
-      "oldValue": "",
-      "newValue": "Name of a built-up area, with defined boundaries, and a local government.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/TwnLctnNm",
@@ -2228,14 +1676,6 @@
       "oldValue": "pattern=None",
       "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/TwnLctnNm",
-      "oldValue": "",
-      "newValue": "Specific location name within the town.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "TypeChanged",
@@ -2254,14 +1694,6 @@
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/DstrctNm",
-      "oldValue": "",
-      "newValue": "Identifies a subdivision within a country sub-division.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/CtrySubDvsn",
@@ -2276,14 +1708,6 @@
       "oldValue": "pattern=None",
       "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/CtrySubDvsn",
-      "oldValue": "",
-      "newValue": "Identifies a subdivision of a country such as state, region, county.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "MinOccursChanged",
@@ -2292,14 +1716,6 @@
       "oldValue": "0",
       "newValue": "1",
       "description": "minOccurs changed from 0 to 1"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/Ctry",
-      "oldValue": "",
-      "newValue": "Nation with its own government.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "MaxOccursChanged",
@@ -2334,28 +1750,12 @@
       "description": "Restriction maxLength changed from '70' to '35'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/AdrLine",
-      "oldValue": "",
-      "newValue": "Information that locates and identifies a specific address, as defined by postal",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr",
       "oldValue": "PostalAddress24",
       "newValue": "GEO_PostalAddress24",
       "description": "Type changed from 'PostalAddress24' to 'GEO_PostalAddress24'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr",
-      "oldValue": "",
-      "newValue": "Information that locates and identifies a specific address, as defined by postal",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "RemovedNode",
@@ -2390,22 +1790,6 @@
       "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/Id/OrgId/Othr/Id",
-      "oldValue": "",
-      "newValue": "Unique and unambiguous identification for the account between the account owner ",
-      "description": "Documentation text changed"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/Id/OrgId/Othr/SchmeNm/Cd",
-      "oldValue": "",
-      "newValue": "Name of the identification scheme, in a coded form as published in an external l",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "RemovedNode",
       "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/Id/OrgId/Othr/SchmeNm/Prtry",
@@ -2422,14 +1806,6 @@
       "description": "Type changed from 'OrganisationIdentificationSchemeName1Choice' to 'GEO_OrganisationIdentificationSchemeName1Choice'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/Id/OrgId/Othr/SchmeNm",
-      "oldValue": "",
-      "newValue": "Name of the identification scheme.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/Id/OrgId/Othr/Issr",
@@ -2444,14 +1820,6 @@
       "oldValue": "pattern=None",
       "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
       "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/Id/OrgId/Othr/Issr",
-      "oldValue": "",
-      "newValue": "Entity that assigns the credit reference type.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "MinOccursChanged",
@@ -2478,28 +1846,12 @@
       "description": "Type changed from 'GenericOrganisationIdentification1' to 'GEO_GenericOrganisationIdentification1'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/Id/OrgId/Othr",
-      "oldValue": "",
-      "newValue": "Unique identification of an account, as assigned by the account servicer, using ",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/Id/OrgId",
       "oldValue": "OrganisationIdentification29",
       "newValue": "GEO_OrganisationIdentification29",
       "description": "Type changed from 'OrganisationIdentification29' to 'GEO_OrganisationIdentification29'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/Id/OrgId",
-      "oldValue": "",
-      "newValue": "Unique and unambiguous way to identify an organisation.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "RemovedNode",
@@ -2558,22 +1910,6 @@
       "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/Id/PrvtId/Othr/Id",
-      "oldValue": "",
-      "newValue": "Unique and unambiguous identification for the account between the account owner ",
-      "description": "Documentation text changed"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/Id/PrvtId/Othr/SchmeNm/Cd",
-      "oldValue": "",
-      "newValue": "Name of the identification scheme, in a coded form as published in an external l",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "RemovedNode",
       "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/Id/PrvtId/Othr/SchmeNm/Prtry",
@@ -2590,14 +1926,6 @@
       "description": "Type changed from 'PersonIdentificationSchemeName1Choice' to 'GEO_PersonIdentificationSchemeName1Choice'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/Id/PrvtId/Othr/SchmeNm",
-      "oldValue": "",
-      "newValue": "Name of the identification scheme.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/Id/PrvtId/Othr/Issr",
@@ -2612,14 +1940,6 @@
       "oldValue": "pattern=None",
       "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
       "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/Id/PrvtId/Othr/Issr",
-      "oldValue": "",
-      "newValue": "Entity that assigns the credit reference type.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "MinOccursChanged",
@@ -2646,14 +1966,6 @@
       "description": "Type changed from 'GenericPersonIdentification1' to 'GEO_GenericPersonIdentification1'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/Id/PrvtId/Othr",
-      "oldValue": "",
-      "newValue": "Unique identification of an account, as assigned by the account servicer, using ",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/Id/PrvtId",
@@ -2662,36 +1974,12 @@
       "description": "Type changed from 'PersonIdentification13' to 'GEO_PersonIdentification13'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/Id/PrvtId",
-      "oldValue": "",
-      "newValue": "Unique and unambiguous identification of a person, for example a passport.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/Id",
       "oldValue": "Party38Choice",
       "newValue": "GEO_Party38Choice",
       "description": "Type changed from 'Party38Choice' to 'GEO_Party38Choice'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/Id",
-      "oldValue": "",
-      "newValue": "Unique and unambiguous identification for the account between the account owner ",
-      "description": "Documentation text changed"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/CtryOfRes",
-      "oldValue": "",
-      "newValue": "Country in which a person resides (the place of a person's home). In the case of",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "RemovedNode",
@@ -2822,14 +2110,6 @@
       "description": "Type changed from 'PartyIdentification135' to 'GEO_PartyIdentification135'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr",
-      "oldValue": "",
-      "newValue": "Party that owes an amount of money to the (ultimate) creditor.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/DbtrAcct/Id/IBAN",
@@ -2844,14 +2124,6 @@
       "oldValue": "pattern=[A-Z]{2,2}[0-9]{2,2}[a-zA-Z0-9]{1,30}",
       "newValue": "pattern=[A-Z]{2,2}GE[a-zA-Z0-9]{1,30}",
       "description": "Restriction pattern changed from '[A-Z]{2,2}[0-9]{2,2}[a-zA-Z0-9]{1,30}' to '[A-Z]{2,2}GE[a-zA-Z0-9]{1,30}'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/DbtrAcct/Id/IBAN",
-      "oldValue": "",
-      "newValue": "International Bank Account Number (IBAN) - identifier used internationally by fi",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "TypeChanged",
@@ -2884,14 +2156,6 @@
       "oldValue": "maxLength=34",
       "newValue": "maxLength=9",
       "description": "Restriction maxLength changed from '34' to '9'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/DbtrAcct/Id/Othr/Id",
-      "oldValue": "",
-      "newValue": "Unique and unambiguous identification for the account between the account owner ",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "RemovedNode",
@@ -2934,28 +2198,12 @@
       "description": "Type changed from 'GenericAccountIdentification1' to 'GEO_GenericAccountIdentification1'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/DbtrAcct/Id/Othr",
-      "oldValue": "",
-      "newValue": "Unique identification of an account, as assigned by the account servicer, using ",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/DbtrAcct/Id",
       "oldValue": "AccountIdentification4Choice",
       "newValue": "GEO_AccountIdentification4Choice__1",
       "description": "Type changed from 'AccountIdentification4Choice' to 'GEO_AccountIdentification4Choice__1'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/DbtrAcct/Id",
-      "oldValue": "",
-      "newValue": "Unique and unambiguous identification for the account between the account owner ",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "RemovedNode",
@@ -2982,14 +2230,6 @@
       "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/DbtrAcct/Tp"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/DbtrAcct/Ccy",
-      "oldValue": "",
-      "newValue": "Identification of the currency in which the account is held. \n\nUsage: Currency s",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/DbtrAcct/Nm",
@@ -3004,14 +2244,6 @@
       "oldValue": "pattern=None",
       "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
       "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/DbtrAcct/Nm",
-      "oldValue": "",
-      "newValue": "Name of the account, as assigned by the account servicing institution, in agreem",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "RemovedNode",
@@ -3062,14 +2294,6 @@
       "description": "Type changed from 'CashAccount38' to 'GEO_CashAccount38__1'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/DbtrAcct",
-      "oldValue": "",
-      "newValue": "Unambiguous identification of the account of the debtor to which a debit entry w",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "MinOccursChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/DbtrAgt/FinInstnId/BICFI",
@@ -3092,14 +2316,6 @@
       "oldValue": "pattern=[A-Z0-9]{4,4}[A-Z]{2,2}[A-Z0-9]{2,2}([A-Z0-9]{3,3}){0,1}",
       "newValue": "pattern=[A-Z0-9]{4,4}GE[A-Z0-9]{2,2}([A-Z0-9]{3,3}){0,1}",
       "description": "Restriction pattern changed from '[A-Z0-9]{4,4}[A-Z]{2,2}[A-Z0-9]{2,2}([A-Z0-9]{3,3}){0,1}' to '[A-Z0-9]{4,4}GE[A-Z0-9]{2,2}([A-Z0-9]{3,3}){0,1}'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/DbtrAgt/FinInstnId/BICFI",
-      "oldValue": "",
-      "newValue": "Code allocated to a financial institution by the ISO 9362 Registration Authority",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "RemovedNode",
@@ -3158,28 +2374,12 @@
       "description": "Restriction maxLength changed from '35' to None"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/DbtrAgt/FinInstnId/ClrSysMmbId/MmbId",
-      "oldValue": "",
-      "newValue": "Identification of a member of a clearing system.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/DbtrAgt/FinInstnId/ClrSysMmbId",
       "oldValue": "ClearingSystemMemberIdentification2",
       "newValue": "GEO_ClearingSystemMemberIdentification2",
       "description": "Type changed from 'ClearingSystemMemberIdentification2' to 'GEO_ClearingSystemMemberIdentification2'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/DbtrAgt/FinInstnId/ClrSysMmbId",
-      "oldValue": "",
-      "newValue": "Information used to identify a member within a clearing system.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "RemovedNode",
@@ -3430,14 +2630,6 @@
       "description": "Type changed from 'FinancialInstitutionIdentification18' to 'GEO_FinancialInstitutionIdentification18'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/DbtrAgt/FinInstnId",
-      "oldValue": "",
-      "newValue": "Unique and unambiguous identification of a financial institution, as assigned un",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "RemovedNode",
       "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/DbtrAgt/BrnchId/Id",
@@ -3654,14 +2846,6 @@
       "description": "Type changed from 'BranchAndFinancialInstitutionIdentification6' to 'GEO_BranchAndFinancialInstitutionIdentification6'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/DbtrAgt",
-      "oldValue": "",
-      "newValue": "Financial institution servicing an account for the debtor.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/DbtrAgtAcct/Id/IBAN",
@@ -3676,14 +2860,6 @@
       "oldValue": "pattern=[A-Z]{2,2}[0-9]{2,2}[a-zA-Z0-9]{1,30}",
       "newValue": "pattern=[A-Z]{2,2}GE[a-zA-Z0-9]{1,30}",
       "description": "Restriction pattern changed from '[A-Z]{2,2}[0-9]{2,2}[a-zA-Z0-9]{1,30}' to '[A-Z]{2,2}GE[a-zA-Z0-9]{1,30}'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/DbtrAgtAcct/Id/IBAN",
-      "oldValue": "",
-      "newValue": "International Bank Account Number (IBAN) - identifier used internationally by fi",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "TypeChanged",
@@ -3716,14 +2892,6 @@
       "oldValue": "maxLength=34",
       "newValue": "maxLength=9",
       "description": "Restriction maxLength changed from '34' to '9'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/DbtrAgtAcct/Id/Othr/Id",
-      "oldValue": "",
-      "newValue": "Unique and unambiguous identification for the account between the account owner ",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "RemovedNode",
@@ -3766,28 +2934,12 @@
       "description": "Type changed from 'GenericAccountIdentification1' to 'GEO_GenericAccountIdentification1'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/DbtrAgtAcct/Id/Othr",
-      "oldValue": "",
-      "newValue": "Unique identification of an account, as assigned by the account servicer, using ",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/DbtrAgtAcct/Id",
       "oldValue": "AccountIdentification4Choice",
       "newValue": "GEO_AccountIdentification4Choice__1",
       "description": "Type changed from 'AccountIdentification4Choice' to 'GEO_AccountIdentification4Choice__1'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/DbtrAgtAcct/Id",
-      "oldValue": "",
-      "newValue": "Unique and unambiguous identification for the account between the account owner ",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "RemovedNode",
@@ -3814,14 +2966,6 @@
       "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/DbtrAgtAcct/Tp"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/DbtrAgtAcct/Ccy",
-      "oldValue": "",
-      "newValue": "Identification of the currency in which the account is held. \n\nUsage: Currency s",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/DbtrAgtAcct/Nm",
@@ -3836,14 +2980,6 @@
       "oldValue": "pattern=None",
       "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
       "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/DbtrAgtAcct/Nm",
-      "oldValue": "",
-      "newValue": "Name of the account, as assigned by the account servicing institution, in agreem",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "RemovedNode",
@@ -3894,14 +3030,6 @@
       "description": "Type changed from 'CashAccount38' to 'GEO_CashAccount38__1'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/DbtrAgtAcct",
-      "oldValue": "",
-      "newValue": "Unambiguous identification of the account of the debtor agent at its servicing a",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/InstrForDbtrAgt",
@@ -3918,14 +3046,6 @@
       "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/InstrForDbtrAgt",
-      "oldValue": "",
-      "newValue": "Further information related to the processing of the payment instruction, that m",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Nm",
@@ -3940,14 +3060,6 @@
       "oldValue": "pattern=None",
       "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Nm",
-      "oldValue": "",
-      "newValue": "Name of the account, as assigned by the account servicing institution, in agreem",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "RemovedNode",
@@ -4014,14 +3126,6 @@
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/Dept",
-      "oldValue": "",
-      "newValue": "Identification of a division of a large organisation or building.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/SubDept",
@@ -4038,14 +3142,6 @@
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/SubDept",
-      "oldValue": "",
-      "newValue": "Identification of a sub-division of a large organisation or building.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/StrtNm",
@@ -4060,14 +3156,6 @@
       "oldValue": "pattern=None",
       "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/StrtNm",
-      "oldValue": "",
-      "newValue": "Name of a street or thoroughfare.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "TypeChanged",
@@ -4084,14 +3172,6 @@
       "oldValue": "pattern=None",
       "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/BldgNb",
-      "oldValue": "",
-      "newValue": "Number that identifies the position of a building on a street.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "TypeChanged",
@@ -4110,14 +3190,6 @@
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/BldgNm",
-      "oldValue": "",
-      "newValue": "Name of the building or house.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/Flr",
@@ -4132,14 +3204,6 @@
       "oldValue": "pattern=None",
       "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/Flr",
-      "oldValue": "",
-      "newValue": "Floor or storey within a building.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "TypeChanged",
@@ -4158,14 +3222,6 @@
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/PstBx",
-      "oldValue": "",
-      "newValue": "Numbered box in a post office, assigned to a person or organisation, where lette",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/Room",
@@ -4182,14 +3238,6 @@
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/Room",
-      "oldValue": "",
-      "newValue": "Building room number.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/PstCd",
@@ -4204,14 +3252,6 @@
       "oldValue": "pattern=None",
       "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/PstCd",
-      "oldValue": "",
-      "newValue": "Identifier consisting of a group of letters and/or numbers that is added to a po",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "MinOccursChanged",
@@ -4238,14 +3278,6 @@
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/TwnNm",
-      "oldValue": "",
-      "newValue": "Name of a built-up area, with defined boundaries, and a local government.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/TwnLctnNm",
@@ -4260,14 +3292,6 @@
       "oldValue": "pattern=None",
       "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/TwnLctnNm",
-      "oldValue": "",
-      "newValue": "Specific location name within the town.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "TypeChanged",
@@ -4286,14 +3310,6 @@
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/DstrctNm",
-      "oldValue": "",
-      "newValue": "Identifies a subdivision within a country sub-division.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/CtrySubDvsn",
@@ -4308,14 +3324,6 @@
       "oldValue": "pattern=None",
       "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/CtrySubDvsn",
-      "oldValue": "",
-      "newValue": "Identifies a subdivision of a country such as state, region, county.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "MinOccursChanged",
@@ -4324,14 +3332,6 @@
       "oldValue": "0",
       "newValue": "1",
       "description": "minOccurs changed from 0 to 1"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/Ctry",
-      "oldValue": "",
-      "newValue": "Nation with its own government.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "MaxOccursChanged",
@@ -4366,28 +3366,12 @@
       "description": "Restriction maxLength changed from '70' to '35'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/AdrLine",
-      "oldValue": "",
-      "newValue": "Information that locates and identifies a specific address, as defined by postal",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr",
       "oldValue": "PostalAddress24",
       "newValue": "GEO_PostalAddress24",
       "description": "Type changed from 'PostalAddress24' to 'GEO_PostalAddress24'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr",
-      "oldValue": "",
-      "newValue": "Information that locates and identifies a specific address, as defined by postal",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "RemovedNode",
@@ -4422,22 +3406,6 @@
       "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Id/OrgId/Othr/Id",
-      "oldValue": "",
-      "newValue": "Unique and unambiguous identification for the account between the account owner ",
-      "description": "Documentation text changed"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Id/OrgId/Othr/SchmeNm/Cd",
-      "oldValue": "",
-      "newValue": "Name of the identification scheme, in a coded form as published in an external l",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "RemovedNode",
       "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Id/OrgId/Othr/SchmeNm/Prtry",
@@ -4454,14 +3422,6 @@
       "description": "Type changed from 'OrganisationIdentificationSchemeName1Choice' to 'GEO_OrganisationIdentificationSchemeName1Choice'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Id/OrgId/Othr/SchmeNm",
-      "oldValue": "",
-      "newValue": "Name of the identification scheme.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Id/OrgId/Othr/Issr",
@@ -4476,14 +3436,6 @@
       "oldValue": "pattern=None",
       "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
       "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Id/OrgId/Othr/Issr",
-      "oldValue": "",
-      "newValue": "Entity that assigns the credit reference type.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "MinOccursChanged",
@@ -4510,28 +3462,12 @@
       "description": "Type changed from 'GenericOrganisationIdentification1' to 'GEO_GenericOrganisationIdentification1'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Id/OrgId/Othr",
-      "oldValue": "",
-      "newValue": "Unique identification of an account, as assigned by the account servicer, using ",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Id/OrgId",
       "oldValue": "OrganisationIdentification29",
       "newValue": "GEO_OrganisationIdentification29",
       "description": "Type changed from 'OrganisationIdentification29' to 'GEO_OrganisationIdentification29'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Id/OrgId",
-      "oldValue": "",
-      "newValue": "Unique and unambiguous way to identify an organisation.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "RemovedNode",
@@ -4590,22 +3526,6 @@
       "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Id/PrvtId/Othr/Id",
-      "oldValue": "",
-      "newValue": "Unique and unambiguous identification for the account between the account owner ",
-      "description": "Documentation text changed"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Id/PrvtId/Othr/SchmeNm/Cd",
-      "oldValue": "",
-      "newValue": "Name of the identification scheme, in a coded form as published in an external l",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "RemovedNode",
       "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Id/PrvtId/Othr/SchmeNm/Prtry",
@@ -4622,14 +3542,6 @@
       "description": "Type changed from 'PersonIdentificationSchemeName1Choice' to 'GEO_PersonIdentificationSchemeName1Choice'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Id/PrvtId/Othr/SchmeNm",
-      "oldValue": "",
-      "newValue": "Name of the identification scheme.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Id/PrvtId/Othr/Issr",
@@ -4644,14 +3556,6 @@
       "oldValue": "pattern=None",
       "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
       "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Id/PrvtId/Othr/Issr",
-      "oldValue": "",
-      "newValue": "Entity that assigns the credit reference type.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "MinOccursChanged",
@@ -4678,14 +3582,6 @@
       "description": "Type changed from 'GenericPersonIdentification1' to 'GEO_GenericPersonIdentification1'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Id/PrvtId/Othr",
-      "oldValue": "",
-      "newValue": "Unique identification of an account, as assigned by the account servicer, using ",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Id/PrvtId",
@@ -4694,36 +3590,12 @@
       "description": "Type changed from 'PersonIdentification13' to 'GEO_PersonIdentification13'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Id/PrvtId",
-      "oldValue": "",
-      "newValue": "Unique and unambiguous identification of a person, for example a passport.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Id",
       "oldValue": "Party38Choice",
       "newValue": "GEO_Party38Choice",
       "description": "Type changed from 'Party38Choice' to 'GEO_Party38Choice'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Id",
-      "oldValue": "",
-      "newValue": "Unique and unambiguous identification for the account between the account owner ",
-      "description": "Documentation text changed"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/CtryOfRes",
-      "oldValue": "",
-      "newValue": "Country in which a person resides (the place of a person's home). In the case of",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "RemovedNode",
@@ -4852,14 +3724,6 @@
       "oldValue": "PartyIdentification135",
       "newValue": "GEO_PartyIdentification135",
       "description": "Type changed from 'PartyIdentification135' to 'GEO_PartyIdentification135'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr",
-      "oldValue": "",
-      "newValue": "Ultimate party that owes an amount of money to the (ultimate) creditor.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "RemovedNode",
@@ -5550,14 +4414,6 @@
       "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/PmtId/InstrId",
-      "oldValue": "",
-      "newValue": "Unique identification as assigned by an instructing party for an instructed part",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/PmtId/EndToEndId",
@@ -5574,52 +4430,12 @@
       "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/PmtId/EndToEndId",
-      "oldValue": "",
-      "newValue": "Unique identification assigned by the initiating party to unambiguously identify",
-      "description": "Documentation text changed"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/PmtId/UETR",
-      "oldValue": "",
-      "newValue": "Universally unique identifier to provide an end-to-end reference of a payment tr",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/PmtId",
       "oldValue": "PaymentIdentification6",
       "newValue": "GEO_PaymentIdentification6",
       "description": "Type changed from 'PaymentIdentification6' to 'GEO_PaymentIdentification6'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/PmtId",
-      "oldValue": "",
-      "newValue": "Set of elements used to reference a payment instruction.",
-      "description": "Documentation text changed"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/PmtTpInf/InstrPrty",
-      "oldValue": "",
-      "newValue": "Urgency or order of importance that the originator would like the recipient of t",
-      "description": "Documentation text changed"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/PmtTpInf/SvcLvl/Cd",
-      "oldValue": "",
-      "newValue": "Name of the identification scheme, in a coded form as published in an external l",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "RemovedNode",
@@ -5646,22 +4462,6 @@
       "description": "Type changed from 'ServiceLevel8Choice' to 'GEO_ServiceLevel8Choice'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/PmtTpInf/SvcLvl",
-      "oldValue": "",
-      "newValue": "Agreement under which or rules under which the transaction should be processed.",
-      "description": "Documentation text changed"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/PmtTpInf/LclInstrm/Cd",
-      "oldValue": "",
-      "newValue": "Name of the identification scheme, in a coded form as published in an external l",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/PmtTpInf/LclInstrm/Prtry",
@@ -5678,36 +4478,12 @@
       "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/PmtTpInf/LclInstrm/Prtry",
-      "oldValue": "",
-      "newValue": "Name of the identification scheme, in a free text form.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/PmtTpInf/LclInstrm",
       "oldValue": "LocalInstrument2Choice",
       "newValue": "GEO_LocalInstrument2Choice",
       "description": "Type changed from 'LocalInstrument2Choice' to 'GEO_LocalInstrument2Choice'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/PmtTpInf/LclInstrm",
-      "oldValue": "",
-      "newValue": "User community specific instrument.\n\nUsage: This element is used to specify a lo",
-      "description": "Documentation text changed"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/PmtTpInf/CtgyPurp/Cd",
-      "oldValue": "",
-      "newValue": "Name of the identification scheme, in a coded form as published in an external l",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "RemovedNode",
@@ -5726,108 +4502,12 @@
       "description": "Type changed from 'CategoryPurpose1Choice' to 'GEO_CategoryPurpose1Choice'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/PmtTpInf/CtgyPurp",
-      "oldValue": "",
-      "newValue": "Specifies the high level purpose of the instruction based on a set of pre-define",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/PmtTpInf",
       "oldValue": "PaymentTypeInformation26",
       "newValue": "GEO_PaymentTypeInformation26",
       "description": "Type changed from 'PaymentTypeInformation26' to 'GEO_PaymentTypeInformation26'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/PmtTpInf",
-      "oldValue": "",
-      "newValue": "Set of elements used to further specify the type of transaction.",
-      "description": "Documentation text changed"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Amt/InstdAmt/@Ccy",
-      "oldValue": "",
-      "newValue": "A code allocated to a currency by a Maintenance Agency under an international id",
-      "description": "Documentation text changed"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Amt/InstdAmt",
-      "oldValue": "",
-      "newValue": "Amount of money to be moved between the debtor and creditor, before deduction of",
-      "description": "Documentation text changed"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Amt/EqvtAmt/Amt/@Ccy",
-      "oldValue": "",
-      "newValue": "A code allocated to a currency by a Maintenance Agency under an international id",
-      "description": "Documentation text changed"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Amt/EqvtAmt/Amt",
-      "oldValue": "",
-      "newValue": "Amount of money to be moved between the debtor and creditor, before deduction of",
-      "description": "Documentation text changed"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Amt/EqvtAmt/CcyOfTrf",
-      "oldValue": "",
-      "newValue": "Specifies the currency of the to be transferred amount, which is different from ",
-      "description": "Documentation text changed"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Amt/EqvtAmt",
-      "oldValue": "",
-      "newValue": "Amount of money to be moved between the debtor and creditor, expressed in the cu",
-      "description": "Documentation text changed"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Amt",
-      "oldValue": "",
-      "newValue": "Amount of money to be moved between the debtor and creditor, before deduction of",
-      "description": "Documentation text changed"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/XchgRateInf/UnitCcy",
-      "oldValue": "",
-      "newValue": "Currency in which the rate of exchange is expressed in a currency exchange. In t",
-      "description": "Documentation text changed"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/XchgRateInf/XchgRate",
-      "oldValue": "",
-      "newValue": "The factor used for conversion of an amount from one currency to another. This r",
-      "description": "Documentation text changed"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/XchgRateInf/RateTp",
-      "oldValue": "",
-      "newValue": "Specifies the type used to complete the currency exchange.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "TypeChanged",
@@ -5846,28 +4526,12 @@
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/XchgRateInf/CtrctId",
-      "oldValue": "",
-      "newValue": "Unique and unambiguous reference to the foreign exchange contract agreed between",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/XchgRateInf",
       "oldValue": "ExchangeRate1",
       "newValue": "GEO_ExchangeRate1",
       "description": "Type changed from 'ExchangeRate1' to 'GEO_ExchangeRate1'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/XchgRateInf",
-      "oldValue": "",
-      "newValue": "Provides details on the currency exchange rate and contract.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "RemovedNode",
@@ -6382,14 +5046,6 @@
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/Nm",
-      "oldValue": "",
-      "newValue": "Name of the account, as assigned by the account servicing institution, in agreem",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "RemovedNode",
       "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/PstlAdr/AdrTp/Cd",
@@ -6454,14 +5110,6 @@
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/PstlAdr/Dept",
-      "oldValue": "",
-      "newValue": "Identification of a division of a large organisation or building.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/PstlAdr/SubDept",
@@ -6478,14 +5126,6 @@
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/PstlAdr/SubDept",
-      "oldValue": "",
-      "newValue": "Identification of a sub-division of a large organisation or building.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/PstlAdr/StrtNm",
@@ -6500,14 +5140,6 @@
       "oldValue": "pattern=None",
       "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/PstlAdr/StrtNm",
-      "oldValue": "",
-      "newValue": "Name of a street or thoroughfare.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "TypeChanged",
@@ -6524,14 +5156,6 @@
       "oldValue": "pattern=None",
       "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/PstlAdr/BldgNb",
-      "oldValue": "",
-      "newValue": "Number that identifies the position of a building on a street.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "TypeChanged",
@@ -6550,14 +5174,6 @@
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/PstlAdr/BldgNm",
-      "oldValue": "",
-      "newValue": "Name of the building or house.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/PstlAdr/Flr",
@@ -6572,14 +5188,6 @@
       "oldValue": "pattern=None",
       "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/PstlAdr/Flr",
-      "oldValue": "",
-      "newValue": "Floor or storey within a building.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "TypeChanged",
@@ -6598,14 +5206,6 @@
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/PstlAdr/PstBx",
-      "oldValue": "",
-      "newValue": "Numbered box in a post office, assigned to a person or organisation, where lette",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/PstlAdr/Room",
@@ -6622,14 +5222,6 @@
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/PstlAdr/Room",
-      "oldValue": "",
-      "newValue": "Building room number.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/PstlAdr/PstCd",
@@ -6644,14 +5236,6 @@
       "oldValue": "pattern=None",
       "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/PstlAdr/PstCd",
-      "oldValue": "",
-      "newValue": "Identifier consisting of a group of letters and/or numbers that is added to a po",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "MinOccursChanged",
@@ -6678,14 +5262,6 @@
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/PstlAdr/TwnNm",
-      "oldValue": "",
-      "newValue": "Name of a built-up area, with defined boundaries, and a local government.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/PstlAdr/TwnLctnNm",
@@ -6700,14 +5276,6 @@
       "oldValue": "pattern=None",
       "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/PstlAdr/TwnLctnNm",
-      "oldValue": "",
-      "newValue": "Specific location name within the town.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "TypeChanged",
@@ -6726,14 +5294,6 @@
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/PstlAdr/DstrctNm",
-      "oldValue": "",
-      "newValue": "Identifies a subdivision within a country sub-division.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/PstlAdr/CtrySubDvsn",
@@ -6748,14 +5308,6 @@
       "oldValue": "pattern=None",
       "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/PstlAdr/CtrySubDvsn",
-      "oldValue": "",
-      "newValue": "Identifies a subdivision of a country such as state, region, county.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "MinOccursChanged",
@@ -6764,14 +5316,6 @@
       "oldValue": "0",
       "newValue": "1",
       "description": "minOccurs changed from 0 to 1"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/PstlAdr/Ctry",
-      "oldValue": "",
-      "newValue": "Nation with its own government.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "MaxOccursChanged",
@@ -6806,28 +5350,12 @@
       "description": "Restriction maxLength changed from '70' to '35'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/PstlAdr/AdrLine",
-      "oldValue": "",
-      "newValue": "Information that locates and identifies a specific address, as defined by postal",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/PstlAdr",
       "oldValue": "PostalAddress24",
       "newValue": "GEO_PostalAddress24",
       "description": "Type changed from 'PostalAddress24' to 'GEO_PostalAddress24'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/PstlAdr",
-      "oldValue": "",
-      "newValue": "Information that locates and identifies a specific address, as defined by postal",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "RemovedNode",
@@ -6862,22 +5390,6 @@
       "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/Id/OrgId/Othr/Id",
-      "oldValue": "",
-      "newValue": "Unique and unambiguous identification for the account between the account owner ",
-      "description": "Documentation text changed"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/Id/OrgId/Othr/SchmeNm/Cd",
-      "oldValue": "",
-      "newValue": "Name of the identification scheme, in a coded form as published in an external l",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "RemovedNode",
       "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/Id/OrgId/Othr/SchmeNm/Prtry",
@@ -6894,14 +5406,6 @@
       "description": "Type changed from 'OrganisationIdentificationSchemeName1Choice' to 'GEO_OrganisationIdentificationSchemeName1Choice'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/Id/OrgId/Othr/SchmeNm",
-      "oldValue": "",
-      "newValue": "Name of the identification scheme.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/Id/OrgId/Othr/Issr",
@@ -6916,14 +5420,6 @@
       "oldValue": "pattern=None",
       "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
       "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/Id/OrgId/Othr/Issr",
-      "oldValue": "",
-      "newValue": "Entity that assigns the credit reference type.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "MinOccursChanged",
@@ -6950,28 +5446,12 @@
       "description": "Type changed from 'GenericOrganisationIdentification1' to 'GEO_GenericOrganisationIdentification1'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/Id/OrgId/Othr",
-      "oldValue": "",
-      "newValue": "Unique identification of an account, as assigned by the account servicer, using ",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/Id/OrgId",
       "oldValue": "OrganisationIdentification29",
       "newValue": "GEO_OrganisationIdentification29",
       "description": "Type changed from 'OrganisationIdentification29' to 'GEO_OrganisationIdentification29'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/Id/OrgId",
-      "oldValue": "",
-      "newValue": "Unique and unambiguous way to identify an organisation.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "RemovedNode",
@@ -7030,22 +5510,6 @@
       "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/Id/PrvtId/Othr/Id",
-      "oldValue": "",
-      "newValue": "Unique and unambiguous identification for the account between the account owner ",
-      "description": "Documentation text changed"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/Id/PrvtId/Othr/SchmeNm/Cd",
-      "oldValue": "",
-      "newValue": "Name of the identification scheme, in a coded form as published in an external l",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "RemovedNode",
       "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/Id/PrvtId/Othr/SchmeNm/Prtry",
@@ -7062,14 +5526,6 @@
       "description": "Type changed from 'PersonIdentificationSchemeName1Choice' to 'GEO_PersonIdentificationSchemeName1Choice'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/Id/PrvtId/Othr/SchmeNm",
-      "oldValue": "",
-      "newValue": "Name of the identification scheme.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/Id/PrvtId/Othr/Issr",
@@ -7084,14 +5540,6 @@
       "oldValue": "pattern=None",
       "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
       "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/Id/PrvtId/Othr/Issr",
-      "oldValue": "",
-      "newValue": "Entity that assigns the credit reference type.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "MinOccursChanged",
@@ -7118,14 +5566,6 @@
       "description": "Type changed from 'GenericPersonIdentification1' to 'GEO_GenericPersonIdentification1'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/Id/PrvtId/Othr",
-      "oldValue": "",
-      "newValue": "Unique identification of an account, as assigned by the account servicer, using ",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/Id/PrvtId",
@@ -7134,36 +5574,12 @@
       "description": "Type changed from 'PersonIdentification13' to 'GEO_PersonIdentification13'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/Id/PrvtId",
-      "oldValue": "",
-      "newValue": "Unique and unambiguous identification of a person, for example a passport.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/Id",
       "oldValue": "Party38Choice",
       "newValue": "GEO_Party38Choice",
       "description": "Type changed from 'Party38Choice' to 'GEO_Party38Choice'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/Id",
-      "oldValue": "",
-      "newValue": "Unique and unambiguous identification for the account between the account owner ",
-      "description": "Documentation text changed"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/CtryOfRes",
-      "oldValue": "",
-      "newValue": "Country in which a person resides (the place of a person's home). In the case of",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "RemovedNode",
@@ -7292,14 +5708,6 @@
       "oldValue": "PartyIdentification135",
       "newValue": "GEO_PartyIdentification135",
       "description": "Type changed from 'PartyIdentification135' to 'GEO_PartyIdentification135'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr",
-      "oldValue": "",
-      "newValue": "Ultimate party that owes an amount of money to the (ultimate) creditor.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "RemovedNode",
@@ -9318,14 +7726,6 @@
       "description": "Restriction pattern changed from '[A-Z0-9]{4,4}[A-Z]{2,2}[A-Z0-9]{2,2}([A-Z0-9]{3,3}){0,1}' to '[A-Z0-9]{4,4}GE[A-Z0-9]{2,2}([A-Z0-9]{3,3}){0,1}'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/CdtrAgt/FinInstnId/BICFI",
-      "oldValue": "",
-      "newValue": "Code allocated to a financial institution by the ISO 9362 Registration Authority",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "RemovedNode",
       "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/CdtrAgt/FinInstnId/ClrSysMmbId/ClrSysId/Cd",
@@ -9382,28 +7782,12 @@
       "description": "Restriction maxLength changed from '35' to None"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/CdtrAgt/FinInstnId/ClrSysMmbId/MmbId",
-      "oldValue": "",
-      "newValue": "Identification of a member of a clearing system.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/CdtrAgt/FinInstnId/ClrSysMmbId",
       "oldValue": "ClearingSystemMemberIdentification2",
       "newValue": "GEO_ClearingSystemMemberIdentification2",
       "description": "Type changed from 'ClearingSystemMemberIdentification2' to 'GEO_ClearingSystemMemberIdentification2'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/CdtrAgt/FinInstnId/ClrSysMmbId",
-      "oldValue": "",
-      "newValue": "Information used to identify a member within a clearing system.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "RemovedNode",
@@ -9654,14 +8038,6 @@
       "description": "Type changed from 'FinancialInstitutionIdentification18' to 'GEO_FinancialInstitutionIdentification18'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/CdtrAgt/FinInstnId",
-      "oldValue": "",
-      "newValue": "Unique and unambiguous identification of a financial institution, as assigned un",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "RemovedNode",
       "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/CdtrAgt/BrnchId/Id",
@@ -9886,14 +8262,6 @@
       "description": "Type changed from 'BranchAndFinancialInstitutionIdentification6' to 'GEO_BranchAndFinancialInstitutionIdentification6'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/CdtrAgt",
-      "oldValue": "",
-      "newValue": "Financial institution servicing an account for the creditor.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "RemovedNode",
       "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/CdtrAgtAcct/Id/IBAN",
@@ -10062,14 +8430,6 @@
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/Nm",
-      "oldValue": "",
-      "newValue": "Name of the account, as assigned by the account servicing institution, in agreem",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "RemovedNode",
       "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/AdrTp/Cd",
@@ -10134,14 +8494,6 @@
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/Dept",
-      "oldValue": "",
-      "newValue": "Identification of a division of a large organisation or building.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/SubDept",
@@ -10158,14 +8510,6 @@
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/SubDept",
-      "oldValue": "",
-      "newValue": "Identification of a sub-division of a large organisation or building.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/StrtNm",
@@ -10180,14 +8524,6 @@
       "oldValue": "pattern=None",
       "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/StrtNm",
-      "oldValue": "",
-      "newValue": "Name of a street or thoroughfare.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "TypeChanged",
@@ -10204,14 +8540,6 @@
       "oldValue": "pattern=None",
       "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/BldgNb",
-      "oldValue": "",
-      "newValue": "Number that identifies the position of a building on a street.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "TypeChanged",
@@ -10230,14 +8558,6 @@
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/BldgNm",
-      "oldValue": "",
-      "newValue": "Name of the building or house.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/Flr",
@@ -10252,14 +8572,6 @@
       "oldValue": "pattern=None",
       "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/Flr",
-      "oldValue": "",
-      "newValue": "Floor or storey within a building.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "TypeChanged",
@@ -10278,14 +8590,6 @@
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/PstBx",
-      "oldValue": "",
-      "newValue": "Numbered box in a post office, assigned to a person or organisation, where lette",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/Room",
@@ -10302,14 +8606,6 @@
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/Room",
-      "oldValue": "",
-      "newValue": "Building room number.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/PstCd",
@@ -10324,14 +8620,6 @@
       "oldValue": "pattern=None",
       "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/PstCd",
-      "oldValue": "",
-      "newValue": "Identifier consisting of a group of letters and/or numbers that is added to a po",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "MinOccursChanged",
@@ -10358,14 +8646,6 @@
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/TwnNm",
-      "oldValue": "",
-      "newValue": "Name of a built-up area, with defined boundaries, and a local government.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/TwnLctnNm",
@@ -10380,14 +8660,6 @@
       "oldValue": "pattern=None",
       "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/TwnLctnNm",
-      "oldValue": "",
-      "newValue": "Specific location name within the town.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "TypeChanged",
@@ -10406,14 +8678,6 @@
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/DstrctNm",
-      "oldValue": "",
-      "newValue": "Identifies a subdivision within a country sub-division.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/CtrySubDvsn",
@@ -10428,14 +8692,6 @@
       "oldValue": "pattern=None",
       "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/CtrySubDvsn",
-      "oldValue": "",
-      "newValue": "Identifies a subdivision of a country such as state, region, county.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "MinOccursChanged",
@@ -10444,14 +8700,6 @@
       "oldValue": "0",
       "newValue": "1",
       "description": "minOccurs changed from 0 to 1"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/Ctry",
-      "oldValue": "",
-      "newValue": "Nation with its own government.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "MaxOccursChanged",
@@ -10486,28 +8734,12 @@
       "description": "Restriction maxLength changed from '70' to '35'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/AdrLine",
-      "oldValue": "",
-      "newValue": "Information that locates and identifies a specific address, as defined by postal",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr",
       "oldValue": "PostalAddress24",
       "newValue": "GEO_PostalAddress24",
       "description": "Type changed from 'PostalAddress24' to 'GEO_PostalAddress24'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr",
-      "oldValue": "",
-      "newValue": "Information that locates and identifies a specific address, as defined by postal",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "RemovedNode",
@@ -10542,22 +8774,6 @@
       "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/Id/OrgId/Othr/Id",
-      "oldValue": "",
-      "newValue": "Unique and unambiguous identification for the account between the account owner ",
-      "description": "Documentation text changed"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/Id/OrgId/Othr/SchmeNm/Cd",
-      "oldValue": "",
-      "newValue": "Name of the identification scheme, in a coded form as published in an external l",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "RemovedNode",
       "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/Id/OrgId/Othr/SchmeNm/Prtry",
@@ -10574,14 +8790,6 @@
       "description": "Type changed from 'OrganisationIdentificationSchemeName1Choice' to 'GEO_OrganisationIdentificationSchemeName1Choice'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/Id/OrgId/Othr/SchmeNm",
-      "oldValue": "",
-      "newValue": "Name of the identification scheme.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/Id/OrgId/Othr/Issr",
@@ -10596,14 +8804,6 @@
       "oldValue": "pattern=None",
       "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
       "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/Id/OrgId/Othr/Issr",
-      "oldValue": "",
-      "newValue": "Entity that assigns the credit reference type.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "MinOccursChanged",
@@ -10630,28 +8830,12 @@
       "description": "Type changed from 'GenericOrganisationIdentification1' to 'GEO_GenericOrganisationIdentification1'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/Id/OrgId/Othr",
-      "oldValue": "",
-      "newValue": "Unique identification of an account, as assigned by the account servicer, using ",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/Id/OrgId",
       "oldValue": "OrganisationIdentification29",
       "newValue": "GEO_OrganisationIdentification29",
       "description": "Type changed from 'OrganisationIdentification29' to 'GEO_OrganisationIdentification29'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/Id/OrgId",
-      "oldValue": "",
-      "newValue": "Unique and unambiguous way to identify an organisation.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "RemovedNode",
@@ -10710,22 +8894,6 @@
       "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/Id/PrvtId/Othr/Id",
-      "oldValue": "",
-      "newValue": "Unique and unambiguous identification for the account between the account owner ",
-      "description": "Documentation text changed"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/Id/PrvtId/Othr/SchmeNm/Cd",
-      "oldValue": "",
-      "newValue": "Name of the identification scheme, in a coded form as published in an external l",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "RemovedNode",
       "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/Id/PrvtId/Othr/SchmeNm/Prtry",
@@ -10742,14 +8910,6 @@
       "description": "Type changed from 'PersonIdentificationSchemeName1Choice' to 'GEO_PersonIdentificationSchemeName1Choice'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/Id/PrvtId/Othr/SchmeNm",
-      "oldValue": "",
-      "newValue": "Name of the identification scheme.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/Id/PrvtId/Othr/Issr",
@@ -10764,14 +8924,6 @@
       "oldValue": "pattern=None",
       "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
       "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/Id/PrvtId/Othr/Issr",
-      "oldValue": "",
-      "newValue": "Entity that assigns the credit reference type.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "MinOccursChanged",
@@ -10798,14 +8950,6 @@
       "description": "Type changed from 'GenericPersonIdentification1' to 'GEO_GenericPersonIdentification1'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/Id/PrvtId/Othr",
-      "oldValue": "",
-      "newValue": "Unique identification of an account, as assigned by the account servicer, using ",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/Id/PrvtId",
@@ -10814,36 +8958,12 @@
       "description": "Type changed from 'PersonIdentification13' to 'GEO_PersonIdentification13'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/Id/PrvtId",
-      "oldValue": "",
-      "newValue": "Unique and unambiguous identification of a person, for example a passport.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/Id",
       "oldValue": "Party38Choice",
       "newValue": "GEO_Party38Choice",
       "description": "Type changed from 'Party38Choice' to 'GEO_Party38Choice'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/Id",
-      "oldValue": "",
-      "newValue": "Unique and unambiguous identification for the account between the account owner ",
-      "description": "Documentation text changed"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/CtryOfRes",
-      "oldValue": "",
-      "newValue": "Country in which a person resides (the place of a person's home). In the case of",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "RemovedNode",
@@ -10982,14 +9102,6 @@
       "description": "Type changed from 'PartyIdentification135' to 'GEO_PartyIdentification135'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr",
-      "oldValue": "",
-      "newValue": "Party to which an amount of money is due.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/CdtrAcct/Id/IBAN",
@@ -11004,14 +9116,6 @@
       "oldValue": "pattern=[A-Z]{2,2}[0-9]{2,2}[a-zA-Z0-9]{1,30}",
       "newValue": "pattern=[A-Z]{2,2}GE[a-zA-Z0-9]{1,30}",
       "description": "Restriction pattern changed from '[A-Z]{2,2}[0-9]{2,2}[a-zA-Z0-9]{1,30}' to '[A-Z]{2,2}GE[a-zA-Z0-9]{1,30}'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/CdtrAcct/Id/IBAN",
-      "oldValue": "",
-      "newValue": "International Bank Account Number (IBAN) - identifier used internationally by fi",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "RemovedNode",
@@ -11070,14 +9174,6 @@
       "description": "Type changed from 'AccountIdentification4Choice' to 'GEO_AccountIdentification4Choice__2'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/CdtrAcct/Id",
-      "oldValue": "",
-      "newValue": "Unique and unambiguous identification for the account between the account owner ",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "RemovedNode",
       "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/CdtrAcct/Tp/Cd",
@@ -11102,14 +9198,6 @@
       "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/CdtrAcct/Tp"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/CdtrAcct/Ccy",
-      "oldValue": "",
-      "newValue": "Identification of the currency in which the account is held. \n\nUsage: Currency s",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/CdtrAcct/Nm",
@@ -11124,14 +9212,6 @@
       "oldValue": "pattern=None",
       "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
       "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/CdtrAcct/Nm",
-      "oldValue": "",
-      "newValue": "Name of the account, as assigned by the account servicing institution, in agreem",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "RemovedNode",
@@ -11190,14 +9270,6 @@
       "description": "Type changed from 'CashAccount38' to 'GEO_CashAccount38__2'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/CdtrAcct",
-      "oldValue": "",
-      "newValue": "Unambiguous identification of the account of the creditor to which a credit entr",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/Nm",
@@ -11212,14 +9284,6 @@
       "oldValue": "pattern=None",
       "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/Nm",
-      "oldValue": "",
-      "newValue": "Name of the account, as assigned by the account servicing institution, in agreem",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "RemovedNode",
@@ -11286,14 +9350,6 @@
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/PstlAdr/Dept",
-      "oldValue": "",
-      "newValue": "Identification of a division of a large organisation or building.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/PstlAdr/SubDept",
@@ -11310,14 +9366,6 @@
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/PstlAdr/SubDept",
-      "oldValue": "",
-      "newValue": "Identification of a sub-division of a large organisation or building.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/PstlAdr/StrtNm",
@@ -11332,14 +9380,6 @@
       "oldValue": "pattern=None",
       "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/PstlAdr/StrtNm",
-      "oldValue": "",
-      "newValue": "Name of a street or thoroughfare.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "TypeChanged",
@@ -11356,14 +9396,6 @@
       "oldValue": "pattern=None",
       "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/PstlAdr/BldgNb",
-      "oldValue": "",
-      "newValue": "Number that identifies the position of a building on a street.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "TypeChanged",
@@ -11382,14 +9414,6 @@
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/PstlAdr/BldgNm",
-      "oldValue": "",
-      "newValue": "Name of the building or house.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/PstlAdr/Flr",
@@ -11404,14 +9428,6 @@
       "oldValue": "pattern=None",
       "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/PstlAdr/Flr",
-      "oldValue": "",
-      "newValue": "Floor or storey within a building.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "TypeChanged",
@@ -11430,14 +9446,6 @@
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/PstlAdr/PstBx",
-      "oldValue": "",
-      "newValue": "Numbered box in a post office, assigned to a person or organisation, where lette",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/PstlAdr/Room",
@@ -11454,14 +9462,6 @@
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/PstlAdr/Room",
-      "oldValue": "",
-      "newValue": "Building room number.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/PstlAdr/PstCd",
@@ -11476,14 +9476,6 @@
       "oldValue": "pattern=None",
       "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/PstlAdr/PstCd",
-      "oldValue": "",
-      "newValue": "Identifier consisting of a group of letters and/or numbers that is added to a po",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "MinOccursChanged",
@@ -11510,14 +9502,6 @@
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/PstlAdr/TwnNm",
-      "oldValue": "",
-      "newValue": "Name of a built-up area, with defined boundaries, and a local government.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/PstlAdr/TwnLctnNm",
@@ -11532,14 +9516,6 @@
       "oldValue": "pattern=None",
       "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/PstlAdr/TwnLctnNm",
-      "oldValue": "",
-      "newValue": "Specific location name within the town.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "TypeChanged",
@@ -11558,14 +9534,6 @@
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/PstlAdr/DstrctNm",
-      "oldValue": "",
-      "newValue": "Identifies a subdivision within a country sub-division.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/PstlAdr/CtrySubDvsn",
@@ -11580,14 +9548,6 @@
       "oldValue": "pattern=None",
       "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/PstlAdr/CtrySubDvsn",
-      "oldValue": "",
-      "newValue": "Identifies a subdivision of a country such as state, region, county.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "MinOccursChanged",
@@ -11596,14 +9556,6 @@
       "oldValue": "0",
       "newValue": "1",
       "description": "minOccurs changed from 0 to 1"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/PstlAdr/Ctry",
-      "oldValue": "",
-      "newValue": "Nation with its own government.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "MaxOccursChanged",
@@ -11638,28 +9590,12 @@
       "description": "Restriction maxLength changed from '70' to '35'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/PstlAdr/AdrLine",
-      "oldValue": "",
-      "newValue": "Information that locates and identifies a specific address, as defined by postal",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/PstlAdr",
       "oldValue": "PostalAddress24",
       "newValue": "GEO_PostalAddress24",
       "description": "Type changed from 'PostalAddress24' to 'GEO_PostalAddress24'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/PstlAdr",
-      "oldValue": "",
-      "newValue": "Information that locates and identifies a specific address, as defined by postal",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "RemovedNode",
@@ -11694,22 +9630,6 @@
       "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/Id/OrgId/Othr/Id",
-      "oldValue": "",
-      "newValue": "Unique and unambiguous identification for the account between the account owner ",
-      "description": "Documentation text changed"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/Id/OrgId/Othr/SchmeNm/Cd",
-      "oldValue": "",
-      "newValue": "Name of the identification scheme, in a coded form as published in an external l",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "RemovedNode",
       "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/Id/OrgId/Othr/SchmeNm/Prtry",
@@ -11726,14 +9646,6 @@
       "description": "Type changed from 'OrganisationIdentificationSchemeName1Choice' to 'GEO_OrganisationIdentificationSchemeName1Choice'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/Id/OrgId/Othr/SchmeNm",
-      "oldValue": "",
-      "newValue": "Name of the identification scheme.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/Id/OrgId/Othr/Issr",
@@ -11748,14 +9660,6 @@
       "oldValue": "pattern=None",
       "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
       "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/Id/OrgId/Othr/Issr",
-      "oldValue": "",
-      "newValue": "Entity that assigns the credit reference type.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "MinOccursChanged",
@@ -11782,28 +9686,12 @@
       "description": "Type changed from 'GenericOrganisationIdentification1' to 'GEO_GenericOrganisationIdentification1'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/Id/OrgId/Othr",
-      "oldValue": "",
-      "newValue": "Unique identification of an account, as assigned by the account servicer, using ",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/Id/OrgId",
       "oldValue": "OrganisationIdentification29",
       "newValue": "GEO_OrganisationIdentification29",
       "description": "Type changed from 'OrganisationIdentification29' to 'GEO_OrganisationIdentification29'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/Id/OrgId",
-      "oldValue": "",
-      "newValue": "Unique and unambiguous way to identify an organisation.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "RemovedNode",
@@ -11862,22 +9750,6 @@
       "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/Id/PrvtId/Othr/Id",
-      "oldValue": "",
-      "newValue": "Unique and unambiguous identification for the account between the account owner ",
-      "description": "Documentation text changed"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/Id/PrvtId/Othr/SchmeNm/Cd",
-      "oldValue": "",
-      "newValue": "Name of the identification scheme, in a coded form as published in an external l",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "RemovedNode",
       "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/Id/PrvtId/Othr/SchmeNm/Prtry",
@@ -11894,14 +9766,6 @@
       "description": "Type changed from 'PersonIdentificationSchemeName1Choice' to 'GEO_PersonIdentificationSchemeName1Choice'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/Id/PrvtId/Othr/SchmeNm",
-      "oldValue": "",
-      "newValue": "Name of the identification scheme.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/Id/PrvtId/Othr/Issr",
@@ -11916,14 +9780,6 @@
       "oldValue": "pattern=None",
       "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
       "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/Id/PrvtId/Othr/Issr",
-      "oldValue": "",
-      "newValue": "Entity that assigns the credit reference type.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "MinOccursChanged",
@@ -11950,14 +9806,6 @@
       "description": "Type changed from 'GenericPersonIdentification1' to 'GEO_GenericPersonIdentification1'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/Id/PrvtId/Othr",
-      "oldValue": "",
-      "newValue": "Unique identification of an account, as assigned by the account servicer, using ",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/Id/PrvtId",
@@ -11966,36 +9814,12 @@
       "description": "Type changed from 'PersonIdentification13' to 'GEO_PersonIdentification13'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/Id/PrvtId",
-      "oldValue": "",
-      "newValue": "Unique and unambiguous identification of a person, for example a passport.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/Id",
       "oldValue": "Party38Choice",
       "newValue": "GEO_Party38Choice",
       "description": "Type changed from 'Party38Choice' to 'GEO_Party38Choice'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/Id",
-      "oldValue": "",
-      "newValue": "Unique and unambiguous identification for the account between the account owner ",
-      "description": "Documentation text changed"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/CtryOfRes",
-      "oldValue": "",
-      "newValue": "Country in which a person resides (the place of a person's home). In the case of",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "RemovedNode",
@@ -12126,14 +9950,6 @@
       "description": "Type changed from 'PartyIdentification135' to 'GEO_PartyIdentification135'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr",
-      "oldValue": "",
-      "newValue": "Ultimate party to which an amount of money is due.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "RemovedNode",
       "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/InstrForCdtrAgt/Cd",
@@ -12158,14 +9974,6 @@
       "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/InstrForCdtrAgt/InstrInf",
-      "oldValue": "",
-      "newValue": "Further information complementing the coded instruction or instruction to the cr",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "MaxOccursChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/InstrForCdtrAgt",
@@ -12182,14 +9990,6 @@
       "description": "Type changed from 'InstructionForCreditorAgent1' to 'GEO_InstructionForCreditorAgent1'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/InstrForCdtrAgt",
-      "oldValue": "",
-      "newValue": "Further information related to the processing of the payment instruction, provid",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/InstrForDbtrAgt",
@@ -12204,22 +10004,6 @@
       "oldValue": "pattern=None",
       "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
       "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/InstrForDbtrAgt",
-      "oldValue": "",
-      "newValue": "Further information related to the processing of the payment instruction, that m",
-      "description": "Documentation text changed"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Purp/Cd",
-      "oldValue": "",
-      "newValue": "Name of the identification scheme, in a coded form as published in an external l",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "RemovedNode",
@@ -12238,22 +10022,6 @@
       "description": "Type changed from 'Purpose2Choice' to 'GEO_Purpose2Choice'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Purp",
-      "oldValue": "",
-      "newValue": "Underlying reason for the payment transaction.\nUsage: Purpose is used by the end",
-      "description": "Documentation text changed"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/RgltryRptg/DbtCdtRptgInd",
-      "oldValue": "",
-      "newValue": "Identifies whether the regulatory reporting information applies to the debit sid",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/RgltryRptg/Authrty/Nm",
@@ -12270,36 +10038,12 @@
       "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/RgltryRptg/Authrty/Nm",
-      "oldValue": "",
-      "newValue": "Name of the account, as assigned by the account servicing institution, in agreem",
-      "description": "Documentation text changed"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/RgltryRptg/Authrty/Ctry",
-      "oldValue": "",
-      "newValue": "Nation with its own government.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/RgltryRptg/Authrty",
       "oldValue": "RegulatoryAuthority2",
       "newValue": "GEO_RegulatoryAuthority2",
       "description": "Type changed from 'RegulatoryAuthority2' to 'GEO_RegulatoryAuthority2'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/RgltryRptg/Authrty",
-      "oldValue": "",
-      "newValue": "Entity requiring the regulatory reporting information.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "TypeChanged",
@@ -12316,30 +10060,6 @@
       "oldValue": "pattern=None",
       "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
       "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/RgltryRptg/Dtls/Tp",
-      "oldValue": "",
-      "newValue": "Specifies the nature, or use of the account.",
-      "description": "Documentation text changed"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/RgltryRptg/Dtls/Dt",
-      "oldValue": "",
-      "newValue": "Specified date.",
-      "description": "Documentation text changed"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/RgltryRptg/Dtls/Ctry",
-      "oldValue": "",
-      "newValue": "Nation with its own government.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "TypeChanged",
@@ -12358,30 +10078,6 @@
       "description": "Restriction pattern changed from None to \"[0-9a-zA-Z/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/RgltryRptg/Dtls/Cd",
-      "oldValue": "",
-      "newValue": "Name of the identification scheme, in a coded form as published in an external l",
-      "description": "Documentation text changed"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/RgltryRptg/Dtls/Amt/@Ccy",
-      "oldValue": "",
-      "newValue": "A code allocated to a currency by a Maintenance Agency under an international id",
-      "description": "Documentation text changed"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/RgltryRptg/Dtls/Amt",
-      "oldValue": "",
-      "newValue": "Amount of money to be moved between the debtor and creditor, before deduction of",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/RgltryRptg/Dtls/Inf",
@@ -12398,14 +10094,6 @@
       "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/RgltryRptg/Dtls/Inf",
-      "oldValue": "",
-      "newValue": "Additional details that cater for specific domestic regulatory requirements.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/RgltryRptg/Dtls",
@@ -12414,28 +10102,12 @@
       "description": "Type changed from 'StructuredRegulatoryReporting3' to 'GEO_StructuredRegulatoryReporting3'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/RgltryRptg/Dtls",
-      "oldValue": "",
-      "newValue": "Set of elements used to provide details on the regulatory reporting information.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/RgltryRptg",
       "oldValue": "RegulatoryReporting3",
       "newValue": "GEO_RegulatoryReporting3",
       "description": "Type changed from 'RegulatoryReporting3' to 'GEO_RegulatoryReporting3'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/RgltryRptg",
-      "oldValue": "",
-      "newValue": "Information needed due to regulatory and statutory requirements.",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "RemovedNode",
@@ -13100,14 +10772,6 @@
       "oldValue": "pattern=None",
       "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
       "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/RmtInf/Ustrd",
-      "oldValue": "",
-      "newValue": "Information supplied to enable the matching/reconciliation of an entry with the ",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "RemovedNode",
@@ -16270,14 +13934,6 @@
       "description": "Type changed from 'RemittanceInformation16' to 'GEO_RemittanceInformation16'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/RmtInf",
-      "oldValue": "",
-      "newValue": "Information supplied to enable the matching of an entry with the items that the ",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "RemovedNode",
       "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/SplmtryData/PlcAndNm",
@@ -16310,28 +13966,12 @@
       "description": "Type changed from 'CreditTransferTransaction34' to 'GEO_CreditTransferTransaction34'"
     },
     {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf",
-      "oldValue": "",
-      "newValue": "Provides information on the individual transaction(s) included in the message.",
-      "description": "Documentation text changed"
-    },
-    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf",
       "oldValue": "PaymentInstruction30",
       "newValue": "GEO_PaymentInstruction30",
       "description": "Type changed from 'PaymentInstruction30' to 'GEO_PaymentInstruction30'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf",
-      "oldValue": "",
-      "newValue": "Set of characteristics that applies to the debit side of the payment transaction",
-      "description": "Documentation text changed"
     },
     {
       "changeType": "RemovedNode",
@@ -16364,14 +14004,6 @@
       "oldValue": "CustomerCreditTransferInitiationV09",
       "newValue": "GEO_CustomerCreditTransferInitiationV09",
       "description": "Type changed from 'CustomerCreditTransferInitiationV09' to 'GEO_CustomerCreditTransferInitiationV09'"
-    },
-    {
-      "changeType": "DocumentationChanged",
-      "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn",
-      "oldValue": "",
-      "newValue": "Scope\nThe CustomerCreditTransferInitiation message is sent by the initiating par",
-      "description": "Documentation text changed"
     }
   ]
 }

@@ -152,10 +152,10 @@ def compare_pair(old: dict | None, new: dict | None) -> list[dict]:
             f"Choice structure changed: {old.get('isChoice')} → {new.get('isChoice')}",
         ))
 
-    # documentation
+    # documentation — only report if old had content and it changed
     old_doc = (old.get("documentation") or "").strip()
     new_doc = (new.get("documentation") or "").strip()
-    if old_doc != new_doc:
+    if old_doc and old_doc != new_doc:
         changes.append(_change(
             "DocumentationChanged", "Informational", path,
             old_doc[:80], new_doc[:80], "Documentation text changed",
