@@ -2,7 +2,7 @@
   "metadata": {
     "sourceFile": "GEO_pain.001.001.09.xsd",
     "targetNamespace": "urn:iso:std:iso:20022:tech:xsd:pain.001.001.09",
-    "generatedAt": "2026-05-22T08:29:48.318420+00:00",
+    "generatedAt": "2026-05-22T09:03:50.403644+00:00",
     "rootElement": "Document",
     "messageName": "pain.001.001.09",
     "warnings": []
@@ -25,6 +25,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Point to point reference, as assigned by the instructing party, and sent to the next party in the chain to unambiguously identify the message.\n\t\t\t\t\t\tUsage: The instructing party has to make sure that MessageIdentification is unique per instructed party for a pre-agreed period.",
+      "documentationKA": "წერტილიდან წერტილამდე რეფერენსი, რომელიც მინიჭებულია დამვალებელი მხარის მიერ და იგზავნება ჯაჭვის შემდეგ მხარესთან შეტყობინების ცალსახად იდენტიფიცირებისთვის. გამოყენება: დამვალებელმა მხარემ უნდა უზრუნველყოს, რომ MessageIdentification უნიკალური იყოს თითოეული დავალებული მხარისთვის წინასწარ შეთანხმებული პერიოდის განმავლობაში.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
         "minLength": "1",
@@ -54,6 +55,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Date and time at which the message was created.",
+      "documentationKA": "თარიღი და დრო, როდესაც შეტყობინება შეიქმნა.",
       "restrictions": {
         "pattern": ".*(\\+|-)((0[0-9])|(1[0-3])):[0-5][0-9]",
         "minLength": null,
@@ -83,6 +85,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Name of the identification scheme, in a coded form as published in an external list.",
+      "documentationKA": "იდენტიფიკაციის სქემის დასახელება კოდირებული ფორმით, როგორც გამოქვეყნებულია გარე სიაში.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -117,6 +120,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Name of the identification scheme, in a free text form.",
+      "documentationKA": "იდენტიფიკაციის სქემის დასახელება თავისუფალი ტექსტის ფორმით.",
       "restrictions": {
         "pattern": null,
         "minLength": "1",
@@ -146,6 +150,7 @@
       "isRepeating": true,
       "isChoice": true,
       "documentation": "User identification or any user key to be used to check whether the initiating party is allowed to initiate transactions from the account specified in the message.\n\n\t\t\t\t\t\tUsage: The content is not of a technical nature, but reflects the organisational structure at the initiating side.\n\t\t\t\t\t\tThe authorisation element can typically be used in relay scenarios, payment initiations, payment returns or payment reversals that are initiated on behalf of a party different from the initiating party.",
+      "documentationKA": "მომხმარებლის იდენტიფიკაცია ან მომხმარებლის ნებისმიერი გასაღები, რომელიც გამოიყენება შესამოწმებლად, აქვს თუ არა ინიციატორ მხარეს უფლება შეტყობინებაში მითითებული ანგარიშიდან ოპერაციების ინიციირებაზე. გამოყენება: შინაარსი ტექნიკური ხასიათის არ არის და ასახავს ინიციატორი მხარის ორგანიზაციულ სტრუქტურას. ავტორიზაციის ელემენტი, ჩვეულებრივ, შეიძლება გამოყენებულ იქნას რელეის სცენარებში, გადახდის ინიციაციებში, გადახდის დაბრუნებებში ან გადახდის უკუქცევებში, რომლებიც ინიციირებულია ინიციატორი მხარისგან განსხვავებული მხარის სახელით.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -178,6 +183,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Number of individual transactions contained in the message.",
+      "documentationKA": "შეტყობინებაში შემავალი ინდივიდუალური ოპერაციების რაოდენობა.",
       "restrictions": {
         "pattern": "[0-9]{1,15}",
         "minLength": null,
@@ -207,6 +213,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Name of the account, as assigned by the account servicing institution, in agreement with the account owner in order to provide an additional means of identification of the account.\n\n\t\t\t\t\t\tUsage: The account name is different from the account owner name. The account name is used in certain user communities to provide a means of identifying the account, in addition to the account owner's identity and the account number.",
+      "documentationKA": "ანგარიშის დასახელება, რომელიც მინიჭებულია ანგარიშის მომსახურე ინსტიტუტის მიერ ანგარიშის მფლობელთან შეთანხმებით, ანგარიშის იდენტიფიკაციის დამატებითი საშუალების უზრუნველსაყოფად. გამოყენება: ანგარიშის დასახელება განსხვავდება ანგარიშის მფლობელის სახელისგან. ზოგიერთ მომხმარებელთა საზოგადოებაში ანგარიშის დასახელება გამოიყენება ანგარიშის იდენტიფიკაციის დამატებით საშუალებად, ანგარიშის მფლობელის იდენტიფიკაციასა და ანგარიშის ნომერთან ერთად.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -236,6 +243,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Identification of a division of a large organisation or building.",
+      "documentationKA": "დიდი ორგანიზაციის ან შენობის განყოფილების იდენტიფიკაცია.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -265,6 +273,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Identification of a sub-division of a large organisation or building.",
+      "documentationKA": "დიდი ორგანიზაციის ან შენობის ქვეგანყოფილების იდენტიფიკაცია.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -294,6 +303,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Name of a street or thoroughfare.",
+      "documentationKA": "ქუჩის ან გზის დასახელება.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -323,6 +333,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Number that identifies the position of a building on a street.",
+      "documentationKA": "ნომერი, რომელიც განსაზღვრავს შენობის მდებარეობას ქუჩაზე.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -352,6 +363,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Name of the building or house.",
+      "documentationKA": "შენობის ან სახლის დასახელება.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -381,6 +393,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Floor or storey within a building.",
+      "documentationKA": "სართული შენობაში.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -410,6 +423,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Numbered box in a post office, assigned to a person or organisation, where letters are kept until called for.",
+      "documentationKA": "საფოსტო განყოფილებაში პირისთვის ან ორგანიზაციისთვის მინიჭებული ნომრიანი ყუთი, სადაც წერილები ინახება მოთხოვნამდე.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -439,6 +453,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Building room number.",
+      "documentationKA": "ოთახის ნომერი შენობაში.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -468,6 +483,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Identifier consisting of a group of letters and/or numbers that is added to a postal address to assist the sorting of mail.",
+      "documentationKA": "ასოებისა და/ან რიცხვების ჯგუფისგან შემდგარი იდენტიფიკატორი, რომელიც ემატება საფოსტო მისამართს ფოსტის დახარისხების გასამარტივებლად.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -497,6 +513,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Name of a built-up area, with defined boundaries, and a local government.",
+      "documentationKA": "განაშენიანებული ტერიტორიის დასახელება, რომელსაც აქვს განსაზღვრული საზღვრები და ადგილობრივი მმართველობა.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -526,6 +543,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Specific location name within the town.",
+      "documentationKA": "ქალაქის ფარგლებში კონკრეტული მდებარეობის დასახელება.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -555,6 +573,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Identifies a subdivision within a country sub-division.",
+      "documentationKA": "განსაზღვრავს ქვედანაყოფს ქვეყნის ადმინისტრაციული ერთეულის ფარგლებში.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -584,6 +603,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Identifies a subdivision of a country such as state, region, county.",
+      "documentationKA": "განსაზღვრავს ქვეყნის ადმინისტრაციულ ერთეულს, როგორიცაა შტატი, რეგიონი ან საგრაფო.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -613,6 +633,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Nation with its own government.",
+      "documentationKA": "საკუთარი მთავრობის მქონე სახელმწიფო.",
       "restrictions": {
         "pattern": "[A-Z]{2,2}",
         "minLength": null,
@@ -642,6 +663,7 @@
       "isRepeating": true,
       "isChoice": false,
       "documentation": "Information that locates and identifies a specific address, as defined by postal services, presented in free format text.",
+      "documentationKA": "ინფორმაცია, რომელიც ადგენს მდებარეობას და იდენტიფიცირებს კონკრეტულ მისამართს, როგორც განსაზღვრულია საფოსტო სამსახურების მიერ, წარმოდგენილი თავისუფალი ფორმატის ტექსტით.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -671,6 +693,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Information that locates and identifies a specific address, as defined by postal services.",
+      "documentationKA": "ინფორმაცია, რომელიც ადგენს მდებარეობას და იდენტიფიცირებს კონკრეტულ მისამართს, როგორც განსაზღვრულია საფოსტო სამსახურების მიერ.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -716,6 +739,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Unique and unambiguous identification for the account between the account owner and the account servicer.",
+      "documentationKA": "ანგარიშის უნიკალური და ერთმნიშვნელოვანი იდენტიფიკაცია ანგარიშის მფლობელსა და ანგარიშის მომსახურე მხარეს შორის.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
         "minLength": "1",
@@ -745,6 +769,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Name of the identification scheme, in a coded form as published in an external list.",
+      "documentationKA": "იდენტიფიკაციის სქემის დასახელება კოდირებული ფორმით, როგორც გამოქვეყნებულია გარე სიაში.",
       "restrictions": {
         "pattern": null,
         "minLength": "1",
@@ -774,6 +799,7 @@
       "isRepeating": false,
       "isChoice": true,
       "documentation": "Name of the identification scheme.",
+      "documentationKA": "იდენტიფიკაციის სქემის დასახელება.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -805,6 +831,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Entity that assigns the credit reference type.",
+      "documentationKA": "სუბიექტი, რომელიც ანიჭებს საკრედიტო რეფერენსის ტიპს.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
         "minLength": "1",
@@ -834,6 +861,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Unique identification of an account, as assigned by the account servicer, using an identification scheme.",
+      "documentationKA": "ანგარიშის უნიკალური იდენტიფიკაცია, მინიჭებული ანგარიშის მომსახურე მხარის მიერ, იდენტიფიკაციის სქემის გამოყენებით.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -867,6 +895,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Unique and unambiguous way to identify an organisation.",
+      "documentationKA": "ორგანიზაციის იდენტიფიკაციის უნიკალური და ერთმნიშვნელოვანი საშუალება.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -898,6 +927,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Unique and unambiguous identification for the account between the account owner and the account servicer.",
+      "documentationKA": "ანგარიშის უნიკალური და ერთმნიშვნელოვანი იდენტიფიკაცია ანგარიშის მფლობელსა და ანგარიშის მომსახურე მხარეს შორის.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
         "minLength": "1",
@@ -927,6 +957,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Name of the identification scheme, in a coded form as published in an external list.",
+      "documentationKA": "იდენტიფიკაციის სქემის დასახელება კოდირებული ფორმით, როგორც გამოქვეყნებულია გარე სიაში.",
       "restrictions": {
         "pattern": null,
         "minLength": "1",
@@ -956,6 +987,7 @@
       "isRepeating": false,
       "isChoice": true,
       "documentation": "Name of the identification scheme.",
+      "documentationKA": "იდენტიფიკაციის სქემის დასახელება.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -987,6 +1019,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Entity that assigns the credit reference type.",
+      "documentationKA": "სუბიექტი, რომელიც ანიჭებს საკრედიტო რეფერენსის ტიპს.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
         "minLength": "1",
@@ -1016,6 +1049,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Unique identification of an account, as assigned by the account servicer, using an identification scheme.",
+      "documentationKA": "ანგარიშის უნიკალური იდენტიფიკაცია, მინიჭებული ანგარიშის მომსახურე მხარის მიერ, იდენტიფიკაციის სქემის გამოყენებით.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -1049,6 +1083,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Unique and unambiguous identification of a person, for example a passport.",
+      "documentationKA": "პირის უნიკალური და ერთმნიშვნელოვანი იდენტიფიკაცია, მაგალითად, პასპორტი.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -1080,6 +1115,7 @@
       "isRepeating": false,
       "isChoice": true,
       "documentation": "Unique and unambiguous identification for the account between the account owner and the account servicer.",
+      "documentationKA": "ანგარიშის უნიკალური და ერთმნიშვნელოვანი იდენტიფიკაცია ანგარიშის მფლობელსა და ანგარიშის მომსახურე მხარეს შორის.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -1112,6 +1148,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Country in which a person resides (the place of a person's home). In the case of a company, it is the country from which the affairs of that company are directed.",
+      "documentationKA": "ქვეყანა, რომელშიც პირი ცხოვრობს (პირის საცხოვრებელი ადგილი). კომპანიის შემთხვევაში, ეს არის ქვეყანა, საიდანაც იმართება ამ კომპანიის საქმიანობა.",
       "restrictions": {
         "pattern": "[A-Z]{2,2}",
         "minLength": null,
@@ -1141,6 +1178,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Party that initiates the payment.\n\n\t\t\t\t\t\tUsage: This can either be the debtor or the party that initiates the credit transfer on behalf of the debtor.",
+      "documentationKA": "მხარე, რომელიც ახდენს გადახდის ინიციირებას. გამოყენება: ეს შეიძლება იყოს დებიტორი ან მხარე, რომელიც დებიტორის სახელით ახდენს საკრედიტო გადარიცხვის ინიციირებას.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -1175,6 +1213,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Code allocated to a financial institution by the ISO 9362 Registration Authority as described in ISO 9362 \"Banking - Banking telecommunication messages - Business identifier code (BIC)\".",
+      "documentationKA": "ISO 9362 რეგისტრაციის ორგანოს მიერ ფინანსური ინსტიტუტისთვის მინიჭებული კოდი, როგორც აღწერილია ISO 9362-ში „საბანკო საქმე — საბანკო სატელეკომუნიკაციო შეტყობინებები — ბიზნეს იდენტიფიკატორის კოდი (BIC)“.",
       "restrictions": {
         "pattern": "[A-Z0-9]{4,4}GE[A-Z0-9]{2,2}([A-Z0-9]{3,3}){0,1}",
         "minLength": null,
@@ -1204,6 +1243,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Identification of a member of a clearing system.",
+      "documentationKA": "კლირინგის სისტემის წევრის იდენტიფიკაცია.",
       "restrictions": {
         "pattern": "[A-Z0-9]{4,4}GE[A-Z0-9]{2,2}([A-Z0-9]{3,3}){0,1}",
         "minLength": null,
@@ -1233,6 +1273,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Information used to identify a member within a clearing system.",
+      "documentationKA": "ინფორმაცია, რომელიც გამოიყენება კლირინგის სისტემაში წევრის იდენტიფიკაციისთვის.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -1264,6 +1305,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Unique and unambiguous identification of a financial institution, as assigned under an internationally recognised or proprietary identification scheme.",
+      "documentationKA": "ფინანსური ინსტიტუტის უნიკალური და ერთმნიშვნელოვანი იდენტიფიკაცია, მინიჭებული საერთაშორისო აღიარებული ან საკუთარი იდენტიფიკაციის სქემის ფარგლებში.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -1296,6 +1338,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Financial institution that receives the instruction from the initiating party and forwards it to the next agent in the payment chain for execution.",
+      "documentationKA": "ფინანსური ინსტიტუტი, რომელიც იღებს დავალებას ინიციატორი მხარისგან და შესასრულებლად აგზავნის მას გადახდის ჯაჭვის შემდეგ აგენტთან.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -1327,6 +1370,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Set of characteristics shared by all individual transactions included in the message.",
+      "documentationKA": "მახასიათებლების ნაკრები, რომელიც საერთოა შეტყობინებაში შემავალი ყველა ინდივიდუალური ოპერაციისთვის.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -1363,6 +1407,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Unique identification, as assigned by a sending party, to unambiguously identify the payment information group within the message.",
+      "documentationKA": "გამგზავნი მხარის მიერ მინიჭებული უნიკალური იდენტიფიკაცია, რომელიც ცალსახად განსაზღვრავს შეტყობინებაში გადახდის ინფორმაციის ჯგუფს.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
         "minLength": "1",
@@ -1392,6 +1437,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Number of individual transactions contained in the message.",
+      "documentationKA": "შეტყობინებაში შემავალი ინდივიდუალური ოპერაციების რაოდენობა.",
       "restrictions": {
         "pattern": "[0-9]{1,15}",
         "minLength": null,
@@ -1421,6 +1467,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Urgency or order of importance that the originator would like the recipient of the payment instruction to apply to the processing of the payment instruction.",
+      "documentationKA": "სასწრაფოობის ან მნიშვნელობის რიგი, რომლის გამოყენებასაც წარმომდგენი სთხოვს გადახდის დავალების მიმღებს გადახდის დავალების დამუშავებისას.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -1453,6 +1500,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Name of the identification scheme, in a coded form as published in an external list.",
+      "documentationKA": "იდენტიფიკაციის სქემის დასახელება კოდირებული ფორმით, როგორც გამოქვეყნებულია გარე სიაში.",
       "restrictions": {
         "pattern": null,
         "minLength": "1",
@@ -1482,6 +1530,7 @@
       "isRepeating": false,
       "isChoice": true,
       "documentation": "Agreement under which or rules under which the transaction should be processed.",
+      "documentationKA": "შეთანხმება ან წესები, რომელთა მიხედვითაც ოპერაცია უნდა დამუშავდეს.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -1513,6 +1562,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Name of the identification scheme, in a coded form as published in an external list.",
+      "documentationKA": "იდენტიფიკაციის სქემის დასახელება კოდირებული ფორმით, როგორც გამოქვეყნებულია გარე სიაში.",
       "restrictions": {
         "pattern": null,
         "minLength": "1",
@@ -1542,6 +1592,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Name of the identification scheme, in a free text form.",
+      "documentationKA": "იდენტიფიკაციის სქემის დასახელება თავისუფალი ტექსტის ფორმით.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
         "minLength": "1",
@@ -1571,6 +1622,7 @@
       "isRepeating": false,
       "isChoice": true,
       "documentation": "User community specific instrument.\n\n\t\t\t\t\t\tUsage: This element is used to specify a local instrument, local clearing option and/or further qualify the service or service level.",
+      "documentationKA": "მომხმარებელთა საზოგადოებისთვის სპეციფიკური ინსტრუმენტი. გამოყენება: ეს ელემენტი გამოიყენება ადგილობრივი ინსტრუმენტის, ადგილობრივი კლირინგის ვარიანტის დასაზუსტებლად და/ან მომსახურების ან მომსახურების დონის დამატებით დასაკვალიფიცირებლად.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -1603,6 +1655,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Name of the identification scheme, in a coded form as published in an external list.",
+      "documentationKA": "იდენტიფიკაციის სქემის დასახელება კოდირებული ფორმით, როგორც გამოქვეყნებულია გარე სიაში.",
       "restrictions": {
         "pattern": null,
         "minLength": "1",
@@ -1632,6 +1685,7 @@
       "isRepeating": false,
       "isChoice": true,
       "documentation": "Specifies the high level purpose of the instruction based on a set of pre-defined categories.\n\t\t\t\t\t\tUsage: This is used by the initiating party to provide information concerning the processing of the payment. It is likely to trigger special processing by any of the agents involved in the payment chain.",
+      "documentationKA": "განსაზღვრავს დავალების მაღალი დონის დანიშნულებას წინასწარ განსაზღვრული კატეგორიების საფუძველზე. გამოყენება: ინიციატორი მხარე ამას იყენებს გადახდის დამუშავებასთან დაკავშირებული ინფორმაციის მისაწოდებლად. სავარაუდოდ, ეს გამოიწვევს სპეციალურ დამუშავებას გადახდის ჯაჭვში ჩართული რომელიმე აგენტის მიერ.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -1663,6 +1717,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Set of elements used to further specify the type of transaction.",
+      "documentationKA": "ელემენტების ნაკრები, რომელიც გამოიყენება ოპერაციის ტიპის დამატებით დასაზუსტებლად.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -1697,6 +1752,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Specified date.",
+      "documentationKA": "მითითებული თარიღი.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -1726,6 +1782,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Specified date and time.",
+      "documentationKA": "მითითებული თარიღი და დრო.",
       "restrictions": {
         "pattern": ".*(\\+|-)((0[0-9])|(1[0-3])):[0-5][0-9]",
         "minLength": null,
@@ -1755,6 +1812,7 @@
       "isRepeating": false,
       "isChoice": true,
       "documentation": "Date at which the initiating party requests the clearing agent to process the payment.\n\t\t\t\t\t\tUsage: This is the date on which the debtor's account is to be debited. If payment by cheque, the date when the cheque must be generated by the bank.",
+      "documentationKA": "თარიღი, როდესაც ინიციატორი მხარე კლირინგის აგენტს სთხოვს გადახდის დამუშავებას. გამოყენება: ეს არის თარიღი, როდესაც დებიტორის ანგარიში უნდა დადებეტდეს. ჩეკით გადახდის შემთხვევაში — თარიღი, როდესაც ბანკმა უნდა შექმნას ჩეკი.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -1787,6 +1845,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Name of the account, as assigned by the account servicing institution, in agreement with the account owner in order to provide an additional means of identification of the account.\n\n\t\t\t\t\t\tUsage: The account name is different from the account owner name. The account name is used in certain user communities to provide a means of identifying the account, in addition to the account owner's identity and the account number.",
+      "documentationKA": "ანგარიშის დასახელება, რომელიც მინიჭებულია ანგარიშის მომსახურე ინსტიტუტის მიერ ანგარიშის მფლობელთან შეთანხმებით, ანგარიშის იდენტიფიკაციის დამატებითი საშუალების უზრუნველსაყოფად. გამოყენება: ანგარიშის დასახელება განსხვავდება ანგარიშის მფლობელის სახელისგან. ზოგიერთ მომხმარებელთა საზოგადოებაში ანგარიშის დასახელება გამოიყენება ანგარიშის იდენტიფიკაციის დამატებით საშუალებად, ანგარიშის მფლობელის იდენტიფიკაციასა და ანგარიშის ნომერთან ერთად.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -1816,6 +1875,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Identification of a division of a large organisation or building.",
+      "documentationKA": "დიდი ორგანიზაციის ან შენობის განყოფილების იდენტიფიკაცია.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -1845,6 +1905,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Identification of a sub-division of a large organisation or building.",
+      "documentationKA": "დიდი ორგანიზაციის ან შენობის ქვეგანყოფილების იდენტიფიკაცია.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -1874,6 +1935,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Name of a street or thoroughfare.",
+      "documentationKA": "ქუჩის ან გზის დასახელება.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -1903,6 +1965,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Number that identifies the position of a building on a street.",
+      "documentationKA": "ნომერი, რომელიც განსაზღვრავს შენობის მდებარეობას ქუჩაზე.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -1932,6 +1995,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Name of the building or house.",
+      "documentationKA": "შენობის ან სახლის დასახელება.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -1961,6 +2025,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Floor or storey within a building.",
+      "documentationKA": "სართული შენობაში.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -1990,6 +2055,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Numbered box in a post office, assigned to a person or organisation, where letters are kept until called for.",
+      "documentationKA": "საფოსტო განყოფილებაში პირისთვის ან ორგანიზაციისთვის მინიჭებული ნომრიანი ყუთი, სადაც წერილები ინახება მოთხოვნამდე.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -2019,6 +2085,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Building room number.",
+      "documentationKA": "ოთახის ნომერი შენობაში.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -2048,6 +2115,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Identifier consisting of a group of letters and/or numbers that is added to a postal address to assist the sorting of mail.",
+      "documentationKA": "ასოებისა და/ან რიცხვების ჯგუფისგან შემდგარი იდენტიფიკატორი, რომელიც ემატება საფოსტო მისამართს ფოსტის დახარისხების გასამარტივებლად.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -2077,6 +2145,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Name of a built-up area, with defined boundaries, and a local government.",
+      "documentationKA": "განაშენიანებული ტერიტორიის დასახელება, რომელსაც აქვს განსაზღვრული საზღვრები და ადგილობრივი მმართველობა.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -2106,6 +2175,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Specific location name within the town.",
+      "documentationKA": "ქალაქის ფარგლებში კონკრეტული მდებარეობის დასახელება.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -2135,6 +2205,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Identifies a subdivision within a country sub-division.",
+      "documentationKA": "განსაზღვრავს ქვედანაყოფს ქვეყნის ადმინისტრაციული ერთეულის ფარგლებში.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -2164,6 +2235,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Identifies a subdivision of a country such as state, region, county.",
+      "documentationKA": "განსაზღვრავს ქვეყნის ადმინისტრაციულ ერთეულს, როგორიცაა შტატი, რეგიონი ან საგრაფო.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -2193,6 +2265,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Nation with its own government.",
+      "documentationKA": "საკუთარი მთავრობის მქონე სახელმწიფო.",
       "restrictions": {
         "pattern": "[A-Z]{2,2}",
         "minLength": null,
@@ -2222,6 +2295,7 @@
       "isRepeating": true,
       "isChoice": false,
       "documentation": "Information that locates and identifies a specific address, as defined by postal services, presented in free format text.",
+      "documentationKA": "ინფორმაცია, რომელიც ადგენს მდებარეობას და იდენტიფიცირებს კონკრეტულ მისამართს, როგორც განსაზღვრულია საფოსტო სამსახურების მიერ, წარმოდგენილი თავისუფალი ფორმატის ტექსტით.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -2251,6 +2325,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Information that locates and identifies a specific address, as defined by postal services.",
+      "documentationKA": "ინფორმაცია, რომელიც ადგენს მდებარეობას და იდენტიფიცირებს კონკრეტულ მისამართს, როგორც განსაზღვრულია საფოსტო სამსახურების მიერ.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -2296,6 +2371,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Unique and unambiguous identification for the account between the account owner and the account servicer.",
+      "documentationKA": "ანგარიშის უნიკალური და ერთმნიშვნელოვანი იდენტიფიკაცია ანგარიშის მფლობელსა და ანგარიშის მომსახურე მხარეს შორის.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
         "minLength": "1",
@@ -2325,6 +2401,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Name of the identification scheme, in a coded form as published in an external list.",
+      "documentationKA": "იდენტიფიკაციის სქემის დასახელება კოდირებული ფორმით, როგორც გამოქვეყნებულია გარე სიაში.",
       "restrictions": {
         "pattern": null,
         "minLength": "1",
@@ -2354,6 +2431,7 @@
       "isRepeating": false,
       "isChoice": true,
       "documentation": "Name of the identification scheme.",
+      "documentationKA": "იდენტიფიკაციის სქემის დასახელება.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -2385,6 +2463,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Entity that assigns the credit reference type.",
+      "documentationKA": "სუბიექტი, რომელიც ანიჭებს საკრედიტო რეფერენსის ტიპს.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
         "minLength": "1",
@@ -2414,6 +2493,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Unique identification of an account, as assigned by the account servicer, using an identification scheme.",
+      "documentationKA": "ანგარიშის უნიკალური იდენტიფიკაცია, მინიჭებული ანგარიშის მომსახურე მხარის მიერ, იდენტიფიკაციის სქემის გამოყენებით.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -2447,6 +2527,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Unique and unambiguous way to identify an organisation.",
+      "documentationKA": "ორგანიზაციის იდენტიფიკაციის უნიკალური და ერთმნიშვნელოვანი საშუალება.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -2478,6 +2559,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Unique and unambiguous identification for the account between the account owner and the account servicer.",
+      "documentationKA": "ანგარიშის უნიკალური და ერთმნიშვნელოვანი იდენტიფიკაცია ანგარიშის მფლობელსა და ანგარიშის მომსახურე მხარეს შორის.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
         "minLength": "1",
@@ -2507,6 +2589,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Name of the identification scheme, in a coded form as published in an external list.",
+      "documentationKA": "იდენტიფიკაციის სქემის დასახელება კოდირებული ფორმით, როგორც გამოქვეყნებულია გარე სიაში.",
       "restrictions": {
         "pattern": null,
         "minLength": "1",
@@ -2536,6 +2619,7 @@
       "isRepeating": false,
       "isChoice": true,
       "documentation": "Name of the identification scheme.",
+      "documentationKA": "იდენტიფიკაციის სქემის დასახელება.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -2567,6 +2651,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Entity that assigns the credit reference type.",
+      "documentationKA": "სუბიექტი, რომელიც ანიჭებს საკრედიტო რეფერენსის ტიპს.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
         "minLength": "1",
@@ -2596,6 +2681,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Unique identification of an account, as assigned by the account servicer, using an identification scheme.",
+      "documentationKA": "ანგარიშის უნიკალური იდენტიფიკაცია, მინიჭებული ანგარიშის მომსახურე მხარის მიერ, იდენტიფიკაციის სქემის გამოყენებით.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -2629,6 +2715,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Unique and unambiguous identification of a person, for example a passport.",
+      "documentationKA": "პირის უნიკალური და ერთმნიშვნელოვანი იდენტიფიკაცია, მაგალითად, პასპორტი.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -2660,6 +2747,7 @@
       "isRepeating": false,
       "isChoice": true,
       "documentation": "Unique and unambiguous identification for the account between the account owner and the account servicer.",
+      "documentationKA": "ანგარიშის უნიკალური და ერთმნიშვნელოვანი იდენტიფიკაცია ანგარიშის მფლობელსა და ანგარიშის მომსახურე მხარეს შორის.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -2692,6 +2780,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Country in which a person resides (the place of a person's home). In the case of a company, it is the country from which the affairs of that company are directed.",
+      "documentationKA": "ქვეყანა, რომელშიც პირი ცხოვრობს (პირის საცხოვრებელი ადგილი). კომპანიის შემთხვევაში, ეს არის ქვეყანა, საიდანაც იმართება ამ კომპანიის საქმიანობა.",
       "restrictions": {
         "pattern": "[A-Z]{2,2}",
         "minLength": null,
@@ -2721,6 +2810,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Party that owes an amount of money to the (ultimate) creditor.",
+      "documentationKA": "მხარე, რომელსაც თანხა ეკისრება (საბოლოო) კრედიტორის მიმართ.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -2755,6 +2845,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "International Bank Account Number (IBAN) - identifier used internationally by financial institutions to uniquely identify the account of a customer. Further specifications of the format and content of the IBAN can be found in the standard ISO 13616 \"Banking and related financial services - International Bank Account Number (IBAN)\" version 1997-10-01, or later revisions.",
+      "documentationKA": "საერთაშორისო საბანკო ანგარიშის ნომერი (IBAN) — იდენტიფიკატორი, რომელიც საერთაშორისო დონეზე გამოიყენება ფინანსური ინსტიტუტების მიერ კლიენტის ანგარიშის უნიკალურად იდენტიფიცირებისთვის. IBAN-ის ფორმატისა და შინაარსის დამატებითი სპეციფიკაციები მოცემულია ISO 13616 სტანდარტში „საბანკო და მასთან დაკავშირებული ფინანსური მომსახურება — საერთაშორისო საბანკო ანგარიშის ნომერი (IBAN)“, 1997-10-01 ვერსიაში ან მის შემდგომ რედაქციებში.",
       "restrictions": {
         "pattern": "[A-Z]{2,2}GE[a-zA-Z0-9]{1,30}",
         "minLength": null,
@@ -2784,6 +2875,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Unique and unambiguous identification for the account between the account owner and the account servicer.",
+      "documentationKA": "ანგარიშის უნიკალური და ერთმნიშვნელოვანი იდენტიფიკაცია ანგარიშის მფლობელსა და ანგარიშის მომსახურე მხარეს შორის.",
       "restrictions": {
         "pattern": "[1-9][0-9]{8}",
         "minLength": "9",
@@ -2813,6 +2905,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Unique identification of an account, as assigned by the account servicer, using an identification scheme.",
+      "documentationKA": "ანგარიშის უნიკალური იდენტიფიკაცია, მინიჭებული ანგარიშის მომსახურე მხარის მიერ, იდენტიფიკაციის სქემის გამოყენებით.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -2844,6 +2937,7 @@
       "isRepeating": false,
       "isChoice": true,
       "documentation": "Unique and unambiguous identification for the account between the account owner and the account servicer.",
+      "documentationKA": "ანგარიშის უნიკალური და ერთმნიშვნელოვანი იდენტიფიკაცია ანგარიშის მფლობელსა და ანგარიშის მომსახურე მხარეს შორის.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -2876,6 +2970,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Identification of the currency in which the account is held.\n\n\t\t\t\t\t\tUsage: Currency should only be used in case one and the same account number covers several currencies\n\t\t\t\t\t\tand the initiating party needs to identify which currency needs to be used for settlement on the account.",
+      "documentationKA": "იმ ვალუტის იდენტიფიკაცია, რომელშიც ანგარიში იწარმოება. გამოყენება: ვალუტა უნდა მიეთითოს მხოლოდ იმ შემთხვევაში, როდესაც ერთი და იგივე ანგარიშის ნომერი რამდენიმე ვალუტას მოიცავს და ინიციატორ მხარეს სჭირდება განსაზღვრა, რომელი ვალუტა უნდა იქნას გამოყენებული ანგარიშზე ანგარიშსწორებისთვის.",
       "restrictions": {
         "pattern": "[A-Z]{3,3}",
         "minLength": null,
@@ -2905,6 +3000,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Name of the account, as assigned by the account servicing institution, in agreement with the account owner in order to provide an additional means of identification of the account.\n\n\t\t\t\t\t\tUsage: The account name is different from the account owner name. The account name is used in certain user communities to provide a means of identifying the account, in addition to the account owner's identity and the account number.",
+      "documentationKA": "ანგარიშის დასახელება, რომელიც მინიჭებულია ანგარიშის მომსახურე ინსტიტუტის მიერ ანგარიშის მფლობელთან შეთანხმებით, ანგარიშის იდენტიფიკაციის დამატებითი საშუალების უზრუნველსაყოფად. გამოყენება: ანგარიშის დასახელება განსხვავდება ანგარიშის მფლობელის სახელისგან. ზოგიერთ მომხმარებელთა საზოგადოებაში ანგარიშის დასახელება გამოიყენება ანგარიშის იდენტიფიკაციის დამატებით საშუალებად, ანგარიშის მფლობელის იდენტიფიკაციასა და ანგარიშის ნომერთან ერთად.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
         "minLength": "1",
@@ -2934,6 +3030,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Unambiguous identification of the account of the debtor to which a debit entry will be made as a result of the transaction.",
+      "documentationKA": "დებიტორის იმ ანგარიშის ერთმნიშვნელოვანი იდენტიფიკაცია, რომელზეც ოპერაციის შედეგად დებეტის ჩანაწერი აისახება.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -2967,6 +3064,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Code allocated to a financial institution by the ISO 9362 Registration Authority as described in ISO 9362 \"Banking - Banking telecommunication messages - Business identifier code (BIC)\".",
+      "documentationKA": "ISO 9362 რეგისტრაციის ორგანოს მიერ ფინანსური ინსტიტუტისთვის მინიჭებული კოდი, როგორც აღწერილია ISO 9362-ში „საბანკო საქმე — საბანკო სატელეკომუნიკაციო შეტყობინებები — ბიზნეს იდენტიფიკატორის კოდი (BIC)“.",
       "restrictions": {
         "pattern": "[A-Z0-9]{4,4}GE[A-Z0-9]{2,2}([A-Z0-9]{3,3}){0,1}",
         "minLength": null,
@@ -2996,6 +3094,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Identification of a member of a clearing system.",
+      "documentationKA": "კლირინგის სისტემის წევრის იდენტიფიკაცია.",
       "restrictions": {
         "pattern": "[A-Z0-9]{4,4}GE[A-Z0-9]{2,2}([A-Z0-9]{3,3}){0,1}",
         "minLength": null,
@@ -3025,6 +3124,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Information used to identify a member within a clearing system.",
+      "documentationKA": "ინფორმაცია, რომელიც გამოიყენება კლირინგის სისტემაში წევრის იდენტიფიკაციისთვის.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -3056,6 +3156,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Unique and unambiguous identification of a financial institution, as assigned under an internationally recognised or proprietary identification scheme.",
+      "documentationKA": "ფინანსური ინსტიტუტის უნიკალური და ერთმნიშვნელოვანი იდენტიფიკაცია, მინიჭებული საერთაშორისო აღიარებული ან საკუთარი იდენტიფიკაციის სქემის ფარგლებში.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -3088,6 +3189,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Financial institution servicing an account for the debtor.",
+      "documentationKA": "ფინანსური ინსტიტუტი, რომელიც ემსახურება დებიტორის ანგარიშს.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -3119,6 +3221,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "International Bank Account Number (IBAN) - identifier used internationally by financial institutions to uniquely identify the account of a customer. Further specifications of the format and content of the IBAN can be found in the standard ISO 13616 \"Banking and related financial services - International Bank Account Number (IBAN)\" version 1997-10-01, or later revisions.",
+      "documentationKA": "საერთაშორისო საბანკო ანგარიშის ნომერი (IBAN) — იდენტიფიკატორი, რომელიც საერთაშორისო დონეზე გამოიყენება ფინანსური ინსტიტუტების მიერ კლიენტის ანგარიშის უნიკალურად იდენტიფიცირებისთვის. IBAN-ის ფორმატისა და შინაარსის დამატებითი სპეციფიკაციები მოცემულია ISO 13616 სტანდარტში „საბანკო და მასთან დაკავშირებული ფინანსური მომსახურება — საერთაშორისო საბანკო ანგარიშის ნომერი (IBAN)“, 1997-10-01 ვერსიაში ან მის შემდგომ რედაქციებში.",
       "restrictions": {
         "pattern": "[A-Z]{2,2}GE[a-zA-Z0-9]{1,30}",
         "minLength": null,
@@ -3148,6 +3251,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Unique and unambiguous identification for the account between the account owner and the account servicer.",
+      "documentationKA": "ანგარიშის უნიკალური და ერთმნიშვნელოვანი იდენტიფიკაცია ანგარიშის მფლობელსა და ანგარიშის მომსახურე მხარეს შორის.",
       "restrictions": {
         "pattern": "[1-9][0-9]{8}",
         "minLength": "9",
@@ -3177,6 +3281,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Unique identification of an account, as assigned by the account servicer, using an identification scheme.",
+      "documentationKA": "ანგარიშის უნიკალური იდენტიფიკაცია, მინიჭებული ანგარიშის მომსახურე მხარის მიერ, იდენტიფიკაციის სქემის გამოყენებით.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -3208,6 +3313,7 @@
       "isRepeating": false,
       "isChoice": true,
       "documentation": "Unique and unambiguous identification for the account between the account owner and the account servicer.",
+      "documentationKA": "ანგარიშის უნიკალური და ერთმნიშვნელოვანი იდენტიფიკაცია ანგარიშის მფლობელსა და ანგარიშის მომსახურე მხარეს შორის.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -3240,6 +3346,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Identification of the currency in which the account is held.\n\n\t\t\t\t\t\tUsage: Currency should only be used in case one and the same account number covers several currencies\n\t\t\t\t\t\tand the initiating party needs to identify which currency needs to be used for settlement on the account.",
+      "documentationKA": "იმ ვალუტის იდენტიფიკაცია, რომელშიც ანგარიში იწარმოება. გამოყენება: ვალუტა უნდა მიეთითოს მხოლოდ იმ შემთხვევაში, როდესაც ერთი და იგივე ანგარიშის ნომერი რამდენიმე ვალუტას მოიცავს და ინიციატორ მხარეს სჭირდება განსაზღვრა, რომელი ვალუტა უნდა იქნას გამოყენებული ანგარიშზე ანგარიშსწორებისთვის.",
       "restrictions": {
         "pattern": "[A-Z]{3,3}",
         "minLength": null,
@@ -3269,6 +3376,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Name of the account, as assigned by the account servicing institution, in agreement with the account owner in order to provide an additional means of identification of the account.\n\n\t\t\t\t\t\tUsage: The account name is different from the account owner name. The account name is used in certain user communities to provide a means of identifying the account, in addition to the account owner's identity and the account number.",
+      "documentationKA": "ანგარიშის დასახელება, რომელიც მინიჭებულია ანგარიშის მომსახურე ინსტიტუტის მიერ ანგარიშის მფლობელთან შეთანხმებით, ანგარიშის იდენტიფიკაციის დამატებითი საშუალების უზრუნველსაყოფად. გამოყენება: ანგარიშის დასახელება განსხვავდება ანგარიშის მფლობელის სახელისგან. ზოგიერთ მომხმარებელთა საზოგადოებაში ანგარიშის დასახელება გამოიყენება ანგარიშის იდენტიფიკაციის დამატებით საშუალებად, ანგარიშის მფლობელის იდენტიფიკაციასა და ანგარიშის ნომერთან ერთად.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
         "minLength": "1",
@@ -3298,6 +3406,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Unambiguous identification of the account of the debtor agent at its servicing agent in the payment chain.",
+      "documentationKA": "დებიტორის აგენტის ანგარიშის ერთმნიშვნელოვანი იდენტიფიკაცია მის მომსახურე აგენტთან გადახდის ჯაჭვში.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -3331,6 +3440,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Further information related to the processing of the payment instruction, that may need to be acted upon by the debtor agent, depending on agreement between debtor and the debtor agent.",
+      "documentationKA": "გადახდის დავალების დამუშავებასთან დაკავშირებული დამატებითი ინფორმაცია, რომლის შესრულებაც შეიძლება დასჭირდეს დებიტორის აგენტს, დებიტორსა და დებიტორის აგენტს შორის შეთანხმების მიხედვით.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
         "minLength": "1",
@@ -3360,6 +3470,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Name of the account, as assigned by the account servicing institution, in agreement with the account owner in order to provide an additional means of identification of the account.\n\n\t\t\t\t\t\tUsage: The account name is different from the account owner name. The account name is used in certain user communities to provide a means of identifying the account, in addition to the account owner's identity and the account number.",
+      "documentationKA": "ანგარიშის დასახელება, რომელიც მინიჭებულია ანგარიშის მომსახურე ინსტიტუტის მიერ ანგარიშის მფლობელთან შეთანხმებით, ანგარიშის იდენტიფიკაციის დამატებითი საშუალების უზრუნველსაყოფად. გამოყენება: ანგარიშის დასახელება განსხვავდება ანგარიშის მფლობელის სახელისგან. ზოგიერთ მომხმარებელთა საზოგადოებაში ანგარიშის დასახელება გამოიყენება ანგარიშის იდენტიფიკაციის დამატებით საშუალებად, ანგარიშის მფლობელის იდენტიფიკაციასა და ანგარიშის ნომერთან ერთად.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -3389,6 +3500,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Identification of a division of a large organisation or building.",
+      "documentationKA": "დიდი ორგანიზაციის ან შენობის განყოფილების იდენტიფიკაცია.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -3418,6 +3530,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Identification of a sub-division of a large organisation or building.",
+      "documentationKA": "დიდი ორგანიზაციის ან შენობის ქვეგანყოფილების იდენტიფიკაცია.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -3447,6 +3560,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Name of a street or thoroughfare.",
+      "documentationKA": "ქუჩის ან გზის დასახელება.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -3476,6 +3590,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Number that identifies the position of a building on a street.",
+      "documentationKA": "ნომერი, რომელიც განსაზღვრავს შენობის მდებარეობას ქუჩაზე.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -3505,6 +3620,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Name of the building or house.",
+      "documentationKA": "შენობის ან სახლის დასახელება.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -3534,6 +3650,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Floor or storey within a building.",
+      "documentationKA": "სართული შენობაში.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -3563,6 +3680,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Numbered box in a post office, assigned to a person or organisation, where letters are kept until called for.",
+      "documentationKA": "საფოსტო განყოფილებაში პირისთვის ან ორგანიზაციისთვის მინიჭებული ნომრიანი ყუთი, სადაც წერილები ინახება მოთხოვნამდე.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -3592,6 +3710,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Building room number.",
+      "documentationKA": "ოთახის ნომერი შენობაში.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -3621,6 +3740,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Identifier consisting of a group of letters and/or numbers that is added to a postal address to assist the sorting of mail.",
+      "documentationKA": "ასოებისა და/ან რიცხვების ჯგუფისგან შემდგარი იდენტიფიკატორი, რომელიც ემატება საფოსტო მისამართს ფოსტის დახარისხების გასამარტივებლად.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -3650,6 +3770,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Name of a built-up area, with defined boundaries, and a local government.",
+      "documentationKA": "განაშენიანებული ტერიტორიის დასახელება, რომელსაც აქვს განსაზღვრული საზღვრები და ადგილობრივი მმართველობა.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -3679,6 +3800,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Specific location name within the town.",
+      "documentationKA": "ქალაქის ფარგლებში კონკრეტული მდებარეობის დასახელება.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -3708,6 +3830,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Identifies a subdivision within a country sub-division.",
+      "documentationKA": "განსაზღვრავს ქვედანაყოფს ქვეყნის ადმინისტრაციული ერთეულის ფარგლებში.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -3737,6 +3860,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Identifies a subdivision of a country such as state, region, county.",
+      "documentationKA": "განსაზღვრავს ქვეყნის ადმინისტრაციულ ერთეულს, როგორიცაა შტატი, რეგიონი ან საგრაფო.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -3766,6 +3890,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Nation with its own government.",
+      "documentationKA": "საკუთარი მთავრობის მქონე სახელმწიფო.",
       "restrictions": {
         "pattern": "[A-Z]{2,2}",
         "minLength": null,
@@ -3795,6 +3920,7 @@
       "isRepeating": true,
       "isChoice": false,
       "documentation": "Information that locates and identifies a specific address, as defined by postal services, presented in free format text.",
+      "documentationKA": "ინფორმაცია, რომელიც ადგენს მდებარეობას და იდენტიფიცირებს კონკრეტულ მისამართს, როგორც განსაზღვრულია საფოსტო სამსახურების მიერ, წარმოდგენილი თავისუფალი ფორმატის ტექსტით.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -3824,6 +3950,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Information that locates and identifies a specific address, as defined by postal services.",
+      "documentationKA": "ინფორმაცია, რომელიც ადგენს მდებარეობას და იდენტიფიცირებს კონკრეტულ მისამართს, როგორც განსაზღვრულია საფოსტო სამსახურების მიერ.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -3869,6 +3996,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Unique and unambiguous identification for the account between the account owner and the account servicer.",
+      "documentationKA": "ანგარიშის უნიკალური და ერთმნიშვნელოვანი იდენტიფიკაცია ანგარიშის მფლობელსა და ანგარიშის მომსახურე მხარეს შორის.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
         "minLength": "1",
@@ -3898,6 +4026,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Name of the identification scheme, in a coded form as published in an external list.",
+      "documentationKA": "იდენტიფიკაციის სქემის დასახელება კოდირებული ფორმით, როგორც გამოქვეყნებულია გარე სიაში.",
       "restrictions": {
         "pattern": null,
         "minLength": "1",
@@ -3927,6 +4056,7 @@
       "isRepeating": false,
       "isChoice": true,
       "documentation": "Name of the identification scheme.",
+      "documentationKA": "იდენტიფიკაციის სქემის დასახელება.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -3958,6 +4088,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Entity that assigns the credit reference type.",
+      "documentationKA": "სუბიექტი, რომელიც ანიჭებს საკრედიტო რეფერენსის ტიპს.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
         "minLength": "1",
@@ -3987,6 +4118,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Unique identification of an account, as assigned by the account servicer, using an identification scheme.",
+      "documentationKA": "ანგარიშის უნიკალური იდენტიფიკაცია, მინიჭებული ანგარიშის მომსახურე მხარის მიერ, იდენტიფიკაციის სქემის გამოყენებით.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -4020,6 +4152,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Unique and unambiguous way to identify an organisation.",
+      "documentationKA": "ორგანიზაციის იდენტიფიკაციის უნიკალური და ერთმნიშვნელოვანი საშუალება.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -4051,6 +4184,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Unique and unambiguous identification for the account between the account owner and the account servicer.",
+      "documentationKA": "ანგარიშის უნიკალური და ერთმნიშვნელოვანი იდენტიფიკაცია ანგარიშის მფლობელსა და ანგარიშის მომსახურე მხარეს შორის.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
         "minLength": "1",
@@ -4080,6 +4214,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Name of the identification scheme, in a coded form as published in an external list.",
+      "documentationKA": "იდენტიფიკაციის სქემის დასახელება კოდირებული ფორმით, როგორც გამოქვეყნებულია გარე სიაში.",
       "restrictions": {
         "pattern": null,
         "minLength": "1",
@@ -4109,6 +4244,7 @@
       "isRepeating": false,
       "isChoice": true,
       "documentation": "Name of the identification scheme.",
+      "documentationKA": "იდენტიფიკაციის სქემის დასახელება.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -4140,6 +4276,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Entity that assigns the credit reference type.",
+      "documentationKA": "სუბიექტი, რომელიც ანიჭებს საკრედიტო რეფერენსის ტიპს.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
         "minLength": "1",
@@ -4169,6 +4306,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Unique identification of an account, as assigned by the account servicer, using an identification scheme.",
+      "documentationKA": "ანგარიშის უნიკალური იდენტიფიკაცია, მინიჭებული ანგარიშის მომსახურე მხარის მიერ, იდენტიფიკაციის სქემის გამოყენებით.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -4202,6 +4340,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Unique and unambiguous identification of a person, for example a passport.",
+      "documentationKA": "პირის უნიკალური და ერთმნიშვნელოვანი იდენტიფიკაცია, მაგალითად, პასპორტი.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -4233,6 +4372,7 @@
       "isRepeating": false,
       "isChoice": true,
       "documentation": "Unique and unambiguous identification for the account between the account owner and the account servicer.",
+      "documentationKA": "ანგარიშის უნიკალური და ერთმნიშვნელოვანი იდენტიფიკაცია ანგარიშის მფლობელსა და ანგარიშის მომსახურე მხარეს შორის.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -4265,6 +4405,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Country in which a person resides (the place of a person's home). In the case of a company, it is the country from which the affairs of that company are directed.",
+      "documentationKA": "ქვეყანა, რომელშიც პირი ცხოვრობს (პირის საცხოვრებელი ადგილი). კომპანიის შემთხვევაში, ეს არის ქვეყანა, საიდანაც იმართება ამ კომპანიის საქმიანობა.",
       "restrictions": {
         "pattern": "[A-Z]{2,2}",
         "minLength": null,
@@ -4294,6 +4435,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Ultimate party that owes an amount of money to the (ultimate) creditor.",
+      "documentationKA": "საბოლოო მხარე, რომელსაც თანხა ეკისრება (საბოლოო) კრედიტორის მიმართ.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -4328,6 +4470,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Unique identification as assigned by an instructing party for an instructed party to unambiguously identify the instruction.\n\n\t\t\t\t\t\tUsage: The instruction identification is a point to point reference that can be used between the instructing party and the instructed party to refer to the individual instruction. It can be included in several messages related to the instruction.",
+      "documentationKA": "დავალების უნიკალური იდენტიფიკაცია, მინიჭებული დამვალებელი მხარის მიერ დავალებული მხარისთვის დავალების ცალსახად იდენტიფიცირების მიზნით. გამოყენება: დავალების იდენტიფიკაცია არის წერტილიდან წერტილამდე რეფერენსი, რომელიც შეიძლება გამოყენებულ იქნას დამვალებელ და დავალებულ მხარეებს შორის ინდივიდუალურ დავალებაზე მითითებისთვის. ის შეიძლება შევიდეს დავალებასთან დაკავშირებულ რამდენიმე შეტყობინებაში.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
         "minLength": "1",
@@ -4357,6 +4500,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Unique identification assigned by the initiating party to unambiguously identify the transaction. This identification is passed on, unchanged, throughout the entire end-to-end chain.\n\n\t\t\t\t\t\tUsage: The end-to-end identification can be used for reconciliation or to link tasks relating to the transaction. It can be included in several messages related to the transaction.",
+      "documentationKA": "ინიციატორი მხარის მიერ მინიჭებული უნიკალური იდენტიფიკაცია ოპერაციის ცალსახად იდენტიფიცირებისთვის. ეს იდენტიფიკაცია უცვლელად გადაეცემა მთელ end-to-end ჯაჭვში. გამოყენება: end-to-end იდენტიფიკაცია შეიძლება გამოყენებულ იქნას შეჯერებისთვის ან ოპერაციასთან დაკავშირებული ამოცანების დასაკავშირებლად. ის შეიძლება შევიდეს ოპერაციასთან დაკავშირებულ რამდენიმე შეტყობინებაში.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
         "minLength": "1",
@@ -4386,6 +4530,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Universally unique identifier to provide an end-to-end reference of a payment transaction.",
+      "documentationKA": "უნივერსალურად უნიკალური იდენტიფიკატორი, რომელიც უზრუნველყოფს გადახდის ოპერაციის end-to-end რეფერენსს.",
       "restrictions": {
         "pattern": "[a-f0-9]{8}-[a-f0-9]{4}-4[a-f0-9]{3}-[89ab][a-f0-9]{3}-[a-f0-9]{12}",
         "minLength": null,
@@ -4415,6 +4560,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Set of elements used to reference a payment instruction.",
+      "documentationKA": "ელემენტების ნაკრები, რომელიც გამოიყენება გადახდის დავალებაზე მითითებისთვის.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -4448,6 +4594,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Urgency or order of importance that the originator would like the recipient of the payment instruction to apply to the processing of the payment instruction.",
+      "documentationKA": "სასწრაფოობის ან მნიშვნელობის რიგი, რომლის გამოყენებასაც წარმომდგენი სთხოვს გადახდის დავალების მიმღებს გადახდის დავალების დამუშავებისას.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -4480,6 +4627,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Name of the identification scheme, in a coded form as published in an external list.",
+      "documentationKA": "იდენტიფიკაციის სქემის დასახელება კოდირებული ფორმით, როგორც გამოქვეყნებულია გარე სიაში.",
       "restrictions": {
         "pattern": null,
         "minLength": "1",
@@ -4509,6 +4657,7 @@
       "isRepeating": false,
       "isChoice": true,
       "documentation": "Agreement under which or rules under which the transaction should be processed.",
+      "documentationKA": "შეთანხმება ან წესები, რომელთა მიხედვითაც ოპერაცია უნდა დამუშავდეს.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -4540,6 +4689,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Name of the identification scheme, in a coded form as published in an external list.",
+      "documentationKA": "იდენტიფიკაციის სქემის დასახელება კოდირებული ფორმით, როგორც გამოქვეყნებულია გარე სიაში.",
       "restrictions": {
         "pattern": null,
         "minLength": "1",
@@ -4569,6 +4719,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Name of the identification scheme, in a free text form.",
+      "documentationKA": "იდენტიფიკაციის სქემის დასახელება თავისუფალი ტექსტის ფორმით.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
         "minLength": "1",
@@ -4598,6 +4749,7 @@
       "isRepeating": false,
       "isChoice": true,
       "documentation": "User community specific instrument.\n\n\t\t\t\t\t\tUsage: This element is used to specify a local instrument, local clearing option and/or further qualify the service or service level.",
+      "documentationKA": "მომხმარებელთა საზოგადოებისთვის სპეციფიკური ინსტრუმენტი. გამოყენება: ეს ელემენტი გამოიყენება ადგილობრივი ინსტრუმენტის, ადგილობრივი კლირინგის ვარიანტის დასაზუსტებლად და/ან მომსახურების ან მომსახურების დონის დამატებით დასაკვალიფიცირებლად.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -4630,6 +4782,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Name of the identification scheme, in a coded form as published in an external list.",
+      "documentationKA": "იდენტიფიკაციის სქემის დასახელება კოდირებული ფორმით, როგორც გამოქვეყნებულია გარე სიაში.",
       "restrictions": {
         "pattern": null,
         "minLength": "1",
@@ -4659,6 +4812,7 @@
       "isRepeating": false,
       "isChoice": true,
       "documentation": "Specifies the high level purpose of the instruction based on a set of pre-defined categories.\n\t\t\t\t\t\tUsage: This is used by the initiating party to provide information concerning the processing of the payment. It is likely to trigger special processing by any of the agents involved in the payment chain.",
+      "documentationKA": "განსაზღვრავს დავალების მაღალი დონის დანიშნულებას წინასწარ განსაზღვრული კატეგორიების საფუძველზე. გამოყენება: ინიციატორი მხარე ამას იყენებს გადახდის დამუშავებასთან დაკავშირებული ინფორმაციის მისაწოდებლად. სავარაუდოდ, ეს გამოიწვევს სპეციალურ დამუშავებას გადახდის ჯაჭვში ჩართული რომელიმე აგენტის მიერ.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -4690,6 +4844,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Set of elements used to further specify the type of transaction.",
+      "documentationKA": "ელემენტების ნაკრები, რომელიც გამოიყენება ოპერაციის ტიპის დამატებით დასაზუსტებლად.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -4724,6 +4879,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "A code allocated to a currency by a Maintenance Agency under an international identification scheme, as described in the latest edition of the international standard ISO 4217 \"Codes for the representation of currencies and funds\".",
+      "documentationKA": "ვალუტისთვის საერთაშორისო იდენტიფიკაციის სქემის ფარგლებში მხარდამჭერი სააგენტოს მიერ მინიჭებული კოდი, როგორც აღწერილია საერთაშორისო სტანდარტის ISO 4217 „ვალუტებისა და ფონდების წარმოდგენის კოდები“ უახლეს გამოცემაში.",
       "restrictions": {
         "pattern": "[A-Z]{3,3}",
         "minLength": null,
@@ -4753,6 +4909,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Amount of money to be moved between the debtor and creditor, before deduction of charges, expressed in the currency as ordered by the initiating party.\n\n\t\t\t\t\t\tUsage: This amount has to be transported unchanged through the transaction chain.",
+      "documentationKA": "დებიტორსა და კრედიტორს შორის გადასარიცხი თანხა, საკომისიოების ჩამოჭრამდე, ინიციატორი მხარის მიერ მითითებულ ვალუტაში. გამოყენება: ეს თანხა გადახდის ჯაჭვში უცვლელად უნდა გადაეცეს.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -4784,6 +4941,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "A code allocated to a currency by a Maintenance Agency under an international identification scheme, as described in the latest edition of the international standard ISO 4217 \"Codes for the representation of currencies and funds\".",
+      "documentationKA": "ვალუტისთვის საერთაშორისო იდენტიფიკაციის სქემის ფარგლებში მხარდამჭერი სააგენტოს მიერ მინიჭებული კოდი, როგორც აღწერილია საერთაშორისო სტანდარტის ISO 4217 „ვალუტებისა და ფონდების წარმოდგენის კოდები“ უახლეს გამოცემაში.",
       "restrictions": {
         "pattern": "[A-Z]{3,3}",
         "minLength": null,
@@ -4813,6 +4971,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Amount of money to be moved between the debtor and creditor, before deduction of charges, expressed in the currency as ordered by the initiating party.",
+      "documentationKA": "დებიტორსა და კრედიტორს შორის გადასარიცხი თანხა, საკომისიოების ჩამოჭრამდე, ინიციატორი მხარის მიერ მითითებულ ვალუტაში.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -4844,6 +5003,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Specifies the currency of the to be transferred amount, which is different from the currency of the debtor's account.",
+      "documentationKA": "განსაზღვრავს გადასარიცხი თანხის ვალუტას, რომელიც განსხვავდება დებიტორის ანგარიშის ვალუტისგან.",
       "restrictions": {
         "pattern": "[A-Z]{3,3}",
         "minLength": null,
@@ -4873,6 +5033,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Amount of money to be moved between the debtor and creditor, expressed in the currency of the debtor's account, and the currency in which the amount is to be moved.",
+      "documentationKA": "დებიტორსა და კრედიტორს შორის გადასარიცხი თანხა, გამოხატული დებიტორის ანგარიშის ვალუტაში და იმ ვალუტაში, რომელშიც თანხა უნდა გადაირიცხოს.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -4905,6 +5066,7 @@
       "isRepeating": false,
       "isChoice": true,
       "documentation": "Amount of money to be moved between the debtor and creditor, before deduction of charges, expressed in the currency as ordered by the initiating party.",
+      "documentationKA": "დებიტორსა და კრედიტორს შორის გადასარიცხი თანხა, საკომისიოების ჩამოჭრამდე, ინიციატორი მხარის მიერ მითითებულ ვალუტაში.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -4937,6 +5099,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Currency in which the rate of exchange is expressed in a currency exchange. In the example 1GBP = xxxCUR, the unit currency is GBP.",
+      "documentationKA": "ვალუტა, რომელშიც გამოხატულია გაცვლითი კურსი ვალუტის გაცვლისას. მაგალითში 1 GBP = xxx CUR, ერთეულის ვალუტა არის GBP.",
       "restrictions": {
         "pattern": "[A-Z]{3,3}",
         "minLength": null,
@@ -4966,6 +5129,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "The factor used for conversion of an amount from one currency to another. This reflects the price at which one currency was bought with another currency.",
+      "documentationKA": "კოეფიციენტი, რომელიც გამოიყენება თანხის ერთი ვალუტიდან მეორეში გადასაყვანად. იგი ასახავს ფასს, რომლითაც ერთი ვალუტა შეიძინეს მეორე ვალუტით.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -4995,6 +5159,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Specifies the type used to complete the currency exchange.",
+      "documentationKA": "განსაზღვრავს ვალუტის გაცვლის შესასრულებლად გამოყენებულ ტიპს.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -5028,6 +5193,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Unique and unambiguous reference to the foreign exchange contract agreed between the initiating party/creditor and the debtor agent.",
+      "documentationKA": "უცხოური ვალუტის გაცვლის ხელშეკრულების უნიკალური და ერთმნიშვნელოვანი რეფერენსი, რომელიც შეთანხმებულია ინიციატორ მხარეს/კრედიტორსა და დებიტორის აგენტს შორის.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -5057,6 +5223,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Provides details on the currency exchange rate and contract.",
+      "documentationKA": "მოიცავს ვალუტის გაცვლის კურსისა და ხელშეკრულების დეტალებს.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -5091,6 +5258,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Name of the account, as assigned by the account servicing institution, in agreement with the account owner in order to provide an additional means of identification of the account.\n\n\t\t\t\t\t\tUsage: The account name is different from the account owner name. The account name is used in certain user communities to provide a means of identifying the account, in addition to the account owner's identity and the account number.",
+      "documentationKA": "ანგარიშის დასახელება, რომელიც მინიჭებულია ანგარიშის მომსახურე ინსტიტუტის მიერ ანგარიშის მფლობელთან შეთანხმებით, ანგარიშის იდენტიფიკაციის დამატებითი საშუალების უზრუნველსაყოფად. გამოყენება: ანგარიშის დასახელება განსხვავდება ანგარიშის მფლობელის სახელისგან. ზოგიერთ მომხმარებელთა საზოგადოებაში ანგარიშის დასახელება გამოიყენება ანგარიშის იდენტიფიკაციის დამატებით საშუალებად, ანგარიშის მფლობელის იდენტიფიკაციასა და ანგარიშის ნომერთან ერთად.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -5120,6 +5288,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Identification of a division of a large organisation or building.",
+      "documentationKA": "დიდი ორგანიზაციის ან შენობის განყოფილების იდენტიფიკაცია.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -5149,6 +5318,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Identification of a sub-division of a large organisation or building.",
+      "documentationKA": "დიდი ორგანიზაციის ან შენობის ქვეგანყოფილების იდენტიფიკაცია.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -5178,6 +5348,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Name of a street or thoroughfare.",
+      "documentationKA": "ქუჩის ან გზის დასახელება.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -5207,6 +5378,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Number that identifies the position of a building on a street.",
+      "documentationKA": "ნომერი, რომელიც განსაზღვრავს შენობის მდებარეობას ქუჩაზე.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -5236,6 +5408,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Name of the building or house.",
+      "documentationKA": "შენობის ან სახლის დასახელება.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -5265,6 +5438,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Floor or storey within a building.",
+      "documentationKA": "სართული შენობაში.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -5294,6 +5468,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Numbered box in a post office, assigned to a person or organisation, where letters are kept until called for.",
+      "documentationKA": "საფოსტო განყოფილებაში პირისთვის ან ორგანიზაციისთვის მინიჭებული ნომრიანი ყუთი, სადაც წერილები ინახება მოთხოვნამდე.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -5323,6 +5498,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Building room number.",
+      "documentationKA": "ოთახის ნომერი შენობაში.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -5352,6 +5528,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Identifier consisting of a group of letters and/or numbers that is added to a postal address to assist the sorting of mail.",
+      "documentationKA": "ასოებისა და/ან რიცხვების ჯგუფისგან შემდგარი იდენტიფიკატორი, რომელიც ემატება საფოსტო მისამართს ფოსტის დახარისხების გასამარტივებლად.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -5381,6 +5558,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Name of a built-up area, with defined boundaries, and a local government.",
+      "documentationKA": "განაშენიანებული ტერიტორიის დასახელება, რომელსაც აქვს განსაზღვრული საზღვრები და ადგილობრივი მმართველობა.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -5410,6 +5588,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Specific location name within the town.",
+      "documentationKA": "ქალაქის ფარგლებში კონკრეტული მდებარეობის დასახელება.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -5439,6 +5618,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Identifies a subdivision within a country sub-division.",
+      "documentationKA": "განსაზღვრავს ქვედანაყოფს ქვეყნის ადმინისტრაციული ერთეულის ფარგლებში.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -5468,6 +5648,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Identifies a subdivision of a country such as state, region, county.",
+      "documentationKA": "განსაზღვრავს ქვეყნის ადმინისტრაციულ ერთეულს, როგორიცაა შტატი, რეგიონი ან საგრაფო.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -5497,6 +5678,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Nation with its own government.",
+      "documentationKA": "საკუთარი მთავრობის მქონე სახელმწიფო.",
       "restrictions": {
         "pattern": "[A-Z]{2,2}",
         "minLength": null,
@@ -5526,6 +5708,7 @@
       "isRepeating": true,
       "isChoice": false,
       "documentation": "Information that locates and identifies a specific address, as defined by postal services, presented in free format text.",
+      "documentationKA": "ინფორმაცია, რომელიც ადგენს მდებარეობას და იდენტიფიცირებს კონკრეტულ მისამართს, როგორც განსაზღვრულია საფოსტო სამსახურების მიერ, წარმოდგენილი თავისუფალი ფორმატის ტექსტით.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -5555,6 +5738,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Information that locates and identifies a specific address, as defined by postal services.",
+      "documentationKA": "ინფორმაცია, რომელიც ადგენს მდებარეობას და იდენტიფიცირებს კონკრეტულ მისამართს, როგორც განსაზღვრულია საფოსტო სამსახურების მიერ.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -5600,6 +5784,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Unique and unambiguous identification for the account between the account owner and the account servicer.",
+      "documentationKA": "ანგარიშის უნიკალური და ერთმნიშვნელოვანი იდენტიფიკაცია ანგარიშის მფლობელსა და ანგარიშის მომსახურე მხარეს შორის.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
         "minLength": "1",
@@ -5629,6 +5814,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Name of the identification scheme, in a coded form as published in an external list.",
+      "documentationKA": "იდენტიფიკაციის სქემის დასახელება კოდირებული ფორმით, როგორც გამოქვეყნებულია გარე სიაში.",
       "restrictions": {
         "pattern": null,
         "minLength": "1",
@@ -5658,6 +5844,7 @@
       "isRepeating": false,
       "isChoice": true,
       "documentation": "Name of the identification scheme.",
+      "documentationKA": "იდენტიფიკაციის სქემის დასახელება.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -5689,6 +5876,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Entity that assigns the credit reference type.",
+      "documentationKA": "სუბიექტი, რომელიც ანიჭებს საკრედიტო რეფერენსის ტიპს.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
         "minLength": "1",
@@ -5718,6 +5906,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Unique identification of an account, as assigned by the account servicer, using an identification scheme.",
+      "documentationKA": "ანგარიშის უნიკალური იდენტიფიკაცია, მინიჭებული ანგარიშის მომსახურე მხარის მიერ, იდენტიფიკაციის სქემის გამოყენებით.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -5751,6 +5940,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Unique and unambiguous way to identify an organisation.",
+      "documentationKA": "ორგანიზაციის იდენტიფიკაციის უნიკალური და ერთმნიშვნელოვანი საშუალება.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -5782,6 +5972,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Unique and unambiguous identification for the account between the account owner and the account servicer.",
+      "documentationKA": "ანგარიშის უნიკალური და ერთმნიშვნელოვანი იდენტიფიკაცია ანგარიშის მფლობელსა და ანგარიშის მომსახურე მხარეს შორის.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
         "minLength": "1",
@@ -5811,6 +6002,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Name of the identification scheme, in a coded form as published in an external list.",
+      "documentationKA": "იდენტიფიკაციის სქემის დასახელება კოდირებული ფორმით, როგორც გამოქვეყნებულია გარე სიაში.",
       "restrictions": {
         "pattern": null,
         "minLength": "1",
@@ -5840,6 +6032,7 @@
       "isRepeating": false,
       "isChoice": true,
       "documentation": "Name of the identification scheme.",
+      "documentationKA": "იდენტიფიკაციის სქემის დასახელება.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -5871,6 +6064,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Entity that assigns the credit reference type.",
+      "documentationKA": "სუბიექტი, რომელიც ანიჭებს საკრედიტო რეფერენსის ტიპს.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
         "minLength": "1",
@@ -5900,6 +6094,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Unique identification of an account, as assigned by the account servicer, using an identification scheme.",
+      "documentationKA": "ანგარიშის უნიკალური იდენტიფიკაცია, მინიჭებული ანგარიშის მომსახურე მხარის მიერ, იდენტიფიკაციის სქემის გამოყენებით.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -5933,6 +6128,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Unique and unambiguous identification of a person, for example a passport.",
+      "documentationKA": "პირის უნიკალური და ერთმნიშვნელოვანი იდენტიფიკაცია, მაგალითად, პასპორტი.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -5964,6 +6160,7 @@
       "isRepeating": false,
       "isChoice": true,
       "documentation": "Unique and unambiguous identification for the account between the account owner and the account servicer.",
+      "documentationKA": "ანგარიშის უნიკალური და ერთმნიშვნელოვანი იდენტიფიკაცია ანგარიშის მფლობელსა და ანგარიშის მომსახურე მხარეს შორის.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -5996,6 +6193,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Country in which a person resides (the place of a person's home). In the case of a company, it is the country from which the affairs of that company are directed.",
+      "documentationKA": "ქვეყანა, რომელშიც პირი ცხოვრობს (პირის საცხოვრებელი ადგილი). კომპანიის შემთხვევაში, ეს არის ქვეყანა, საიდანაც იმართება ამ კომპანიის საქმიანობა.",
       "restrictions": {
         "pattern": "[A-Z]{2,2}",
         "minLength": null,
@@ -6025,6 +6223,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Ultimate party that owes an amount of money to the (ultimate) creditor.",
+      "documentationKA": "საბოლოო მხარე, რომელსაც თანხა ეკისრება (საბოლოო) კრედიტორის მიმართ.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -6059,6 +6258,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Code allocated to a financial institution by the ISO 9362 Registration Authority as described in ISO 9362 \"Banking - Banking telecommunication messages - Business identifier code (BIC)\".",
+      "documentationKA": "ISO 9362 რეგისტრაციის ორგანოს მიერ ფინანსური ინსტიტუტისთვის მინიჭებული კოდი, როგორც აღწერილია ISO 9362-ში „საბანკო საქმე — საბანკო სატელეკომუნიკაციო შეტყობინებები — ბიზნეს იდენტიფიკატორის კოდი (BIC)“.",
       "restrictions": {
         "pattern": "[A-Z0-9]{4,4}GE[A-Z0-9]{2,2}([A-Z0-9]{3,3}){0,1}",
         "minLength": null,
@@ -6088,6 +6288,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Identification of a member of a clearing system.",
+      "documentationKA": "კლირინგის სისტემის წევრის იდენტიფიკაცია.",
       "restrictions": {
         "pattern": "[A-Z0-9]{4,4}GE[A-Z0-9]{2,2}([A-Z0-9]{3,3}){0,1}",
         "minLength": null,
@@ -6117,6 +6318,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Information used to identify a member within a clearing system.",
+      "documentationKA": "ინფორმაცია, რომელიც გამოიყენება კლირინგის სისტემაში წევრის იდენტიფიკაციისთვის.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -6148,6 +6350,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Unique and unambiguous identification of a financial institution, as assigned under an internationally recognised or proprietary identification scheme.",
+      "documentationKA": "ფინანსური ინსტიტუტის უნიკალური და ერთმნიშვნელოვანი იდენტიფიკაცია, მინიჭებული საერთაშორისო აღიარებული ან საკუთარი იდენტიფიკაციის სქემის ფარგლებში.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -6180,6 +6383,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Financial institution servicing an account for the creditor.",
+      "documentationKA": "ფინანსური ინსტიტუტი, რომელიც ემსახურება კრედიტორის ანგარიშს.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -6211,6 +6415,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Name of the account, as assigned by the account servicing institution, in agreement with the account owner in order to provide an additional means of identification of the account.\n\n\t\t\t\t\t\tUsage: The account name is different from the account owner name. The account name is used in certain user communities to provide a means of identifying the account, in addition to the account owner's identity and the account number.",
+      "documentationKA": "ანგარიშის დასახელება, რომელიც მინიჭებულია ანგარიშის მომსახურე ინსტიტუტის მიერ ანგარიშის მფლობელთან შეთანხმებით, ანგარიშის იდენტიფიკაციის დამატებითი საშუალების უზრუნველსაყოფად. გამოყენება: ანგარიშის დასახელება განსხვავდება ანგარიშის მფლობელის სახელისგან. ზოგიერთ მომხმარებელთა საზოგადოებაში ანგარიშის დასახელება გამოიყენება ანგარიშის იდენტიფიკაციის დამატებით საშუალებად, ანგარიშის მფლობელის იდენტიფიკაციასა და ანგარიშის ნომერთან ერთად.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -6240,6 +6445,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Identification of a division of a large organisation or building.",
+      "documentationKA": "დიდი ორგანიზაციის ან შენობის განყოფილების იდენტიფიკაცია.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -6269,6 +6475,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Identification of a sub-division of a large organisation or building.",
+      "documentationKA": "დიდი ორგანიზაციის ან შენობის ქვეგანყოფილების იდენტიფიკაცია.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -6298,6 +6505,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Name of a street or thoroughfare.",
+      "documentationKA": "ქუჩის ან გზის დასახელება.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -6327,6 +6535,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Number that identifies the position of a building on a street.",
+      "documentationKA": "ნომერი, რომელიც განსაზღვრავს შენობის მდებარეობას ქუჩაზე.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -6356,6 +6565,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Name of the building or house.",
+      "documentationKA": "შენობის ან სახლის დასახელება.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -6385,6 +6595,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Floor or storey within a building.",
+      "documentationKA": "სართული შენობაში.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -6414,6 +6625,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Numbered box in a post office, assigned to a person or organisation, where letters are kept until called for.",
+      "documentationKA": "საფოსტო განყოფილებაში პირისთვის ან ორგანიზაციისთვის მინიჭებული ნომრიანი ყუთი, სადაც წერილები ინახება მოთხოვნამდე.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -6443,6 +6655,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Building room number.",
+      "documentationKA": "ოთახის ნომერი შენობაში.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -6472,6 +6685,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Identifier consisting of a group of letters and/or numbers that is added to a postal address to assist the sorting of mail.",
+      "documentationKA": "ასოებისა და/ან რიცხვების ჯგუფისგან შემდგარი იდენტიფიკატორი, რომელიც ემატება საფოსტო მისამართს ფოსტის დახარისხების გასამარტივებლად.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -6501,6 +6715,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Name of a built-up area, with defined boundaries, and a local government.",
+      "documentationKA": "განაშენიანებული ტერიტორიის დასახელება, რომელსაც აქვს განსაზღვრული საზღვრები და ადგილობრივი მმართველობა.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -6530,6 +6745,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Specific location name within the town.",
+      "documentationKA": "ქალაქის ფარგლებში კონკრეტული მდებარეობის დასახელება.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -6559,6 +6775,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Identifies a subdivision within a country sub-division.",
+      "documentationKA": "განსაზღვრავს ქვედანაყოფს ქვეყნის ადმინისტრაციული ერთეულის ფარგლებში.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -6588,6 +6805,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Identifies a subdivision of a country such as state, region, county.",
+      "documentationKA": "განსაზღვრავს ქვეყნის ადმინისტრაციულ ერთეულს, როგორიცაა შტატი, რეგიონი ან საგრაფო.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -6617,6 +6835,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Nation with its own government.",
+      "documentationKA": "საკუთარი მთავრობის მქონე სახელმწიფო.",
       "restrictions": {
         "pattern": "[A-Z]{2,2}",
         "minLength": null,
@@ -6646,6 +6865,7 @@
       "isRepeating": true,
       "isChoice": false,
       "documentation": "Information that locates and identifies a specific address, as defined by postal services, presented in free format text.",
+      "documentationKA": "ინფორმაცია, რომელიც ადგენს მდებარეობას და იდენტიფიცირებს კონკრეტულ მისამართს, როგორც განსაზღვრულია საფოსტო სამსახურების მიერ, წარმოდგენილი თავისუფალი ფორმატის ტექსტით.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -6675,6 +6895,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Information that locates and identifies a specific address, as defined by postal services.",
+      "documentationKA": "ინფორმაცია, რომელიც ადგენს მდებარეობას და იდენტიფიცირებს კონკრეტულ მისამართს, როგორც განსაზღვრულია საფოსტო სამსახურების მიერ.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -6720,6 +6941,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Unique and unambiguous identification for the account between the account owner and the account servicer.",
+      "documentationKA": "ანგარიშის უნიკალური და ერთმნიშვნელოვანი იდენტიფიკაცია ანგარიშის მფლობელსა და ანგარიშის მომსახურე მხარეს შორის.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
         "minLength": "1",
@@ -6749,6 +6971,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Name of the identification scheme, in a coded form as published in an external list.",
+      "documentationKA": "იდენტიფიკაციის სქემის დასახელება კოდირებული ფორმით, როგორც გამოქვეყნებულია გარე სიაში.",
       "restrictions": {
         "pattern": null,
         "minLength": "1",
@@ -6778,6 +7001,7 @@
       "isRepeating": false,
       "isChoice": true,
       "documentation": "Name of the identification scheme.",
+      "documentationKA": "იდენტიფიკაციის სქემის დასახელება.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -6809,6 +7033,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Entity that assigns the credit reference type.",
+      "documentationKA": "სუბიექტი, რომელიც ანიჭებს საკრედიტო რეფერენსის ტიპს.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
         "minLength": "1",
@@ -6838,6 +7063,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Unique identification of an account, as assigned by the account servicer, using an identification scheme.",
+      "documentationKA": "ანგარიშის უნიკალური იდენტიფიკაცია, მინიჭებული ანგარიშის მომსახურე მხარის მიერ, იდენტიფიკაციის სქემის გამოყენებით.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -6871,6 +7097,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Unique and unambiguous way to identify an organisation.",
+      "documentationKA": "ორგანიზაციის იდენტიფიკაციის უნიკალური და ერთმნიშვნელოვანი საშუალება.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -6902,6 +7129,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Unique and unambiguous identification for the account between the account owner and the account servicer.",
+      "documentationKA": "ანგარიშის უნიკალური და ერთმნიშვნელოვანი იდენტიფიკაცია ანგარიშის მფლობელსა და ანგარიშის მომსახურე მხარეს შორის.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
         "minLength": "1",
@@ -6931,6 +7159,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Name of the identification scheme, in a coded form as published in an external list.",
+      "documentationKA": "იდენტიფიკაციის სქემის დასახელება კოდირებული ფორმით, როგორც გამოქვეყნებულია გარე სიაში.",
       "restrictions": {
         "pattern": null,
         "minLength": "1",
@@ -6960,6 +7189,7 @@
       "isRepeating": false,
       "isChoice": true,
       "documentation": "Name of the identification scheme.",
+      "documentationKA": "იდენტიფიკაციის სქემის დასახელება.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -6991,6 +7221,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Entity that assigns the credit reference type.",
+      "documentationKA": "სუბიექტი, რომელიც ანიჭებს საკრედიტო რეფერენსის ტიპს.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
         "minLength": "1",
@@ -7020,6 +7251,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Unique identification of an account, as assigned by the account servicer, using an identification scheme.",
+      "documentationKA": "ანგარიშის უნიკალური იდენტიფიკაცია, მინიჭებული ანგარიშის მომსახურე მხარის მიერ, იდენტიფიკაციის სქემის გამოყენებით.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -7053,6 +7285,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Unique and unambiguous identification of a person, for example a passport.",
+      "documentationKA": "პირის უნიკალური და ერთმნიშვნელოვანი იდენტიფიკაცია, მაგალითად, პასპორტი.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -7084,6 +7317,7 @@
       "isRepeating": false,
       "isChoice": true,
       "documentation": "Unique and unambiguous identification for the account between the account owner and the account servicer.",
+      "documentationKA": "ანგარიშის უნიკალური და ერთმნიშვნელოვანი იდენტიფიკაცია ანგარიშის მფლობელსა და ანგარიშის მომსახურე მხარეს შორის.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -7116,6 +7350,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Country in which a person resides (the place of a person's home). In the case of a company, it is the country from which the affairs of that company are directed.",
+      "documentationKA": "ქვეყანა, რომელშიც პირი ცხოვრობს (პირის საცხოვრებელი ადგილი). კომპანიის შემთხვევაში, ეს არის ქვეყანა, საიდანაც იმართება ამ კომპანიის საქმიანობა.",
       "restrictions": {
         "pattern": "[A-Z]{2,2}",
         "minLength": null,
@@ -7145,6 +7380,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Party to which an amount of money is due.",
+      "documentationKA": "მხარე, რომლისთვისაც გადასახდელია თანხა.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -7179,6 +7415,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "International Bank Account Number (IBAN) - identifier used internationally by financial institutions to uniquely identify the account of a customer. Further specifications of the format and content of the IBAN can be found in the standard ISO 13616 \"Banking and related financial services - International Bank Account Number (IBAN)\" version 1997-10-01, or later revisions.",
+      "documentationKA": "საერთაშორისო საბანკო ანგარიშის ნომერი (IBAN) — იდენტიფიკატორი, რომელიც საერთაშორისო დონეზე გამოიყენება ფინანსური ინსტიტუტების მიერ კლიენტის ანგარიშის უნიკალურად იდენტიფიცირებისთვის. IBAN-ის ფორმატისა და შინაარსის დამატებითი სპეციფიკაციები მოცემულია ISO 13616 სტანდარტში „საბანკო და მასთან დაკავშირებული ფინანსური მომსახურება — საერთაშორისო საბანკო ანგარიშის ნომერი (IBAN)“, 1997-10-01 ვერსიაში ან მის შემდგომ რედაქციებში.",
       "restrictions": {
         "pattern": "[A-Z]{2,2}GE[a-zA-Z0-9]{1,30}",
         "minLength": null,
@@ -7208,6 +7445,7 @@
       "isRepeating": false,
       "isChoice": true,
       "documentation": "Unique and unambiguous identification for the account between the account owner and the account servicer.",
+      "documentationKA": "ანგარიშის უნიკალური და ერთმნიშვნელოვანი იდენტიფიკაცია ანგარიშის მფლობელსა და ანგარიშის მომსახურე მხარეს შორის.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -7239,6 +7477,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Identification of the currency in which the account is held.\n\n\t\t\t\t\t\tUsage: Currency should only be used in case one and the same account number covers several currencies\n\t\t\t\t\t\tand the initiating party needs to identify which currency needs to be used for settlement on the account.",
+      "documentationKA": "იმ ვალუტის იდენტიფიკაცია, რომელშიც ანგარიში იწარმოება. გამოყენება: ვალუტა უნდა მიეთითოს მხოლოდ იმ შემთხვევაში, როდესაც ერთი და იგივე ანგარიშის ნომერი რამდენიმე ვალუტას მოიცავს და ინიციატორ მხარეს სჭირდება განსაზღვრა, რომელი ვალუტა უნდა იქნას გამოყენებული ანგარიშზე ანგარიშსწორებისთვის.",
       "restrictions": {
         "pattern": "[A-Z]{3,3}",
         "minLength": null,
@@ -7268,6 +7507,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Name of the account, as assigned by the account servicing institution, in agreement with the account owner in order to provide an additional means of identification of the account.\n\n\t\t\t\t\t\tUsage: The account name is different from the account owner name. The account name is used in certain user communities to provide a means of identifying the account, in addition to the account owner's identity and the account number.",
+      "documentationKA": "ანგარიშის დასახელება, რომელიც მინიჭებულია ანგარიშის მომსახურე ინსტიტუტის მიერ ანგარიშის მფლობელთან შეთანხმებით, ანგარიშის იდენტიფიკაციის დამატებითი საშუალების უზრუნველსაყოფად. გამოყენება: ანგარიშის დასახელება განსხვავდება ანგარიშის მფლობელის სახელისგან. ზოგიერთ მომხმარებელთა საზოგადოებაში ანგარიშის დასახელება გამოიყენება ანგარიშის იდენტიფიკაციის დამატებით საშუალებად, ანგარიშის მფლობელის იდენტიფიკაციასა და ანგარიშის ნომერთან ერთად.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
         "minLength": "1",
@@ -7297,6 +7537,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Unambiguous identification of the account of the creditor to which a credit entry will be posted as a result of the payment transaction.",
+      "documentationKA": "კრედიტორის იმ ანგარიშის ერთმნიშვნელოვანი იდენტიფიკაცია, რომელზეც გადახდის ოპერაციის შედეგად კრედიტის ჩანაწერი აისახება.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -7330,6 +7571,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Name of the account, as assigned by the account servicing institution, in agreement with the account owner in order to provide an additional means of identification of the account.\n\n\t\t\t\t\t\tUsage: The account name is different from the account owner name. The account name is used in certain user communities to provide a means of identifying the account, in addition to the account owner's identity and the account number.",
+      "documentationKA": "ანგარიშის დასახელება, რომელიც მინიჭებულია ანგარიშის მომსახურე ინსტიტუტის მიერ ანგარიშის მფლობელთან შეთანხმებით, ანგარიშის იდენტიფიკაციის დამატებითი საშუალების უზრუნველსაყოფად. გამოყენება: ანგარიშის დასახელება განსხვავდება ანგარიშის მფლობელის სახელისგან. ზოგიერთ მომხმარებელთა საზოგადოებაში ანგარიშის დასახელება გამოიყენება ანგარიშის იდენტიფიკაციის დამატებით საშუალებად, ანგარიშის მფლობელის იდენტიფიკაციასა და ანგარიშის ნომერთან ერთად.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -7359,6 +7601,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Identification of a division of a large organisation or building.",
+      "documentationKA": "დიდი ორგანიზაციის ან შენობის განყოფილების იდენტიფიკაცია.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -7388,6 +7631,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Identification of a sub-division of a large organisation or building.",
+      "documentationKA": "დიდი ორგანიზაციის ან შენობის ქვეგანყოფილების იდენტიფიკაცია.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -7417,6 +7661,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Name of a street or thoroughfare.",
+      "documentationKA": "ქუჩის ან გზის დასახელება.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -7446,6 +7691,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Number that identifies the position of a building on a street.",
+      "documentationKA": "ნომერი, რომელიც განსაზღვრავს შენობის მდებარეობას ქუჩაზე.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -7475,6 +7721,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Name of the building or house.",
+      "documentationKA": "შენობის ან სახლის დასახელება.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -7504,6 +7751,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Floor or storey within a building.",
+      "documentationKA": "სართული შენობაში.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -7533,6 +7781,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Numbered box in a post office, assigned to a person or organisation, where letters are kept until called for.",
+      "documentationKA": "საფოსტო განყოფილებაში პირისთვის ან ორგანიზაციისთვის მინიჭებული ნომრიანი ყუთი, სადაც წერილები ინახება მოთხოვნამდე.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -7562,6 +7811,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Building room number.",
+      "documentationKA": "ოთახის ნომერი შენობაში.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -7591,6 +7841,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Identifier consisting of a group of letters and/or numbers that is added to a postal address to assist the sorting of mail.",
+      "documentationKA": "ასოებისა და/ან რიცხვების ჯგუფისგან შემდგარი იდენტიფიკატორი, რომელიც ემატება საფოსტო მისამართს ფოსტის დახარისხების გასამარტივებლად.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -7620,6 +7871,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Name of a built-up area, with defined boundaries, and a local government.",
+      "documentationKA": "განაშენიანებული ტერიტორიის დასახელება, რომელსაც აქვს განსაზღვრული საზღვრები და ადგილობრივი მმართველობა.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -7649,6 +7901,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Specific location name within the town.",
+      "documentationKA": "ქალაქის ფარგლებში კონკრეტული მდებარეობის დასახელება.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -7678,6 +7931,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Identifies a subdivision within a country sub-division.",
+      "documentationKA": "განსაზღვრავს ქვედანაყოფს ქვეყნის ადმინისტრაციული ერთეულის ფარგლებში.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -7707,6 +7961,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Identifies a subdivision of a country such as state, region, county.",
+      "documentationKA": "განსაზღვრავს ქვეყნის ადმინისტრაციულ ერთეულს, როგორიცაა შტატი, რეგიონი ან საგრაფო.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -7736,6 +7991,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Nation with its own government.",
+      "documentationKA": "საკუთარი მთავრობის მქონე სახელმწიფო.",
       "restrictions": {
         "pattern": "[A-Z]{2,2}",
         "minLength": null,
@@ -7765,6 +8021,7 @@
       "isRepeating": true,
       "isChoice": false,
       "documentation": "Information that locates and identifies a specific address, as defined by postal services, presented in free format text.",
+      "documentationKA": "ინფორმაცია, რომელიც ადგენს მდებარეობას და იდენტიფიცირებს კონკრეტულ მისამართს, როგორც განსაზღვრულია საფოსტო სამსახურების მიერ, წარმოდგენილი თავისუფალი ფორმატის ტექსტით.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -7794,6 +8051,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Information that locates and identifies a specific address, as defined by postal services.",
+      "documentationKA": "ინფორმაცია, რომელიც ადგენს მდებარეობას და იდენტიფიცირებს კონკრეტულ მისამართს, როგორც განსაზღვრულია საფოსტო სამსახურების მიერ.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -7839,6 +8097,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Unique and unambiguous identification for the account between the account owner and the account servicer.",
+      "documentationKA": "ანგარიშის უნიკალური და ერთმნიშვნელოვანი იდენტიფიკაცია ანგარიშის მფლობელსა და ანგარიშის მომსახურე მხარეს შორის.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
         "minLength": "1",
@@ -7868,6 +8127,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Name of the identification scheme, in a coded form as published in an external list.",
+      "documentationKA": "იდენტიფიკაციის სქემის დასახელება კოდირებული ფორმით, როგორც გამოქვეყნებულია გარე სიაში.",
       "restrictions": {
         "pattern": null,
         "minLength": "1",
@@ -7897,6 +8157,7 @@
       "isRepeating": false,
       "isChoice": true,
       "documentation": "Name of the identification scheme.",
+      "documentationKA": "იდენტიფიკაციის სქემის დასახელება.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -7928,6 +8189,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Entity that assigns the credit reference type.",
+      "documentationKA": "სუბიექტი, რომელიც ანიჭებს საკრედიტო რეფერენსის ტიპს.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
         "minLength": "1",
@@ -7957,6 +8219,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Unique identification of an account, as assigned by the account servicer, using an identification scheme.",
+      "documentationKA": "ანგარიშის უნიკალური იდენტიფიკაცია, მინიჭებული ანგარიშის მომსახურე მხარის მიერ, იდენტიფიკაციის სქემის გამოყენებით.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -7990,6 +8253,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Unique and unambiguous way to identify an organisation.",
+      "documentationKA": "ორგანიზაციის იდენტიფიკაციის უნიკალური და ერთმნიშვნელოვანი საშუალება.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -8021,6 +8285,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Unique and unambiguous identification for the account between the account owner and the account servicer.",
+      "documentationKA": "ანგარიშის უნიკალური და ერთმნიშვნელოვანი იდენტიფიკაცია ანგარიშის მფლობელსა და ანგარიშის მომსახურე მხარეს შორის.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
         "minLength": "1",
@@ -8050,6 +8315,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Name of the identification scheme, in a coded form as published in an external list.",
+      "documentationKA": "იდენტიფიკაციის სქემის დასახელება კოდირებული ფორმით, როგორც გამოქვეყნებულია გარე სიაში.",
       "restrictions": {
         "pattern": null,
         "minLength": "1",
@@ -8079,6 +8345,7 @@
       "isRepeating": false,
       "isChoice": true,
       "documentation": "Name of the identification scheme.",
+      "documentationKA": "იდენტიფიკაციის სქემის დასახელება.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -8110,6 +8377,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Entity that assigns the credit reference type.",
+      "documentationKA": "სუბიექტი, რომელიც ანიჭებს საკრედიტო რეფერენსის ტიპს.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
         "minLength": "1",
@@ -8139,6 +8407,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Unique identification of an account, as assigned by the account servicer, using an identification scheme.",
+      "documentationKA": "ანგარიშის უნიკალური იდენტიფიკაცია, მინიჭებული ანგარიშის მომსახურე მხარის მიერ, იდენტიფიკაციის სქემის გამოყენებით.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -8172,6 +8441,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Unique and unambiguous identification of a person, for example a passport.",
+      "documentationKA": "პირის უნიკალური და ერთმნიშვნელოვანი იდენტიფიკაცია, მაგალითად, პასპორტი.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -8203,6 +8473,7 @@
       "isRepeating": false,
       "isChoice": true,
       "documentation": "Unique and unambiguous identification for the account between the account owner and the account servicer.",
+      "documentationKA": "ანგარიშის უნიკალური და ერთმნიშვნელოვანი იდენტიფიკაცია ანგარიშის მფლობელსა და ანგარიშის მომსახურე მხარეს შორის.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -8235,6 +8506,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Country in which a person resides (the place of a person's home). In the case of a company, it is the country from which the affairs of that company are directed.",
+      "documentationKA": "ქვეყანა, რომელშიც პირი ცხოვრობს (პირის საცხოვრებელი ადგილი). კომპანიის შემთხვევაში, ეს არის ქვეყანა, საიდანაც იმართება ამ კომპანიის საქმიანობა.",
       "restrictions": {
         "pattern": "[A-Z]{2,2}",
         "minLength": null,
@@ -8264,6 +8536,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Ultimate party to which an amount of money is due.",
+      "documentationKA": "საბოლოო მხარე, რომლისთვისაც გადასახდელია თანხა.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -8298,6 +8571,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Further information complementing the coded instruction or instruction to the creditor's agent that is bilaterally agreed or specific to a user community.",
+      "documentationKA": "დამატებითი ინფორმაცია, რომელიც ავსებს კოდირებულ დავალებას ან კრედიტორის აგენტისთვის განკუთვნილ დავალებას და ორმხრივად შეთანხმებულია ან სპეციფიკურია მომხმარებელთა საზოგადოებისთვის.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
         "minLength": "1",
@@ -8327,6 +8601,7 @@
       "isRepeating": true,
       "isChoice": false,
       "documentation": "Further information related to the processing of the payment instruction, provided by the initiating party, and intended for the creditor agent.",
+      "documentationKA": "ინიციატორი მხარის მიერ მოწოდებული და კრედიტორის აგენტისთვის განკუთვნილი დამატებითი ინფორმაცია, რომელიც დაკავშირებულია გადახდის დავალების დამუშავებასთან.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -8358,6 +8633,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Further information related to the processing of the payment instruction, that may need to be acted upon by the debtor agent, depending on agreement between debtor and the debtor agent.",
+      "documentationKA": "გადახდის დავალების დამუშავებასთან დაკავშირებული დამატებითი ინფორმაცია, რომლის შესრულებაც შეიძლება დასჭირდეს დებიტორის აგენტს, დებიტორსა და დებიტორის აგენტს შორის შეთანხმების მიხედვით.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
         "minLength": "1",
@@ -8387,6 +8663,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Name of the identification scheme, in a coded form as published in an external list.",
+      "documentationKA": "იდენტიფიკაციის სქემის დასახელება კოდირებული ფორმით, როგორც გამოქვეყნებულია გარე სიაში.",
       "restrictions": {
         "pattern": null,
         "minLength": "1",
@@ -8416,6 +8693,7 @@
       "isRepeating": false,
       "isChoice": true,
       "documentation": "Underlying reason for the payment transaction.\n\t\t\t\t\t\tUsage: Purpose is used by the end-customers, that is initiating party, (ultimate) debtor, (ultimate) creditor to provide information concerning the nature of the payment. Purpose is a content element, which is not used for processing by any of the agents involved in the payment chain.",
+      "documentationKA": "გადახდის ოპერაციის საფუძვლიანი მიზეზი. გამოყენება: დანიშნულებას იყენებენ საბოლოო მომხმარებლები — ინიციატორი მხარე, (საბოლოო) დებიტორი და (საბოლოო) კრედიტორი — გადახდის ბუნებასთან დაკავშირებული ინფორმაციის მისაწოდებლად. დანიშნულება არის შინაარსობრივი ელემენტი და არ გამოიყენება გადახდის ჯაჭვში ჩართული აგენტების მიერ დამუშავებისთვის.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -8447,6 +8725,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Identifies whether the regulatory reporting information applies to the debit side, to the credit side or to both debit and credit sides of the transaction.",
+      "documentationKA": "განსაზღვრავს, ვრცელდება თუ არა რეგულატორული ანგარიშგების ინფორმაცია ოპერაციის დებეტურ მხარეზე, კრედიტულ მხარეზე თუ ორივეზე.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -8480,6 +8759,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Name of the account, as assigned by the account servicing institution, in agreement with the account owner in order to provide an additional means of identification of the account.\n\n\t\t\t\t\t\tUsage: The account name is different from the account owner name. The account name is used in certain user communities to provide a means of identifying the account, in addition to the account owner's identity and the account number.",
+      "documentationKA": "ანგარიშის დასახელება, რომელიც მინიჭებულია ანგარიშის მომსახურე ინსტიტუტის მიერ ანგარიშის მფლობელთან შეთანხმებით, ანგარიშის იდენტიფიკაციის დამატებითი საშუალების უზრუნველსაყოფად. გამოყენება: ანგარიშის დასახელება განსხვავდება ანგარიშის მფლობელის სახელისგან. ზოგიერთ მომხმარებელთა საზოგადოებაში ანგარიშის დასახელება გამოიყენება ანგარიშის იდენტიფიკაციის დამატებით საშუალებად, ანგარიშის მფლობელის იდენტიფიკაციასა და ანგარიშის ნომერთან ერთად.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
         "minLength": "1",
@@ -8509,6 +8789,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Nation with its own government.",
+      "documentationKA": "საკუთარი მთავრობის მქონე სახელმწიფო.",
       "restrictions": {
         "pattern": "[A-Z]{2,2}",
         "minLength": null,
@@ -8538,6 +8819,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Entity requiring the regulatory reporting information.",
+      "documentationKA": "სუბიექტი, რომელიც მოითხოვს რეგულატორული ანგარიშგების ინფორმაციას.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -8570,6 +8852,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Specifies the nature, or use of the account.",
+      "documentationKA": "განსაზღვრავს ანგარიშის ბუნებას ან გამოყენებას.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
         "minLength": "1",
@@ -8599,6 +8882,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Specified date.",
+      "documentationKA": "მითითებული თარიღი.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -8628,6 +8912,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Nation with its own government.",
+      "documentationKA": "საკუთარი მთავრობის მქონე სახელმწიფო.",
       "restrictions": {
         "pattern": "[A-Z]{2,2}",
         "minLength": null,
@@ -8657,6 +8942,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Name of the identification scheme, in a coded form as published in an external list.",
+      "documentationKA": "იდენტიფიკაციის სქემის დასახელება კოდირებული ფორმით, როგორც გამოქვეყნებულია გარე სიაში.",
       "restrictions": {
         "pattern": "[0-9a-zA-Z/\\-\\?:\\(\\)\\.,'\\+ ]+",
         "minLength": "1",
@@ -8686,6 +8972,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "A code allocated to a currency by a Maintenance Agency under an international identification scheme, as described in the latest edition of the international standard ISO 4217 \"Codes for the representation of currencies and funds\".",
+      "documentationKA": "ვალუტისთვის საერთაშორისო იდენტიფიკაციის სქემის ფარგლებში მხარდამჭერი სააგენტოს მიერ მინიჭებული კოდი, როგორც აღწერილია საერთაშორისო სტანდარტის ISO 4217 „ვალუტებისა და ფონდების წარმოდგენის კოდები“ უახლეს გამოცემაში.",
       "restrictions": {
         "pattern": "[A-Z]{3,3}",
         "minLength": null,
@@ -8715,6 +9002,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Amount of money to be moved between the debtor and creditor, before deduction of charges, expressed in the currency as ordered by the initiating party.",
+      "documentationKA": "დებიტორსა და კრედიტორს შორის გადასარიცხი თანხა, საკომისიოების ჩამოჭრამდე, ინიციატორი მხარის მიერ მითითებულ ვალუტაში.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -8746,6 +9034,7 @@
       "isRepeating": true,
       "isChoice": false,
       "documentation": "Additional details that cater for specific domestic regulatory requirements.",
+      "documentationKA": "დამატებითი დეტალები, რომლებიც განკუთვნილია კონკრეტული ადგილობრივი რეგულატორული მოთხოვნების დასაკმაყოფილებლად.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
         "minLength": "1",
@@ -8775,6 +9064,7 @@
       "isRepeating": true,
       "isChoice": false,
       "documentation": "Set of elements used to provide details on the regulatory reporting information.",
+      "documentationKA": "ელემენტების ნაკრები, რომელიც გამოიყენება რეგულატორული ანგარიშგების ინფორმაციის დეტალების მისაწოდებლად.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -8811,6 +9101,7 @@
       "isRepeating": true,
       "isChoice": false,
       "documentation": "Information needed due to regulatory and statutory requirements.",
+      "documentationKA": "რეგულატორული და კანონმდებლობით დადგენილი მოთხოვნების გამო საჭირო ინფორმაცია.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -8844,6 +9135,7 @@
       "isRepeating": true,
       "isChoice": false,
       "documentation": "Information supplied to enable the matching/reconciliation of an entry with the items that the payment is intended to settle, such as commercial invoices in an accounts' receivable system, in an unstructured form.",
+      "documentationKA": "არასტრუქტურირებული ფორმით მოწოდებული ინფორმაცია, რომელიც შესაძლებელს ხდის ჩანაწერის შეჯერებას იმ ელემენტებთან, რომელთა დასაფარადაც განკუთვნილია გადახდა, მაგალითად, კომერციულ ინვოისებთან დებიტორული დავალიანებების სისტემაში.",
       "restrictions": {
         "pattern": "[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
         "minLength": "1",
@@ -8873,6 +9165,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Information supplied to enable the matching of an entry with the items that the transfer is intended to settle, such as commercial invoices in an accounts' receivable system.",
+      "documentationKA": "მოწოდებული ინფორმაცია, რომელიც შესაძლებელს ხდის ჩანაწერის შეჯერებას იმ ელემენტებთან, რომელთა დასაფარადაც განკუთვნილია გადარიცხვა, მაგალითად, კომერციულ ინვოისებთან დებიტორული დავალიანებების სისტემაში.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -8904,6 +9197,7 @@
       "isRepeating": true,
       "isChoice": false,
       "documentation": "Provides information on the individual transaction(s) included in the message.",
+      "documentationKA": "მოიცავს ინფორმაციას შეტყობინებაში შემავალი ინდივიდუალური ოპერაციების შესახებ.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -8948,6 +9242,7 @@
       "isRepeating": true,
       "isChoice": false,
       "documentation": "Set of characteristics that applies to the debit side of the payment transactions included in the credit transfer initiation.",
+      "documentationKA": "მახასიათებლების ნაკრები, რომელიც ეხება საკრედიტო გადარიცხვის ინიციაციაში შემავალი გადახდის ოპერაციების დებეტურ მხარეს.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -8989,6 +9284,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": "Customer Credit Transfer Initiation message.",
+      "documentationKA": "კლიენტის საკრედიტო გადარიცხვის ინიციაციის შეტყობინება.",
       "restrictions": {
         "pattern": null,
         "minLength": null,
@@ -9021,6 +9317,7 @@
       "isRepeating": false,
       "isChoice": false,
       "documentation": null,
+      "documentationKA": null,
       "restrictions": {
         "pattern": null,
         "minLength": null,

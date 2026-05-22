@@ -6,6 +6,7 @@ const state = {
   originalSchema: null,  // original.json
   updatedSchema: null,   // schema-model.json
   viewMode: "updated",   // "original" | "updated" | "diff"
+  lang: "en",            // "en" | "ka"
   diff: null,            // diff-model.json or null
   byId: {},              // id → node
   childrenOf: {},        // id → [child ids]
@@ -23,6 +24,12 @@ const state = {
     changedOnly: false,
   },
 };
+
+// ── Language helper ────────────────────────────────────────────────────────────
+function getDoc(node) {
+  if (state.lang === "ka" && node.documentationKA) return node.documentationKA;
+  return node.documentation || null;
+}
 
 // ── Bootstrap ──────────────────────────────────────────────────────────────────
 async function loadData() {
@@ -186,6 +193,15 @@ function initDiff() {
 
 // ── UI bindings ────────────────────────────────────────────────────────────────
 function bindUI() {
+  document.querySelectorAll(".lang-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      state.lang = btn.dataset.lang;
+      document.querySelectorAll(".lang-btn").forEach(b => b.classList.toggle("active", b === btn));
+      renderTree();
+      if (state.selected) selectNode(state.selected);
+    });
+  });
+
   document.getElementById("btn-expand-all").addEventListener("click", () => {
     for (const id of Object.keys(state.childrenOf)) {
       if (state.childrenOf[id].length > 0) state.expanded.add(id);
@@ -230,7 +246,7 @@ function applySearch() {
 
   for (const n of state.schema.nodesFlat) {
     const haystack = [
-      n.label, n.name, n.xmlTag, n.xmlPath, n.typeName, n.documentation
+      n.label, n.name, n.xmlTag, n.xmlPath, n.typeName, n.documentation, n.documentationKA
     ].filter(Boolean).join(" ").toLowerCase();
     if (haystack.includes(state.searchQuery)) {
       state.matchedIds.add(n.id);
@@ -341,7 +357,8 @@ function buildRow(node, depth, showTag, flatSearch) {
   }
   row.className = cls;
   row.dataset.id = node.id;
-  if (node.documentation) row.title = node.documentation;
+  const doc = getDoc(node);
+  if (doc) row.title = doc;
 
   // Name cell
   const nameCell = document.createElement("div");
@@ -378,11 +395,11 @@ function buildRow(node, depth, showTag, flatSearch) {
   nameCell.appendChild(nameSpan);
 
   // Documentation indicator
-  if (node.documentation) {
+  if (node.documentation || node.documentationKA) {
     const docHint = document.createElement("span");
     docHint.className = "doc-hint";
     docHint.textContent = "ℹ";
-    docHint.title = node.documentation;
+    docHint.title = doc || "";
     nameCell.appendChild(docHint);
   }
 
@@ -526,9 +543,10 @@ function renderDetails(node) {
         <span class="detail-value">${(state.childrenOf[node.id] ?? []).length}</span></div>
     </div>`;
 
-  if (node.documentation) {
+  const detailDoc = getDoc(node);
+  if (detailDoc) {
     html += `<div class="detail-section"><h3>Documentation</h3>
-      <div class="detail-value">${esc(node.documentation)}</div></div>`;
+      <div class="detail-value">${esc(detailDoc)}</div></div>`;
   }
 
   const hasRestrictions = node.restrictions &&

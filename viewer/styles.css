@@ -25,6 +25,7 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; font-size: 13px;
 }
 .hdr-btn:hover { background: #3a3d5a; }
 .view-btn.active { background: #5c6bc0; color: #fff; border-color: #5c6bc0; }
+.lang-btn.active { background: #5c6bc0; color: #fff; border-color: #5c6bc0; }
 
 /* ── Toolbar (checkboxes) ─────────────────────────────────────────────────── */
 #toolbar {

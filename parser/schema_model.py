@@ -8,6 +8,7 @@ import hashlib
 from lxml import etree
 
 XS = "http://www.w3.org/2001/XMLSchema"
+_XML_LANG = "{http://www.w3.org/XML/1998/namespace}lang"
 
 
 def _xs(tag: str) -> str:
@@ -63,17 +64,19 @@ def _detect_node_kind(type_name: str, base_type: str, has_enums: bool,
 # ── TypeInfo / ChildDef / AttributeDef ───────────────────────────────────────
 
 class ChildDef:
-    __slots__ = ("tag", "type_name", "min_occurs", "max_occurs", "documentation", "label")
+    __slots__ = ("tag", "type_name", "min_occurs", "max_occurs", "documentation", "documentation_ka", "label")
 
     def __init__(self, tag: str, type_name: str | None,
                  min_occurs: int = 1, max_occurs: str = "1",
                  documentation: str | None = None,
+                 documentation_ka: str | None = None,
                  label: str | None = None):
         self.tag = tag
         self.type_name = type_name
         self.min_occurs = min_occurs
         self.max_occurs = max_occurs
         self.documentation = documentation
+        self.documentation_ka = documentation_ka
         self.label = label
 
 
@@ -99,6 +102,7 @@ class TypeInfo:
             "minInclusive": None,
         }
         self.documentation: str | None = None
+        self.documentation_ka: str | None = None
         self.attributes: list[AttributeDef] = []
 
 
@@ -146,6 +150,7 @@ class TypeRegistry:
         info = TypeInfo()
         info.kind = "complexType"
         info.documentation = self._get_doc(el)
+        info.documentation_ka = self._get_doc(el, lang="KA")
 
         seq = el.find(_xs("sequence"))
         cho = el.find(_xs("choice"))
@@ -171,6 +176,7 @@ class TypeRegistry:
         info = TypeInfo()
         info.kind = "simpleType"
         info.documentation = self._get_doc(el)
+        info.documentation_ka = self._get_doc(el, lang="KA")
         restr = el.find(_xs("restriction"))
         if restr is not None:
             info.base_type = _strip_ns(restr.get("base"))
@@ -196,6 +202,7 @@ class TypeRegistry:
                     min_occurs=int(child.get("minOccurs", 1)),
                     max_occurs=child.get("maxOccurs", "1"),
                     documentation=self._get_doc(child),
+                    documentation_ka=self._get_doc(child, lang="KA"),
                     label=self._get_label(child),
                 ))
             elif local in ("sequence", "choice"):
@@ -211,17 +218,30 @@ class TypeRegistry:
         )
 
     @staticmethod
-    def _get_doc(el) -> str | None:
+    def _get_doc(el, lang: str | None = None) -> str | None:
         ann = el.find(_xs("annotation"))
         if ann is None:
             return None
         docs = ann.findall(_xs("documentation"))
         if not docs:
             return None
+        if lang is not None:
+            # Return Definition text for the specific language only.
+            for doc in docs:
+                if (doc.get("source") == "Definition"
+                        and doc.get(_XML_LANG, "").upper() == lang.upper()
+                        and doc.text):
+                    return doc.text.strip()
+            return None
         # ISO 20022 XSDs use two <xs:documentation> elements per annotation:
         #   source="Name"       — the ISO class name (e.g. "PaymentInformationIdentification")
         #   source="Definition" — the human-readable description (what we want here)
-        # Prefer Definition; fall back to the last doc element, then the first.
+        # Prefer Definition with EN lang or no lang; fall back to last/first.
+        for doc in docs:
+            if (doc.get("source") == "Definition"
+                    and doc.get(_XML_LANG, "EN").upper() == "EN"
+                    and doc.text):
+                return doc.text.strip()
         for doc in docs:
             if doc.get("source") == "Definition" and doc.text:
                 return doc.text.strip()
@@ -271,6 +291,7 @@ class NodeBuilder:
                 ancestor_paths: frozenset, ancestor_types: frozenset,
                 is_root: bool = False,
                 elem_doc: str | None = None,
+                elem_doc_ka: str | None = None,
                 elem_label: str | None = None) -> dict:
 
         # Detect cycles by type name (handles recursive types like linked lists)
@@ -293,7 +314,8 @@ class NodeBuilder:
                                "totalDigits", "fractionDigits", "minInclusive")
         }
         # Element-level annotation takes priority over type-level annotation.
-        documentation = elem_doc or (info.documentation if info else None)
+        documentation    = elem_doc    or (info.documentation    if info else None)
+        documentation_ka = elem_doc_ka or (info.documentation_ka if info else None)
         is_choice = info.is_choice if info else False
 
         node_kind = "root" if is_root else _detect_node_kind(
@@ -326,6 +348,7 @@ class NodeBuilder:
             "isRepeating": is_repeating,
             "isChoice": is_choice,
             "documentation": documentation,
+            "documentationKA": documentation_ka,
             "restrictions": restrictions,
             "enumerations": enumerations,
             "childrenIds": [],
@@ -349,6 +372,7 @@ class NodeBuilder:
                 ancestor_paths=new_ancestors,
                 ancestor_types=new_ancestor_types,
                 elem_doc=cdef.documentation,
+                elem_doc_ka=cdef.documentation_ka,
                 elem_label=cdef.label,
             )
             node["childrenIds"].append(child["id"])
@@ -385,7 +409,7 @@ class NodeBuilder:
             "minOccurs": min_occurs, "maxOccurs": max_occurs,
             "multiplicity": _format_multiplicity(min_occurs, max_occurs),
             "isMandatory": min_occurs >= 1, "isRepeating": False,
-            "isChoice": False, "documentation": None,
+            "isChoice": False, "documentation": None, "documentationKA": None,
             "restrictions": {k: None for k in ("pattern", "minLength", "maxLength",
                                                 "length", "totalDigits", "fractionDigits",
                                                 "minInclusive")},
