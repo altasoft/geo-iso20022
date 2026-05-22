@@ -290,3 +290,114 @@ def test_stable_id_is_deterministic():
     assert id1 == id2
     assert id1 != id3
     assert len(id1) == 16
+
+
+# ── Georgian (KA) documentation ───────────────────────────────────────────────
+
+def test_get_doc_returns_en_definition_by_default():
+    root = parse_xsd("""
+        <xs:complexType name="Header">
+          <xs:annotation>
+            <xs:documentation source="Name">GroupHeader</xs:documentation>
+            <xs:documentation source="Definition" xml:lang="EN">English definition.</xs:documentation>
+            <xs:documentation source="Definition" xml:lang="KA">Georgian definition.</xs:documentation>
+          </xs:annotation>
+          <xs:sequence>
+            <xs:element name="Id" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+    """)
+    warnings = []
+    reg = TypeRegistry(warnings)
+    reg.load_tree(root)
+    t = reg.get("Header")
+    assert t.documentation == "English definition."
+    assert t.documentation_ka == "Georgian definition."
+
+
+def test_get_doc_ka_only_when_lang_specified():
+    root = parse_xsd("""
+        <xs:complexType name="Header">
+          <xs:annotation>
+            <xs:documentation source="Definition" xml:lang="EN">EN text.</xs:documentation>
+            <xs:documentation source="Definition" xml:lang="KA">KA text.</xs:documentation>
+          </xs:annotation>
+          <xs:sequence>
+            <xs:element name="Id" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+    """)
+    warnings = []
+    reg = TypeRegistry(warnings)
+    reg.load_tree(root)
+    t = reg.get("Header")
+    assert t.documentation == "EN text."
+    assert t.documentation_ka == "KA text."
+
+
+def test_get_doc_ka_returns_none_when_no_ka_annotation():
+    root = parse_xsd("""
+        <xs:complexType name="Header">
+          <xs:annotation>
+            <xs:documentation source="Definition" xml:lang="EN">Only English.</xs:documentation>
+          </xs:annotation>
+          <xs:sequence>
+            <xs:element name="Id" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+    """)
+    warnings = []
+    reg = TypeRegistry(warnings)
+    reg.load_tree(root)
+    t = reg.get("Header")
+    assert t.documentation == "Only English."
+    assert t.documentation_ka is None
+
+
+def test_documentation_ka_propagated_to_node():
+    reg, warnings = _make_registry("""
+        <xs:complexType name="Document">
+          <xs:sequence>
+            <xs:element name="Hdr" type="Header">
+              <xs:annotation>
+                <xs:documentation source="Definition" xml:lang="EN">Header EN.</xs:documentation>
+                <xs:documentation source="Definition" xml:lang="KA">Header KA.</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+        <xs:complexType name="Header">
+          <xs:sequence>
+            <xs:element name="Id" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+    """)
+    builder = NodeBuilder(reg, warnings)
+    builder.build("Document", "Document")
+    hdr = next(n for n in builder.nodes_flat if n["xmlTag"] == "Hdr")
+    assert hdr["documentation"] == "Header EN."
+    assert hdr["documentationKA"] == "Header KA."
+
+
+def test_documentation_ka_falls_back_to_type_annotation():
+    reg, warnings = _make_registry("""
+        <xs:complexType name="Document">
+          <xs:sequence>
+            <xs:element name="Hdr" type="Header"/>
+          </xs:sequence>
+        </xs:complexType>
+        <xs:complexType name="Header">
+          <xs:annotation>
+            <xs:documentation source="Definition" xml:lang="EN">Type EN.</xs:documentation>
+            <xs:documentation source="Definition" xml:lang="KA">Type KA.</xs:documentation>
+          </xs:annotation>
+          <xs:sequence>
+            <xs:element name="Id" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+    """)
+    builder = NodeBuilder(reg, warnings)
+    builder.build("Document", "Document")
+    hdr = next(n for n in builder.nodes_flat if n["xmlTag"] == "Hdr")
+    assert hdr["documentation"] == "Type EN."
+    assert hdr["documentationKA"] == "Type KA."
