@@ -11,8 +11,8 @@ if errorlevel 1 ( echo FAILED & exit /b 1 )
 echo Done.
 echo.
 
-echo [2/3] Parsing Georgian revision_0.3...
-python parser\parse_xsd.py --input xsds\GEO_pain.001.001.09.revision_0.3.xsd --out viewer\schema-model.json
+echo [2/3] Parsing Georgian revision...
+python parser\parse_xsd.py --input xsds\GEO_pain.001.001.09.xsd --out viewer\schema-model.json
 if errorlevel 1 ( echo FAILED & exit /b 1 )
 echo Done.
 echo.

@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "sourceFile": "GEO_pain.001.001.09.revision_0.3.xsd",
+    "sourceFile": "GEO_pain.001.001.09.xsd",
     "targetNamespace": "urn:iso:std:iso:20022:tech:xsd:pain.001.001.09",
-    "generatedAt": "2026-05-22T07:07:39.217642+00:00",
+    "generatedAt": "2026-05-22T07:48:23.063767+00:00",
     "rootElement": "Document",
     "messageName": "pain.001.001.09",
     "warnings": []
