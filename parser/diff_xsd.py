@@ -131,7 +131,7 @@ def compare_pair(old: dict | None, new: dict | None) -> list[dict]:
     # typeName
     if old.get("typeName") != new.get("typeName"):
         changes.append(_change(
-            "TypeChanged", "Breaking",
+            "TypeChanged", "NonBreaking",
             path, old.get("typeName"), new.get("typeName"),
             f"Type changed from {old.get('typeName')!r} to {new.get('typeName')!r}",
         ))
