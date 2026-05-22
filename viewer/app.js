@@ -15,13 +15,16 @@ const state = {
   selected: null,
   searchQuery: "",
   matchedIds: new Set(),   // ids matching current search
-  diffByPath: {},          // xmlPath → [changes]
-  diffByNodeId: {},        // nodeId → [changes]
+  diffByPath: {},            // xmlPath → [changes]
+  diffByNodeId: {},          // nodeId → [changes]
+  removedByParentPath: {},   // parentXmlPath → [originalNodes]
+  removedById: {},           // "removed:"+xmlPath → originalNode
   filters: {
     showXmlTags: false,
     mandatoryOnly: false,
     repeatingOnly: false,
     changedOnly: false,
+    showRemoved: true,
   },
 };
 
@@ -119,10 +122,15 @@ function switchView(mode) {
   } else {
     state.diffByPath   = {};
     state.diffByNodeId = {};
+    state.removedByParentPath = {};
+    state.removedById = {};
     document.getElementById("diff-bar").classList.remove("visible");
     document.getElementById("cb-changed-wrap").style.display = "none";
+    document.getElementById("cb-removed-wrap").style.display = "none";
     state.filters.changedOnly = false;
+    state.filters.showRemoved = true;
     document.getElementById("cb-changed").checked = false;
+    document.getElementById("cb-removed").checked = true;
   }
 
   _updateViewButtons();
@@ -170,6 +178,9 @@ function initIndex() {
 function initDiff() {
   state.diffByPath = {};
   state.diffByNodeId = {};
+  state.removedByParentPath = {};
+  state.removedById = {};
+
   for (const change of state.diff.changes) {
     if (!state.diffByPath[change.xmlPath]) state.diffByPath[change.xmlPath] = [];
     state.diffByPath[change.xmlPath].push(change);
@@ -181,6 +192,26 @@ function initDiff() {
     }
   }
 
+  // Build removed ghost nodes from original schema
+  if (state.originalSchema) {
+    const removedPaths = new Set(
+      state.diff.changes.filter(c => c.changeType === "RemovedNode").map(c => c.xmlPath)
+    );
+    const origByPath = {};
+    for (const n of state.originalSchema.nodesFlat) origByPath[n.xmlPath] = n;
+
+    for (const path of removedPaths) {
+      // Skip if parent is also removed — the parent ghost covers the subtree
+      const parentPath = path.substring(0, path.lastIndexOf("/")) || "/";
+      if (removedPaths.has(parentPath)) continue;
+      const origNode = origByPath[path];
+      if (!origNode) continue;
+      if (!state.removedByParentPath[parentPath]) state.removedByParentPath[parentPath] = [];
+      state.removedByParentPath[parentPath].push(origNode);
+      state.removedById["removed:" + path] = origNode;
+    }
+  }
+
   // Show diff bar
   const s = state.diff.summary;
   document.getElementById("dp-added").textContent   = `Added: ${s.added}`;
@@ -189,6 +220,7 @@ function initDiff() {
   document.getElementById("dp-breaking").textContent= `Breaking: ${s.breaking}`;
   document.getElementById("diff-bar").classList.add("visible");
   document.getElementById("cb-changed-wrap").style.display = "";
+  document.getElementById("cb-removed-wrap").style.display = "";
 }
 
 // ── UI bindings ────────────────────────────────────────────────────────────────
@@ -235,6 +267,10 @@ function bindUI() {
   });
   document.getElementById("cb-changed").addEventListener("change", e => {
     state.filters.changedOnly = e.target.checked;
+    renderTree();
+  });
+  document.getElementById("cb-removed").addEventListener("change", e => {
+    state.filters.showRemoved = e.target.checked;
     renderTree();
   });
 }
@@ -335,7 +371,81 @@ function buildTreeRows(id, depth, fragment, showTag) {
     for (const cid of state.childrenOf[id] ?? []) {
       buildTreeRows(cid, depth + 1, fragment, showTag);
     }
+    if (state.viewMode === "diff" && state.filters.showRemoved) {
+      for (const rn of state.removedByParentPath[node.xmlPath] ?? []) {
+        if (isRemovedNodeVisible(rn)) {
+          fragment.appendChild(buildRemovedRow(rn, depth + 1, showTag));
+        }
+      }
+    }
   }
+}
+
+function isRemovedNodeVisible(node) {
+  if (!state.searchQuery) return true;
+  const haystack = [node.label, node.name, node.xmlTag, node.xmlPath, node.typeName, node.documentation, node.documentationKA]
+    .filter(Boolean).join(" ").toLowerCase();
+  return haystack.includes(state.searchQuery);
+}
+
+function buildRemovedRow(origNode, depth, showTag) {
+  const ghostId = "removed:" + origNode.xmlPath;
+  const row = document.createElement("div");
+  let cls = "tree-row diff-removed";
+  if (showTag) cls += " with-tag";
+  if (state.selected === ghostId) cls += " selected";
+  row.className = cls;
+  row.dataset.id = ghostId;
+  const doc = state.lang === "ka" && origNode.documentationKA ? origNode.documentationKA : (origNode.documentation || null);
+  if (doc) row.title = doc;
+
+  const nameCell = document.createElement("div");
+  nameCell.className = "tree-name-cell";
+
+  const indent = document.createElement("span");
+  indent.className = "tree-indent";
+  indent.style.width = `${depth * 16}px`;
+  nameCell.appendChild(indent);
+
+  // Empty toggle placeholder (no expand)
+  const toggle = document.createElement("span");
+  toggle.className = "toggle-btn";
+  nameCell.appendChild(toggle);
+
+  const badge = getBadge(origNode);
+  if (badge) nameCell.appendChild(badge);
+
+  const nameSpan = document.createElement("span");
+  nameSpan.className = "node-name";
+  nameSpan.textContent = origNode.label || origNode.name;
+  nameCell.appendChild(nameSpan);
+
+  const removedBadge = document.createElement("span");
+  removedBadge.className = "diff-badge db-removed";
+  removedBadge.textContent = "removed";
+  nameCell.appendChild(removedBadge);
+
+  row.appendChild(nameCell);
+
+  if (showTag) {
+    const tagCell = document.createElement("div");
+    tagCell.className = "tree-xml-tag";
+    tagCell.textContent = origNode.xmlTag;
+    row.appendChild(tagCell);
+  }
+
+  const multCell = document.createElement("div");
+  multCell.className = "tree-mult";
+  multCell.textContent = origNode.multiplicity;
+  row.appendChild(multCell);
+
+  const typeCell = document.createElement("div");
+  typeCell.className = "tree-type";
+  typeCell.textContent = origNode.typeName || "";
+  row.appendChild(typeCell);
+
+  row.addEventListener("click", () => selectNode(ghostId));
+  return row;
 }
 
 function buildRow(node, depth, showTag, flatSearch) {
@@ -506,16 +616,25 @@ function toggleNode(id) {
 function selectNode(id) {
   state.selected = id;
   renderTree();
-  renderDetails(state.byId[id]);
+  if (id.startsWith("removed:")) {
+    renderDetails(state.removedById[id], true);
+  } else {
+    renderDetails(state.byId[id], false);
+  }
 }
 
-function renderDetails(node) {
+function renderDetails(node, isRemoved = false) {
   const panel = document.getElementById("details-panel");
   if (!node) { panel.innerHTML = '<p class="empty-msg">Select a node.</p>'; return; }
 
-  const changes = state.diffByNodeId[node.id] ?? [];
+  const changes = isRemoved ? [] : (state.diffByNodeId[node.id] ?? []);
+  const removedBanner = isRemoved
+    ? `<div style="background:#ffebee;border-left:4px solid #e53935;padding:8px 12px;margin-bottom:16px;border-radius:4px;font-size:12px;color:#c62828;font-weight:600;">
+        REMOVED — this element exists in ISO 20022 but was removed from the Georgian profile
+       </div>`
+    : "";
 
-  let html = `
+  let html = removedBanner + `
     <div class="detail-section">
       <h3>Node</h3>
       ${node.label ? `<div class="detail-row"><span class="detail-label">Name</span>
