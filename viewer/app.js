@@ -694,7 +694,7 @@ function renderDetails(node, isRemoved = false) {
     for (const c of changes) {
       html += `<li class="change-${esc(c.severity)}">
         <span class="change-type-tag">${esc(c.changeType)}</span>
-        <span class="sev-tag sev-${esc(c.severity)}">${esc(c.severity)}</span>
+        ${c.severity !== "NonBreaking" ? `<span class="sev-tag sev-${esc(c.severity)}">${esc(c.severity)}</span>` : ""}
         ${esc(c.description)}
         ${c.oldValue !== null && c.oldValue !== undefined
           ? `<br><small>Before: <code>${esc(String(c.oldValue))}</code>
