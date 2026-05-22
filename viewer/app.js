@@ -217,7 +217,6 @@ function initDiff() {
   document.getElementById("dp-added").textContent   = `Added: ${s.added}`;
   document.getElementById("dp-removed").textContent = `Removed: ${s.removed}`;
   document.getElementById("dp-changed").textContent = `Changed: ${s.changed}`;
-  document.getElementById("dp-breaking").textContent= `Breaking: ${s.breaking}`;
   document.getElementById("diff-bar").classList.add("visible");
   document.getElementById("cb-changed-wrap").style.display = "";
   document.getElementById("cb-removed-wrap").style.display = "";
@@ -695,10 +694,10 @@ function renderDetails(node, isRemoved = false) {
       html += `<li class="change-${esc(c.severity)}">
         <span class="change-type-tag">${esc(c.changeType)}</span>
         ${c.severity !== "NonBreaking" ? `<span class="sev-tag sev-${esc(c.severity)}">${esc(c.severity)}</span>` : ""}
-        ${esc(c.description)}
         ${c.oldValue !== null && c.oldValue !== undefined
-          ? `<br><small>Before: <code>${esc(String(c.oldValue))}</code>
-             → After: <code>${c.newValue != null ? esc(String(c.newValue)) : "—"}</code></small>` : ""}
+          ? `<small>Before: <code>${esc(String(c.oldValue))}</code>
+             → After: <code>${c.newValue != null ? esc(String(c.newValue)) : "—"}</code></small>`
+          : esc(c.description)}
       </li>`;
     }
     html += `</ul></div>`;
