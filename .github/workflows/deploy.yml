@@ -22,9 +22,28 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Parse ISO 20022 original
+        run: python parser/parse_xsd.py --input xsds/pain.001.001.09.xsd --out viewer/original.json
+
+      - name: Parse Georgian revision
+        run: python parser/parse_xsd.py --input xsds/GEO_pain.001.001.09.revision_0.3.xsd --out viewer/schema-model.json
+
+      - name: Generate diff
+        run: python parser/diff_xsd.py --old viewer/original.json --new viewer/schema-model.json --out viewer/diff-model.json
+
       - uses: actions/configure-pages@v5
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./viewer
+
       - id: deployment
         uses: actions/deploy-pages@v4
