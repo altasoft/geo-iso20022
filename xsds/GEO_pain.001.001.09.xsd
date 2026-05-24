@@ -1,4 +1,5 @@
-﻿<?xml version='1.0' encoding='UTF-8'?>
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Revision 6 -->
 <xs:schema xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.09" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="urn:iso:std:iso:20022:tech:xsd:pain.001.001.09">
 	<xs:element name="Document" type="Document"/>
 	<xs:complexType name="GEO_AccountIdentification4Choice__1">
@@ -924,14 +925,14 @@
 	</xs:simpleType>
 	<xs:simpleType name="GEO_RestrictedFINXMax140Text">
 		<xs:restriction base="xs:string">
-			<xs:pattern value="[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\-\?:\(\)\.,'\+ ]+"/>
+			<xs:pattern value="[0-9a-zA-Zა-ჰ/\-\?:\(\)\.,'\+ ]+"/>
 			<xs:minLength value="1"/>
 			<xs:maxLength value="140"/>
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="GEO_RestrictedFINXMax140Text_Extended">
 		<xs:restriction base="xs:string">
-			<xs:pattern value="[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\-\?:\(\)\.,'\+ !#$%&amp;\*=^_`\{\|\}~&quot;;&lt;&gt;@\[\\\]]+"/>
+			<xs:pattern value="[0-9a-zA-Zა-ჰ/\-\?:\(\)\.,'\+ !#$%&amp;\*=^_`\{\|\}~&quot;;&lt;&gt;@\[\\\]]+"/>
 			<xs:minLength value="1"/>
 			<xs:maxLength value="140"/>
 		</xs:restriction>
@@ -943,7 +944,7 @@
 	</xs:simpleType>
 	<xs:simpleType name="GEO_RestrictedFINXMax16Text_Extended">
 		<xs:restriction base="xs:string">
-			<xs:pattern value="[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\-\?:\(\)\.,'\+ !#$%&amp;\*=^_`\{\|\}~&quot;;&lt;&gt;@\[\\\]]+"/>
+			<xs:pattern value="[0-9a-zA-Zა-ჰ/\-\?:\(\)\.,'\+ !#$%&amp;\*=^_`\{\|\}~&quot;;&lt;&gt;@\[\\\]]+"/>
 			<xs:minLength value="1"/>
 			<xs:maxLength value="16"/>
 		</xs:restriction>
@@ -957,28 +958,28 @@
 	</xs:simpleType>
 	<xs:simpleType name="GEO_RestrictedFINXMax35Text">
 		<xs:restriction base="xs:string">
-			<xs:pattern value="[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\-\?:\(\)\.,'\+ ]+"/>
+			<xs:pattern value="[0-9a-zA-Zა-ჰ/\-\?:\(\)\.,'\+ ]+"/>
 			<xs:minLength value="1"/>
 			<xs:maxLength value="35"/>
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="GEO_RestrictedFINXMax35Text_Extended">
 		<xs:restriction base="xs:string">
-			<xs:pattern value="[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\-\?:\(\)\.,'\+ !#$%&amp;\*=^_`\{\|\}~&quot;;&lt;&gt;@\[\\\]]+"/>
+			<xs:pattern value="[0-9a-zA-Zა-ჰ/\-\?:\(\)\.,'\+ !#$%&amp;\*=^_`\{\|\}~&quot;;&lt;&gt;@\[\\\]]+"/>
 			<xs:minLength value="1"/>
 			<xs:maxLength value="35"/>
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="GEO_RestrictedFINXMax70Text">
 		<xs:restriction base="xs:string">
-			<xs:pattern value="[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\-\?:\(\)\.,'\+ ]+"/>
+			<xs:pattern value="[0-9a-zA-Zა-ჰ/\-\?:\(\)\.,'\+ ]+"/>
 			<xs:minLength value="1"/>
 			<xs:maxLength value="70"/>
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="GEO_RestrictedFINXMax70Text_Extended">
 		<xs:restriction base="xs:string">
-			<xs:pattern value="[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\-\?:\(\)\.,'\+ !#$%&amp;\*=^_`\{\|\}~&quot;;&lt;&gt;@\[\\\]]+"/>
+			<xs:pattern value="[0-9a-zA-Zა-ჰ/\-\?:\(\)\.,'\+ !#$%&amp;\*=^_`\{\|\}~&quot;;&lt;&gt;@\[\\\]]+"/>
 			<xs:minLength value="1"/>
 			<xs:maxLength value="70"/>
 		</xs:restriction>
@@ -1131,6 +1132,13 @@
 					<xs:documentation source="Definition" xml:lang="KA">გამგზავნი მხარის მიერ მინიჭებული უნიკალური იდენტიფიკაცია, რომელიც ცალსახად განსაზღვრავს შეტყობინებაში გადახდის ინფორმაციის ჯგუფს.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
+			<xs:element name="PmtMtd" type="GEO_PaymentMethod3Code_fixed">
+				<xs:annotation>
+					<xs:documentation source="Name" xml:lang="EN">PaymentMethod</xs:documentation>
+					<xs:documentation source="Definition" xml:lang="EN">Means of payment that will be used to move the amount of money.</xs:documentation>
+					<xs:documentation source="Definition" xml:lang="KA">გადახდის საშუალება, რომელიც გამოყენებული იქნება თანხის გადატანისთვის.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
 			<xs:element maxOccurs="1" minOccurs="0" name="NbOfTxs" type="Max15NumericText">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">NumberOfTransactions</xs:documentation>
@@ -1206,6 +1214,22 @@
 			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
+	<xs:simpleType name="GEO_PaymentMethod3Code_fixed">
+		<xs:annotation>
+			<xs:documentation source="Name" xml:lang="EN">GEO_PaymentMethod3Code</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="EN">Specifies the transfer method that will be used to transfer an amount of money.</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="KA">განსაზღვრავს გადახდის მეთოდს, რომელიც გამოყენებული იქნება თანხის გადატანისთვის.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="TRF">
+				<xs:annotation>
+					<xs:documentation source="Name" xml:lang="EN">CreditTransfer</xs:documentation>
+					<xs:documentation source="Definition" xml:lang="EN">Payment method is a credit transfer.</xs:documentation>
+					<xs:documentation source="Definition" xml:lang="KA">გადახდის მეთოდია კრედიტური გადარიცხვა.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
 	<xs:complexType name="GEO_PaymentTypeInformation26">
 		<xs:annotation>
 			<xs:documentation source="Name" xml:lang="EN">GEO_PaymentTypeInformation26</xs:documentation>
