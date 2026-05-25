@@ -1,6 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<!-- Revision 6 -->
+<!--Revision 09-->
 <xs:schema xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.09" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="urn:iso:std:iso:20022:tech:xsd:pain.001.001.09">
+	<xs:annotation>
+		<xs:documentation source="Name" xml:lang="EN">pain.001.001.09</xs:documentation>
+		<xs:documentation source="Definition" xml:lang="EN">The pain.001.001.09 message is sent by an initiating party to a financial institution, directly or through a clearing system, to move funds from a debtor account to a creditor account. The pain.001.001.09 message can be used in domestic and cross-border scenarios.</xs:documentation>
+		<xs:documentation source="Definition" xml:lang="KA">შეტყობინება pain.001.001.09 ინიციატორი მხარის მიერ ფინანსურ ინსტიტუტს, პირდაპირ ან კლირინგის სისტემის მეშვეობით, გადაეცემა დებიტორის ანგარიშიდან კრედიტორის ანგარიშზე თანხის გადასატანად. შეტყობინება pain.001.001.09 შეიძლება გამოყენებულ იქნას როგორც საშინაო, ისე საზღვარგარეთ სცენარებში.</xs:documentation>
+	</xs:annotation>
 	<xs:element name="Document" type="Document"/>
 	<xs:complexType name="GEO_AccountIdentification4Choice__1">
 		<xs:annotation>
@@ -184,27 +189,11 @@
 					<xs:documentation source="Definition" xml:lang="KA">ანგარიშის უნიკალური და ერთმნიშვნელოვანი იდენტიფიკაცია ანგარიშის მფლობელსა და ანგარიშის მომსახურე მხარეს შორის.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element maxOccurs="1" minOccurs="0" name="Ccy" type="ActiveOrHistoricCurrencyCode">
+			<xs:element name="Ccy" type="ActiveOrHistoricCurrencyCode">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">Currency</xs:documentation>
-					<xs:documentation source="Definition" xml:lang="EN">
-						Identification of the currency in which the account is held.
-
-						Usage: Currency should only be used in case one and the same account number covers several currencies
-						and the initiating party needs to identify which currency needs to be used for settlement on the account.
-					</xs:documentation>
+					<xs:documentation source="Definition" xml:lang="EN">Identification of the currency in which the account is held.</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="KA">იმ ვალუტის იდენტიფიკაცია, რომელშიც ანგარიში იწარმოება. გამოყენება: ვალუტა უნდა მიეთითოს მხოლოდ იმ შემთხვევაში, როდესაც ერთი და იგივე ანგარიშის ნომერი რამდენიმე ვალუტას მოიცავს და ინიციატორ მხარეს სჭირდება განსაზღვრა, რომელი ვალუტა უნდა იქნას გამოყენებული ანგარიშზე ანგარიშსწორებისთვის.</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element maxOccurs="1" minOccurs="0" name="Nm" type="GEO_RestrictedFINXMax70Text">
-				<xs:annotation>
-					<xs:documentation source="Name" xml:lang="EN">Name</xs:documentation>
-					<xs:documentation source="Definition" xml:lang="EN">
-						Name of the account, as assigned by the account servicing institution, in agreement with the account owner in order to provide an additional means of identification of the account.
-
-						Usage: The account name is different from the account owner name. The account name is used in certain user communities to provide a means of identifying the account, in addition to the account owner's identity and the account number.
-					</xs:documentation>
-					<xs:documentation source="Definition" xml:lang="KA">ანგარიშის დასახელება, რომელიც მინიჭებულია ანგარიშის მომსახურე ინსტიტუტის მიერ ანგარიშის მფლობელთან შეთანხმებით, ანგარიშის იდენტიფიკაციის დამატებითი საშუალების უზრუნველსაყოფად. გამოყენება: ანგარიშის დასახელება განსხვავდება ანგარიშის მფლობელის სახელისგან. ზოგიერთ მომხმარებელთა საზოგადოებაში ანგარიშის დასახელება გამოიყენება ანგარიშის იდენტიფიკაციის დამატებით საშუალებად, ანგარიშის მფლობელის იდენტიფიკაციასა და ანგარიშის ნომერთან ერთად.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 		</xs:sequence>
@@ -220,30 +209,14 @@
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">Identification</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">Unique and unambiguous identification for the account between the account owner and the account servicer.</xs:documentation>
-					<xs:documentation source="Definition" xml:lang="KA">ანგარიშის უნიკალური და ერთმნიშვნელოვანი იდენტიფიკაცია ანგარიშის მფლობელსა და ანგარიშის მომსახურე მხარეს შორის.</xs:documentation>
+					<xs:documentation source="Definition" xml:lang="KA">იმ ვალუტის იდენტიფიკაცია, რომელშიც ანგარიში იწარმოება.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element maxOccurs="1" minOccurs="0" name="Ccy" type="ActiveOrHistoricCurrencyCode">
+			<xs:element name="Ccy" type="ActiveOrHistoricCurrencyCode">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">Currency</xs:documentation>
-					<xs:documentation source="Definition" xml:lang="EN">
-						Identification of the currency in which the account is held.
-
-						Usage: Currency should only be used in case one and the same account number covers several currencies
-						and the initiating party needs to identify which currency needs to be used for settlement on the account.
-					</xs:documentation>
-					<xs:documentation source="Definition" xml:lang="KA">იმ ვალუტის იდენტიფიკაცია, რომელშიც ანგარიში იწარმოება. გამოყენება: ვალუტა უნდა მიეთითოს მხოლოდ იმ შემთხვევაში, როდესაც ერთი და იგივე ანგარიშის ნომერი რამდენიმე ვალუტას მოიცავს და ინიციატორ მხარეს სჭირდება განსაზღვრა, რომელი ვალუტა უნდა იქნას გამოყენებული ანგარიშზე ანგარიშსწორებისთვის.</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element maxOccurs="1" minOccurs="0" name="Nm" type="GEO_RestrictedFINXMax70Text">
-				<xs:annotation>
-					<xs:documentation source="Name" xml:lang="EN">Name</xs:documentation>
-					<xs:documentation source="Definition" xml:lang="EN">
-						Name of the account, as assigned by the account servicing institution, in agreement with the account owner in order to provide an additional means of identification of the account.
-
-						Usage: The account name is different from the account owner name. The account name is used in certain user communities to provide a means of identifying the account, in addition to the account owner's identity and the account number.
-					</xs:documentation>
-					<xs:documentation source="Definition" xml:lang="KA">ანგარიშის დასახელება, რომელიც მინიჭებულია ანგარიშის მომსახურე ინსტიტუტის მიერ ანგარიშის მფლობელთან შეთანხმებით, ანგარიშის იდენტიფიკაციის დამატებითი საშუალების უზრუნველსაყოფად. გამოყენება: ანგარიშის დასახელება განსხვავდება ანგარიშის მფლობელის სახელისგან. ზოგიერთ მომხმარებელთა საზოგადოებაში ანგარიშის დასახელება გამოიყენება ანგარიშის იდენტიფიკაციის დამატებით საშუალებად, ანგარიშის მფლობელის იდენტიფიკაციასა და ანგარიშის ნომერთან ერთად.</xs:documentation>
+					<xs:documentation source="Definition" xml:lang="EN">Identification of the currency in which the account is held.</xs:documentation>
+					<xs:documentation source="Definition" xml:lang="KA">იმ ვალუტის იდენტიფიკაცია, რომელშიც ანგარიში იწარმოება.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 		</xs:sequence>
@@ -309,7 +282,7 @@
 			</xs:element>
 			<xs:element maxOccurs="1" minOccurs="0" name="PmtTpInf" type="GEO_PaymentTypeInformation26">
 				<xs:annotation>
-					<xs:documentation source="Name" xml:lang="EN">PaymentTypeInformation</xs:documentation>
+					<xs:documentation source="Name" xml:lang="EN">GEO_PaymentTypeInformation</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">Set of elements used to further specify the type of transaction.</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="KA">ელემენტების ნაკრები, რომელიც გამოიყენება ოპერაციის ტიპის დამატებით დასაზუსტებლად.</xs:documentation>
 				</xs:annotation>
@@ -328,35 +301,35 @@
 					<xs:documentation source="Definition" xml:lang="KA">მოიცავს ვალუტის გაცვლის კურსისა და ხელშეკრულების დეტალებს.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element maxOccurs="1" minOccurs="0" name="UltmtDbtr" type="GEO_PartyIdentification135">
+			<xs:element maxOccurs="1" minOccurs="0" name="UltmtDbtr" type="GEO_PartyIdentification135__2">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">UltimateDebtor</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">Ultimate party that owes an amount of money to the (ultimate) creditor.</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="KA">საბოლოო მხარე, რომელსაც თანხა ეკისრება (საბოლოო) კრედიტორის მიმართ.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element maxOccurs="1" minOccurs="1" name="CdtrAgt" type="GEO_BranchAndFinancialInstitutionIdentification6">
+			<xs:element name="CdtrAgt" type="GEO_BranchAndFinancialInstitutionIdentification6">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">CreditorAgent</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">Financial institution servicing an account for the creditor.</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="KA">ფინანსური ინსტიტუტი, რომელიც ემსახურება კრედიტორის ანგარიშს.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element maxOccurs="1" minOccurs="1" name="Cdtr" type="GEO_PartyIdentification135">
+			<xs:element name="Cdtr" type="GEO_PartyIdentification135__1">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">Creditor</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">Party to which an amount of money is due.</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="KA">მხარე, რომლისთვისაც გადასახდელია თანხა.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element maxOccurs="1" minOccurs="1" name="CdtrAcct" type="GEO_CashAccount38__2">
+			<xs:element name="CdtrAcct" type="GEO_CashAccount38__2">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">CreditorAccount</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">Unambiguous identification of the account of the creditor to which a credit entry will be posted as a result of the payment transaction.</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="KA">კრედიტორის იმ ანგარიშის ერთმნიშვნელოვანი იდენტიფიკაცია, რომელზეც გადახდის ოპერაციის შედეგად კრედიტის ჩანაწერი აისახება.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element maxOccurs="1" minOccurs="0" name="UltmtCdtr" type="GEO_PartyIdentification135">
+			<xs:element maxOccurs="1" minOccurs="0" name="UltmtCdtr" type="GEO_PartyIdentification135__2">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">UltimateCreditor</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">Ultimate party to which an amount of money is due.</xs:documentation>
@@ -394,11 +367,76 @@
 					<xs:documentation source="Definition" xml:lang="KA">რეგულატორული და კანონმდებლობით დადგენილი მოთხოვნების გამო საჭირო ინფორმაცია.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element maxOccurs="1" minOccurs="0" name="RmtInf" type="GEO_RemittanceInformation16">
+			<xs:element name="RmtInf" type="GEO_RemittanceInformation16">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">RemittanceInformation</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">Information supplied to enable the matching of an entry with the items that the transfer is intended to settle, such as commercial invoices in an accounts' receivable system.</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="KA">მოწოდებული ინფორმაცია, რომელიც შესაძლებელს ხდის ჩანაწერის შეჯერებას იმ ელემენტებთან, რომელთა დასაფარადაც განკუთვნილია გადარიცხვა, მაგალითად, კომერციულ ინვოისებთან დებიტორული დავალიანებების სისტემაში.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="GEO_CreditorReferenceInformation2">
+		<xs:annotation>
+			<xs:documentation source="Name" xml:lang="EN">GEO_CreditorReferenceInformation2</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="EN">Reference information provided by the creditor to allow the identification of the underlying documents.</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="KA">კრედიტორის მიერ მოწოდებული რეფერენციული ინფორმაცია, რომელიც საშუალებას იძლევა ძირითადი დოკუმენტების იდენტიფიკაცია.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="Tp" type="GEO_CreditorReferenceType2">
+				<xs:annotation>
+					<xs:documentation source="Name" xml:lang="EN">Type</xs:documentation>
+					<xs:documentation source="Definition" xml:lang="EN">Specifies the type of creditor reference.</xs:documentation>
+					<xs:documentation source="Definition" xml:lang="KA">კრედიტორის რეფერენციის ტიპი.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Ref" type="GEO_RestrictedFINXMax35Text_Extended">
+				<xs:annotation>
+					<xs:documentation source="Name" xml:lang="EN">Reference</xs:documentation>
+					<xs:documentation source="Definition" xml:lang="EN">
+						Unique reference, as assigned by the creditor, to unambiguously refer to the payment transaction.
+
+						Usage: If available, the initiating party should provide this reference in the structured remittance information, to enable reconciliation by the creditor upon receipt of the amount of money.
+
+						If the business context requires the use of a creditor reference or a payment remit identification, and only one identifier can be passed through the end-to-end chain, the creditor's reference or payment remittance identification should be quoted in the end-to-end transaction identification.
+					</xs:documentation>
+					<xs:documentation source="Definition" xml:lang="KA">უნიკალური რეფერენცია, რომელიც კრედიტორმა განსაზღვრა, რათა დაუფარავად მიუთითოს გადახდის ტრანზაქციაზე.
+						ოქმის ნომერი
+						
+						გამოყენება: თუ ხელმისაწვდომია, ინიციატორმა მხარემ უნდა მიაწოდოს ეს რეფერენცია სტრუქტურირებული გადახდის ინფორმაციის ფარგლებში, რათა კრედიტორმა შეძლოს თანხის მიღების შემდეგ აღრიცხვა.
+
+						თუ ბიზნეს კონტექსტი მოითხოვს კრედიტორის რეფერენციის ან გადახდის რემიტის იდენტიფიკაციის გამოყენებას, და მხოლოდ ერთი იდენტიფიკატორი შეიძლება გადაეცეს ბოლომდე, კრედიტორის რეფერენცია ან გადახდის რემიტის იდენტიფიკაცია უნდა იქნას მითითებული ბოლომდე ტრანზაქციის იდენტიფიკაციაში.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="GEO_CreditorReferenceType1Choice">
+		<xs:annotation>
+			<xs:documentation source="Name" xml:lang="EN">GEO_CreditorReferenceType1Choice</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="EN">Specifies the type of document referred by the creditor.</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="KA">კრედიტორის მიერ მითითებული დოკუმენტის ტიპი.</xs:documentation>
+		</xs:annotation>
+		<xs:choice>
+			<xs:element name="Prtry" type="GEO_RestrictedFINXMax35Text_Extended">
+				<xs:annotation>
+					<xs:documentation source="Name" xml:lang="EN">Proprietary</xs:documentation>
+					<xs:documentation source="Definition" xml:lang="EN">Creditor reference type, in a proprietary form.</xs:documentation>
+					<xs:documentation source="Definition" xml:lang="KA">კრედიტორის რეფერენსის ტიპი, საკუთრების ფორმით.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="GEO_CreditorReferenceType2">
+		<xs:annotation>
+			<xs:documentation source="Name" xml:lang="EN">CreditorReferenceType2__1</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="EN">Specifies the type of creditor reference.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="CdOrPrtry" type="GEO_CreditorReferenceType1Choice">
+				<xs:annotation>
+					<xs:documentation source="Name" xml:lang="EN">CodeOrProprietary</xs:documentation>
+					<xs:documentation source="Definition" xml:lang="EN">Coded or proprietary format creditor reference type.</xs:documentation>
+					<xs:documentation source="Definition" xml:lang="KA">კოდირებული ან საკუთრების ფორმატის კრედიტორის რეფერენსის ტიპი.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 		</xs:sequence>
@@ -455,7 +493,7 @@
 					<xs:documentation source="Definition" xml:lang="KA">მითითებული თარიღი.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="DtTm" type="GEO_DateTime">
+			<xs:element name="DtTm" type="GEO_ISODateTime">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">DateTime</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">Specified date and time.</xs:documentation>
@@ -547,36 +585,6 @@
 			<xs:enumeration value="AGRD"/>
 		</xs:restriction>
 	</xs:simpleType>
-	<xs:simpleType name="ExternalAccountIdentification1Code">
-		<xs:annotation>
-			<xs:documentation source="Name" xml:lang="EN">ExternalAccountIdentification1Code</xs:documentation>
-			<xs:documentation source="Definition" xml:lang="EN">
-				Specifies the external account identification scheme name code in the format of character string with a maximum length of 4 characters.
-				The list of valid codes is an external code list published separately.
-				External code sets can be downloaded from www.iso20022.org.
-			</xs:documentation>
-			<xs:documentation source="Definition" xml:lang="KA">განსაზღვრავს ანგარიშის იდენტიფიკაციის გარე სქემის დასახელების კოდს სიმბოლოთა სტრიქონის ფორმატში, მაქსიმალური სიგრძით 4 სიმბოლო. მოქმედი კოდების სია ცალკე გამოქვეყნებული გარე კოდების სიაა. გარე კოდების ნაკრებები შეიძლება ჩამოიტვირთოს www.iso20022.org-დან.</xs:documentation>
-		</xs:annotation>
-		<xs:restriction base="xs:string">
-			<xs:minLength value="1"/>
-			<xs:maxLength value="4"/>
-		</xs:restriction>
-	</xs:simpleType>
-	<xs:simpleType name="ExternalCashAccountType1Code">
-		<xs:annotation>
-			<xs:documentation source="Name" xml:lang="EN">ExternalCashAccountType1Code</xs:documentation>
-			<xs:documentation source="Definition" xml:lang="EN">
-				Specifies the nature, or use, of the cash account in the format of character string with a maximum length of 4 characters.
-				The list of valid codes is an external code list published separately.
-				External code sets can be downloaded from www.iso20022.org.
-			</xs:documentation>
-			<xs:documentation source="Definition" xml:lang="KA">განსაზღვრავს ფულადი ანგარიშის ბუნებას ან გამოყენებას სიმბოლოთა სტრიქონის ფორმატში, მაქსიმალური სიგრძით 4 სიმბოლო. მოქმედი კოდების სია ცალკე გამოქვეყნებული გარე კოდების სიაა. გარე კოდების ნაკრებები შეიძლება ჩამოიტვირთოს www.iso20022.org-დან.</xs:documentation>
-		</xs:annotation>
-		<xs:restriction base="xs:string">
-			<xs:minLength value="1"/>
-			<xs:maxLength value="4"/>
-		</xs:restriction>
-	</xs:simpleType>
 	<xs:simpleType name="ExternalCategoryPurpose1Code">
 		<xs:annotation>
 			<xs:documentation source="Name" xml:lang="EN">ExternalCategoryPurpose1Code</xs:documentation>
@@ -589,20 +597,6 @@
 		<xs:restriction base="xs:string">
 			<xs:minLength value="1"/>
 			<xs:maxLength value="4"/>
-		</xs:restriction>
-	</xs:simpleType>
-	<xs:simpleType name="ExternalClearingSystemIdentification1Code">
-		<xs:annotation>
-			<xs:documentation source="Name" xml:lang="EN">ExternalClearingSystemIdentification1Code</xs:documentation>
-			<xs:documentation source="Definition" xml:lang="EN">
-				Specifies the clearing system identification code, as published in an external clearing system identification code list.
-				External code sets can be downloaded from www.iso20022.org.
-			</xs:documentation>
-			<xs:documentation source="Definition" xml:lang="KA">განსაზღვრავს კლირინგის სისტემის იდენტიფიკაციის კოდს, როგორც გამოქვეყნებულია კლირინგის სისტემის იდენტიფიკაციის გარე კოდების სიაში. გარე კოდების ნაკრებები შეიძლება ჩამოიტვირთოს www.iso20022.org-დან.</xs:documentation>
-		</xs:annotation>
-		<xs:restriction base="xs:string">
-			<xs:minLength value="1"/>
-			<xs:maxLength value="5"/>
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="ExternalLocalInstrument1Code">
@@ -665,21 +659,6 @@
 			<xs:maxLength value="4"/>
 		</xs:restriction>
 	</xs:simpleType>
-	<xs:simpleType name="ExternalServiceLevel1Code">
-		<xs:annotation>
-			<xs:documentation source="Name" xml:lang="EN">ExternalServiceLevel1Code</xs:documentation>
-			<xs:documentation source="Definition" xml:lang="EN">
-				Specifies the external service level code in the format of character string with a maximum length of 4 characters.
-				The list of valid codes is an external code list published separately.
-				External code sets can be downloaded from www.iso20022.org.
-			</xs:documentation>
-			<xs:documentation source="Definition" xml:lang="KA">განსაზღვრავს მომსახურების დონის გარე კოდს სიმბოლოთა სტრიქონის ფორმატში, მაქსიმალური სიგრძით 4 სიმბოლო. მოქმედი კოდების სია ცალკე გამოქვეყნებული გარე კოდების სიაა. გარე კოდების ნაკრებები შეიძლება ჩამოიტვირთოს www.iso20022.org-დან.</xs:documentation>
-		</xs:annotation>
-		<xs:restriction base="xs:string">
-			<xs:minLength value="1"/>
-			<xs:maxLength value="4"/>
-		</xs:restriction>
-	</xs:simpleType>
 	<xs:complexType name="GEO_FinancialInstitutionIdentification18">
 		<xs:annotation>
 			<xs:documentation source="Name" xml:lang="EN">GEO_FinancialInstitutionIdentification18</xs:documentation>
@@ -687,7 +666,7 @@
 			<xs:documentation source="Definition" xml:lang="KA">მოიცავს ფინანსური ინსტიტუტის იდენტიფიკაციისთვის საჭირო დეტალებს.</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element maxOccurs="1" minOccurs="1" name="BICFI" type="GEO_BICFIDec2014Identifier">
+			<xs:element name="BICFI" type="GEO_BICFIDec2014Identifier">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">BICFI</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">Code allocated to a financial institution by the ISO 9362 Registration Authority as described in ISO 9362 "Banking - Banking telecommunication messages - Business identifier code (BIC)".</xs:documentation>
@@ -733,18 +712,11 @@
 					<xs:documentation source="Definition" xml:lang="KA">ანგარიშის უნიკალური და ერთმნიშვნელოვანი იდენტიფიკაცია ანგარიშის მფლობელსა და ანგარიშის მომსახურე მხარეს შორის.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element maxOccurs="1" minOccurs="0" name="SchmeNm" type="GEO_OrganisationIdentificationSchemeName1Choice">
+			<xs:element name="SchmeNm" type="GEO_OrganisationIdentificationSchemeName1Choice">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">SchemeName</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">Name of the identification scheme.</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="KA">იდენტიფიკაციის სქემის დასახელება.</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element maxOccurs="1" minOccurs="0" name="Issr" type="GEO_RestrictedFINXMax35Text">
-				<xs:annotation>
-					<xs:documentation source="Name" xml:lang="EN">Issuer</xs:documentation>
-					<xs:documentation source="Definition" xml:lang="EN">Entity that assigns the credit reference type.</xs:documentation>
-					<xs:documentation source="Definition" xml:lang="KA">სუბიექტი, რომელიც ანიჭებს საკრედიტო რეფერენსის ტიპს.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 		</xs:sequence>
@@ -763,18 +735,11 @@
 					<xs:documentation source="Definition" xml:lang="KA">ანგარიშის უნიკალური და ერთმნიშვნელოვანი იდენტიფიკაცია ანგარიშის მფლობელსა და ანგარიშის მომსახურე მხარეს შორის.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element maxOccurs="1" minOccurs="0" name="SchmeNm" type="GEO_PersonIdentificationSchemeName1Choice">
+			<xs:element name="SchmeNm" type="GEO_PersonIdentificationSchemeName1Choice">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">SchemeName</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">Name of the identification scheme.</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="KA">იდენტიფიკაციის სქემის დასახელება.</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element maxOccurs="1" minOccurs="0" name="Issr" type="GEO_RestrictedFINXMax35Text">
-				<xs:annotation>
-					<xs:documentation source="Name" xml:lang="EN">Issuer</xs:documentation>
-					<xs:documentation source="Definition" xml:lang="EN">Entity that assigns the credit reference type.</xs:documentation>
-					<xs:documentation source="Definition" xml:lang="KA">სუბიექტი, რომელიც ანიჭებს საკრედიტო რეფერენსის ტიპს.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 		</xs:sequence>
@@ -796,7 +761,7 @@
 					<xs:documentation source="Definition" xml:lang="KA">წერტილიდან წერტილამდე რეფერენსი, რომელიც მინიჭებულია დამვალებელი მხარის მიერ და იგზავნება ჯაჭვის შემდეგ მხარესთან შეტყობინების ცალსახად იდენტიფიცირებისთვის. გამოყენება: დამვალებელმა მხარემ უნდა უზრუნველყოს, რომ MessageIdentification უნიკალური იყოს თითოეული დავალებული მხარისთვის წინასწარ შეთანხმებული პერიოდის განმავლობაში.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="CreDtTm" type="GEO_DateTime">
+			<xs:element name="CreDtTm" type="GEO_ISODateTime">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">CreationDateTime</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">Date and time at which the message was created.</xs:documentation>
@@ -822,7 +787,7 @@
 					<xs:documentation source="Definition" xml:lang="KA">შეტყობინებაში შემავალი ინდივიდუალური ოპერაციების რაოდენობა.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="InitgPty" type="GEO_PartyIdentification135">
+			<xs:element name="InitgPty" type="GEO_PartyIdentification135__3">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">InitiatingParty</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">
@@ -831,13 +796,6 @@
 						Usage: This can either be the debtor or the party that initiates the credit transfer on behalf of the debtor.
 					</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="KA">მხარე, რომელიც ახდენს გადახდის ინიციირებას. გამოყენება: ეს შეიძლება იყოს დებიტორი ან მხარე, რომელიც დებიტორის სახელით ახდენს საკრედიტო გადარიცხვის ინიციირებას.</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element maxOccurs="1" minOccurs="0" name="FwdgAgt" type="GEO_BranchAndFinancialInstitutionIdentification6">
-				<xs:annotation>
-					<xs:documentation source="Name" xml:lang="EN">ForwardingAgent</xs:documentation>
-					<xs:documentation source="Definition" xml:lang="EN">Financial institution that receives the instruction from the initiating party and forwards it to the next agent in the payment chain for execution.</xs:documentation>
-					<xs:documentation source="Definition" xml:lang="KA">ფინანსური ინსტიტუტი, რომელიც იღებს დავალებას ინიციატორი მხარისგან და შესასრულებლად აგზავნის მას გადახდის ჯაჭვის შემდეგ აგენტთან.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 		</xs:sequence>
@@ -858,9 +816,9 @@
 		</xs:annotation>
 		<xs:restriction base="xs:date"/>
 	</xs:simpleType>
-	<xs:simpleType name="GEO_DateTime">
+	<xs:simpleType name="GEO_ISODateTime">
 		<xs:annotation>
-			<xs:documentation source="Name" xml:lang="EN">GEO_DateTime</xs:documentation>
+			<xs:documentation source="Name" xml:lang="EN">GEO_ISODateTime</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:dateTime">
 			<xs:pattern value=".*(\+|-)((0[0-9])|(1[0-3])):[0-5][0-9]"/>
@@ -949,16 +907,9 @@
 			<xs:maxLength value="16"/>
 		</xs:restriction>
 	</xs:simpleType>
-	<xs:simpleType name="GEO_TreasuryCode">
-		<xs:restriction base="xs:string">
-			<xs:pattern value="[1-9][0-9]{8}"/>
-			<xs:minLength value="9"/>
-			<xs:maxLength value="9"/>
-		</xs:restriction>
-	</xs:simpleType>
 	<xs:simpleType name="GEO_RestrictedFINXMax35Text">
 		<xs:restriction base="xs:string">
-			<xs:pattern value="[0-9a-zA-Zა-ჰ/\-\?:\(\)\.,'\+ ]+"/>
+			<xs:pattern value="[0-9a-zA-Z/\-\?:\(\)\.,'\+ ]+"/>
 			<xs:minLength value="1"/>
 			<xs:maxLength value="35"/>
 		</xs:restriction>
@@ -991,7 +942,7 @@
 			<xs:documentation source="Definition" xml:lang="KA">ორგანიზაციის იდენტიფიკაციის უნიკალური და ერთმნიშვნელოვანი საშუალება.</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element maxOccurs="1" minOccurs="1" name="Othr" type="GEO_GenericOrganisationIdentification1">
+			<xs:element name="Othr" type="GEO_GenericOrganisationIdentification1">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">Other</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">Unique identification of an account, as assigned by the account servicer, using an identification scheme.</xs:documentation>
@@ -1039,14 +990,48 @@
 			</xs:element>
 		</xs:choice>
 	</xs:complexType>
-	<xs:complexType name="GEO_PartyIdentification135">
+	<xs:complexType name="GEO_PartyIdentification135__1">
 		<xs:annotation>
-			<xs:documentation source="Name" xml:lang="EN">GEO_PartyIdentification135</xs:documentation>
+			<xs:documentation source="Name" xml:lang="EN">GEO_PartyIdentification135__1</xs:documentation>
 			<xs:documentation source="Definition" xml:lang="EN">Specifies the identification of a person or an organisation.</xs:documentation>
 			<xs:documentation source="Definition" xml:lang="KA">განსაზღვრავს პირის ან ორგანიზაციის იდენტიფიკაციას.</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element maxOccurs="1" minOccurs="0" name="Nm" type="GEO_RestrictedFINXMax140Text_Extended">
+			<xs:element name="Nm" type="GEO_RestrictedFINXMax140Text_Extended">
+				<xs:annotation>
+					<xs:documentation source="Name" xml:lang="EN">Name</xs:documentation>
+					<xs:documentation source="Definition" xml:lang="EN">
+						Name of the account, as assigned by the account servicing institution, in agreement with the account owner in order to provide an additional means of identification of the account.
+
+						Usage: The account name is different from the account owner name. The account name is used in certain user communities to provide a means of identifying the account, in addition to the account owner's identity and the account number.
+					</xs:documentation>
+					<xs:documentation source="Definition" xml:lang="KA">ანგარიშის დასახელება, რომელიც მინიჭებულია ანგარიშის მომსახურე ინსტიტუტის მიერ ანგარიშის მფლობელთან შეთანხმებით, ანგარიშის იდენტიფიკაციის დამატებითი საშუალების უზრუნველსაყოფად. გამოყენება: ანგარიშის დასახელება განსხვავდება ანგარიშის მფლობელის სახელისგან. ზოგიერთ მომხმარებელთა საზოგადოებაში ანგარიშის დასახელება გამოიყენება ანგარიშის იდენტიფიკაციის დამატებით საშუალებად, ანგარიშის მფლობელის იდენტიფიკაციასა და ანგარიშის ნომერთან ერთად.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element maxOccurs="1" minOccurs="0" name="Id" type="GEO_Party38Choice">
+				<xs:annotation>
+					<xs:documentation source="Name" xml:lang="EN">Identification</xs:documentation>
+					<xs:documentation source="Definition" xml:lang="EN">Unique and unambiguous identification for the account between the account owner and the account servicer.</xs:documentation>
+					<xs:documentation source="Definition" xml:lang="KA">ანგარიშის უნიკალური და ერთმნიშვნელოვანი იდენტიფიკაცია ანგარიშის მფლობელსა და ანგარიშის მომსახურე მხარეს შორის.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element maxOccurs="1" minOccurs="0" name="CtryOfRes" type="CountryCode">
+				<xs:annotation>
+					<xs:documentation source="Name" xml:lang="EN">CountryOfResidence</xs:documentation>
+					<xs:documentation source="Definition" xml:lang="EN">Country in which a person resides (the place of a person's home). In the case of a company, it is the country from which the affairs of that company are directed.</xs:documentation>
+					<xs:documentation source="Definition" xml:lang="KA">ქვეყანა, რომელშიც პირი ცხოვრობს (პირის საცხოვრებელი ადგილი). კომპანიის შემთხვევაში, ეს არის ქვეყანა, საიდანაც იმართება ამ კომპანიის საქმიანობა.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="GEO_PartyIdentification135__2">
+		<xs:annotation>
+			<xs:documentation source="Name" xml:lang="EN">GEO_PartyIdentification135__2</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="EN">Specifies the identification of a person or an organisation.</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="KA">განსაზღვრავს პირის ან ორგანიზაციის იდენტიფიკაციას.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="Nm" type="GEO_RestrictedFINXMax140Text_Extended">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">Name</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">
@@ -1080,6 +1065,22 @@
 			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
+	<xs:complexType name="GEO_PartyIdentification135__3">
+		<xs:annotation>
+			<xs:documentation source="Name" xml:lang="EN">GEO_PartyIdentification135__3</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="EN">Specifies the identification of a person or an organisation.</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="KA">განსაზღვრავს პირის ან ორგანიზაციის იდენტიფიკაციას.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="Id" type="GEO_Party38Choice">
+				<xs:annotation>
+					<xs:documentation source="Name" xml:lang="EN">Identification</xs:documentation>
+					<xs:documentation source="Definition" xml:lang="EN">Unique and unambiguous identification for the account between the account owner and the account servicer.</xs:documentation>
+					<xs:documentation source="Definition" xml:lang="KA">ანგარიშის უნიკალური და ერთმნიშვნელოვანი იდენტიფიკაცია ანგარიშის მფლობელსა და ანგარიშის მომსახურე მხარეს შორის.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
 	<xs:complexType name="GEO_PaymentIdentification6">
 		<xs:annotation>
 			<xs:documentation source="Name" xml:lang="EN">GEO_PaymentIdentification6</xs:documentation>
@@ -1109,7 +1110,7 @@
 					<xs:documentation source="Definition" xml:lang="KA">ინიციატორი მხარის მიერ მინიჭებული უნიკალური იდენტიფიკაცია ოპერაციის ცალსახად იდენტიფიცირებისთვის. ეს იდენტიფიკაცია უცვლელად გადაეცემა მთელ end-to-end ჯაჭვში. გამოყენება: end-to-end იდენტიფიკაცია შეიძლება გამოყენებულ იქნას შეჯერებისთვის ან ოპერაციასთან დაკავშირებული ამოცანების დასაკავშირებლად. ის შეიძლება შევიდეს ოპერაციასთან დაკავშირებულ რამდენიმე შეტყობინებაში.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element maxOccurs="1" minOccurs="0" name="UETR" type="UUIDv4Identifier">
+			<xs:element name="UETR" type="UUIDv4Identifier">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">UETR</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">Universally unique identifier to provide an end-to-end reference of a payment transaction.</xs:documentation>
@@ -1148,7 +1149,7 @@
 			</xs:element>
 			<xs:element maxOccurs="1" minOccurs="0" name="PmtTpInf" type="GEO_PaymentTypeInformation26">
 				<xs:annotation>
-					<xs:documentation source="Name" xml:lang="EN">PaymentTypeInformation</xs:documentation>
+					<xs:documentation source="Name" xml:lang="EN">GEO_PaymentTypeInformation</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">Set of elements used to further specify the type of transaction.</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="KA">ელემენტების ნაკრები, რომელიც გამოიყენება ოპერაციის ტიპის დამატებით დასაზუსტებლად.</xs:documentation>
 				</xs:annotation>
@@ -1163,7 +1164,7 @@
 					<xs:documentation source="Definition" xml:lang="KA">თარიღი, როდესაც ინიციატორი მხარე კლირინგის აგენტს სთხოვს გადახდის დამუშავებას. გამოყენება: ეს არის თარიღი, როდესაც დებიტორის ანგარიში უნდა დადებეტდეს. ჩეკით გადახდის შემთხვევაში — თარიღი, როდესაც ბანკმა უნდა შექმნას ჩეკი.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="Dbtr" type="GEO_PartyIdentification135">
+			<xs:element name="Dbtr" type="GEO_PartyIdentification135__1">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">Debtor</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">Party that owes an amount of money to the (ultimate) creditor.</xs:documentation>
@@ -1196,13 +1197,6 @@
 					<xs:documentation source="Name" xml:lang="EN">InstructionForDebtorAgent</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">Further information related to the processing of the payment instruction, that may need to be acted upon by the debtor agent, depending on agreement between debtor and the debtor agent.</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="KA">გადახდის დავალების დამუშავებასთან დაკავშირებული დამატებითი ინფორმაცია, რომლის შესრულებაც შეიძლება დასჭირდეს დებიტორის აგენტს, დებიტორსა და დებიტორის აგენტს შორის შეთანხმების მიხედვით.</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element maxOccurs="1" minOccurs="0" name="UltmtDbtr" type="GEO_PartyIdentification135">
-				<xs:annotation>
-					<xs:documentation source="Name" xml:lang="EN">UltimateDebtor</xs:documentation>
-					<xs:documentation source="Definition" xml:lang="EN">Ultimate party that owes an amount of money to the (ultimate) creditor.</xs:documentation>
-					<xs:documentation source="Definition" xml:lang="KA">საბოლოო მხარე, რომელსაც თანხა ეკისრება (საბოლოო) კრედიტორის მიმართ.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element maxOccurs="unbounded" minOccurs="1" name="CdtTrfTxInf" type="GEO_CreditTransferTransaction34">
@@ -1281,7 +1275,7 @@
 			<xs:documentation source="Definition" xml:lang="KA">პირის იდენტიფიკაციის უნიკალური და ერთმნიშვნელოვანი საშუალება.</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element maxOccurs="1" minOccurs="1" name="Othr" type="GEO_GenericPersonIdentification1">
+			<xs:element name="Othr" type="GEO_GenericPersonIdentification1">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">Other</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">Unique identification of an account, as assigned by the account servicer, using an identification scheme.</xs:documentation>
@@ -1376,7 +1370,7 @@
 					<xs:documentation source="Definition" xml:lang="KA">ასოებისა და/ან რიცხვების ჯგუფისგან შემდგარი იდენტიფიკატორი, რომელიც ემატება საფოსტო მისამართს ფოსტის დახარისხების გასამარტივებლად.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element maxOccurs="1" minOccurs="1" name="TwnNm" type="GEO_RestrictedFINXMax35Text_Extended">
+			<xs:element name="TwnNm" type="GEO_RestrictedFINXMax35Text_Extended">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">TownName</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">Name of a built-up area, with defined boundaries, and a local government.</xs:documentation>
@@ -1404,7 +1398,7 @@
 					<xs:documentation source="Definition" xml:lang="KA">განსაზღვრავს ქვეყნის ადმინისტრაციულ ერთეულს, როგორიცაა შტატი, რეგიონი ან საგრაფო.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element maxOccurs="1" minOccurs="1" name="Ctry" type="CountryCode">
+			<xs:element name="Ctry" type="CountryCode">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">Country</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">Nation with its own government.</xs:documentation>
@@ -1533,21 +1527,50 @@
 					<xs:documentation source="Definition" xml:lang="KA">არასტრუქტურირებული ფორმით მოწოდებული ინფორმაცია, რომელიც შესაძლებელს ხდის ჩანაწერის შეჯერებას იმ ელემენტებთან, რომელთა დასაფარადაც განკუთვნილია გადახდა, მაგალითად, კომერციულ ინვოისებთან დებიტორული დავალიანებების სისტემაში.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
+			<xs:element maxOccurs="1" minOccurs="0" name="Strd" type="GEO_StructuredRemittanceInformation16">
+				<xs:annotation>
+					<xs:documentation source="Name" xml:lang="EN">Structured</xs:documentation>
+					<xs:documentation source="Definition" xml:lang="EN">Information supplied to enable the matching/reconciliation of an entry with the items that the payment is intended to settle, such as commercial invoices in an accounts' receivable system, in a structured form.</xs:documentation>
+					<xs:documentation source="Definition" xml:lang="KA">სტრუქტურირებული ფორმით მოწოდებული ინფორმაცია, რომელიც შესაძლებელს ხდის ჩანაწერის შეჯერებას იმ ელემენტებთან, რომელთა დასაფარადაც განკუთვნილია გადახდა, მაგალითად, კომერციულ ინვოისებთან დებიტორული დავალიანებების სისტემაში.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
+	<xs:simpleType name="GEO_ServiceLevelPrtryCode">
+		<xs:annotation>
+			<xs:documentation source="Name" xml:lang="EN">GEO_ServiceLevelPrtryCode</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="EN">Specifies the local transfer processing channel.</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="KA">განსაზღვრავს გადარიცხვის დამუშავების ადგილობრივ არხს.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="RTGS">
+				<xs:annotation>
+					<xs:documentation source="Name" xml:lang="EN">Real Time Gross Settlement</xs:documentation>
+					<xs:documentation source="Definition" xml:lang="EN">Indicates that the transfer should be processed through RTGS as a fast transfer.</xs:documentation>
+					<xs:documentation source="Definition" xml:lang="KA">მიუთითებს, რომ გადარიცხვა უნდა დამუშავდეს RTGS-ის საშუალებით, როგორც სწრაფი გადარიცხვა.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ACH">
+				<xs:annotation>
+					<xs:documentation source="Name" xml:lang="EN">Automated Clearing House</xs:documentation>
+					<xs:documentation source="Definition" xml:lang="EN">Indicates that the transfer should be processed through ACH as a bulk transfer.</xs:documentation>
+					<xs:documentation source="Definition" xml:lang="KA">მიუთითებს, რომ გადარიცხვა უნდა დამუშავდეს ACH-ის საშუალებით, როგორც ჯგუფური გადარიცხვა.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
 	<xs:complexType name="GEO_ServiceLevel8Choice">
 		<xs:annotation>
 			<xs:documentation source="Name" xml:lang="EN">GEO_ServiceLevel8Choice</xs:documentation>
-			<xs:documentation source="Definition" xml:lang="EN">Specifies the service level of the transaction.</xs:documentation>
-			<xs:documentation source="Definition" xml:lang="KA">განსაზღვრავს ოპერაციის მომსახურების დონეს.</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="EN">Specifies whether the transfer should be processed through RTGS as a fast transfer or through ACH as a bulk transfer.</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="KA">განსაზღვრავს, გადარიცხვა უნდა დამუშავდეს RTGS-ის საშუალებით, როგორც სწრაფი გადარიცხვა, თუ ACH-ის საშუალებით, როგორც ჯგუფური გადარიცხვა.</xs:documentation>
 		</xs:annotation>
 		<xs:choice>
-			<!--TODO: გვჭირდება? არ გვჭირდება? Restrict values-->
-			<xs:element name="Cd" type="ExternalServiceLevel1Code">
+			<xs:element name="Prtry" type="GEO_ServiceLevelPrtryCode">
 				<xs:annotation>
-					<xs:documentation source="Name" xml:lang="EN">Code</xs:documentation>
-					<xs:documentation source="Definition" xml:lang="EN">Name of the identification scheme, in a coded form as published in an external list.</xs:documentation>
-					<xs:documentation source="Definition" xml:lang="KA">იდენტიფიკაციის სქემის დასახელება კოდირებული ფორმით, როგორც გამოქვეყნებულია გარე სიაში.</xs:documentation>
+					<xs:documentation source="Name" xml:lang="EN">Proprietary</xs:documentation>
+					<xs:documentation source="Definition" xml:lang="EN">Specifies the local transfer processing channel: RTGS for fast transfers or ACH for bulk transfers.</xs:documentation>
+					<xs:documentation source="Definition" xml:lang="KA">განსაზღვრავს გადარიცხვის დამუშავების ადგილობრივ არხს: RTGS — სწრაფი გადარიცხვებისთვის, ან ACH — ჯგუფური გადარიცხვებისთვის.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 		</xs:choice>
@@ -1603,14 +1626,36 @@
 			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
+	<xs:complexType name="GEO_StructuredRemittanceInformation16">
+		<xs:annotation>
+			<xs:documentation source="Name" xml:lang="EN">GEO_StructuredRemittanceInformation16</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="EN">Information supplied to enable the matching/reconciliation of an entry with the items that the payment is intended to settle, such as commercial invoices in an accounts' receivable system, in a structured form.</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="KA">სტრუქტურირებული ფორმით მოწოდებული ინფორმაცია, რომელიც შესაძლებელს ხდის ჩანაწერის შეჯერებას იმ ელემენტებთან, რომელთა დასაფარადაც განკუთვნილია გადახდა, მაგალითად, კომერციულ ინვოისებთან დებიტორული დავალიანებების სისტემაში.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element maxOccurs="1" minOccurs="0" name="CdtrRefInf" type="GEO_CreditorReferenceInformation2">
+				<xs:annotation>
+					<xs:documentation source="Name" xml:lang="EN">CreditorReferenceInformation</xs:documentation>
+					<xs:documentation source="Definition" xml:lang="EN">Reference information provided by the creditor to allow the identification of the underlying documents.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
 	<xs:simpleType name="UUIDv4Identifier">
 		<xs:annotation>
 			<xs:documentation source="Name" xml:lang="EN">UUIDv4Identifier</xs:documentation>
-			<xs:documentation source="Definition" xml:lang="EN">Universally Unique IDentifier (UUID) version 4, as described in IETC RFC 4122 "Universally Unique IDentifier (UUID) URN Namespace".</xs:documentation>
-			<xs:documentation source="Definition" xml:lang="KA">უნივერსალურად უნიკალური იდენტიფიკატორი (UUID) ვერსია 4, როგორც აღწერილია IETC RFC 4122-ში „Universally Unique IDentifier (UUID) URN Namespace“.</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="EN">Universally Unique IDentifier (UUID) version 4, as described in IETF RFC 4122 "Universally Unique IDentifier (UUID) URN Namespace".</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="KA">უნივერსალურად უნიკალური იდენტიფიკატორი (UUID) ვერსია 4, როგორც აღწერილია IETF RFC 4122-ში „Universally Unique IDentifier (UUID) URN Namespace“.</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
 			<xs:pattern value="[a-f0-9]{8}-[a-f0-9]{4}-4[a-f0-9]{3}-[89ab][a-f0-9]{3}-[a-f0-9]{12}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="GEO_TreasuryCode">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[1-9][0-9]{8}"/>
+			<xs:minLength value="9"/>
+			<xs:maxLength value="9"/>
 		</xs:restriction>
 	</xs:simpleType>
 </xs:schema>
