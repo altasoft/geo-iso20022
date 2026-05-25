@@ -35,6 +35,14 @@ function getDoc(node) {
   return node.documentation || null;
 }
 
+// ── Cache-busting ──────────────────────────────────────────────────────────────
+
+/** Append ?v=BUILD_V to a URL when a build hash is available (set by version.js). */
+function vUrl(url) {
+  const v = window.__BUILD_V__;
+  return v ? `${url}?v=${v}` : url;
+}
+
 // ── Bootstrap ──────────────────────────────────────────────────────────────────
 
 /** Load a .js sidecar by injecting a <script> tag; captures and clears the global. */
@@ -54,7 +62,7 @@ function loadSidecar(url, globalVar) {
 
 async function fetchManifest() {
   try {
-    const res = await fetch("data/messages.json");
+    const res = await fetch(vUrl("data/messages.json"));
     if (res.ok) return await res.json();
   } catch (e) { /* fall through */ }
   return window.__MESSAGES__ ?? null;
@@ -68,11 +76,6 @@ function populateSelector(messages) {
     opt.value = msg.id;
     opt.textContent = msg.label;
     sel.appendChild(opt);
-  }
-  if (messages.length <= 1) {
-    sel.classList.add("hidden");
-  } else {
-    sel.classList.remove("hidden");
   }
   sel.addEventListener("change", () => loadData(sel.value));
 }
@@ -100,9 +103,9 @@ async function loadData(messageId) {
 
   // Try fetch for all three in parallel
   const [origRes, schemaRes, diffRes] = await Promise.allSettled([
-    fetch(`${prefix}/original.json`),
-    fetch(`${prefix}/schema-model.json`),
-    fetch(`${prefix}/diff-model.json`),
+    fetch(vUrl(`${prefix}/original.json`)),
+    fetch(vUrl(`${prefix}/schema-model.json`)),
+    fetch(vUrl(`${prefix}/diff-model.json`)),
   ]);
 
   if (token !== state.loadToken) return; // superseded by a newer load
@@ -249,10 +252,8 @@ function initIndex() {
     }
   }
 
-  // Update header
+  // Update browser tab title
   const meta = state.schema.metadata;
-  document.getElementById("message-name").textContent =
-    meta.messageName || meta.rootElement || "XSD Visualizer";
   document.title = `XSD Visualizer — ${meta.messageName || meta.rootElement}`;
 }
 

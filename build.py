@@ -15,6 +15,7 @@ Output:
   viewer/data/<message-id>/diff-model.json + .js
   viewer/data/messages.json + messages.js  (manifest)
 """
+import hashlib
 import json
 import subprocess
 import sys
@@ -97,6 +98,28 @@ def write_manifest(entries: list[dict]) -> None:
     print(f"Written: {js_path}")
 
 
+def write_version() -> str:
+    """Hash app.js + styles.css + all generated data JSON files → write viewer/data/version.js."""
+    viewer_dir = ROOT / "viewer"
+    h = hashlib.sha256()
+    # Hash the static code files
+    for fname in ["app.js", "styles.css"]:
+        p = viewer_dir / fname
+        if p.exists():
+            h.update(p.read_bytes())
+    # Hash all generated data JSON files so data changes also bust the cache
+    if VIEWER_DATA_DIR.exists():
+        for p in sorted(VIEWER_DATA_DIR.rglob("*.json")):
+            h.update(p.read_bytes())
+    version = h.hexdigest()[:8]
+
+    version_js = VIEWER_DATA_DIR / "version.js"
+    with open(version_js, "w", encoding="utf-8") as f:
+        f.write(f"window.__BUILD_V__ = '{version}';\n")
+    print(f"Written: {version_js} (v={version})")
+    return version
+
+
 def main() -> None:
     print("=== XSD Visualizer — Build ===\n")
     messages = discover_messages()
@@ -114,6 +137,7 @@ def main() -> None:
             print(f"[ERROR] Skipping '{msg['id']}' due to build failure", file=sys.stderr)
 
     write_manifest(entries)
+    write_version()
 
     print(f"\n=== Done. {len(entries)} message(s) built ===")
     print("\nTo view: cd viewer && python -m http.server 8080")

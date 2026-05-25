@@ -33,6 +33,12 @@ jobs:
       - name: Build viewer data
         run: python build.py
 
+      - name: Inject cache-busting hash into index.html
+        run: |
+          SHORT="${GITHUB_SHA:0:8}"
+          sed -i "s|src=\"app\.js\"|src=\"app.js?v=${SHORT}\"|g" viewer/index.html
+          sed -i "s|href=\"styles\.css\"|href=\"styles.css?v=${SHORT}\"|g" viewer/index.html
+
       - uses: actions/configure-pages@v5
 
       - uses: actions/upload-pages-artifact@v3

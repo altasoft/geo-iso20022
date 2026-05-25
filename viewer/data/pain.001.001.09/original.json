@@ -2,7 +2,7 @@
   "metadata": {
     "sourceFile": "pain.001.001.09.xsd",
     "targetNamespace": "urn:iso:std:iso:20022:tech:xsd:pain.001.001.09",
-    "generatedAt": "2026-05-25T07:28:15.007297+00:00",
+    "generatedAt": "2026-05-25T09:45:56.079858+00:00",
     "rootElement": "Document",
     "messageName": "pain.001.001.09",
     "warnings": []

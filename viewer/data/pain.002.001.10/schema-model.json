@@ -2,7 +2,7 @@
   "metadata": {
     "sourceFile": "GEO_pain.002.001.10.xsd",
     "targetNamespace": "urn:iso:std:iso:20022:tech:xsd:pain.002.001.10",
-    "generatedAt": "2026-05-25T07:28:15.721478+00:00",
+    "generatedAt": "2026-05-25T09:45:56.753345+00:00",
     "rootElement": "Document",
     "messageName": "pain.002.001.10",
     "warnings": []

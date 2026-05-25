@@ -2,15 +2,15 @@
   "metadata": {
     "oldSource": "pain.001.001.09.xsd",
     "newSource": "GEO_pain.001.001.09.xsd",
-    "generatedAt": "2026-05-25T07:28:15.392153+00:00"
+    "generatedAt": "2026-05-25T09:45:56.425204+00:00"
   },
   "summary": {
     "added": 0,
-    "removed": 1298,
-    "changed": 453,
+    "removed": 1396,
+    "changed": 293,
     "breaking": 0,
-    "nonBreaking": 453,
-    "informational": 1298
+    "nonBreaking": 293,
+    "informational": 1396
   },
   "changes": [
     {
@@ -26,16 +26,16 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/MsgId",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "newValue": "pattern=[0-9a-zA-Z/\\-\\?:\\(\\)\\.,'\\+ ]+",
+      "description": "Restriction pattern changed from None to \"[0-9a-zA-Z/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/CreDtTm",
       "oldValue": "ISODateTime",
-      "newValue": "GEO_DateTime",
-      "description": "Type changed from 'ISODateTime' to 'GEO_DateTime'"
+      "newValue": "GEO_ISODateTime",
+      "description": "Type changed from 'ISODateTime' to 'GEO_ISODateTime'"
     },
     {
       "changeType": "RestrictionChanged",
@@ -52,6 +52,14 @@
       "oldValue": "[0..1]",
       "newValue": null,
       "description": "Node removed: /Document/CstmrCdtTrfInitn/GrpHdr/CtrlSum"
+    },
+    {
+      "changeType": "MinOccursChanged",
+      "severity": "NonBreaking",
+      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/Nm",
+      "oldValue": "0",
+      "newValue": "1",
+      "description": "minOccurs changed from 0 to 1"
     },
     {
       "changeType": "TypeChanged",
@@ -118,268 +126,132 @@
       "description": "Node removed: /Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/AdrTp"
     },
     {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/Dept",
-      "oldValue": "Max70Text",
-      "newValue": "GEO_RestrictedFINXMax70Text_Extended",
-      "description": "Type changed from 'Max70Text' to 'GEO_RestrictedFINXMax70Text_Extended'"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/Dept"
     },
     {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/Dept",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/SubDept",
-      "oldValue": "Max70Text",
-      "newValue": "GEO_RestrictedFINXMax70Text_Extended",
-      "description": "Type changed from 'Max70Text' to 'GEO_RestrictedFINXMax70Text_Extended'"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/SubDept"
     },
     {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/SubDept",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/StrtNm",
-      "oldValue": "Max70Text",
-      "newValue": "GEO_RestrictedFINXMax70Text_Extended",
-      "description": "Type changed from 'Max70Text' to 'GEO_RestrictedFINXMax70Text_Extended'"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/StrtNm"
     },
     {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/StrtNm",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/BldgNb",
-      "oldValue": "Max16Text",
-      "newValue": "GEO_RestrictedFINXMax16Text_Extended",
-      "description": "Type changed from 'Max16Text' to 'GEO_RestrictedFINXMax16Text_Extended'"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/BldgNb"
     },
     {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/BldgNb",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/BldgNm",
-      "oldValue": "Max35Text",
-      "newValue": "GEO_RestrictedFINXMax35Text_Extended",
-      "description": "Type changed from 'Max35Text' to 'GEO_RestrictedFINXMax35Text_Extended'"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/BldgNm"
     },
     {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/BldgNm",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/Flr",
-      "oldValue": "Max70Text",
-      "newValue": "GEO_RestrictedFINXMax70Text_Extended",
-      "description": "Type changed from 'Max70Text' to 'GEO_RestrictedFINXMax70Text_Extended'"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/Flr"
     },
     {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/Flr",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/PstBx",
-      "oldValue": "Max16Text",
-      "newValue": "GEO_RestrictedFINXMax16Text_Extended",
-      "description": "Type changed from 'Max16Text' to 'GEO_RestrictedFINXMax16Text_Extended'"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/PstBx"
     },
     {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/PstBx",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/Room",
-      "oldValue": "Max70Text",
-      "newValue": "GEO_RestrictedFINXMax70Text_Extended",
-      "description": "Type changed from 'Max70Text' to 'GEO_RestrictedFINXMax70Text_Extended'"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/Room"
     },
     {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/Room",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/PstCd",
-      "oldValue": "Max16Text",
-      "newValue": "GEO_RestrictedFINXMax16Text_Extended",
-      "description": "Type changed from 'Max16Text' to 'GEO_RestrictedFINXMax16Text_Extended'"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/PstCd"
     },
     {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/PstCd",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "MinOccursChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/TwnNm",
-      "oldValue": "0",
-      "newValue": "1",
-      "description": "minOccurs changed from 0 to 1"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/TwnNm"
     },
     {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/TwnNm",
-      "oldValue": "Max35Text",
-      "newValue": "GEO_RestrictedFINXMax35Text_Extended",
-      "description": "Type changed from 'Max35Text' to 'GEO_RestrictedFINXMax35Text_Extended'"
-    },
-    {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/TwnNm",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/TwnLctnNm",
-      "oldValue": "Max35Text",
-      "newValue": "GEO_RestrictedFINXMax35Text_Extended",
-      "description": "Type changed from 'Max35Text' to 'GEO_RestrictedFINXMax35Text_Extended'"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/TwnLctnNm"
     },
     {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/TwnLctnNm",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/DstrctNm",
-      "oldValue": "Max35Text",
-      "newValue": "GEO_RestrictedFINXMax35Text_Extended",
-      "description": "Type changed from 'Max35Text' to 'GEO_RestrictedFINXMax35Text_Extended'"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/DstrctNm"
     },
     {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/DstrctNm",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/CtrySubDvsn",
-      "oldValue": "Max35Text",
-      "newValue": "GEO_RestrictedFINXMax35Text_Extended",
-      "description": "Type changed from 'Max35Text' to 'GEO_RestrictedFINXMax35Text_Extended'"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/CtrySubDvsn"
     },
     {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/CtrySubDvsn",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "MinOccursChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/Ctry",
-      "oldValue": "0",
-      "newValue": "1",
-      "description": "minOccurs changed from 0 to 1"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/Ctry"
     },
     {
-      "changeType": "MaxOccursChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/AdrLine",
-      "oldValue": "7",
-      "newValue": "2",
-      "description": "maxOccurs changed from 7 to 2"
+      "oldValue": "[0..7]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/AdrLine"
     },
     {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/AdrLine",
-      "oldValue": "Max70Text",
-      "newValue": "GEO_RestrictedFINXMax35Text_Extended",
-      "description": "Type changed from 'Max70Text' to 'GEO_RestrictedFINXMax35Text_Extended'"
-    },
-    {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/AdrLine",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/AdrLine",
-      "oldValue": "maxLength=70",
-      "newValue": "maxLength=35",
-      "description": "Restriction maxLength changed from '70' to '35'"
-    },
-    {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr",
-      "oldValue": "PostalAddress24",
-      "newValue": "GEO_PostalAddress24",
-      "description": "Type changed from 'PostalAddress24' to 'GEO_PostalAddress24'"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr"
     },
     {
       "changeType": "RemovedNode",
@@ -410,8 +282,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/Id/OrgId/Othr/Id",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "newValue": "pattern=[0-9a-zA-Z/\\-\\?:\\(\\)\\.,'\\+ ]+",
+      "description": "Restriction pattern changed from None to \"[0-9a-zA-Z/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
       "changeType": "RemovedNode",
@@ -422,6 +294,14 @@
       "description": "Node removed: /Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/Id/OrgId/Othr/SchmeNm/Prtry"
     },
     {
+      "changeType": "MinOccursChanged",
+      "severity": "NonBreaking",
+      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/Id/OrgId/Othr/SchmeNm",
+      "oldValue": "0",
+      "newValue": "1",
+      "description": "minOccurs changed from 0 to 1"
+    },
+    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/Id/OrgId/Othr/SchmeNm",
@@ -430,20 +310,12 @@
       "description": "Type changed from 'OrganisationIdentificationSchemeName1Choice' to 'GEO_OrganisationIdentificationSchemeName1Choice'"
     },
     {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/Id/OrgId/Othr/Issr",
-      "oldValue": "Max35Text",
-      "newValue": "GEO_RestrictedFINXMax35Text",
-      "description": "Type changed from 'Max35Text' to 'GEO_RestrictedFINXMax35Text'"
-    },
-    {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/Id/OrgId/Othr/Issr",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/Id/OrgId/Othr/Issr"
     },
     {
       "changeType": "MinOccursChanged",
@@ -530,8 +402,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/Id/PrvtId/Othr/Id",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "newValue": "pattern=[0-9a-zA-Z/\\-\\?:\\(\\)\\.,'\\+ ]+",
+      "description": "Restriction pattern changed from None to \"[0-9a-zA-Z/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
       "changeType": "RemovedNode",
@@ -542,6 +414,14 @@
       "description": "Node removed: /Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/Id/PrvtId/Othr/SchmeNm/Prtry"
     },
     {
+      "changeType": "MinOccursChanged",
+      "severity": "NonBreaking",
+      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/Id/PrvtId/Othr/SchmeNm",
+      "oldValue": "0",
+      "newValue": "1",
+      "description": "minOccurs changed from 0 to 1"
+    },
+    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/Id/PrvtId/Othr/SchmeNm",
@@ -550,20 +430,12 @@
       "description": "Type changed from 'PersonIdentificationSchemeName1Choice' to 'GEO_PersonIdentificationSchemeName1Choice'"
     },
     {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/Id/PrvtId/Othr/Issr",
-      "oldValue": "Max35Text",
-      "newValue": "GEO_RestrictedFINXMax35Text",
-      "description": "Type changed from 'Max35Text' to 'GEO_RestrictedFINXMax35Text'"
-    },
-    {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/Id/PrvtId/Othr/Issr",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/Id/PrvtId/Othr/Issr"
     },
     {
       "changeType": "MinOccursChanged",
@@ -730,32 +602,16 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty",
       "oldValue": "PartyIdentification135",
-      "newValue": "GEO_PartyIdentification135",
-      "description": "Type changed from 'PartyIdentification135' to 'GEO_PartyIdentification135'"
+      "newValue": "GEO_PartyIdentification135__1",
+      "description": "Type changed from 'PartyIdentification135' to 'GEO_PartyIdentification135__1'"
     },
     {
-      "changeType": "MinOccursChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/FwdgAgt/FinInstnId/BICFI",
-      "oldValue": "0",
-      "newValue": "1",
-      "description": "minOccurs changed from 0 to 1"
-    },
-    {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/FwdgAgt/FinInstnId/BICFI",
-      "oldValue": "BICFIDec2014Identifier",
-      "newValue": "GEO_BICFIDec2014Identifier",
-      "description": "Type changed from 'BICFIDec2014Identifier' to 'GEO_BICFIDec2014Identifier'"
-    },
-    {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/FwdgAgt/FinInstnId/BICFI",
-      "oldValue": "pattern=[A-Z0-9]{4,4}[A-Z]{2,2}[A-Z0-9]{2,2}([A-Z0-9]{3,3}){0,1}",
-      "newValue": "pattern=[A-Z0-9]{4,4}GE[A-Z0-9]{2,2}([A-Z0-9]{3,3}){0,1}",
-      "description": "Restriction pattern changed from '[A-Z0-9]{4,4}[A-Z]{2,2}[A-Z0-9]{2,2}([A-Z0-9]{3,3}){0,1}' to '[A-Z0-9]{4,4}GE[A-Z0-9]{2,2}([A-Z0-9]{3,3}){0,1}'"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/GrpHdr/FwdgAgt/FinInstnId/BICFI"
     },
     {
       "changeType": "RemovedNode",
@@ -782,44 +638,20 @@
       "description": "Node removed: /Document/CstmrCdtTrfInitn/GrpHdr/FwdgAgt/FinInstnId/ClrSysMmbId/ClrSysId"
     },
     {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/FwdgAgt/FinInstnId/ClrSysMmbId/MmbId",
-      "oldValue": "Max35Text",
-      "newValue": "GEO_BICFIDec2014Identifier",
-      "description": "Type changed from 'Max35Text' to 'GEO_BICFIDec2014Identifier'"
+      "oldValue": "[1..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/GrpHdr/FwdgAgt/FinInstnId/ClrSysMmbId/MmbId"
     },
     {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/FwdgAgt/FinInstnId/ClrSysMmbId/MmbId",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[A-Z0-9]{4,4}GE[A-Z0-9]{2,2}([A-Z0-9]{3,3}){0,1}",
-      "description": "Restriction pattern changed from None to '[A-Z0-9]{4,4}GE[A-Z0-9]{2,2}([A-Z0-9]{3,3}){0,1}'"
-    },
-    {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/FwdgAgt/FinInstnId/ClrSysMmbId/MmbId",
-      "oldValue": "minLength=1",
-      "newValue": "minLength=None",
-      "description": "Restriction minLength changed from '1' to None"
-    },
-    {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/FwdgAgt/FinInstnId/ClrSysMmbId/MmbId",
-      "oldValue": "maxLength=35",
-      "newValue": "maxLength=None",
-      "description": "Restriction maxLength changed from '35' to None"
-    },
-    {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/FwdgAgt/FinInstnId/ClrSysMmbId",
-      "oldValue": "ClearingSystemMemberIdentification2",
-      "newValue": "GEO_ClearingSystemMemberIdentification2",
-      "description": "Type changed from 'ClearingSystemMemberIdentification2' to 'GEO_ClearingSystemMemberIdentification2'"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/GrpHdr/FwdgAgt/FinInstnId/ClrSysMmbId"
     },
     {
       "changeType": "RemovedNode",
@@ -1062,12 +894,12 @@
       "description": "Node removed: /Document/CstmrCdtTrfInitn/GrpHdr/FwdgAgt/FinInstnId/Othr"
     },
     {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/FwdgAgt/FinInstnId",
-      "oldValue": "FinancialInstitutionIdentification18",
-      "newValue": "GEO_FinancialInstitutionIdentification18",
-      "description": "Type changed from 'FinancialInstitutionIdentification18' to 'GEO_FinancialInstitutionIdentification18'"
+      "oldValue": "[1..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/GrpHdr/FwdgAgt/FinInstnId"
     },
     {
       "changeType": "RemovedNode",
@@ -1278,12 +1110,12 @@
       "description": "Node removed: /Document/CstmrCdtTrfInitn/GrpHdr/FwdgAgt/BrnchId"
     },
     {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/FwdgAgt",
-      "oldValue": "BranchAndFinancialInstitutionIdentification6",
-      "newValue": "GEO_BranchAndFinancialInstitutionIdentification6",
-      "description": "Type changed from 'BranchAndFinancialInstitutionIdentification6' to 'GEO_BranchAndFinancialInstitutionIdentification6'"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/GrpHdr/FwdgAgt"
     },
     {
       "changeType": "TypeChanged",
@@ -1306,8 +1138,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/PmtInfId",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "newValue": "pattern=[0-9a-zA-Z/\\-\\?:\\(\\)\\.,'\\+ ]+",
+      "description": "Restriction pattern changed from None to \"[0-9a-zA-Z/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
       "changeType": "TypeChanged",
@@ -1352,10 +1184,50 @@
     {
       "changeType": "RemovedNode",
       "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/PmtTpInf/SvcLvl/Prtry",
+      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/PmtTpInf/SvcLvl/Cd",
       "oldValue": "[1..1]",
       "newValue": null,
-      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/PmtTpInf/SvcLvl/Prtry"
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/PmtTpInf/SvcLvl/Cd"
+    },
+    {
+      "changeType": "TypeChanged",
+      "severity": "NonBreaking",
+      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/PmtTpInf/SvcLvl/Prtry",
+      "oldValue": "Max35Text",
+      "newValue": "GEO_ServiceLevelPrtryCode",
+      "description": "Type changed from 'Max35Text' to 'GEO_ServiceLevelPrtryCode'"
+    },
+    {
+      "changeType": "EnumerationAdded",
+      "severity": "NonBreaking",
+      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/PmtTpInf/SvcLvl/Prtry",
+      "oldValue": null,
+      "newValue": "ACH",
+      "description": "Enumeration value added: 'ACH'"
+    },
+    {
+      "changeType": "EnumerationAdded",
+      "severity": "NonBreaking",
+      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/PmtTpInf/SvcLvl/Prtry",
+      "oldValue": null,
+      "newValue": "RTGS",
+      "description": "Enumeration value added: 'RTGS'"
+    },
+    {
+      "changeType": "RestrictionChanged",
+      "severity": "NonBreaking",
+      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/PmtTpInf/SvcLvl/Prtry",
+      "oldValue": "minLength=1",
+      "newValue": "minLength=None",
+      "description": "Restriction minLength changed from '1' to None"
+    },
+    {
+      "changeType": "RestrictionChanged",
+      "severity": "NonBreaking",
+      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/PmtTpInf/SvcLvl/Prtry",
+      "oldValue": "maxLength=35",
+      "newValue": "maxLength=None",
+      "description": "Restriction maxLength changed from '35' to None"
     },
     {
       "changeType": "MaxOccursChanged",
@@ -1386,8 +1258,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/PmtTpInf/LclInstrm/Prtry",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "newValue": "pattern=[0-9a-zA-Z/\\-\\?:\\(\\)\\.,'\\+ ]+",
+      "description": "Restriction pattern changed from None to \"[0-9a-zA-Z/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
       "changeType": "TypeChanged",
@@ -1426,8 +1298,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/ReqdExctnDt/DtTm",
       "oldValue": "ISODateTime",
-      "newValue": "GEO_DateTime",
-      "description": "Type changed from 'ISODateTime' to 'GEO_DateTime'"
+      "newValue": "GEO_ISODateTime",
+      "description": "Type changed from 'ISODateTime' to 'GEO_ISODateTime'"
     },
     {
       "changeType": "RestrictionChanged",
@@ -1444,6 +1316,14 @@
       "oldValue": "[0..1]",
       "newValue": null,
       "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/PoolgAdjstmntDt"
+    },
+    {
+      "changeType": "MinOccursChanged",
+      "severity": "NonBreaking",
+      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/Nm",
+      "oldValue": "0",
+      "newValue": "1",
+      "description": "minOccurs changed from 0 to 1"
     },
     {
       "changeType": "TypeChanged",
@@ -1510,268 +1390,132 @@
       "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/AdrTp"
     },
     {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/Dept",
-      "oldValue": "Max70Text",
-      "newValue": "GEO_RestrictedFINXMax70Text_Extended",
-      "description": "Type changed from 'Max70Text' to 'GEO_RestrictedFINXMax70Text_Extended'"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/Dept"
     },
     {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/Dept",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/SubDept",
-      "oldValue": "Max70Text",
-      "newValue": "GEO_RestrictedFINXMax70Text_Extended",
-      "description": "Type changed from 'Max70Text' to 'GEO_RestrictedFINXMax70Text_Extended'"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/SubDept"
     },
     {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/SubDept",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/StrtNm",
-      "oldValue": "Max70Text",
-      "newValue": "GEO_RestrictedFINXMax70Text_Extended",
-      "description": "Type changed from 'Max70Text' to 'GEO_RestrictedFINXMax70Text_Extended'"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/StrtNm"
     },
     {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/StrtNm",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/BldgNb",
-      "oldValue": "Max16Text",
-      "newValue": "GEO_RestrictedFINXMax16Text_Extended",
-      "description": "Type changed from 'Max16Text' to 'GEO_RestrictedFINXMax16Text_Extended'"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/BldgNb"
     },
     {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/BldgNb",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/BldgNm",
-      "oldValue": "Max35Text",
-      "newValue": "GEO_RestrictedFINXMax35Text_Extended",
-      "description": "Type changed from 'Max35Text' to 'GEO_RestrictedFINXMax35Text_Extended'"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/BldgNm"
     },
     {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/BldgNm",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/Flr",
-      "oldValue": "Max70Text",
-      "newValue": "GEO_RestrictedFINXMax70Text_Extended",
-      "description": "Type changed from 'Max70Text' to 'GEO_RestrictedFINXMax70Text_Extended'"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/Flr"
     },
     {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/Flr",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/PstBx",
-      "oldValue": "Max16Text",
-      "newValue": "GEO_RestrictedFINXMax16Text_Extended",
-      "description": "Type changed from 'Max16Text' to 'GEO_RestrictedFINXMax16Text_Extended'"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/PstBx"
     },
     {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/PstBx",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/Room",
-      "oldValue": "Max70Text",
-      "newValue": "GEO_RestrictedFINXMax70Text_Extended",
-      "description": "Type changed from 'Max70Text' to 'GEO_RestrictedFINXMax70Text_Extended'"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/Room"
     },
     {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/Room",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/PstCd",
-      "oldValue": "Max16Text",
-      "newValue": "GEO_RestrictedFINXMax16Text_Extended",
-      "description": "Type changed from 'Max16Text' to 'GEO_RestrictedFINXMax16Text_Extended'"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/PstCd"
     },
     {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/PstCd",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "MinOccursChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/TwnNm",
-      "oldValue": "0",
-      "newValue": "1",
-      "description": "minOccurs changed from 0 to 1"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/TwnNm"
     },
     {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/TwnNm",
-      "oldValue": "Max35Text",
-      "newValue": "GEO_RestrictedFINXMax35Text_Extended",
-      "description": "Type changed from 'Max35Text' to 'GEO_RestrictedFINXMax35Text_Extended'"
-    },
-    {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/TwnNm",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/TwnLctnNm",
-      "oldValue": "Max35Text",
-      "newValue": "GEO_RestrictedFINXMax35Text_Extended",
-      "description": "Type changed from 'Max35Text' to 'GEO_RestrictedFINXMax35Text_Extended'"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/TwnLctnNm"
     },
     {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/TwnLctnNm",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/DstrctNm",
-      "oldValue": "Max35Text",
-      "newValue": "GEO_RestrictedFINXMax35Text_Extended",
-      "description": "Type changed from 'Max35Text' to 'GEO_RestrictedFINXMax35Text_Extended'"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/DstrctNm"
     },
     {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/DstrctNm",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/CtrySubDvsn",
-      "oldValue": "Max35Text",
-      "newValue": "GEO_RestrictedFINXMax35Text_Extended",
-      "description": "Type changed from 'Max35Text' to 'GEO_RestrictedFINXMax35Text_Extended'"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/CtrySubDvsn"
     },
     {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/CtrySubDvsn",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "MinOccursChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/Ctry",
-      "oldValue": "0",
-      "newValue": "1",
-      "description": "minOccurs changed from 0 to 1"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/Ctry"
     },
     {
-      "changeType": "MaxOccursChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/AdrLine",
-      "oldValue": "7",
-      "newValue": "2",
-      "description": "maxOccurs changed from 7 to 2"
+      "oldValue": "[0..7]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/AdrLine"
     },
     {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/AdrLine",
-      "oldValue": "Max70Text",
-      "newValue": "GEO_RestrictedFINXMax35Text_Extended",
-      "description": "Type changed from 'Max70Text' to 'GEO_RestrictedFINXMax35Text_Extended'"
-    },
-    {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/AdrLine",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/AdrLine",
-      "oldValue": "maxLength=70",
-      "newValue": "maxLength=35",
-      "description": "Restriction maxLength changed from '70' to '35'"
-    },
-    {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr",
-      "oldValue": "PostalAddress24",
-      "newValue": "GEO_PostalAddress24",
-      "description": "Type changed from 'PostalAddress24' to 'GEO_PostalAddress24'"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr"
     },
     {
       "changeType": "RemovedNode",
@@ -1802,8 +1546,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/Id/OrgId/Othr/Id",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "newValue": "pattern=[0-9a-zA-Z/\\-\\?:\\(\\)\\.,'\\+ ]+",
+      "description": "Restriction pattern changed from None to \"[0-9a-zA-Z/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
       "changeType": "RemovedNode",
@@ -1814,6 +1558,14 @@
       "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/Dbtr/Id/OrgId/Othr/SchmeNm/Prtry"
     },
     {
+      "changeType": "MinOccursChanged",
+      "severity": "NonBreaking",
+      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/Id/OrgId/Othr/SchmeNm",
+      "oldValue": "0",
+      "newValue": "1",
+      "description": "minOccurs changed from 0 to 1"
+    },
+    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/Id/OrgId/Othr/SchmeNm",
@@ -1822,20 +1574,12 @@
       "description": "Type changed from 'OrganisationIdentificationSchemeName1Choice' to 'GEO_OrganisationIdentificationSchemeName1Choice'"
     },
     {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/Id/OrgId/Othr/Issr",
-      "oldValue": "Max35Text",
-      "newValue": "GEO_RestrictedFINXMax35Text",
-      "description": "Type changed from 'Max35Text' to 'GEO_RestrictedFINXMax35Text'"
-    },
-    {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/Id/OrgId/Othr/Issr",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/Dbtr/Id/OrgId/Othr/Issr"
     },
     {
       "changeType": "MinOccursChanged",
@@ -1922,8 +1666,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/Id/PrvtId/Othr/Id",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "newValue": "pattern=[0-9a-zA-Z/\\-\\?:\\(\\)\\.,'\\+ ]+",
+      "description": "Restriction pattern changed from None to \"[0-9a-zA-Z/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
       "changeType": "RemovedNode",
@@ -1934,6 +1678,14 @@
       "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/Dbtr/Id/PrvtId/Othr/SchmeNm/Prtry"
     },
     {
+      "changeType": "MinOccursChanged",
+      "severity": "NonBreaking",
+      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/Id/PrvtId/Othr/SchmeNm",
+      "oldValue": "0",
+      "newValue": "1",
+      "description": "minOccurs changed from 0 to 1"
+    },
+    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/Id/PrvtId/Othr/SchmeNm",
@@ -1942,20 +1694,12 @@
       "description": "Type changed from 'PersonIdentificationSchemeName1Choice' to 'GEO_PersonIdentificationSchemeName1Choice'"
     },
     {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/Id/PrvtId/Othr/Issr",
-      "oldValue": "Max35Text",
-      "newValue": "GEO_RestrictedFINXMax35Text",
-      "description": "Type changed from 'Max35Text' to 'GEO_RestrictedFINXMax35Text'"
-    },
-    {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/Id/PrvtId/Othr/Issr",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/Dbtr/Id/PrvtId/Othr/Issr"
     },
     {
       "changeType": "MinOccursChanged",
@@ -2122,8 +1866,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr",
       "oldValue": "PartyIdentification135",
-      "newValue": "GEO_PartyIdentification135",
-      "description": "Type changed from 'PartyIdentification135' to 'GEO_PartyIdentification135'"
+      "newValue": "GEO_PartyIdentification135__1",
+      "description": "Type changed from 'PartyIdentification135' to 'GEO_PartyIdentification135__1'"
     },
     {
       "changeType": "TypeChanged",
@@ -2246,20 +1990,20 @@
       "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/DbtrAcct/Tp"
     },
     {
-      "changeType": "TypeChanged",
+      "changeType": "MinOccursChanged",
       "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/DbtrAcct/Nm",
-      "oldValue": "Max70Text",
-      "newValue": "GEO_RestrictedFINXMax70Text",
-      "description": "Type changed from 'Max70Text' to 'GEO_RestrictedFINXMax70Text'"
+      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/DbtrAcct/Ccy",
+      "oldValue": "0",
+      "newValue": "1",
+      "description": "minOccurs changed from 0 to 1"
     },
     {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/DbtrAcct/Nm",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/DbtrAcct/Nm"
     },
     {
       "changeType": "RemovedNode",
@@ -2982,20 +2726,20 @@
       "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/DbtrAgtAcct/Tp"
     },
     {
-      "changeType": "TypeChanged",
+      "changeType": "MinOccursChanged",
       "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/DbtrAgtAcct/Nm",
-      "oldValue": "Max70Text",
-      "newValue": "GEO_RestrictedFINXMax70Text",
-      "description": "Type changed from 'Max70Text' to 'GEO_RestrictedFINXMax70Text'"
+      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/DbtrAgtAcct/Ccy",
+      "oldValue": "0",
+      "newValue": "1",
+      "description": "minOccurs changed from 0 to 1"
     },
     {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/DbtrAgtAcct/Nm",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/DbtrAgtAcct/Nm"
     },
     {
       "changeType": "RemovedNode",
@@ -3062,20 +2806,12 @@
       "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Nm",
-      "oldValue": "Max140Text",
-      "newValue": "GEO_RestrictedFINXMax140Text_Extended",
-      "description": "Type changed from 'Max140Text' to 'GEO_RestrictedFINXMax140Text_Extended'"
-    },
-    {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Nm",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Nm"
     },
     {
       "changeType": "RemovedNode",
@@ -3126,268 +2862,132 @@
       "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/AdrTp"
     },
     {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/Dept",
-      "oldValue": "Max70Text",
-      "newValue": "GEO_RestrictedFINXMax70Text_Extended",
-      "description": "Type changed from 'Max70Text' to 'GEO_RestrictedFINXMax70Text_Extended'"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/Dept"
     },
     {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/Dept",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/SubDept",
-      "oldValue": "Max70Text",
-      "newValue": "GEO_RestrictedFINXMax70Text_Extended",
-      "description": "Type changed from 'Max70Text' to 'GEO_RestrictedFINXMax70Text_Extended'"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/SubDept"
     },
     {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/SubDept",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/StrtNm",
-      "oldValue": "Max70Text",
-      "newValue": "GEO_RestrictedFINXMax70Text_Extended",
-      "description": "Type changed from 'Max70Text' to 'GEO_RestrictedFINXMax70Text_Extended'"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/StrtNm"
     },
     {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/StrtNm",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/BldgNb",
-      "oldValue": "Max16Text",
-      "newValue": "GEO_RestrictedFINXMax16Text_Extended",
-      "description": "Type changed from 'Max16Text' to 'GEO_RestrictedFINXMax16Text_Extended'"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/BldgNb"
     },
     {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/BldgNb",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/BldgNm",
-      "oldValue": "Max35Text",
-      "newValue": "GEO_RestrictedFINXMax35Text_Extended",
-      "description": "Type changed from 'Max35Text' to 'GEO_RestrictedFINXMax35Text_Extended'"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/BldgNm"
     },
     {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/BldgNm",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/Flr",
-      "oldValue": "Max70Text",
-      "newValue": "GEO_RestrictedFINXMax70Text_Extended",
-      "description": "Type changed from 'Max70Text' to 'GEO_RestrictedFINXMax70Text_Extended'"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/Flr"
     },
     {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/Flr",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/PstBx",
-      "oldValue": "Max16Text",
-      "newValue": "GEO_RestrictedFINXMax16Text_Extended",
-      "description": "Type changed from 'Max16Text' to 'GEO_RestrictedFINXMax16Text_Extended'"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/PstBx"
     },
     {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/PstBx",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/Room",
-      "oldValue": "Max70Text",
-      "newValue": "GEO_RestrictedFINXMax70Text_Extended",
-      "description": "Type changed from 'Max70Text' to 'GEO_RestrictedFINXMax70Text_Extended'"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/Room"
     },
     {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/Room",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/PstCd",
-      "oldValue": "Max16Text",
-      "newValue": "GEO_RestrictedFINXMax16Text_Extended",
-      "description": "Type changed from 'Max16Text' to 'GEO_RestrictedFINXMax16Text_Extended'"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/PstCd"
     },
     {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/PstCd",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "MinOccursChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/TwnNm",
-      "oldValue": "0",
-      "newValue": "1",
-      "description": "minOccurs changed from 0 to 1"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/TwnNm"
     },
     {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/TwnNm",
-      "oldValue": "Max35Text",
-      "newValue": "GEO_RestrictedFINXMax35Text_Extended",
-      "description": "Type changed from 'Max35Text' to 'GEO_RestrictedFINXMax35Text_Extended'"
-    },
-    {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/TwnNm",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/TwnLctnNm",
-      "oldValue": "Max35Text",
-      "newValue": "GEO_RestrictedFINXMax35Text_Extended",
-      "description": "Type changed from 'Max35Text' to 'GEO_RestrictedFINXMax35Text_Extended'"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/TwnLctnNm"
     },
     {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/TwnLctnNm",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/DstrctNm",
-      "oldValue": "Max35Text",
-      "newValue": "GEO_RestrictedFINXMax35Text_Extended",
-      "description": "Type changed from 'Max35Text' to 'GEO_RestrictedFINXMax35Text_Extended'"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/DstrctNm"
     },
     {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/DstrctNm",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/CtrySubDvsn",
-      "oldValue": "Max35Text",
-      "newValue": "GEO_RestrictedFINXMax35Text_Extended",
-      "description": "Type changed from 'Max35Text' to 'GEO_RestrictedFINXMax35Text_Extended'"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/CtrySubDvsn"
     },
     {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/CtrySubDvsn",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "MinOccursChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/Ctry",
-      "oldValue": "0",
-      "newValue": "1",
-      "description": "minOccurs changed from 0 to 1"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/Ctry"
     },
     {
-      "changeType": "MaxOccursChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/AdrLine",
-      "oldValue": "7",
-      "newValue": "2",
-      "description": "maxOccurs changed from 7 to 2"
+      "oldValue": "[0..7]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/AdrLine"
     },
     {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/AdrLine",
-      "oldValue": "Max70Text",
-      "newValue": "GEO_RestrictedFINXMax35Text_Extended",
-      "description": "Type changed from 'Max70Text' to 'GEO_RestrictedFINXMax35Text_Extended'"
-    },
-    {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/AdrLine",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/AdrLine",
-      "oldValue": "maxLength=70",
-      "newValue": "maxLength=35",
-      "description": "Restriction maxLength changed from '70' to '35'"
-    },
-    {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr",
-      "oldValue": "PostalAddress24",
-      "newValue": "GEO_PostalAddress24",
-      "description": "Type changed from 'PostalAddress24' to 'GEO_PostalAddress24'"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr"
     },
     {
       "changeType": "RemovedNode",
@@ -3406,20 +3006,20 @@
       "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Id/OrgId/LEI"
     },
     {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Id/OrgId/Othr/Id",
-      "oldValue": "Max35Text",
-      "newValue": "GEO_RestrictedFINXMax35Text",
-      "description": "Type changed from 'Max35Text' to 'GEO_RestrictedFINXMax35Text'"
+      "oldValue": "[1..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Id/OrgId/Othr/Id"
     },
     {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Id/OrgId/Othr/Id",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "changeType": "RemovedNode",
+      "severity": "Informational",
+      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Id/OrgId/Othr/SchmeNm/Cd",
+      "oldValue": "[1..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Id/OrgId/Othr/SchmeNm/Cd"
     },
     {
       "changeType": "RemovedNode",
@@ -3430,60 +3030,36 @@
       "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Id/OrgId/Othr/SchmeNm/Prtry"
     },
     {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Id/OrgId/Othr/SchmeNm",
-      "oldValue": "OrganisationIdentificationSchemeName1Choice",
-      "newValue": "GEO_OrganisationIdentificationSchemeName1Choice",
-      "description": "Type changed from 'OrganisationIdentificationSchemeName1Choice' to 'GEO_OrganisationIdentificationSchemeName1Choice'"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Id/OrgId/Othr/SchmeNm"
     },
     {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Id/OrgId/Othr/Issr",
-      "oldValue": "Max35Text",
-      "newValue": "GEO_RestrictedFINXMax35Text",
-      "description": "Type changed from 'Max35Text' to 'GEO_RestrictedFINXMax35Text'"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Id/OrgId/Othr/Issr"
     },
     {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Id/OrgId/Othr/Issr",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
-    },
-    {
-      "changeType": "MinOccursChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Id/OrgId/Othr",
-      "oldValue": "0",
-      "newValue": "1",
-      "description": "minOccurs changed from 0 to 1"
+      "oldValue": "[0..∞]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Id/OrgId/Othr"
     },
     {
-      "changeType": "MaxOccursChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Id/OrgId/Othr",
-      "oldValue": "unbounded",
-      "newValue": "1",
-      "description": "maxOccurs changed from unbounded to 1"
-    },
-    {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Id/OrgId/Othr",
-      "oldValue": "GenericOrganisationIdentification1",
-      "newValue": "GEO_GenericOrganisationIdentification1",
-      "description": "Type changed from 'GenericOrganisationIdentification1' to 'GEO_GenericOrganisationIdentification1'"
-    },
-    {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Id/OrgId",
-      "oldValue": "OrganisationIdentification29",
-      "newValue": "GEO_OrganisationIdentification29",
-      "description": "Type changed from 'OrganisationIdentification29' to 'GEO_OrganisationIdentification29'"
+      "oldValue": "[1..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Id/OrgId"
     },
     {
       "changeType": "RemovedNode",
@@ -3526,20 +3102,20 @@
       "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Id/PrvtId/DtAndPlcOfBirth"
     },
     {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Id/PrvtId/Othr/Id",
-      "oldValue": "Max35Text",
-      "newValue": "GEO_RestrictedFINXMax35Text",
-      "description": "Type changed from 'Max35Text' to 'GEO_RestrictedFINXMax35Text'"
+      "oldValue": "[1..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Id/PrvtId/Othr/Id"
     },
     {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Id/PrvtId/Othr/Id",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "changeType": "RemovedNode",
+      "severity": "Informational",
+      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Id/PrvtId/Othr/SchmeNm/Cd",
+      "oldValue": "[1..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Id/PrvtId/Othr/SchmeNm/Cd"
     },
     {
       "changeType": "RemovedNode",
@@ -3550,68 +3126,52 @@
       "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Id/PrvtId/Othr/SchmeNm/Prtry"
     },
     {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Id/PrvtId/Othr/SchmeNm",
-      "oldValue": "PersonIdentificationSchemeName1Choice",
-      "newValue": "GEO_PersonIdentificationSchemeName1Choice",
-      "description": "Type changed from 'PersonIdentificationSchemeName1Choice' to 'GEO_PersonIdentificationSchemeName1Choice'"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Id/PrvtId/Othr/SchmeNm"
     },
     {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Id/PrvtId/Othr/Issr",
-      "oldValue": "Max35Text",
-      "newValue": "GEO_RestrictedFINXMax35Text",
-      "description": "Type changed from 'Max35Text' to 'GEO_RestrictedFINXMax35Text'"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Id/PrvtId/Othr/Issr"
     },
     {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Id/PrvtId/Othr/Issr",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
-    },
-    {
-      "changeType": "MinOccursChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Id/PrvtId/Othr",
-      "oldValue": "0",
-      "newValue": "1",
-      "description": "minOccurs changed from 0 to 1"
+      "oldValue": "[0..∞]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Id/PrvtId/Othr"
     },
     {
-      "changeType": "MaxOccursChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Id/PrvtId/Othr",
-      "oldValue": "unbounded",
-      "newValue": "1",
-      "description": "maxOccurs changed from unbounded to 1"
-    },
-    {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Id/PrvtId/Othr",
-      "oldValue": "GenericPersonIdentification1",
-      "newValue": "GEO_GenericPersonIdentification1",
-      "description": "Type changed from 'GenericPersonIdentification1' to 'GEO_GenericPersonIdentification1'"
-    },
-    {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Id/PrvtId",
-      "oldValue": "PersonIdentification13",
-      "newValue": "GEO_PersonIdentification13",
-      "description": "Type changed from 'PersonIdentification13' to 'GEO_PersonIdentification13'"
+      "oldValue": "[1..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Id/PrvtId"
     },
     {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Id",
-      "oldValue": "Party38Choice",
-      "newValue": "GEO_Party38Choice",
-      "description": "Type changed from 'Party38Choice' to 'GEO_Party38Choice'"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Id"
+    },
+    {
+      "changeType": "RemovedNode",
+      "severity": "Informational",
+      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/CtryOfRes",
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/CtryOfRes"
     },
     {
       "changeType": "RemovedNode",
@@ -3734,12 +3294,12 @@
       "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/CtctDtls"
     },
     {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr",
-      "oldValue": "PartyIdentification135",
-      "newValue": "GEO_PartyIdentification135",
-      "description": "Type changed from 'PartyIdentification135' to 'GEO_PartyIdentification135'"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr"
     },
     {
       "changeType": "RemovedNode",
@@ -4426,8 +3986,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/PmtId/InstrId",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "newValue": "pattern=[0-9a-zA-Z/\\-\\?:\\(\\)\\.,'\\+ ]+",
+      "description": "Restriction pattern changed from None to \"[0-9a-zA-Z/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
       "changeType": "TypeChanged",
@@ -4442,8 +4002,16 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/PmtId/EndToEndId",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "newValue": "pattern=[0-9a-zA-Z/\\-\\?:\\(\\)\\.,'\\+ ]+",
+      "description": "Restriction pattern changed from None to \"[0-9a-zA-Z/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+    },
+    {
+      "changeType": "MinOccursChanged",
+      "severity": "NonBreaking",
+      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/PmtId/UETR",
+      "oldValue": "0",
+      "newValue": "1",
+      "description": "minOccurs changed from 0 to 1"
     },
     {
       "changeType": "TypeChanged",
@@ -4456,10 +4024,50 @@
     {
       "changeType": "RemovedNode",
       "severity": "Informational",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/PmtTpInf/SvcLvl/Prtry",
+      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/PmtTpInf/SvcLvl/Cd",
       "oldValue": "[1..1]",
       "newValue": null,
-      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/PmtTpInf/SvcLvl/Prtry"
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/PmtTpInf/SvcLvl/Cd"
+    },
+    {
+      "changeType": "TypeChanged",
+      "severity": "NonBreaking",
+      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/PmtTpInf/SvcLvl/Prtry",
+      "oldValue": "Max35Text",
+      "newValue": "GEO_ServiceLevelPrtryCode",
+      "description": "Type changed from 'Max35Text' to 'GEO_ServiceLevelPrtryCode'"
+    },
+    {
+      "changeType": "EnumerationAdded",
+      "severity": "NonBreaking",
+      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/PmtTpInf/SvcLvl/Prtry",
+      "oldValue": null,
+      "newValue": "ACH",
+      "description": "Enumeration value added: 'ACH'"
+    },
+    {
+      "changeType": "EnumerationAdded",
+      "severity": "NonBreaking",
+      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/PmtTpInf/SvcLvl/Prtry",
+      "oldValue": null,
+      "newValue": "RTGS",
+      "description": "Enumeration value added: 'RTGS'"
+    },
+    {
+      "changeType": "RestrictionChanged",
+      "severity": "NonBreaking",
+      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/PmtTpInf/SvcLvl/Prtry",
+      "oldValue": "minLength=1",
+      "newValue": "minLength=None",
+      "description": "Restriction minLength changed from '1' to None"
+    },
+    {
+      "changeType": "RestrictionChanged",
+      "severity": "NonBreaking",
+      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/PmtTpInf/SvcLvl/Prtry",
+      "oldValue": "maxLength=35",
+      "newValue": "maxLength=None",
+      "description": "Restriction maxLength changed from '35' to None"
     },
     {
       "changeType": "MaxOccursChanged",
@@ -4490,8 +4098,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/PmtTpInf/LclInstrm/Prtry",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "newValue": "pattern=[0-9a-zA-Z/\\-\\?:\\(\\)\\.,'\\+ ]+",
+      "description": "Restriction pattern changed from None to \"[0-9a-zA-Z/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
       "changeType": "TypeChanged",
@@ -5046,6 +4654,14 @@
       "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/ChqInstr"
     },
     {
+      "changeType": "MinOccursChanged",
+      "severity": "NonBreaking",
+      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/Nm",
+      "oldValue": "0",
+      "newValue": "1",
+      "description": "minOccurs changed from 0 to 1"
+    },
+    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/Nm",
@@ -5402,8 +5018,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/Id/OrgId/Othr/Id",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "newValue": "pattern=[0-9a-zA-Z/\\-\\?:\\(\\)\\.,'\\+ ]+",
+      "description": "Restriction pattern changed from None to \"[0-9a-zA-Z/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
       "changeType": "RemovedNode",
@@ -5414,6 +5030,14 @@
       "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/Id/OrgId/Othr/SchmeNm/Prtry"
     },
     {
+      "changeType": "MinOccursChanged",
+      "severity": "NonBreaking",
+      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/Id/OrgId/Othr/SchmeNm",
+      "oldValue": "0",
+      "newValue": "1",
+      "description": "minOccurs changed from 0 to 1"
+    },
+    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/Id/OrgId/Othr/SchmeNm",
@@ -5422,20 +5046,12 @@
       "description": "Type changed from 'OrganisationIdentificationSchemeName1Choice' to 'GEO_OrganisationIdentificationSchemeName1Choice'"
     },
     {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/Id/OrgId/Othr/Issr",
-      "oldValue": "Max35Text",
-      "newValue": "GEO_RestrictedFINXMax35Text",
-      "description": "Type changed from 'Max35Text' to 'GEO_RestrictedFINXMax35Text'"
-    },
-    {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/Id/OrgId/Othr/Issr",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/Id/OrgId/Othr/Issr"
     },
     {
       "changeType": "MinOccursChanged",
@@ -5522,8 +5138,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/Id/PrvtId/Othr/Id",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "newValue": "pattern=[0-9a-zA-Z/\\-\\?:\\(\\)\\.,'\\+ ]+",
+      "description": "Restriction pattern changed from None to \"[0-9a-zA-Z/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
       "changeType": "RemovedNode",
@@ -5534,6 +5150,14 @@
       "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/Id/PrvtId/Othr/SchmeNm/Prtry"
     },
     {
+      "changeType": "MinOccursChanged",
+      "severity": "NonBreaking",
+      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/Id/PrvtId/Othr/SchmeNm",
+      "oldValue": "0",
+      "newValue": "1",
+      "description": "minOccurs changed from 0 to 1"
+    },
+    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/Id/PrvtId/Othr/SchmeNm",
@@ -5542,20 +5166,12 @@
       "description": "Type changed from 'PersonIdentificationSchemeName1Choice' to 'GEO_PersonIdentificationSchemeName1Choice'"
     },
     {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/Id/PrvtId/Othr/Issr",
-      "oldValue": "Max35Text",
-      "newValue": "GEO_RestrictedFINXMax35Text",
-      "description": "Type changed from 'Max35Text' to 'GEO_RestrictedFINXMax35Text'"
-    },
-    {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/Id/PrvtId/Othr/Issr",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/Id/PrvtId/Othr/Issr"
     },
     {
       "changeType": "MinOccursChanged",
@@ -5722,8 +5338,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr",
       "oldValue": "PartyIdentification135",
-      "newValue": "GEO_PartyIdentification135",
-      "description": "Type changed from 'PartyIdentification135' to 'GEO_PartyIdentification135'"
+      "newValue": "GEO_PartyIdentification135__2",
+      "description": "Type changed from 'PartyIdentification135' to 'GEO_PartyIdentification135__2'"
     },
     {
       "changeType": "RemovedNode",
@@ -8430,6 +8046,14 @@
       "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/CdtrAgtAcct"
     },
     {
+      "changeType": "MinOccursChanged",
+      "severity": "NonBreaking",
+      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/Nm",
+      "oldValue": "0",
+      "newValue": "1",
+      "description": "minOccurs changed from 0 to 1"
+    },
+    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/Nm",
@@ -8494,268 +8118,132 @@
       "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/AdrTp"
     },
     {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/Dept",
-      "oldValue": "Max70Text",
-      "newValue": "GEO_RestrictedFINXMax70Text_Extended",
-      "description": "Type changed from 'Max70Text' to 'GEO_RestrictedFINXMax70Text_Extended'"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/Dept"
     },
     {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/Dept",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/SubDept",
-      "oldValue": "Max70Text",
-      "newValue": "GEO_RestrictedFINXMax70Text_Extended",
-      "description": "Type changed from 'Max70Text' to 'GEO_RestrictedFINXMax70Text_Extended'"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/SubDept"
     },
     {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/SubDept",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/StrtNm",
-      "oldValue": "Max70Text",
-      "newValue": "GEO_RestrictedFINXMax70Text_Extended",
-      "description": "Type changed from 'Max70Text' to 'GEO_RestrictedFINXMax70Text_Extended'"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/StrtNm"
     },
     {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/StrtNm",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/BldgNb",
-      "oldValue": "Max16Text",
-      "newValue": "GEO_RestrictedFINXMax16Text_Extended",
-      "description": "Type changed from 'Max16Text' to 'GEO_RestrictedFINXMax16Text_Extended'"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/BldgNb"
     },
     {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/BldgNb",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/BldgNm",
-      "oldValue": "Max35Text",
-      "newValue": "GEO_RestrictedFINXMax35Text_Extended",
-      "description": "Type changed from 'Max35Text' to 'GEO_RestrictedFINXMax35Text_Extended'"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/BldgNm"
     },
     {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/BldgNm",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/Flr",
-      "oldValue": "Max70Text",
-      "newValue": "GEO_RestrictedFINXMax70Text_Extended",
-      "description": "Type changed from 'Max70Text' to 'GEO_RestrictedFINXMax70Text_Extended'"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/Flr"
     },
     {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/Flr",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/PstBx",
-      "oldValue": "Max16Text",
-      "newValue": "GEO_RestrictedFINXMax16Text_Extended",
-      "description": "Type changed from 'Max16Text' to 'GEO_RestrictedFINXMax16Text_Extended'"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/PstBx"
     },
     {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/PstBx",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/Room",
-      "oldValue": "Max70Text",
-      "newValue": "GEO_RestrictedFINXMax70Text_Extended",
-      "description": "Type changed from 'Max70Text' to 'GEO_RestrictedFINXMax70Text_Extended'"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/Room"
     },
     {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/Room",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/PstCd",
-      "oldValue": "Max16Text",
-      "newValue": "GEO_RestrictedFINXMax16Text_Extended",
-      "description": "Type changed from 'Max16Text' to 'GEO_RestrictedFINXMax16Text_Extended'"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/PstCd"
     },
     {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/PstCd",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "MinOccursChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/TwnNm",
-      "oldValue": "0",
-      "newValue": "1",
-      "description": "minOccurs changed from 0 to 1"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/TwnNm"
     },
     {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/TwnNm",
-      "oldValue": "Max35Text",
-      "newValue": "GEO_RestrictedFINXMax35Text_Extended",
-      "description": "Type changed from 'Max35Text' to 'GEO_RestrictedFINXMax35Text_Extended'"
-    },
-    {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/TwnNm",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/TwnLctnNm",
-      "oldValue": "Max35Text",
-      "newValue": "GEO_RestrictedFINXMax35Text_Extended",
-      "description": "Type changed from 'Max35Text' to 'GEO_RestrictedFINXMax35Text_Extended'"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/TwnLctnNm"
     },
     {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/TwnLctnNm",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/DstrctNm",
-      "oldValue": "Max35Text",
-      "newValue": "GEO_RestrictedFINXMax35Text_Extended",
-      "description": "Type changed from 'Max35Text' to 'GEO_RestrictedFINXMax35Text_Extended'"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/DstrctNm"
     },
     {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/DstrctNm",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/CtrySubDvsn",
-      "oldValue": "Max35Text",
-      "newValue": "GEO_RestrictedFINXMax35Text_Extended",
-      "description": "Type changed from 'Max35Text' to 'GEO_RestrictedFINXMax35Text_Extended'"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/CtrySubDvsn"
     },
     {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/CtrySubDvsn",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "MinOccursChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/Ctry",
-      "oldValue": "0",
-      "newValue": "1",
-      "description": "minOccurs changed from 0 to 1"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/Ctry"
     },
     {
-      "changeType": "MaxOccursChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/AdrLine",
-      "oldValue": "7",
-      "newValue": "2",
-      "description": "maxOccurs changed from 7 to 2"
+      "oldValue": "[0..7]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/AdrLine"
     },
     {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/AdrLine",
-      "oldValue": "Max70Text",
-      "newValue": "GEO_RestrictedFINXMax35Text_Extended",
-      "description": "Type changed from 'Max70Text' to 'GEO_RestrictedFINXMax35Text_Extended'"
-    },
-    {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/AdrLine",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
-    },
-    {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/AdrLine",
-      "oldValue": "maxLength=70",
-      "newValue": "maxLength=35",
-      "description": "Restriction maxLength changed from '70' to '35'"
-    },
-    {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr",
-      "oldValue": "PostalAddress24",
-      "newValue": "GEO_PostalAddress24",
-      "description": "Type changed from 'PostalAddress24' to 'GEO_PostalAddress24'"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr"
     },
     {
       "changeType": "RemovedNode",
@@ -8786,8 +8274,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/Id/OrgId/Othr/Id",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "newValue": "pattern=[0-9a-zA-Z/\\-\\?:\\(\\)\\.,'\\+ ]+",
+      "description": "Restriction pattern changed from None to \"[0-9a-zA-Z/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
       "changeType": "RemovedNode",
@@ -8798,6 +8286,14 @@
       "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/Id/OrgId/Othr/SchmeNm/Prtry"
     },
     {
+      "changeType": "MinOccursChanged",
+      "severity": "NonBreaking",
+      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/Id/OrgId/Othr/SchmeNm",
+      "oldValue": "0",
+      "newValue": "1",
+      "description": "minOccurs changed from 0 to 1"
+    },
+    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/Id/OrgId/Othr/SchmeNm",
@@ -8806,20 +8302,12 @@
       "description": "Type changed from 'OrganisationIdentificationSchemeName1Choice' to 'GEO_OrganisationIdentificationSchemeName1Choice'"
     },
     {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/Id/OrgId/Othr/Issr",
-      "oldValue": "Max35Text",
-      "newValue": "GEO_RestrictedFINXMax35Text",
-      "description": "Type changed from 'Max35Text' to 'GEO_RestrictedFINXMax35Text'"
-    },
-    {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/Id/OrgId/Othr/Issr",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/Id/OrgId/Othr/Issr"
     },
     {
       "changeType": "MinOccursChanged",
@@ -8906,8 +8394,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/Id/PrvtId/Othr/Id",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "newValue": "pattern=[0-9a-zA-Z/\\-\\?:\\(\\)\\.,'\\+ ]+",
+      "description": "Restriction pattern changed from None to \"[0-9a-zA-Z/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
       "changeType": "RemovedNode",
@@ -8918,6 +8406,14 @@
       "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/Id/PrvtId/Othr/SchmeNm/Prtry"
     },
     {
+      "changeType": "MinOccursChanged",
+      "severity": "NonBreaking",
+      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/Id/PrvtId/Othr/SchmeNm",
+      "oldValue": "0",
+      "newValue": "1",
+      "description": "minOccurs changed from 0 to 1"
+    },
+    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/Id/PrvtId/Othr/SchmeNm",
@@ -8926,20 +8422,12 @@
       "description": "Type changed from 'PersonIdentificationSchemeName1Choice' to 'GEO_PersonIdentificationSchemeName1Choice'"
     },
     {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/Id/PrvtId/Othr/Issr",
-      "oldValue": "Max35Text",
-      "newValue": "GEO_RestrictedFINXMax35Text",
-      "description": "Type changed from 'Max35Text' to 'GEO_RestrictedFINXMax35Text'"
-    },
-    {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/Id/PrvtId/Othr/Issr",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/Id/PrvtId/Othr/Issr"
     },
     {
       "changeType": "MinOccursChanged",
@@ -9114,8 +8602,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr",
       "oldValue": "PartyIdentification135",
-      "newValue": "GEO_PartyIdentification135",
-      "description": "Type changed from 'PartyIdentification135' to 'GEO_PartyIdentification135'"
+      "newValue": "GEO_PartyIdentification135__1",
+      "description": "Type changed from 'PartyIdentification135' to 'GEO_PartyIdentification135__1'"
     },
     {
       "changeType": "TypeChanged",
@@ -9214,20 +8702,20 @@
       "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/CdtrAcct/Tp"
     },
     {
-      "changeType": "TypeChanged",
+      "changeType": "MinOccursChanged",
       "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/CdtrAcct/Nm",
-      "oldValue": "Max70Text",
-      "newValue": "GEO_RestrictedFINXMax70Text",
-      "description": "Type changed from 'Max70Text' to 'GEO_RestrictedFINXMax70Text'"
+      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/CdtrAcct/Ccy",
+      "oldValue": "0",
+      "newValue": "1",
+      "description": "minOccurs changed from 0 to 1"
     },
     {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/CdtrAcct/Nm",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/CdtrAcct/Nm"
     },
     {
       "changeType": "RemovedNode",
@@ -9284,6 +8772,14 @@
       "oldValue": "CashAccount38",
       "newValue": "GEO_CashAccount38__2",
       "description": "Type changed from 'CashAccount38' to 'GEO_CashAccount38__2'"
+    },
+    {
+      "changeType": "MinOccursChanged",
+      "severity": "NonBreaking",
+      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/Nm",
+      "oldValue": "0",
+      "newValue": "1",
+      "description": "minOccurs changed from 0 to 1"
     },
     {
       "changeType": "TypeChanged",
@@ -9642,8 +9138,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/Id/OrgId/Othr/Id",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "newValue": "pattern=[0-9a-zA-Z/\\-\\?:\\(\\)\\.,'\\+ ]+",
+      "description": "Restriction pattern changed from None to \"[0-9a-zA-Z/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
       "changeType": "RemovedNode",
@@ -9654,6 +9150,14 @@
       "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/Id/OrgId/Othr/SchmeNm/Prtry"
     },
     {
+      "changeType": "MinOccursChanged",
+      "severity": "NonBreaking",
+      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/Id/OrgId/Othr/SchmeNm",
+      "oldValue": "0",
+      "newValue": "1",
+      "description": "minOccurs changed from 0 to 1"
+    },
+    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/Id/OrgId/Othr/SchmeNm",
@@ -9662,20 +9166,12 @@
       "description": "Type changed from 'OrganisationIdentificationSchemeName1Choice' to 'GEO_OrganisationIdentificationSchemeName1Choice'"
     },
     {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/Id/OrgId/Othr/Issr",
-      "oldValue": "Max35Text",
-      "newValue": "GEO_RestrictedFINXMax35Text",
-      "description": "Type changed from 'Max35Text' to 'GEO_RestrictedFINXMax35Text'"
-    },
-    {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/Id/OrgId/Othr/Issr",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/Id/OrgId/Othr/Issr"
     },
     {
       "changeType": "MinOccursChanged",
@@ -9762,8 +9258,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/Id/PrvtId/Othr/Id",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "newValue": "pattern=[0-9a-zA-Z/\\-\\?:\\(\\)\\.,'\\+ ]+",
+      "description": "Restriction pattern changed from None to \"[0-9a-zA-Z/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
       "changeType": "RemovedNode",
@@ -9774,6 +9270,14 @@
       "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/Id/PrvtId/Othr/SchmeNm/Prtry"
     },
     {
+      "changeType": "MinOccursChanged",
+      "severity": "NonBreaking",
+      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/Id/PrvtId/Othr/SchmeNm",
+      "oldValue": "0",
+      "newValue": "1",
+      "description": "minOccurs changed from 0 to 1"
+    },
+    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/Id/PrvtId/Othr/SchmeNm",
@@ -9782,20 +9286,12 @@
       "description": "Type changed from 'PersonIdentificationSchemeName1Choice' to 'GEO_PersonIdentificationSchemeName1Choice'"
     },
     {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/Id/PrvtId/Othr/Issr",
-      "oldValue": "Max35Text",
-      "newValue": "GEO_RestrictedFINXMax35Text",
-      "description": "Type changed from 'Max35Text' to 'GEO_RestrictedFINXMax35Text'"
-    },
-    {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/Id/PrvtId/Othr/Issr",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/Id/PrvtId/Othr/Issr"
     },
     {
       "changeType": "MinOccursChanged",
@@ -9962,8 +9458,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr",
       "oldValue": "PartyIdentification135",
-      "newValue": "GEO_PartyIdentification135",
-      "description": "Type changed from 'PartyIdentification135' to 'GEO_PartyIdentification135'"
+      "newValue": "GEO_PartyIdentification135__2",
+      "description": "Type changed from 'PartyIdentification135' to 'GEO_PartyIdentification135__2'"
     },
     {
       "changeType": "RemovedNode",
@@ -10074,8 +9570,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/RgltryRptg/Dtls/Tp",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "newValue": "pattern=[0-9a-zA-Z/\\-\\?:\\(\\)\\.,'\\+ ]+",
+      "description": "Restriction pattern changed from None to \"[0-9a-zA-Z/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
       "changeType": "TypeChanged",
@@ -10106,8 +9602,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/RgltryRptg/Dtls/Inf",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "newValue": "pattern=[0-9a-zA-Z/\\-\\?:\\(\\)\\.,'\\+ ]+",
+      "description": "Restriction pattern changed from None to \"[0-9a-zA-Z/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
       "changeType": "TypeChanged",
@@ -13940,6 +13436,14 @@
       "oldValue": "[0..∞]",
       "newValue": null,
       "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/RmtInf/Strd"
+    },
+    {
+      "changeType": "MinOccursChanged",
+      "severity": "NonBreaking",
+      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/RmtInf",
+      "oldValue": "0",
+      "newValue": "1",
+      "description": "minOccurs changed from 0 to 1"
     },
     {
       "changeType": "TypeChanged",
