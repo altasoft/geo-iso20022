@@ -1,10 +1,5 @@
-<<<<<<< HEAD
-﻿<?xml version='1.0' encoding='UTF-8'?>
-<!--Revision 08-->
-=======
 <?xml version='1.0' encoding='UTF-8'?>
-<!--Revision 09-->
->>>>>>> 53d87b10f88b7a476db83b71d285b026161e15ba
+<!--Revision 10-->
 <xs:schema xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.09" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="urn:iso:std:iso:20022:tech:xsd:pain.001.001.09">
 	<xs:annotation>
 		<xs:documentation source="Name" xml:lang="EN">pain.001.001.09</xs:documentation>
@@ -475,7 +470,7 @@
 					<xs:documentation source="Definition" xml:lang="KA">მახასიათებლების ნაკრები, რომელიც საერთოა შეტყობინებაში შემავალი ყველა ინდივიდუალური ოპერაციისთვის.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element maxOccurs="unbounded" minOccurs="1" name="PmtInf" type="GEO_PaymentInstruction30">
+			<xs:element maxOccurs="1" minOccurs="1" name="PmtInf" type="GEO_PaymentInstruction30">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">PaymentInformation</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">Set of characteristics that applies to the debit side of the payment transactions included in the credit transfer initiation.</xs:documentation>
@@ -792,11 +787,7 @@
 					<xs:documentation source="Definition" xml:lang="KA">შეტყობინებაში შემავალი ინდივიდუალური ოპერაციების რაოდენობა.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-<<<<<<< HEAD
-			<xs:element name="InitgPty" type="GEO_PartyIdentification135__1">
-=======
 			<xs:element name="InitgPty" type="GEO_PartyIdentification135__3">
->>>>>>> 53d87b10f88b7a476db83b71d285b026161e15ba
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">InitiatingParty</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">
@@ -1149,13 +1140,13 @@
 					<xs:documentation source="Definition" xml:lang="KA">გადახდის საშუალება, რომელიც გამოყენებული იქნება თანხის გადატანისთვის.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element maxOccurs="1" minOccurs="0" name="NbOfTxs" type="Max15NumericText">
+			<!--<xs:element maxOccurs="1" minOccurs="0" name="NbOfTxs" type="Max15NumericText">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">NumberOfTransactions</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">Number of individual transactions contained in the message.</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="KA">შეტყობინებაში შემავალი ინდივიდუალური ოპერაციების რაოდენობა.</xs:documentation>
 				</xs:annotation>
-			</xs:element>
+			</xs:element>-->
 			<xs:element maxOccurs="1" minOccurs="0" name="PmtTpInf" type="GEO_PaymentTypeInformation26">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">GEO_PaymentTypeInformation</xs:documentation>
@@ -1642,7 +1633,7 @@
 			<xs:documentation source="Definition" xml:lang="KA">სტრუქტურირებული ფორმით მოწოდებული ინფორმაცია, რომელიც შესაძლებელს ხდის ჩანაწერის შეჯერებას იმ ელემენტებთან, რომელთა დასაფარადაც განკუთვნილია გადახდა, მაგალითად, კომერციულ ინვოისებთან დებიტორული დავალიანებების სისტემაში.</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element maxOccurs="1" minOccurs="0" name="CdtrRefInf" type="GEO_CreditorReferenceInformation2">
+			<xs:element name="CdtrRefInf" type="GEO_CreditorReferenceInformation2">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">CreditorReferenceInformation</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">Reference information provided by the creditor to allow the identification of the underlying documents.</xs:documentation>
@@ -1667,8 +1658,4 @@
 			<xs:maxLength value="9"/>
 		</xs:restriction>
 	</xs:simpleType>
-<<<<<<< HEAD
 </xs:schema>
-=======
-</xs:schema>
->>>>>>> 53d87b10f88b7a476db83b71d285b026161e15ba
