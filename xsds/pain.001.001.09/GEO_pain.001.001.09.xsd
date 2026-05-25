@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<!--Revision 10-->
+<!--Revision 11-->
 <xs:schema xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.09" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="urn:iso:std:iso:20022:tech:xsd:pain.001.001.09">
 	<xs:annotation>
 		<xs:documentation source="Name" xml:lang="EN">pain.001.001.09</xs:documentation>
@@ -1147,13 +1147,13 @@
 					<xs:documentation source="Definition" xml:lang="KA">შეტყობინებაში შემავალი ინდივიდუალური ოპერაციების რაოდენობა.</xs:documentation>
 				</xs:annotation>
 			</xs:element>-->
-			<xs:element maxOccurs="1" minOccurs="0" name="PmtTpInf" type="GEO_PaymentTypeInformation26">
+			<!--<xs:element maxOccurs="1" minOccurs="0" name="PmtTpInf" type="GEO_PaymentTypeInformation26">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">GEO_PaymentTypeInformation</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">Set of elements used to further specify the type of transaction.</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="KA">ელემენტების ნაკრები, რომელიც გამოიყენება ოპერაციის ტიპის დამატებით დასაზუსტებლად.</xs:documentation>
 				</xs:annotation>
-			</xs:element>
+			</xs:element>-->
 			<xs:element name="ReqdExctnDt" type="DateAndDateTime2Choice">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">RequestedExecutionDate</xs:documentation>
