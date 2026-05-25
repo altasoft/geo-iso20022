@@ -3,11 +3,13 @@
 A browser-based interactive viewer for ISO 20022 XSD message schemas.
 Parses XSD files into a JSON model and renders an expandable tree with diff comparison.
 
-Built to visualize the Georgian national adaptation of ISO 20022 pain.001 (credit transfer initiation).
+Built to visualize the Georgian national adaptation of ISO 20022 payment messages.
 
-## Live Demo
+## 🌐 Live
 
-Deployed on GitHub Pages — three view modes available:
+**https://altasoft.github.io/geo-iso20022/**
+
+Three view modes available:
 - **ISO 20022** — the international standard schema
 - **Georgian** — the Georgian national adaptation
 - **Diff** — side-by-side change highlighting with severity classification
