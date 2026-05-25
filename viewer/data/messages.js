@@ -1,0 +1,1 @@
+window.__MESSAGES__ = {"messages": [{"id": "pain.001.001.09", "label": "pain.001.001.09"}, {"id": "pain.002.001.10", "label": "pain.002.001.10"}]};

@@ -27,6 +27,16 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; font-size: 13px;
 .view-btn.active { background: #5c6bc0; color: #fff; border-color: #5c6bc0; }
 .lang-btn.active { background: #5c6bc0; color: #fff; border-color: #5c6bc0; }
 
+/* Message selector */
+#message-selector {
+  padding: 5px 10px; border-radius: 4px; border: 1px solid #3f4769;
+  background: #2a2d4a; color: #e8eaf6; font-size: 12px; cursor: pointer;
+  height: 30px;
+}
+#message-selector:focus { outline: none; border-color: #7986cb; }
+#message-selector option { background: #2a2d4a; color: #e8eaf6; }
+#message-selector.hidden { display: none; }
+
 /* ── Toolbar (checkboxes) ─────────────────────────────────────────────────── */
 #toolbar {
   background: #ffffff; border-bottom: 1px solid #e0e4ed;

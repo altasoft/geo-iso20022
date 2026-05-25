@@ -26,6 +26,7 @@ const state = {
     changedOnly: false,
     showRemoved: true,
   },
+  loadToken: 0,
 };
 
 // ── Language helper ────────────────────────────────────────────────────────────
@@ -35,72 +36,152 @@ function getDoc(node) {
 }
 
 // ── Bootstrap ──────────────────────────────────────────────────────────────────
-async function loadData() {
-  // Load all three in parallel
+
+/** Load a .js sidecar by injecting a <script> tag; captures and clears the global. */
+function loadSidecar(url, globalVar) {
+  return new Promise(resolve => {
+    const script = document.createElement("script");
+    script.src = url;
+    script.onload = () => {
+      const val = window[globalVar] ?? null;
+      delete window[globalVar];
+      resolve(val);
+    };
+    script.onerror = () => resolve(null);
+    document.head.appendChild(script);
+  });
+}
+
+async function fetchManifest() {
+  try {
+    const res = await fetch("data/messages.json");
+    if (res.ok) return await res.json();
+  } catch (e) { /* fall through */ }
+  return window.__MESSAGES__ ?? null;
+}
+
+function populateSelector(messages) {
+  const sel = document.getElementById("message-selector");
+  sel.innerHTML = "";
+  for (const msg of messages) {
+    const opt = document.createElement("option");
+    opt.value = msg.id;
+    opt.textContent = msg.label;
+    sel.appendChild(opt);
+  }
+  if (messages.length <= 1) {
+    sel.classList.add("hidden");
+  } else {
+    sel.classList.remove("hidden");
+  }
+  sel.addEventListener("change", () => loadData(sel.value));
+}
+
+async function loadData(messageId) {
+  const token = ++state.loadToken;
+  // Reset transient UI
+  state.expanded    = new Set();
+  state.selected    = null;
+  state.searchQuery = "";
+  state.matchedIds  = new Set();
+  document.getElementById("search-box").value = "";
+  document.getElementById("tree-body").innerHTML =
+    '<div class="no-results" id="loading-msg">Loading schema…</div>';
+  document.getElementById("diff-bar").classList.remove("visible");
+  document.getElementById("cb-changed-wrap").style.display = "none";
+  document.getElementById("cb-removed-wrap").style.display = "none";
+  document.getElementById("view-selector").style.display   = "none";
+  state.filters.changedOnly = false;
+  state.filters.showRemoved = true;
+  document.getElementById("cb-changed").checked = false;
+  document.getElementById("cb-removed").checked = true;
+
+  const prefix = `data/${messageId}`;
+
+  // Try fetch for all three in parallel
   const [origRes, schemaRes, diffRes] = await Promise.allSettled([
-    fetch("original.json"),
-    fetch("schema-model.json"),
-    fetch("diff-model.json"),
+    fetch(`${prefix}/original.json`),
+    fetch(`${prefix}/schema-model.json`),
+    fetch(`${prefix}/diff-model.json`),
   ]);
+
+  if (token !== state.loadToken) return; // superseded by a newer load
 
   let originalSchema = null;
   if (origRes.status === "fulfilled" && origRes.value.ok)
     originalSchema = await origRes.value.json().catch(() => null);
-  if (!originalSchema) originalSchema = window.__ORIGINAL_MODEL__ ?? null;
 
   let updatedSchema = null;
   if (schemaRes.status === "fulfilled" && schemaRes.value.ok)
     updatedSchema = await schemaRes.value.json().catch(() => null);
-  if (!updatedSchema) updatedSchema = window.__SCHEMA_MODEL__ ?? null;
 
   let diff = null;
   if (diffRes.status === "fulfilled" && diffRes.value.ok)
     diff = await diffRes.value.json().catch(() => null);
-  if (!diff) diff = window.__DIFF_MODEL__ ?? null;
+
+  // Sidecar fallbacks (file:// protocol) — sequential: shared globals
+  if (!originalSchema) {
+    originalSchema = await loadSidecar(`${prefix}/original.js`, "__SCHEMA_MODEL__");
+    if (token !== state.loadToken) return;
+  }
+  if (!updatedSchema) {
+    updatedSchema  = await loadSidecar(`${prefix}/schema-model.js`, "__SCHEMA_MODEL__");
+    if (token !== state.loadToken) return;
+  }
+  if (!diff) {
+    diff           = await loadSidecar(`${prefix}/diff-model.js`, "__DIFF_MODEL__");
+    if (token !== state.loadToken) return;
+  }
 
   if (!updatedSchema && !originalSchema) {
     document.getElementById("loading-msg").textContent =
-      "schema-model.json not found. Run parse_xsd.py first, then serve this folder.";
+      "Schema data not found. Run build.py first, then serve this folder via HTTP.";
     return;
   }
 
   state.originalSchema = originalSchema;
-  state.updatedSchema = updatedSchema;
-  state.diff = diff;
+  state.updatedSchema  = updatedSchema;
+  state.diff           = diff;
 
   // Default view
-  if (diff && updatedSchema) state.viewMode = "diff";
-  else if (updatedSchema)    state.viewMode = "updated";
-  else                       state.viewMode = "original";
+  if (diff && updatedSchema)  state.viewMode = "diff";
+  else if (updatedSchema)     state.viewMode = "updated";
+  else                        state.viewMode = "original";
 
   state.schema = state.viewMode === "original" ? originalSchema : updatedSchema;
 
   setupViewSelector();
   initIndex();
   if (state.diff && state.viewMode === "diff") initDiff();
-  bindUI();
   renderAll();
 }
 
+async function init() {
+  const manifest = await fetchManifest();
+  if (!manifest || !manifest.messages || manifest.messages.length === 0) {
+    document.getElementById("loading-msg").textContent =
+      "messages.json not found. Run build.py first, then serve this folder via HTTP.";
+    return;
+  }
+  populateSelector(manifest.messages);
+  bindUI();
+  await loadData(manifest.messages[0].id);
+}
+
 function setupViewSelector() {
-  const sel = document.getElementById("view-selector");
+  const sel    = document.getElementById("view-selector");
   const hasOrig = !!state.originalSchema;
   const hasUpd  = !!state.updatedSchema;
   const hasDiff = !!state.diff;
 
-  // Only show if there's more than one meaningful view
   if (!hasOrig && !hasDiff) return;
 
-  if (!hasOrig) sel.querySelector('[data-view="original"]').style.display = "none";
-  if (!hasUpd)  sel.querySelector('[data-view="updated"]').style.display  = "none";
-  if (!hasDiff) sel.querySelector('[data-view="diff"]').style.display     = "none";
+  sel.querySelector('[data-view="original"]').style.display = hasOrig ? "" : "none";
+  sel.querySelector('[data-view="updated"]').style.display  = hasUpd  ? "" : "none";
+  sel.querySelector('[data-view="diff"]').style.display     = hasDiff ? "" : "none";
 
   sel.style.display = "flex";
   _updateViewButtons();
-
-  sel.querySelectorAll(".view-btn").forEach(btn => {
-    btn.addEventListener("click", () => switchView(btn.dataset.view));
-  });
 }
 
 function switchView(mode) {
@@ -224,6 +305,11 @@ function initDiff() {
 
 // ── UI bindings ────────────────────────────────────────────────────────────────
 function bindUI() {
+  // View selector buttons (registered once; loadData resets active state via _updateViewButtons)
+  document.querySelectorAll(".view-btn").forEach(btn => {
+    btn.addEventListener("click", () => switchView(btn.dataset.view));
+  });
+
   document.querySelectorAll(".lang-btn").forEach(btn => {
     btn.addEventListener("click", () => {
       state.lang = btn.dataset.lang;
@@ -723,4 +809,4 @@ function esc(s) {
 }
 
 // ── Entry point ────────────────────────────────────────────────────────────────
-document.addEventListener("DOMContentLoaded", loadData);
+document.addEventListener("DOMContentLoaded", init);

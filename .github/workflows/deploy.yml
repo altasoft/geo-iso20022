@@ -30,14 +30,8 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Parse ISO 20022 original
-        run: python parser/parse_xsd.py --input xsds/pain.001.001.09.xsd --out viewer/original.json
-
-      - name: Parse Georgian revision
-        run: python parser/parse_xsd.py --input xsds/GEO_pain.001.001.09.xsd --out viewer/schema-model.json
-
-      - name: Generate diff
-        run: python parser/diff_xsd.py --old viewer/original.json --new viewer/schema-model.json --out viewer/diff-model.json
+      - name: Build viewer data
+        run: python build.py
 
       - uses: actions/configure-pages@v5
 

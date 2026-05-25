@@ -11,6 +11,7 @@
 <!-- Header -->
 <div id="header">
   <span id="message-name">XSD Visualizer</span>
+  <select id="message-selector" class="hdr-btn hidden"></select>
   <div id="lang-selector" style="gap:2px; display:flex">
     <button class="hdr-btn lang-btn active" data-lang="en">EN</button>
     <button class="hdr-btn lang-btn" data-lang="ka">KA</button>
@@ -72,11 +73,8 @@
   </div>
 </div>
 
-<!-- Sidecar fallbacks (written by parser) -->
-<script src="original.js" onerror="void(0)"></script>
-<script>window.__ORIGINAL_MODEL__ = window.__SCHEMA_MODEL__ || null;</script>
-<script src="schema-model.js" onerror="void(0)"></script>
-<script src="diff-model.js" onerror="void(0)"></script>
+<!-- Manifest sidecar fallback (for file:// protocol) -->
+<script src="data/messages.js" onerror="void(0)"></script>
 <script src="app.js"></script>
 </body>
 </html>

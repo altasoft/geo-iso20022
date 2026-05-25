@@ -2,15 +2,15 @@
   "metadata": {
     "oldSource": "pain.001.001.09.xsd",
     "newSource": "GEO_pain.001.001.09.xsd",
-    "generatedAt": "2026-05-22T09:03:50.647509+00:00"
+    "generatedAt": "2026-05-25T07:28:15.392153+00:00"
   },
   "summary": {
     "added": 0,
-    "removed": 1299,
-    "changed": 450,
+    "removed": 1298,
+    "changed": 453,
     "breaking": 0,
-    "nonBreaking": 450,
-    "informational": 1299
+    "nonBreaking": 453,
+    "informational": 1298
   },
   "changes": [
     {
@@ -26,8 +26,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/MsgId",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
+      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
       "changeType": "TypeChanged",
@@ -66,8 +66,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/Nm",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "RemovedNode",
@@ -130,8 +130,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/Dept",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -146,8 +146,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/SubDept",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -162,8 +162,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/StrtNm",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -178,8 +178,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/BldgNb",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -194,8 +194,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/BldgNm",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -210,8 +210,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/Flr",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -226,8 +226,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/PstBx",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -242,8 +242,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/Room",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -258,8 +258,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/PstCd",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "MinOccursChanged",
@@ -282,8 +282,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/TwnNm",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -298,8 +298,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/TwnLctnNm",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -314,8 +314,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/DstrctNm",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -330,8 +330,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/CtrySubDvsn",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "MinOccursChanged",
@@ -362,8 +362,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/PstlAdr/AdrLine",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "RestrictionChanged",
@@ -410,8 +410,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/Id/OrgId/Othr/Id",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
+      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
       "changeType": "RemovedNode",
@@ -442,8 +442,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/Id/OrgId/Othr/Issr",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
+      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
       "changeType": "MinOccursChanged",
@@ -530,8 +530,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/Id/PrvtId/Othr/Id",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
+      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
       "changeType": "RemovedNode",
@@ -562,8 +562,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/GrpHdr/InitgPty/Id/PrvtId/Othr/Issr",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
+      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
       "changeType": "MinOccursChanged",
@@ -1306,16 +1306,32 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/PmtInfId",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
+      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
-      "changeType": "RemovedNode",
-      "severity": "Informational",
+      "changeType": "TypeChanged",
+      "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/PmtMtd",
-      "oldValue": "[1..1]",
+      "oldValue": "PaymentMethod3Code",
+      "newValue": "GEO_PaymentMethod3Code_fixed",
+      "description": "Type changed from 'PaymentMethod3Code' to 'GEO_PaymentMethod3Code_fixed'"
+    },
+    {
+      "changeType": "EnumerationRemoved",
+      "severity": "NonBreaking",
+      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/PmtMtd",
+      "oldValue": "CHK",
       "newValue": null,
-      "description": "Node removed: /Document/CstmrCdtTrfInitn/PmtInf/PmtMtd"
+      "description": "Enumeration value removed: 'CHK'"
+    },
+    {
+      "changeType": "EnumerationRemoved",
+      "severity": "NonBreaking",
+      "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/PmtMtd",
+      "oldValue": "TRA",
+      "newValue": null,
+      "description": "Enumeration value removed: 'TRA'"
     },
     {
       "changeType": "RemovedNode",
@@ -1370,8 +1386,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/PmtTpInf/LclInstrm/Prtry",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
+      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
       "changeType": "TypeChanged",
@@ -1442,8 +1458,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/Nm",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "RemovedNode",
@@ -1506,8 +1522,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/Dept",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -1522,8 +1538,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/SubDept",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -1538,8 +1554,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/StrtNm",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -1554,8 +1570,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/BldgNb",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -1570,8 +1586,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/BldgNm",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -1586,8 +1602,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/Flr",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -1602,8 +1618,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/PstBx",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -1618,8 +1634,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/Room",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -1634,8 +1650,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/PstCd",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "MinOccursChanged",
@@ -1658,8 +1674,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/TwnNm",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -1674,8 +1690,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/TwnLctnNm",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -1690,8 +1706,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/DstrctNm",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -1706,8 +1722,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/CtrySubDvsn",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "MinOccursChanged",
@@ -1738,8 +1754,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/PstlAdr/AdrLine",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "RestrictionChanged",
@@ -1786,8 +1802,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/Id/OrgId/Othr/Id",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
+      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
       "changeType": "RemovedNode",
@@ -1818,8 +1834,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/Id/OrgId/Othr/Issr",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
+      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
       "changeType": "MinOccursChanged",
@@ -1906,8 +1922,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/Id/PrvtId/Othr/Id",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
+      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
       "changeType": "RemovedNode",
@@ -1938,8 +1954,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/Dbtr/Id/PrvtId/Othr/Issr",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
+      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
       "changeType": "MinOccursChanged",
@@ -2242,8 +2258,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/DbtrAcct/Nm",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
+      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
       "changeType": "RemovedNode",
@@ -2978,8 +2994,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/DbtrAgtAcct/Nm",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
+      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
       "changeType": "RemovedNode",
@@ -3042,8 +3058,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/InstrForDbtrAgt",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
+      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
       "changeType": "TypeChanged",
@@ -3058,8 +3074,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Nm",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "RemovedNode",
@@ -3122,8 +3138,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/Dept",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -3138,8 +3154,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/SubDept",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -3154,8 +3170,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/StrtNm",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -3170,8 +3186,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/BldgNb",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -3186,8 +3202,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/BldgNm",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -3202,8 +3218,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/Flr",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -3218,8 +3234,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/PstBx",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -3234,8 +3250,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/Room",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -3250,8 +3266,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/PstCd",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "MinOccursChanged",
@@ -3274,8 +3290,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/TwnNm",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -3290,8 +3306,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/TwnLctnNm",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -3306,8 +3322,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/DstrctNm",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -3322,8 +3338,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/CtrySubDvsn",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "MinOccursChanged",
@@ -3354,8 +3370,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/PstlAdr/AdrLine",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "RestrictionChanged",
@@ -3402,8 +3418,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Id/OrgId/Othr/Id",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
+      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
       "changeType": "RemovedNode",
@@ -3434,8 +3450,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Id/OrgId/Othr/Issr",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
+      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
       "changeType": "MinOccursChanged",
@@ -3522,8 +3538,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Id/PrvtId/Othr/Id",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
+      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
       "changeType": "RemovedNode",
@@ -3554,8 +3570,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/UltmtDbtr/Id/PrvtId/Othr/Issr",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
+      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
       "changeType": "MinOccursChanged",
@@ -4410,8 +4426,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/PmtId/InstrId",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
+      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
       "changeType": "TypeChanged",
@@ -4426,8 +4442,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/PmtId/EndToEndId",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
+      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
       "changeType": "TypeChanged",
@@ -4474,8 +4490,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/PmtTpInf/LclInstrm/Prtry",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
+      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
       "changeType": "TypeChanged",
@@ -4522,8 +4538,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/XchgRateInf/CtrctId",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -5042,8 +5058,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/Nm",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "RemovedNode",
@@ -5106,8 +5122,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/PstlAdr/Dept",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -5122,8 +5138,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/PstlAdr/SubDept",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -5138,8 +5154,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/PstlAdr/StrtNm",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -5154,8 +5170,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/PstlAdr/BldgNb",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -5170,8 +5186,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/PstlAdr/BldgNm",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -5186,8 +5202,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/PstlAdr/Flr",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -5202,8 +5218,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/PstlAdr/PstBx",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -5218,8 +5234,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/PstlAdr/Room",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -5234,8 +5250,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/PstlAdr/PstCd",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "MinOccursChanged",
@@ -5258,8 +5274,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/PstlAdr/TwnNm",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -5274,8 +5290,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/PstlAdr/TwnLctnNm",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -5290,8 +5306,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/PstlAdr/DstrctNm",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -5306,8 +5322,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/PstlAdr/CtrySubDvsn",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "MinOccursChanged",
@@ -5338,8 +5354,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/PstlAdr/AdrLine",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "RestrictionChanged",
@@ -5386,8 +5402,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/Id/OrgId/Othr/Id",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
+      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
       "changeType": "RemovedNode",
@@ -5418,8 +5434,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/Id/OrgId/Othr/Issr",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
+      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
       "changeType": "MinOccursChanged",
@@ -5506,8 +5522,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/Id/PrvtId/Othr/Id",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
+      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
       "changeType": "RemovedNode",
@@ -5538,8 +5554,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtDbtr/Id/PrvtId/Othr/Issr",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
+      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
       "changeType": "MinOccursChanged",
@@ -8426,8 +8442,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/Nm",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "RemovedNode",
@@ -8490,8 +8506,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/Dept",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -8506,8 +8522,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/SubDept",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -8522,8 +8538,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/StrtNm",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -8538,8 +8554,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/BldgNb",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -8554,8 +8570,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/BldgNm",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -8570,8 +8586,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/Flr",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -8586,8 +8602,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/PstBx",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -8602,8 +8618,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/Room",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -8618,8 +8634,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/PstCd",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "MinOccursChanged",
@@ -8642,8 +8658,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/TwnNm",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -8658,8 +8674,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/TwnLctnNm",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -8674,8 +8690,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/DstrctNm",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -8690,8 +8706,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/CtrySubDvsn",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "MinOccursChanged",
@@ -8722,8 +8738,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/PstlAdr/AdrLine",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "RestrictionChanged",
@@ -8770,8 +8786,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/Id/OrgId/Othr/Id",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
+      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
       "changeType": "RemovedNode",
@@ -8802,8 +8818,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/Id/OrgId/Othr/Issr",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
+      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
       "changeType": "MinOccursChanged",
@@ -8890,8 +8906,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/Id/PrvtId/Othr/Id",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
+      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
       "changeType": "RemovedNode",
@@ -8922,8 +8938,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/Cdtr/Id/PrvtId/Othr/Issr",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
+      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
       "changeType": "MinOccursChanged",
@@ -9210,8 +9226,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/CdtrAcct/Nm",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
+      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
       "changeType": "RemovedNode",
@@ -9282,8 +9298,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/Nm",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "RemovedNode",
@@ -9346,8 +9362,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/PstlAdr/Dept",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -9362,8 +9378,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/PstlAdr/SubDept",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -9378,8 +9394,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/PstlAdr/StrtNm",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -9394,8 +9410,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/PstlAdr/BldgNb",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -9410,8 +9426,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/PstlAdr/BldgNm",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -9426,8 +9442,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/PstlAdr/Flr",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -9442,8 +9458,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/PstlAdr/PstBx",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -9458,8 +9474,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/PstlAdr/Room",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -9474,8 +9490,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/PstlAdr/PstCd",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "MinOccursChanged",
@@ -9498,8 +9514,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/PstlAdr/TwnNm",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -9514,8 +9530,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/PstlAdr/TwnLctnNm",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -9530,8 +9546,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/PstlAdr/DstrctNm",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "TypeChanged",
@@ -9546,8 +9562,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/PstlAdr/CtrySubDvsn",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "MinOccursChanged",
@@ -9578,8 +9594,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/PstlAdr/AdrLine",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "RestrictionChanged",
@@ -9626,8 +9642,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/Id/OrgId/Othr/Id",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
+      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
       "changeType": "RemovedNode",
@@ -9658,8 +9674,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/Id/OrgId/Othr/Issr",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
+      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
       "changeType": "MinOccursChanged",
@@ -9746,8 +9762,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/Id/PrvtId/Othr/Id",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
+      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
       "changeType": "RemovedNode",
@@ -9778,8 +9794,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/UltmtCdtr/Id/PrvtId/Othr/Issr",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
+      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
       "changeType": "MinOccursChanged",
@@ -9970,8 +9986,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/InstrForCdtrAgt/InstrInf",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
+      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
       "changeType": "MaxOccursChanged",
@@ -10002,8 +10018,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/InstrForDbtrAgt",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
+      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
       "changeType": "RemovedNode",
@@ -10034,8 +10050,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/RgltryRptg/Authrty/Nm",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
+      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
       "changeType": "TypeChanged",
@@ -10058,8 +10074,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/RgltryRptg/Dtls/Tp",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
+      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
       "changeType": "TypeChanged",
@@ -10090,8 +10106,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/RgltryRptg/Dtls/Inf",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
+      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
       "changeType": "TypeChanged",
@@ -10770,8 +10786,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/RmtInf/Ustrd",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-ZÃ¡Æ’Â-Ã¡Æ’Â°/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
-      "description": "Restriction pattern changed from None to '[0-9a-zA-ZÃ¡Æ’Â\\x90-Ã¡Æ’Â°/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
+      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+",
+      "description": "Restriction pattern changed from None to '[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,\\'\\\\+ !#$%&\\\\*=^_`\\\\{\\\\|\\\\}~\";<>@\\\\[\\\\\\\\\\\\]]+'"
     },
     {
       "changeType": "RemovedNode",
