@@ -1185,13 +1185,6 @@
 					<xs:documentation source="Definition" xml:lang="KA">ფინანსური ინსტიტუტი, რომელიც ემსახურება დებიტორის ანგარიშს.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element maxOccurs="1" minOccurs="0" name="DbtrAgtAcct" type="GEO_CashAccount38__1">
-				<xs:annotation>
-					<xs:documentation source="Name" xml:lang="EN">DebtorAgentAccount</xs:documentation>
-					<xs:documentation source="Definition" xml:lang="EN">Unambiguous identification of the account of the debtor agent at its servicing agent in the payment chain.</xs:documentation>
-					<xs:documentation source="Definition" xml:lang="KA">დებიტორის აგენტის ანგარიშის ერთმნიშვნელოვანი იდენტიფიკაცია მის მომსახურე აგენტთან გადახდის ჯაჭვში.</xs:documentation>
-				</xs:annotation>
-			</xs:element>
 			<xs:element maxOccurs="1" minOccurs="0" name="InstrForDbtrAgt" type="GEO_RestrictedFINXMax140Text">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">InstructionForDebtorAgent</xs:documentation>
