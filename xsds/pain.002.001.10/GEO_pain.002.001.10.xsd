@@ -221,7 +221,7 @@
 			<xs:maxLength value="35"/>
 		</xs:restriction>
 	</xs:simpleType>
-	<xs:complexType name="NumberOfTransactionsPerStatus5">
+	<!--<xs:complexType name="NumberOfTransactionsPerStatus5">
 		<xs:annotation>
 			<xs:documentation source="Name" xml:lang="EN">NumberOfTransactionsPerStatus5</xs:documentation>
 			<xs:documentation source="Definition" xml:lang="EN"> Detailed information on the number of transactions for each identical transaction status.</xs:documentation>
@@ -243,7 +243,7 @@
 				</xs:annotation>
 			</xs:element>
 		</xs:sequence>
-	</xs:complexType>
+	</xs:complexType>-->
 	<xs:complexType name="GEO_OriginalGroupHeader17">
 		<xs:annotation>
 			<xs:documentation source="Name" xml:lang="EN">GEO_OriginalGroupHeader17</xs:documentation>
@@ -279,13 +279,13 @@
 					<xs:documentation source="Definition" xml:lang="KA">სტატუსის მიზეზის შესახებ დეტალური ინფორმაცია.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element maxOccurs="unbounded" minOccurs="0" name="NbOfTxsPerSts" type="NumberOfTransactionsPerStatus5">
+			<!--<xs:element maxOccurs="unbounded" minOccurs="0" name="NbOfTxsPerSts" type="NumberOfTransactionsPerStatus5">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">NumberOfTransactionsPerStatus</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">Detailed information on the number of transactions for each identical transaction status.</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="KA">დეტალური ინფორმაცია ტრანზაქციების რაოდენობის შესახებ თითოეული იდენტური ტრანზაქციის სტატუსისთვის.</xs:documentation>
 				</xs:annotation>
-			</xs:element>
+			</xs:element>-->
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="GEO_OriginalPaymentInstruction32">
@@ -302,7 +302,7 @@
 					<xs:documentation source="Definition" xml:lang="KA">ორიგინალური გადახდის ინფორმაციის უნიკალური იდენტიფიკაცია, რომელიც მინიჭებულია ორიგინალური გამგზავნის მიერ, რათა ცალსახად განსაზღვროს ორიგინალური გადახდის ინფორმაციის ჯგუფი.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element maxOccurs="1" minOccurs="0" name="OrgnlNbOfTxs" type="Max15NumericText">
+			<!--<xs:element maxOccurs="1" minOccurs="0" name="OrgnlNbOfTxs" type="Max15NumericText">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">OriginalNumberOfTransactions</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">Number of individual transactions contained in the original payment information group.</xs:documentation>
@@ -336,7 +336,7 @@
 					<xs:documentation source="Definition" xml:lang="EN">Provides information on the original transactions to which the status report message refers.</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="KA">ორიგინალური ტრანზაქციის შესახებ ინფორმაცია, რომლის სტატუსის ანგარიშის შეტყობინება ეხება.</xs:documentation>
 				</xs:annotation>
-			</xs:element>
+			</xs:element>-->
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="GEO_PaymentTransaction105">
