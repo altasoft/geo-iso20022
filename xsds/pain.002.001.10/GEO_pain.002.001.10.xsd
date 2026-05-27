@@ -110,7 +110,7 @@
 					<xs:documentation source="Definition" xml:lang="KA">ორიგინალური ჯგუფის ინფორმაცია ტრანზაქციების ჯგუფის შესახებ, რომლის სტატუსის ანგარიშის შეტყობინება ეხება.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element maxOccurs="unbounded" minOccurs="0" name="OrgnlPmtInfAndSts" type="GEO_OriginalPaymentInstruction32">
+			<xs:element maxOccurs="1" minOccurs="0" name="OrgnlPmtInfAndSts" type="GEO_OriginalPaymentInstruction32">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">OriginalPaymentInformationAndStatus</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">Information concerning the original payment information, to which the status report message refers.</xs:documentation>
@@ -272,7 +272,7 @@
 					<xs:documentation source="Definition" xml:lang="KA">ტრანზაქციების ჯგუფის სტატუსი.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element maxOccurs="unbounded" minOccurs="0" name="StsRsnInf" type="StatusReasonInformation12">
+			<xs:element maxOccurs="4" minOccurs="0" name="StsRsnInf" type="StatusReasonInformation12">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">StatusReasonInformation</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">Provides detailed information on the status reason.</xs:documentation>
@@ -330,7 +330,7 @@
 					<xs:documentation source="Definition" xml:lang="KA">დეტალური ინფორმაცია ტრანზაქციების რაოდენობის შესახებ თითოეული იდენტური ტრანზაქციის სტატუსისთვის.</xs:documentation>
 				</xs:annotation>
 			</xs:element>-->
-			<xs:element maxOccurs="unbounded" minOccurs="0" name="TxInfAndSts" type="GEO_PaymentTransaction105">
+			<xs:element maxOccurs="1" minOccurs="1" name="TxInfAndSts" type="GEO_PaymentTransaction105">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">TransactionInformationAndStatus</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">Provides information on the original transactions to which the status report message refers.</xs:documentation>
@@ -387,14 +387,14 @@
 					<xs:documentation source="Definition" xml:lang="KA">ტრანზაქციის სტატუსი კოდირებული ფორმით.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element maxOccurs="unbounded" minOccurs="0" name="StsRsnInf" type="StatusReasonInformation12">
+			<xs:element maxOccurs="4" minOccurs="0" name="StsRsnInf" type="StatusReasonInformation12">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">StatusReasonInformation</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">Provides detailed information on the status reason.</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="KA">სტატუსის მიზეზის შესახებ დეტალური ინფორმაცია.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element maxOccurs="unbounded" minOccurs="0" name="ChrgsInf" type="GEO_Charges7">
+			<xs:element maxOccurs="4" minOccurs="0" name="ChrgsInf" type="GEO_Charges7">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">ChargesInformation</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">
@@ -444,7 +444,7 @@
 					<xs:documentation source="Definition" xml:lang="KA">მიუთითებს სტატუსის ანგარიშის მიზეზს.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element maxOccurs="unbounded" minOccurs="0" name="AddtlInf" type="GEO_RestrictedFINXMax105Text">
+			<xs:element maxOccurs="4" minOccurs="0" name="AddtlInf" type="GEO_RestrictedFINXMax105Text">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">AdditionalInformation</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">
