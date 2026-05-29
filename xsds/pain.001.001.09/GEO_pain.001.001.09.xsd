@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<!--Revision 14-->
+<!--Revision 15-->
 <xs:schema xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.09" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="urn:iso:std:iso:20022:tech:xsd:pain.001.001.09">
 	<xs:annotation>
 		<xs:documentation source="Name" xml:lang="EN">pain.001.001.09</xs:documentation>
@@ -7,11 +7,13 @@
 		<xs:documentation source="Definition" xml:lang="KA">შეტყობინება pain.001.001.09 ინიციატორი მხარის მიერ ფინანსურ ინსტიტუტს, პირდაპირ ან კლირინგის სისტემის მეშვეობით, გადაეცემა დებიტორის ანგარიშიდან კრედიტორის ანგარიშზე თანხის გადასატანად. შეტყობინება pain.001.001.09 შეიძლება გამოყენებულ იქნას როგორც საშინაო, ისე საზღვარგარეთ სცენარებში.</xs:documentation>
 	</xs:annotation>
 	<xs:element name="Document" type="Document"/>
-	<xs:complexType name="GEO_AccountIdentification4Choice__1">
+	<xs:complexType name="GEO_AccountIdentification4Choice">
 		<xs:annotation>
-			<xs:documentation source="Name" xml:lang="EN">GEO_AccountIdentification4Choice__1</xs:documentation>
+			<xs:documentation source="Name" xml:lang="EN">GEO_AccountIdentification4Choice</xs:documentation>
 			<xs:documentation source="Definition" xml:lang="EN">Specifies the unique identification of an account as assigned by the account servicer.</xs:documentation>
-			<xs:documentation source="Definition" xml:lang="KA">განსაზღვრავს ანგარიშის უნიკალურ იდენტიფიკაციას, რომელიც მინიჭებულია ანგარიშის მომსახურე მხარის მიერ.</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="KA">
+			გამოიყენება როცა IBAN ანგარიშის მითითება არ არის აუცილებელი. მაგალითად ხაზინაში გადარიცხვისას კრედიტის მხარეს
+			განსაზღვრავს ანგარიშის უნიკალურ იდენტიფიკაციას, რომელიც მინიჭებულია ანგარიშის მომსახურე მხარის მიერ.</xs:documentation>
 		</xs:annotation>
 		<xs:choice>
 			<xs:element name="IBAN" type="GEO_IBAN2007Identifier">
@@ -30,11 +32,13 @@
 			</xs:element>
 		</xs:choice>
 	</xs:complexType>
-	<xs:complexType name="GEO_AccountIdentification4Choice__2">
+	<xs:complexType name="GEO_AccountIdentification4Choice__IbanOnly">
 		<xs:annotation>
-			<xs:documentation source="Name" xml:lang="EN">GEO_AccountIdentification4Choice__2</xs:documentation>
+			<xs:documentation source="Name" xml:lang="EN">GEO_AccountIdentification4Choice__IbanOnly</xs:documentation>
 			<xs:documentation source="Definition" xml:lang="EN">Specifies the unique identification of an account as assigned by the account servicer.</xs:documentation>
-			<xs:documentation source="Definition" xml:lang="KA">განსაზღვრავს ანგარიშის უნიკალურ იდენტიფიკაციას, რომელიც მინიჭებულია ანგარიშის მომსახურე მხარის მიერ.</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="KA">
+				გამოიყენება როცა IBAN ანგარიშის მითითება აუცილებელია.
+				განსაზღვრავს ანგარიშის უნიკალურ იდენტიფიკაციას, რომელიც მინიჭებულია ანგარიშის მომსახურე მხარის მიერ.</xs:documentation>
 		</xs:annotation>
 		<xs:choice>
 			<xs:element name="IBAN" type="GEO_IBAN2007Identifier">
@@ -175,14 +179,16 @@
 			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
-	<xs:complexType name="GEO_CashAccount38__1">
+	<xs:complexType name="GEO_CashAccount38">
 		<xs:annotation>
-			<xs:documentation source="Name" xml:lang="EN">GEO_CashAccount38__1</xs:documentation>
+			<xs:documentation source="Name" xml:lang="EN">GEO_CashAccount38</xs:documentation>
 			<xs:documentation source="Definition" xml:lang="EN">Provides the details to identify an account.</xs:documentation>
-			<xs:documentation source="Definition" xml:lang="KA">მოიცავს ანგარიშის იდენტიფიკაციისთვის საჭირო დეტალებს.</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="KA">
+				გამოიყენება როცა IBAN ანგარიშის მითითება არ არის აუცილებელი. მაგალითად ხაზინაში გადარიცხვისას კრედიტის მხარეს
+				მოიცავს ანგარიშის იდენტიფიკაციისთვის საჭირო დეტალებს.</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="Id" type="GEO_AccountIdentification4Choice__1">
+			<xs:element name="Id" type="GEO_AccountIdentification4Choice">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">Identification</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">Unique and unambiguous identification for the account between the account owner and the account servicer.</xs:documentation>
@@ -198,14 +204,16 @@
 			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
-	<xs:complexType name="GEO_CashAccount38__2">
+	<xs:complexType name="GEO_CashAccount38__IbanOnly">
 		<xs:annotation>
-			<xs:documentation source="Name" xml:lang="EN">GEO_CashAccount38__2</xs:documentation>
+			<xs:documentation source="Name" xml:lang="EN">GEO_CashAccount38__IbanOnly</xs:documentation>
 			<xs:documentation source="Definition" xml:lang="EN">Provides the details to identify an account.</xs:documentation>
-			<xs:documentation source="Definition" xml:lang="KA">მოიცავს ანგარიშის იდენტიფიკაციისთვის საჭირო დეტალებს.</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="KA">
+				გამოიყენება როცა IBAN ანგარიშის მითითება აუცილებელია.
+				მოიცავს ანგარიშის იდენტიფიკაციისთვის საჭირო დეტალებს.</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="Id" type="GEO_AccountIdentification4Choice__2">
+			<xs:element name="Id" type="GEO_AccountIdentification4Choice__IbanOnly">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">Identification</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">Unique and unambiguous identification for the account between the account owner and the account servicer.</xs:documentation>
@@ -301,7 +309,7 @@
 					<xs:documentation source="Definition" xml:lang="KA">მოიცავს ვალუტის გაცვლის კურსისა და ხელშეკრულების დეტალებს.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element maxOccurs="1" minOccurs="0" name="UltmtDbtr" type="GEO_PartyIdentification135__1">
+			<xs:element maxOccurs="1" minOccurs="0" name="UltmtDbtr" type="GEO_PartyIdentification135">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">UltimateDebtor</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">Ultimate party that owes an amount of money to the (ultimate) creditor.</xs:documentation>
@@ -315,21 +323,21 @@
 					<xs:documentation source="Definition" xml:lang="KA">ფინანსური ინსტიტუტი, რომელიც ემსახურება კრედიტორის ანგარიშს.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="Cdtr" type="GEO_PartyIdentification135__1">
+			<xs:element name="Cdtr" type="GEO_PartyIdentification135">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">Creditor</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">Party to which an amount of money is due.</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="KA">მხარე, რომლისთვისაც გადასახდელია თანხა.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="CdtrAcct" type="GEO_CashAccount38__2">
+			<xs:element name="CdtrAcct" type="GEO_CashAccount38">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">CreditorAccount</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">Unambiguous identification of the account of the creditor to which a credit entry will be posted as a result of the payment transaction.</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="KA">კრედიტორის იმ ანგარიშის ერთმნიშვნელოვანი იდენტიფიკაცია, რომელზეც გადახდის ოპერაციის შედეგად კრედიტის ჩანაწერი აისახება.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element maxOccurs="1" minOccurs="0" name="UltmtCdtr" type="GEO_PartyIdentification135__1">
+			<xs:element maxOccurs="1" minOccurs="0" name="UltmtCdtr" type="GEO_PartyIdentification135">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">UltimateCreditor</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">Ultimate party to which an amount of money is due.</xs:documentation>
@@ -802,7 +810,7 @@
 					<xs:documentation source="Definition" xml:lang="KA">შეტყობინებაში შემავალი ყველა ინდივიდუალური თანხის ჯამი, ვალუტის მიუხედავად.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="InitgPty" type="GEO_PartyIdentification135__2">
+			<xs:element name="InitgPty" type="GEO_PartyIdentification135__IdOnly">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">InitiatingParty</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">
@@ -1005,9 +1013,9 @@
 			</xs:element>
 		</xs:choice>
 	</xs:complexType>
-	<xs:complexType name="GEO_PartyIdentification135__1">
+	<xs:complexType name="GEO_PartyIdentification135">
 		<xs:annotation>
-			<xs:documentation source="Name" xml:lang="EN">GEO_PartyIdentification135__1</xs:documentation>
+			<xs:documentation source="Name" xml:lang="EN">GEO_PartyIdentification135</xs:documentation>
 			<xs:documentation source="Definition" xml:lang="EN">Specifies the identification of a person or an organisation.</xs:documentation>
 			<xs:documentation source="Definition" xml:lang="KA">განსაზღვრავს პირის ან ორგანიზაციის იდენტიფიკაციას.</xs:documentation>
 		</xs:annotation>
@@ -1046,9 +1054,9 @@
 			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
-	<xs:complexType name="GEO_PartyIdentification135__2">
+	<xs:complexType name="GEO_PartyIdentification135__IdOnly">
 		<xs:annotation>
-			<xs:documentation source="Name" xml:lang="EN">GEO_PartyIdentification135__2</xs:documentation>
+			<xs:documentation source="Name" xml:lang="EN">GEO_PartyIdentification135__IdOnly</xs:documentation>
 			<xs:documentation source="Definition" xml:lang="EN">Specifies the identification of a person or an organisation.</xs:documentation>
 			<xs:documentation source="Definition" xml:lang="KA">განსაზღვრავს პირის ან ორგანიზაციის იდენტიფიკაციას.</xs:documentation>
 		</xs:annotation>
@@ -1145,14 +1153,14 @@
 					<xs:documentation source="Definition" xml:lang="KA">თარიღი, როდესაც ინიციატორი მხარე კლირინგის აგენტს სთხოვს გადახდის დამუშავებას. გამოყენება: ეს არის თარიღი, როდესაც დებიტორის ანგარიში უნდა დადებეტდეს. ჩეკით გადახდის შემთხვევაში — თარიღი, როდესაც ბანკმა უნდა შექმნას ჩეკი.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="Dbtr" type="GEO_PartyIdentification135__1">
+			<xs:element name="Dbtr" type="GEO_PartyIdentification135">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">Debtor</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">Party that owes an amount of money to the (ultimate) creditor.</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="KA">მხარე, რომელსაც თანხა ეკისრება (საბოლოო) კრედიტორის მიმართ.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="DbtrAcct" type="GEO_CashAccount38__1">
+			<xs:element name="DbtrAcct" type="GEO_CashAccount38__IbanOnly">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">DebtorAccount</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">Unambiguous identification of the account of the debtor to which a debit entry will be made as a result of the transaction.</xs:documentation>
@@ -1166,7 +1174,7 @@
 					<xs:documentation source="Definition" xml:lang="KA">ფინანსური ინსტიტუტი, რომელიც ემსახურება დებიტორის ანგარიშს.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element maxOccurs="1" minOccurs="0" name="DbtrAgtAcct" type="GEO_CashAccount38__2">
+			<xs:element maxOccurs="1" minOccurs="0" name="DbtrAgtAcct" type="GEO_CashAccount38__IbanOnly">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">DebtorAgentAccount</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">Unambiguous identification of the account of the debtor agent at its servicing agent in the payment chain.</xs:documentation>
