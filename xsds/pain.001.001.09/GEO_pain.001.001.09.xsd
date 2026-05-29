@@ -149,7 +149,7 @@
 			<xs:documentation source="Definition" xml:lang="KA">ISO 9362 რეგისტრაციის ორგანოს მიერ ფინანსური ინსტიტუტისთვის მინიჭებული კოდი, როგორც აღწერილია ISO 9362:2014-ში — „საბანკო საქმე — საბანკო სატელეკომუნიკაციო შეტყობინებები — ბიზნეს იდენტიფიკატორის კოდი (BIC)“.</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
-			<xs:pattern value="[A-Z0-9]{4,4}GE[A-Z0-9]{2,2}([A-Z0-9]{3,3}){0,1}"/>
+			<xs:pattern value="[A-Z0-9]{4,4}GE[A-Z0-9]{2,2}"/>
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="BaseOneRate">
@@ -830,7 +830,7 @@
 			<xs:documentation source="Definition" xml:lang="KA">საერთაშორისო საბანკო ანგარიშის ნომერი არის კოდი, რომელსაც ფინანსური ინსტიტუტები საერთაშორისო დონეზე იყენებენ ფინანსურ ინსტიტუტში კლიენტის ანგარიშის უნიკალურად იდენტიფიცირებისთვის, როგორც აღწერილია ISO 13616 სტანდარტის 2007 წლის გამოცემაში „საბანკო და მასთან დაკავშირებული ფინანსური მომსახურება — საერთაშორისო საბანკო ანგარიშის ნომერი (IBAN)“ და ჩანაცვლებულია სტანდარტის უფრო ახალი გამოცემით.</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
-			<xs:pattern value="[A-Z]{2,2}GE[a-zA-Z0-9]{1,30}"/>
+			<xs:pattern value="GE[0-9]{2}[A-Z]{2}[0-9]{16}"/>
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="ISODate">
