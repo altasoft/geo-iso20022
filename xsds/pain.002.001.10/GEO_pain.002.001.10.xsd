@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Revision 04-->
+<!--Revision 05-->
 <xs:schema xmlns="urn:iso:std:iso:20022:tech:xsd:pain.002.001.10" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="urn:iso:std:iso:20022:tech:xsd:pain.002.001.10">
 	<xs:element name="Document" type="Document"/>
 	<xs:simpleType name="ActiveOrHistoricCurrencyAndAmount_SimpleType">
@@ -95,6 +95,29 @@
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="GEO_CustomerPaymentStatusReportV10">
+		<xs:annotation>
+			<xs:documentation source="Name" xml:lang="EN">CustomerPaymentStatusReportV10</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="EN">
+				Scope&#13;
+				The CustomerPaymentStatusReport message is sent by an instructed agent to the previous party in the payment chain. It is used to inform this party about the positive or negative status of an instruction (either single or file). It is also used to report on a pending instruction.&#13;
+				Usage&#13;
+				The CustomerPaymentStatusReport message is exchanged between an agent and a non-financial institution customer to provide status information on instructions previously sent. Its usage will always be governed by a bilateral agreement between the agent and the non-financial institution customer.&#13;
+				The CustomerPaymentStatusReport message can be used to provide information about the status (for example a rejection, an acceptance) of the initiation of a credit transfer, a direct debit, as well as on the initiation of other customer instructions.&#13;
+				The CustomerPaymentStatusReport message refers to the original instruction(s) by means of references only or by means of references and a set of elements from the original instruction.&#13;
+				The CustomerPaymentStatusReport message can be used in domestic and cross-border scenarios.&#13;
+				The CustomerPaymentStatusReport may also be sent to the receiver of the payment in a real time payment scenario, as both sides of the transactions must be informed of the status of the transaction (that is either the beneficiary is credited, or the transaction is rejected).
+			</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="KA">
+				საზღვრები
+				CustomerPaymentStatusReport შეტყობინება იგზავნება ინსტრუქტირებულმა აგენტმა გადახდის ჯაჭვის წინა მხარეს. ის გამოიყენება იმისთვის, რომ აცნობოს ამ მხარეს ინსტრუქციის (ერთჯერადი ან ფაილის) დადებითი ან უარყოფითი სტატუსის შესახებ. ის ასევე გამოიყენება პენდინგ ინსტრუქციის შესახებ ანგარიშის გასაკეთებლად.
+				გამოყენება
+				CustomerPaymentStatusReport შეტყობინება გაცვლილია აგენტსა და არასაფინანსო დაწესებულების კლიენტს შორის, რათა მიაწოდოს სტატუსის ინფორმაცია ადრე გაგზავნილ ინსტრუქციებზე. მისი გამოყენება ყოველთვის იქნება რეგულირებული აგენტსა და არასაფინანსო დაწესებულების კლიენტს შორის ორმხრივი შეთანხმებით.
+				CustomerPaymentStatusReport შეტყობინება შეიძლება გამოყენებულ იქნას ინფორმაციის მიწოდებისთვის სტატუსის შესახებ (მაგალითად, უარყოფა, მიღება) კრედიტ ტრანსფერის ინიციირების, პირდაპირი დებეტის, ასევე სხვა მომხმარებლის ინსტრუქციების ინიციირების შესახებ.
+				CustomerPaymentStatusReport შეტყობინება ეხება ორიგინალური ინსტრუქციების მითითებებს მხოლოდ მითითებების საშუალებით ან მითითებების საშუალებით და ორიგინალური ინსტრუქციის ელემენტების ნაკრებით.
+				CustomerPaymentStatusReport შეტყობინება შეიძლება გამოყენებულ იქნას საშინაო და საზღვარგარეთ სცენარებში.
+				CustomerPaymentStatusReport ასევე შეიძლება გაიგზავნოს გადახდის მიმღებს რეალურ დროში გადახდის სცენარში, რადგან ორივე მხარეს უნდა ჰქონდეს ინფორმაცია ტრანზაქციის სტატუსის შესახებ (რომელიც არის ან ბენეფიციარი კრედიტდება, ან ტრანზაქცია უარყოფილია).
+			</xs:documentation>
+		</xs:annotation>
 		<xs:sequence>
 			<xs:element name="GrpHdr" type="GEO_GroupHeader86">
 				<xs:annotation>
@@ -137,12 +160,34 @@
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="ExternalPaymentTransactionStatus1Code">
-			<xs:restriction base="xs:string">
+		<xs:annotation>
+			<xs:documentation source="Name" xml:lang="EN">ExternalPaymentTransactionStatus1Code</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="EN">
+				Specifies the status of an individual payment instructions, as published in an external payment transaction status code set.&#13;
+				External code sets can be downloaded from www.iso20022.org.
+			</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="KA">
+				ინდივიდუალური გადახდის ინსტრუქციის სტატუსი, როგორც გამოქვეყნებულია გარე გადახდის ტრანზაქციის სტატუსის კოდების ნაკრებში.&#13;
+				გარე კოდების ნაკრები ხელმისაწვდომია www.iso20022.org-ზე.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
 			<xs:minLength value="1"/>
 			<xs:maxLength value="4"/>
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="ExternalStatusReason1Code">
+		<xs:annotation>
+			<xs:documentation source="Name" xml:lang="EN">ExternalStatusReason1Code</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="EN">
+				Specifies the status reason, as published in an external status reason code list.&#13;
+				External code sets can be downloaded from www.iso20022.org.
+			</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="KA">
+				სტატუსის მიზეზი, როგორც გამოქვეყნებულია გარე სტატუსის მიზეზის კოდების სიაში.&#13;
+				გარე კოდების სეტები ხელმისაწვდომია www.iso20022.org-ზე.
+			</xs:documentation>
+		</xs:annotation>
 		<xs:restriction base="xs:string">
 			<xs:minLength value="1"/>
 			<xs:maxLength value="4"/>
@@ -202,7 +247,12 @@
 			<xs:pattern value=".*(\+|-)((0[0-9])|(1[0-3])):[0-5][0-9]"/>
 		</xs:restriction>
 	</xs:simpleType>
-	<xs:simpleType name="GEO_RestrictedFINXMax105Text">
+	<xs:simpleType name="GEO_RestrictedFINXMax105Text_Ka">
+		<xs:annotation>
+			<xs:documentation source="Name" xml:lang="EN">GEO_RestrictedFINXMax105Text_Ka</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="EN">Specifies a character string with a minimum length of 1, and a maximum length of 105 characters, and limited to character set X, that is, 0-9 a-z A-Z / - ? : ( ) . , ‘ + .</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="KA">განსაზღვრავს სიმბოლოთა სტრიქონს მინიმალური სიგრძით 1 და მაქსიმალური სიგრძით 105 სიმბოლო, და შეზღუდულია სიმბოლოების ნაკრებით X, ანუ 0-9 a-z A-Z / - ? : ( ) . , ‘ + .</xs:documentation>
+		</xs:annotation>
 		<xs:restriction base="xs:string">
 			<xs:pattern value="[0-9a-zA-Zა-ჰ/\-\?:\(\)\.,'\+ ]+"/>
 			<xs:minLength value="1"/>
@@ -210,6 +260,11 @@
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="GEO_RestrictedFINXMax35Text">
+		<xs:annotation>
+			<xs:documentation source="Name" xml:lang="EN">GEO_RestrictedFINXMax35Text</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="EN">Specifies a character string with a minimum length of 1, and a maximum length of 35 characters, and limited to character set X, that is, 0-9 a-z A-Z / - ? : ( ) . , ‘ + .</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="KA">განსაზღვრავს სიმბოლოთა სტრიქონს მინიმალური სიგრძით 1 და მაქსიმალური სიგრძით 35 სიმბოლო, და შეზღუდულია სიმბოლოების ნაკრებით X, ანუ 0-9 a-z A-Z / - ? : ( ) . , ‘ + .</xs:documentation>
+		</xs:annotation>
 		<xs:restriction base="xs:string">
 			<xs:pattern value="[0-9a-zA-Z/\-\?:\(\)\.,'\+ ]+"/>
 			<xs:minLength value="1"/>
@@ -381,7 +436,7 @@
 					<xs:documentation source="Definition" xml:lang="KA">მიუთითებს სტატუსის ანგარიშის მიზეზს.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element maxOccurs="4" minOccurs="0" name="AddtlInf" type="GEO_RestrictedFINXMax105Text">
+			<xs:element maxOccurs="4" minOccurs="0" name="AddtlInf" type="GEO_RestrictedFINXMax105Text_Ka">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">AdditionalInformation</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">
