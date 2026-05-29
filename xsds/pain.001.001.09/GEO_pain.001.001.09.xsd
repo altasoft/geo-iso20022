@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<!--Revision 15-->
+<!--Revision 16-->
 <xs:schema xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.09" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="urn:iso:std:iso:20022:tech:xsd:pain.001.001.09">
 	<xs:annotation>
 		<xs:documentation source="Name" xml:lang="EN">pain.001.001.09</xs:documentation>
@@ -12,8 +12,9 @@
 			<xs:documentation source="Name" xml:lang="EN">GEO_AccountIdentification4Choice</xs:documentation>
 			<xs:documentation source="Definition" xml:lang="EN">Specifies the unique identification of an account as assigned by the account servicer.</xs:documentation>
 			<xs:documentation source="Definition" xml:lang="KA">
-			გამოიყენება როცა IBAN ანგარიშის მითითება არ არის აუცილებელი. მაგალითად ხაზინაში გადარიცხვისას კრედიტის მხარეს
-			განსაზღვრავს ანგარიშის უნიკალურ იდენტიფიკაციას, რომელიც მინიჭებულია ანგარიშის მომსახურე მხარის მიერ.</xs:documentation>
+				გამოიყენება როცა IBAN ანგარიშის მითითება არ არის აუცილებელი. მაგალითად ხაზინაში გადარიცხვისას კრედიტის მხარეს
+				განსაზღვრავს ანგარიშის უნიკალურ იდენტიფიკაციას, რომელიც მინიჭებულია ანგარიშის მომსახურე მხარის მიერ.
+			</xs:documentation>
 		</xs:annotation>
 		<xs:choice>
 			<xs:element name="IBAN" type="GEO_IBAN2007Identifier">
@@ -38,7 +39,8 @@
 			<xs:documentation source="Definition" xml:lang="EN">Specifies the unique identification of an account as assigned by the account servicer.</xs:documentation>
 			<xs:documentation source="Definition" xml:lang="KA">
 				გამოიყენება როცა IBAN ანგარიშის მითითება აუცილებელია.
-				განსაზღვრავს ანგარიშის უნიკალურ იდენტიფიკაციას, რომელიც მინიჭებულია ანგარიშის მომსახურე მხარის მიერ.</xs:documentation>
+				განსაზღვრავს ანგარიშის უნიკალურ იდენტიფიკაციას, რომელიც მინიჭებულია ანგარიშის მომსახურე მხარის მიერ.
+			</xs:documentation>
 		</xs:annotation>
 		<xs:choice>
 			<xs:element name="IBAN" type="GEO_IBAN2007Identifier">
@@ -185,7 +187,8 @@
 			<xs:documentation source="Definition" xml:lang="EN">Provides the details to identify an account.</xs:documentation>
 			<xs:documentation source="Definition" xml:lang="KA">
 				გამოიყენება როცა IBAN ანგარიშის მითითება არ არის აუცილებელი. მაგალითად ხაზინაში გადარიცხვისას კრედიტის მხარეს
-				მოიცავს ანგარიშის იდენტიფიკაციისთვის საჭირო დეტალებს.</xs:documentation>
+				მოიცავს ანგარიშის იდენტიფიკაციისთვის საჭირო დეტალებს.
+			</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
 			<xs:element name="Id" type="GEO_AccountIdentification4Choice">
@@ -210,7 +213,8 @@
 			<xs:documentation source="Definition" xml:lang="EN">Provides the details to identify an account.</xs:documentation>
 			<xs:documentation source="Definition" xml:lang="KA">
 				გამოიყენება როცა IBAN ანგარიშის მითითება აუცილებელია.
-				მოიცავს ანგარიშის იდენტიფიკაციისთვის საჭირო დეტალებს.</xs:documentation>
+				მოიცავს ანგარიშის იდენტიფიკაციისთვის საჭირო დეტალებს.
+			</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
 			<xs:element name="Id" type="GEO_AccountIdentification4Choice__IbanOnly">
@@ -351,7 +355,7 @@
 					<xs:documentation source="Definition" xml:lang="KA">ინიციატორი მხარის მიერ მოწოდებული და კრედიტორის აგენტისთვის განკუთვნილი დამატებითი ინფორმაცია, რომელიც დაკავშირებულია გადახდის დავალების დამუშავებასთან.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element maxOccurs="1" minOccurs="0" name="InstrForDbtrAgt" type="GEO_RestrictedFINXMax140Text">
+			<xs:element maxOccurs="1" minOccurs="0" name="InstrForDbtrAgt" type="GEO_RestrictedFINXMax140Text_Ka">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">InstructionForDebtorAgent</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">Further information related to the processing of the payment instruction, that may need to be acted upon by the debtor agent, depending on agreement between debtor and the debtor agent.</xs:documentation>
@@ -398,7 +402,7 @@
 					<xs:documentation source="Definition" xml:lang="KA">კრედიტორის რეფერენციის ტიპი.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="Ref" type="GEO_RestrictedFINXMax35Text_Extended">
+			<xs:element name="Ref" type="GEO_RestrictedFINXMax35Text_Extended_Ka">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">Reference</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">
@@ -427,7 +431,7 @@
 			<xs:documentation source="Definition" xml:lang="KA">კრედიტორის მიერ მითითებული დოკუმენტის ტიპი.</xs:documentation>
 		</xs:annotation>
 		<xs:choice>
-			<xs:element name="Prtry" type="GEO_RestrictedFINXMax35Text_Extended">
+			<xs:element name="Prtry" type="GEO_RestrictedFINXMax35Text_Extended_Ka">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">Proprietary</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">Creditor reference type, in a proprietary form.</xs:documentation>
@@ -513,6 +517,11 @@
 		</xs:choice>
 	</xs:complexType>
 	<xs:simpleType name="DecimalNumber">
+		<xs:annotation>
+			<xs:documentation source="Name" xml:lang="EN">DecimalNumber</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="EN">Number of objects represented as a decimal number, for example 0.75 or 45.6.</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="KA">ობიექტების რაოდენობა, რომელიც წარმოდგენილია ათწილადი რიცხვით, მაგალითად 0.75 ან 45.6.</xs:documentation>
+		</xs:annotation>
 		<xs:restriction base="xs:decimal">
 			<xs:fractionDigits value="17"/>
 			<xs:totalDigits value="18"/>
@@ -580,7 +589,7 @@
 					<xs:documentation source="Definition" xml:lang="KA">განსაზღვრავს ვალუტის გაცვლის შესასრულებლად გამოყენებულ ტიპს.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element maxOccurs="1" minOccurs="0" name="CtrctId" type="GEO_RestrictedFINXMax35Text_Extended">
+			<xs:element maxOccurs="1" minOccurs="0" name="CtrctId" type="GEO_RestrictedFINXMax35Text_Extended_Ka">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">ContractIdentification</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">Unique and unambiguous reference to the foreign exchange contract agreed between the initiating party/creditor and the debtor agent.</xs:documentation>
@@ -810,7 +819,8 @@
 					<xs:documentation source="Definition" xml:lang="KA">შეტყობინებაში შემავალი ყველა ინდივიდუალური თანხის ჯამი, ვალუტის მიუხედავად.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="InitgPty" type="GEO_PartyIdentification135__IdOnly">
+			<!--TODO-->
+			<xs:element name="InitgPty" type="GEO_PartyIdentification135__OrgOnly">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">InitiatingParty</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">
@@ -854,7 +864,7 @@
 			<xs:documentation source="Definition" xml:lang="KA">გადახდის დავალების დამუშავებასთან დაკავშირებული დამატებითი ინფორმაცია, რომელზეც შეიძლება მოქმედება დასჭირდეს კრედიტორის აგენტს. დავალება შეიძლება ეხებოდეს მომსახურების დონეს, შეიძლება იყოს კრედიტორის აგენტის მიერ შესასრულებელი დავალება ან კრედიტორის აგენტისათვის საჭირო ინფორმაცია.</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element maxOccurs="1" minOccurs="0" name="InstrInf" type="GEO_RestrictedFINXMax140Text">
+			<xs:element maxOccurs="1" minOccurs="0" name="InstrInf" type="GEO_RestrictedFINXMax140Text_Ka">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">InstructionInformation</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">Further information complementing the coded instruction or instruction to the creditor's agent that is bilaterally agreed or specific to a user community.</xs:documentation>
@@ -887,6 +897,15 @@
 		</xs:choice>
 	</xs:complexType>
 	<xs:simpleType name="GEO_RestrictedFINXMax10Text">
+		<xs:annotation>
+			<xs:documentation source="Name" xml:lang="EN">GEO_RestrictedFINXMax10Text</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="EN">
+				Specifies a character string with a minimum length of 1, and a maximum length of 10 characters, and limited to character set X, that is, 0-9 a-z A-Z / - ? : ( ) . , ' + .
+			</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="KA">
+				განსაზღვრავს სიმბოლოთა სტრიქონს მინიმალური სიგრძით 1 და მაქსიმალური სიგრძით 10 სიმბოლო, და შეზღუდულია სიმბოლოების ნაკრებით X, ანუ 0-9 a-z A-Z / - ? : ( ) . , ' + .
+			</xs:documentation>
+		</xs:annotation>
 		<xs:restriction base="xs:string">
 			<xs:pattern value="[0-9a-zA-Z/\-\?:\(\)\.,'\+ ]+"/>
 			<xs:minLength value="1"/>
@@ -904,14 +923,32 @@
 			<xs:maxLength value="128"/>
 		</xs:restriction>
 	</xs:simpleType>
-	<xs:simpleType name="GEO_RestrictedFINXMax140Text">
+	<xs:simpleType name="GEO_RestrictedFINXMax140Text_Ka">
+		<xs:annotation>
+			<xs:documentation source="Name" xml:lang="EN">GEO_RestrictedFINXMax140Text_Extended_Ka</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="EN">
+				Specifies a character string with a minimum length of 1, and a maximum length of 140 characters, and limited to character set X, that is, 0-9 a-z A-Z / - ? : ( ) . , ' + . that is extended to support the following additional characters !#$%&amp;*=^_`{|}~";&lt;&gt;@[\]&#13;
+			</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="KA">
+				განსაზღვრავს სიმბოლოთა სტრიქონს მინიმალური სიგრძით 1 და მაქსიმალური სიგრძით 140 სიმბოლო, და შეზღუდულია სიმბოლოების ნაკრებით X, ანუ 0-9 a-z A-Z / - ? : ( ) . , ' + . რომელიც გაფართოვებულია შემდეგი დამატებითი სიმბოლოების მხარდაჭერისთვის !#$%&amp;*=^_`{|}~";&lt;&gt;@[\]&#13;
+			</xs:documentation>
+		</xs:annotation>
 		<xs:restriction base="xs:string">
 			<xs:pattern value="[0-9a-zA-Zა-ჰ/\-\?:\(\)\.,'\+ ]+"/>
 			<xs:minLength value="1"/>
 			<xs:maxLength value="140"/>
 		</xs:restriction>
 	</xs:simpleType>
-	<xs:simpleType name="GEO_RestrictedFINXMax140Text_Extended">
+	<xs:simpleType name="GEO_RestrictedFINXMax140Text_Extended_Ka">
+		<xs:annotation>
+			<xs:documentation source="Name" xml:lang="EN">GEO_RestrictedFINXMax140Text_Extended_Ka</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="EN">
+				Specifies a character string with a minimum length of 1, and a maximum length of 140 characters, and limited to character set X, that is, 0-9 a-z A-Z / - ? : ( ) . , ' + . that is extended to support the following additional characters !#$%&amp;*=^_`{|}~";&lt;&gt;@[\]&#13;
+			</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="KA">
+				განსაზღვრავს სიმბოლოთა სტრიქონს მინიმალური სიგრძით 1 და მაქსიმალური სიგრძით 140 სიმბოლო, და შეზღუდულია სიმბოლოების ნაკრებით X, ანუ 0-9 a-z A-Z / - ? : ( ) . , ' + . რომელიც გაფართოვებულია შემდეგი დამატებითი სიმბოლოების მხარდაჭერისთვის !#$%&amp;*=^_`{|}~";&lt;&gt;@[\]&#13;
+			</xs:documentation>
+		</xs:annotation>
 		<xs:restriction base="xs:string">
 			<xs:pattern value="[0-9a-zA-Zა-ჰ/\-\?:\(\)\.,'\+ !#$%&amp;\*=^_`\{\|\}~&quot;;&lt;&gt;@\[\\\]]+"/>
 			<xs:minLength value="1"/>
@@ -919,11 +956,21 @@
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="Max15NumericText">
+		<xs:annotation>
+			<xs:documentation source="Name" xml:lang="EN">Max15NumericText</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="EN">Specifies a numeric string with a maximum length of 15 digits.</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="KA">განსაზღვრავს ციფრულ სტრიქონს მაქსიმალური სიგრძით 15 ციფრი.</xs:documentation>
+		</xs:annotation>
 		<xs:restriction base="xs:string">
 			<xs:pattern value="[0-9]{1,15}"/>
 		</xs:restriction>
 	</xs:simpleType>
-	<xs:simpleType name="GEO_RestrictedFINXMax16Text_Extended">
+	<xs:simpleType name="GEO_RestrictedFINXMax16Text_Extended_Ka">
+		<xs:annotation>
+			<xs:documentation source="Name" xml:lang="EN">GEO_RestrictedFINXMax16Text_Extended_Ka</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="EN">Specifies a character string with a minimum length of 1, and a maximum length of 16 characters, and limited to character set X, that is, 0-9 a-z A-Z / - ? : ( ) . , ' + . that is extended to support the following additional characters !#$%&amp;*=^_`{|}~";&lt;&gt;@[\]</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="KA">განსაზღვრავს სიმბოლოთა სტრიქონს მინიმალური სიგრძით 1 და მაქსიმალური სიგრძით 16 სიმბოლო, და შეზღუდულია სიმბოლოების ნაკრებით X, ანუ 0-9 a-z A-Z / - ? : ( ) . , ' + . რომელიც გაფართოვებულია შემდეგი დამატებითი სიმბოლოების მხარდაჭერისთვის !#$%&amp;*=^_`{|}~";&lt;&gt;@[\]</xs:documentation>
+		</xs:annotation>
 		<xs:restriction base="xs:string">
 			<xs:pattern value="[0-9a-zA-Zა-ჰ/\-\?:\(\)\.,'\+ !#$%&amp;\*=^_`\{\|\}~&quot;;&lt;&gt;@\[\\\]]+"/>
 			<xs:minLength value="1"/>
@@ -931,27 +978,47 @@
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="GEO_RestrictedFINXMax35Text">
+		<xs:annotation>
+			<xs:documentation source="Name" xml:lang="EN">GEO_RestrictedFINXMax35Text</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="EN">Specifies a character string with a minimum length of 1, and a maximum length of 35 characters, and limited to character set X, that is, 0-9 a-z A-Z / - ? : ( ) . , ‘ + .</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="KA">განსაზღვრავს სიმბოლოთა სტრიქონს მინიმალური სიგრძით 1 და მაქსიმალური სიგრძით 35 სიმბოლო, და შეზღუდულია სიმბოლოების ნაკრებით X, ანუ 0-9 a-z A-Z / - ? : ( ) . , ‘ + .</xs:documentation>
+		</xs:annotation>
 		<xs:restriction base="xs:string">
 			<xs:pattern value="[0-9a-zA-Z/\-\?:\(\)\.,'\+ ]+"/>
 			<xs:minLength value="1"/>
 			<xs:maxLength value="35"/>
 		</xs:restriction>
 	</xs:simpleType>
-	<xs:simpleType name="GEO_RestrictedFINXMax35Text_Extended">
+	<xs:simpleType name="GEO_RestrictedFINXMax35Text_Extended_Ka">
+		<xs:annotation>
+			<xs:documentation source="Name" xml:lang="EN">GEO_RestrictedFINXMax35Text_Extended_Ka</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="EN">Specifies a character string with a minimum length of 1, and a maximum length of 35 characters, and limited to character set X, that is, 0-9 a-z A-Z / - ? : ( ) . , ' + . that is extended to support the following additional characters !#$%&amp;*=^_`{|}~";&lt;&gt;@[\]</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="KA">განსაზღვრავს სიმბოლოთა სტრიქონს მინიმალური სიგრძით 1 და მაქსიმალური სიგრძით 35 სიმბოლო, და შეზღუდულია სიმბოლოების ნაკრებით X, ანუ 0-9 a-z A-Z / - ? : ( ) . , ' + . რომელიც გაფართოვებულია შემდეგი დამატებითი სიმბოლოების მხარდაჭერისთვის !#$%&amp;*=^_`{|}~";&lt;&gt;@[\]</xs:documentation>
+		</xs:annotation>
 		<xs:restriction base="xs:string">
 			<xs:pattern value="[0-9a-zA-Zა-ჰ/\-\?:\(\)\.,'\+ !#$%&amp;\*=^_`\{\|\}~&quot;;&lt;&gt;@\[\\\]]+"/>
 			<xs:minLength value="1"/>
 			<xs:maxLength value="35"/>
 		</xs:restriction>
 	</xs:simpleType>
-	<xs:simpleType name="GEO_RestrictedFINXMax70Text">
+	<xs:simpleType name="GEO_RestrictedFINXMax70Text_Ka">
+		<xs:annotation>
+			<xs:documentation source="Name" xml:lang="EN">GEO_RestrictedFINXMax70Text_Ka</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="EN">Specifies a character string with a minimum length of 1, and a maximum length of 70 characters, and limited to character set X, that is, 0-9 a-z A-Z / - ? : ( ) . , ' + .</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="KA">განსაზღვრავს სიმბოლოთა სტრიქონს მინიმალური სიგრძით 1 და მაქსიმალური სიგრძით 70 სიმბოლო, და შეზღუდულია სიმბოლოების ნაკრებით X, ანუ 0-9 a-z A-Z / - ? : ( ) . , ' + .</xs:documentation>
+		</xs:annotation>
 		<xs:restriction base="xs:string">
 			<xs:pattern value="[0-9a-zA-Zა-ჰ/\-\?:\(\)\.,'\+ ]+"/>
 			<xs:minLength value="1"/>
 			<xs:maxLength value="70"/>
 		</xs:restriction>
 	</xs:simpleType>
-	<xs:simpleType name="GEO_RestrictedFINXMax70Text_Extended">
+	<xs:simpleType name="GEO_RestrictedFINXMax70Text_Extended_Ka">
+		<xs:annotation>
+			<xs:documentation source="Name" xml:lang="EN">GEO_RestrictedFINXMax70Text_Extended_Ka</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="EN">Specifies a character string with a minimum length of 1, and a maximum length of 70 characters, and limited to character set X, that is, 0-9 a-z A-Z / - ? : ( ) . , ' + . that is extended to support the following additional characters !#$%&amp;*=^_`{|}~";&lt;&gt;@[\]</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="KA">განსაზღვრავს სიმბოლოთა სტრიქონს მინიმალური სიგრძით 1 და მაქსიმალური სიგრძით 70 სიმბოლო, და შეზღუდულია სიმბოლოების ნაკრებით X, ანუ 0-9 a-z A-Z / - ? : ( ) . , ' + . რომელიც გაფართოვებულია შემდეგი დამატებითი სიმბოლოების მხარდაჭერისთვის !#$%&amp;*=^_`{|}~";&lt;&gt;@[\]</xs:documentation>
+		</xs:annotation>
 		<xs:restriction base="xs:string">
 			<xs:pattern value="[0-9a-zA-Zა-ჰ/\-\?:\(\)\.,'\+ !#$%&amp;\*=^_`\{\|\}~&quot;;&lt;&gt;@\[\\\]]+"/>
 			<xs:minLength value="1"/>
@@ -1013,6 +1080,22 @@
 			</xs:element>
 		</xs:choice>
 	</xs:complexType>
+	<xs:complexType name="GEO_Party38Choice_OrgOnly">
+		<xs:annotation>
+			<xs:documentation source="Name" xml:lang="EN">GEO_Party38Choice_OrgOnly</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="EN">Nature or use of the account.</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="KA">ანგარიშის ბუნება ან გამოყენება.</xs:documentation>
+		</xs:annotation>
+		<xs:choice>
+			<xs:element name="OrgId" type="GEO_OrganisationIdentification29">
+				<xs:annotation>
+					<xs:documentation source="Name" xml:lang="EN">OrganisationIdentification</xs:documentation>
+					<xs:documentation source="Definition" xml:lang="EN">Unique and unambiguous way to identify an organisation.</xs:documentation>
+					<xs:documentation source="Definition" xml:lang="KA">ორგანიზაციის იდენტიფიკაციის უნიკალური და ერთმნიშვნელოვანი საშუალება.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:choice>
+	</xs:complexType>
 	<xs:complexType name="GEO_PartyIdentification135">
 		<xs:annotation>
 			<xs:documentation source="Name" xml:lang="EN">GEO_PartyIdentification135</xs:documentation>
@@ -1020,7 +1103,7 @@
 			<xs:documentation source="Definition" xml:lang="KA">განსაზღვრავს პირის ან ორგანიზაციის იდენტიფიკაციას.</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="Nm" type="GEO_RestrictedFINXMax140Text_Extended">
+			<xs:element name="Nm" type="GEO_RestrictedFINXMax140Text_Extended_Ka">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">Name</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">
@@ -1054,14 +1137,14 @@
 			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
-	<xs:complexType name="GEO_PartyIdentification135__IdOnly">
+	<xs:complexType name="GEO_PartyIdentification135__OrgOnly">
 		<xs:annotation>
-			<xs:documentation source="Name" xml:lang="EN">GEO_PartyIdentification135__IdOnly</xs:documentation>
+			<xs:documentation source="Name" xml:lang="EN">GEO_PartyIdentification135__OrgOnly</xs:documentation>
 			<xs:documentation source="Definition" xml:lang="EN">Specifies the identification of a person or an organisation.</xs:documentation>
 			<xs:documentation source="Definition" xml:lang="KA">განსაზღვრავს პირის ან ორგანიზაციის იდენტიფიკაციას.</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="Id" type="GEO_Party38Choice">
+			<xs:element name="Id" type="GEO_Party38Choice_OrgOnly">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">Identification</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">Unique and unambiguous identification for the account between the account owner and the account servicer.</xs:documentation>
@@ -1180,10 +1263,11 @@
 					<xs:documentation source="Definition" xml:lang="EN">Unambiguous identification of the account of the debtor agent at its servicing agent in the payment chain.</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="KA">
 						!!! ივსება მხოლოდ Type1 მონაწილის გადარიცხვის შეტყობინებებში !!!
-						დებიტორის აგენტის იმ ანგარიშის ერთმნიშვნელოვანი იდენტიფიკაცია, რომელიც მდებარეობს გადახდის ჯაჭვში მისი მომსახურე აგენტთან.</xs:documentation>
+						დებიტორის აგენტის იმ ანგარიშის ერთმნიშვნელოვანი იდენტიფიკაცია, რომელიც მდებარეობს გადახდის ჯაჭვში მისი მომსახურე აგენტთან.
+					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element maxOccurs="1" minOccurs="0" name="InstrForDbtrAgt" type="GEO_RestrictedFINXMax140Text">
+			<xs:element maxOccurs="1" minOccurs="0" name="InstrForDbtrAgt" type="GEO_RestrictedFINXMax140Text_Ka">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">InstructionForDebtorAgent</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">Further information related to the processing of the payment instruction, that may need to be acted upon by the debtor agent, depending on agreement between debtor and the debtor agent.</xs:documentation>
@@ -1298,91 +1382,91 @@
 			<xs:documentation source="Definition" xml:lang="KA">ინფორმაცია, რომელიც ადგენს მდებარეობას და იდენტიფიცირებს კონკრეტულ მისამართს, როგორც განსაზღვრულია საფოსტო სამსახურების მიერ.</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element maxOccurs="1" minOccurs="0" name="Dept" type="GEO_RestrictedFINXMax70Text_Extended">
+			<xs:element maxOccurs="1" minOccurs="0" name="Dept" type="GEO_RestrictedFINXMax70Text_Extended_Ka">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">Department</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">Identification of a division of a large organisation or building.</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="KA">დიდი ორგანიზაციის ან შენობის განყოფილების იდენტიფიკაცია.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element maxOccurs="1" minOccurs="0" name="SubDept" type="GEO_RestrictedFINXMax70Text_Extended">
+			<xs:element maxOccurs="1" minOccurs="0" name="SubDept" type="GEO_RestrictedFINXMax70Text_Extended_Ka">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">SubDepartment</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">Identification of a sub-division of a large organisation or building.</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="KA">დიდი ორგანიზაციის ან შენობის ქვეგანყოფილების იდენტიფიკაცია.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element maxOccurs="1" minOccurs="0" name="StrtNm" type="GEO_RestrictedFINXMax70Text_Extended">
+			<xs:element maxOccurs="1" minOccurs="0" name="StrtNm" type="GEO_RestrictedFINXMax70Text_Extended_Ka">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">StreetName</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">Name of a street or thoroughfare.</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="KA">ქუჩის ან გზის დასახელება.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element maxOccurs="1" minOccurs="0" name="BldgNb" type="GEO_RestrictedFINXMax16Text_Extended">
+			<xs:element maxOccurs="1" minOccurs="0" name="BldgNb" type="GEO_RestrictedFINXMax16Text_Extended_Ka">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">BuildingNumber</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">Number that identifies the position of a building on a street.</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="KA">ნომერი, რომელიც განსაზღვრავს შენობის მდებარეობას ქუჩაზე.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element maxOccurs="1" minOccurs="0" name="BldgNm" type="GEO_RestrictedFINXMax35Text_Extended">
+			<xs:element maxOccurs="1" minOccurs="0" name="BldgNm" type="GEO_RestrictedFINXMax35Text_Extended_Ka">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">BuildingName</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">Name of the building or house.</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="KA">შენობის ან სახლის დასახელება.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element maxOccurs="1" minOccurs="0" name="Flr" type="GEO_RestrictedFINXMax70Text_Extended">
+			<xs:element maxOccurs="1" minOccurs="0" name="Flr" type="GEO_RestrictedFINXMax70Text_Extended_Ka">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">Floor</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">Floor or storey within a building.</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="KA">სართული შენობაში.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element maxOccurs="1" minOccurs="0" name="PstBx" type="GEO_RestrictedFINXMax16Text_Extended">
+			<xs:element maxOccurs="1" minOccurs="0" name="PstBx" type="GEO_RestrictedFINXMax16Text_Extended_Ka">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">PostBox</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">Numbered box in a post office, assigned to a person or organisation, where letters are kept until called for.</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="KA">საფოსტო განყოფილებაში პირისთვის ან ორგანიზაციისთვის მინიჭებული ნომრიანი ყუთი, სადაც წერილები ინახება მოთხოვნამდე.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element maxOccurs="1" minOccurs="0" name="Room" type="GEO_RestrictedFINXMax70Text_Extended">
+			<xs:element maxOccurs="1" minOccurs="0" name="Room" type="GEO_RestrictedFINXMax70Text_Extended_Ka">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">Room</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">Building room number.</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="KA">ოთახის ნომერი შენობაში.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element maxOccurs="1" minOccurs="0" name="PstCd" type="GEO_RestrictedFINXMax16Text_Extended">
+			<xs:element maxOccurs="1" minOccurs="0" name="PstCd" type="GEO_RestrictedFINXMax16Text_Extended_Ka">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">PostCode</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">Identifier consisting of a group of letters and/or numbers that is added to a postal address to assist the sorting of mail.</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="KA">ასოებისა და/ან რიცხვების ჯგუფისგან შემდგარი იდენტიფიკატორი, რომელიც ემატება საფოსტო მისამართს ფოსტის დახარისხების გასამარტივებლად.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="TwnNm" type="GEO_RestrictedFINXMax35Text_Extended">
+			<xs:element name="TwnNm" type="GEO_RestrictedFINXMax35Text_Extended_Ka">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">TownName</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">Name of a built-up area, with defined boundaries, and a local government.</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="KA">განაშენიანებული ტერიტორიის დასახელება, რომელსაც აქვს განსაზღვრული საზღვრები და ადგილობრივი მმართველობა.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element maxOccurs="1" minOccurs="0" name="TwnLctnNm" type="GEO_RestrictedFINXMax35Text_Extended">
+			<xs:element maxOccurs="1" minOccurs="0" name="TwnLctnNm" type="GEO_RestrictedFINXMax35Text_Extended_Ka">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">TownLocationName</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">Specific location name within the town.</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="KA">ქალაქის ფარგლებში კონკრეტული მდებარეობის დასახელება.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element maxOccurs="1" minOccurs="0" name="DstrctNm" type="GEO_RestrictedFINXMax35Text_Extended">
+			<xs:element maxOccurs="1" minOccurs="0" name="DstrctNm" type="GEO_RestrictedFINXMax35Text_Extended_Ka">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">DistrictName</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">Identifies a subdivision within a country sub-division.</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="KA">განსაზღვრავს ქვედანაყოფს ქვეყნის ადმინისტრაციული ერთეულის ფარგლებში.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element maxOccurs="1" minOccurs="0" name="CtrySubDvsn" type="GEO_RestrictedFINXMax35Text_Extended">
+			<xs:element maxOccurs="1" minOccurs="0" name="CtrySubDvsn" type="GEO_RestrictedFINXMax35Text_Extended_Ka">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">CountrySubDivision</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">Identifies a subdivision of a country such as state, region, county.</xs:documentation>
@@ -1396,7 +1480,7 @@
 					<xs:documentation source="Definition" xml:lang="KA">საკუთარი მთავრობის მქონე სახელმწიფო.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element maxOccurs="2" minOccurs="0" name="AdrLine" type="GEO_RestrictedFINXMax35Text_Extended">
+			<xs:element maxOccurs="2" minOccurs="0" name="AdrLine" type="GEO_RestrictedFINXMax35Text_Extended_Ka">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">AddressLine</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">Information that locates and identifies a specific address, as defined by postal services, presented in free format text.</xs:documentation>
@@ -1442,7 +1526,7 @@
 			<xs:documentation source="Definition" xml:lang="KA">სუბიექტი, რომელიც მოითხოვს რეგულატორული ანგარიშგების ინფორმაციას.</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element maxOccurs="1" minOccurs="0" name="Nm" type="GEO_RestrictedFINXMax140Text">
+			<xs:element maxOccurs="1" minOccurs="0" name="Nm" type="GEO_RestrictedFINXMax140Text_Ka">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">Name</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">
@@ -1511,7 +1595,7 @@
 			<xs:documentation source="Definition" xml:lang="KA">მოწოდებული ინფორმაცია, რომელიც შესაძლებელს ხდის ჩანაწერის შეჯერებას იმ ელემენტებთან, რომელთა დასაფარადაც განკუთვნილია გადახდა, მაგალითად, კომერციულ ინვოისებთან დებიტორული დავალიანებების სისტემაში.</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element maxOccurs="4" minOccurs="1" name="Ustrd" type="GEO_RestrictedFINXMax140Text_Extended">
+			<xs:element maxOccurs="4" minOccurs="1" name="Ustrd" type="GEO_RestrictedFINXMax140Text_Extended_Ka">
 				<xs:annotation>
 					<xs:documentation source="Name" xml:lang="EN">Unstructured</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">Information supplied to enable the matching/reconciliation of an entry with the items that the payment is intended to settle, such as commercial invoices in an accounts' receivable system, in an unstructured form.</xs:documentation>
@@ -1643,6 +1727,11 @@
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="GEO_TreasuryCode">
+		<xs:annotation>
+			<xs:documentation source="Name" xml:lang="EN">GEO_TreasuryCode</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="EN">Code assigned by the treasury to identify a specific transaction.</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="KA">კოდი, რომელიც განკუთვნილია საგარეო საქმეთა სამინისტროს მიერ კონკრეტული ტრანზაქციის იდენტიფიცირებისთვის.</xs:documentation>
+		</xs:annotation>
 		<xs:restriction base="xs:string">
 			<xs:pattern value="[1-9][0-9]{8}"/>
 			<xs:minLength value="9"/>
