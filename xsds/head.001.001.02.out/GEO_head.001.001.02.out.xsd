@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns="urn:iso:std:iso:20022:tech:xsd:head.001.001.02" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="urn:iso:std:iso:20022:tech:xsd:head.001.001.02">
+	<xs:element name="AppHdr" type="GEO_BusinessApplicationHeaderV02_Out"/>
+	<xs:complexType name="GEO_BusinessApplicationHeaderV02_Out">
+		<xs:sequence>
+			<xs:element name="Fr" type="GEO_Party44Choice_BicFiOnly">
+			</xs:element>
+			<xs:element name="To" type="GEO_Party44Choice_OrgOnly">
+			</xs:element>
+			<xs:element name="BizMsgIdr" type="GEO_RestrictedFINXMax35Text">
+			</xs:element>
+			<xs:element name="MsgDefIdr" type="GEO_RestrictedFINXMax35Text">
+			</xs:element>
+			<xs:element name="BizSvc" type="UsageIdentifierPatternText">
+			</xs:element>
+			<xs:element name="CreDt" type="GEO_ISODateTime">
+			</xs:element>
+			<xs:element maxOccurs="1" minOccurs="0" name="PssblDplct" type="YesNoIndicator">
+			</xs:element>
+			<xs:element maxOccurs="1" minOccurs="1" name="Sgntr" type="SignatureEnvelope">
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="GEO_FinancialInstitutionIdentification18_BicFiOnly">
+		<xs:annotation>
+			<xs:documentation source="Name" xml:lang="EN">GEO_FinancialInstitutionIdentification18_BicFiOnly</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="EN">Specifies the details to identify a financial institution.</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="KA">მოიცავს ფინანსური ინსტიტუტის იდენტიფიკაციისთვის საჭირო დეტალებს.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="BICFI" type="GEO_BICFIDec2014Identifier">
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="GEO_ISODateTime">
+		<xs:annotation>
+			<xs:documentation source="Name" xml:lang="EN">GEO_ISODateTime</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:dateTime">
+			<xs:pattern value=".*(\+|-)((0[0-9])|(1[0-3])):[0-5][0-9]"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="GEO_RestrictedFINXMax35Text">
+		<xs:annotation>
+			<xs:documentation source="Name" xml:lang="EN">GEO_RestrictedFINXMax35Text</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="EN">Specifies a character string with a minimum length of 1, and a maximum length of 35 characters, and limited to character set X, that is, 0-9 a-z A-Z / - ? : ( ) . , ‘ + .</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="KA">განსაზღვრავს სიმბოლოთა სტრიქონს მინიმალური სიგრძით 1 და მაქსიმალური სიგრძით 35 სიმბოლო, და შეზღუდულია სიმბოლოების ნაკრებით X, ანუ 0-9 a-z A-Z / - ? : ( ) . , ‘ + .</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[0-9a-zA-Z/\-\?:\(\)\.,'\+ ]+"/>
+			<xs:minLength value="1"/>
+			<xs:maxLength value="35"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="GEO_Party44Choice_OrgOnly">
+		<xs:choice>
+			<xs:element name="OrgId" type="GEO_PartyIdentification135__OrgOnly"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="GEO_Party44Choice_BicFiOnly">
+		<xs:choice>
+			<xs:element name="FIId" type="GEO_BranchAndFinancialInstitutionIdentification6_BicOnly"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="GEO_PartyIdentification135__OrgOnly">
+		<xs:annotation>
+			<xs:documentation source="Name" xml:lang="EN">GEO_PartyIdentification135__OrgOnly</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="EN">Specifies the identification of a person or an organisation.</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="KA">განსაზღვრავს პირის ან ორგანიზაციის იდენტიფიკაციას.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="Id" type="GEO_Party38Choice_OrgOnly">
+				<xs:annotation>
+					<xs:documentation source="Name" xml:lang="EN">Identification</xs:documentation>
+					<xs:documentation source="Definition" xml:lang="EN">Unique and unambiguous identification for the account between the account owner and the account servicer.</xs:documentation>
+					<xs:documentation source="Definition" xml:lang="KA">ანგარიშის უნიკალური და ერთმნიშვნელოვანი იდენტიფიკაცია ანგარიშის მფლობელსა და ანგარიშის მომსახურე მხარეს შორის.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="GEO_Party38Choice_OrgOnly">
+		<xs:annotation>
+			<xs:documentation source="Name" xml:lang="EN">GEO_Party38Choice_OrgOnly</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="EN">Nature or use of the account.</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="KA">ანგარიშის ბუნება ან გამოყენება.</xs:documentation>
+		</xs:annotation>
+		<xs:choice>
+			<xs:element name="OrgId" type="GEO_OrganisationIdentification29">
+				<xs:annotation>
+					<xs:documentation source="Name" xml:lang="EN">OrganisationIdentification</xs:documentation>
+					<xs:documentation source="Definition" xml:lang="EN">Unique and unambiguous way to identify an organisation.</xs:documentation>
+					<xs:documentation source="Definition" xml:lang="KA">ორგანიზაციის იდენტიფიკაციის უნიკალური და ერთმნიშვნელოვანი საშუალება.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="GEO_OrganisationIdentification29">
+		<xs:annotation>
+			<xs:documentation source="Name" xml:lang="EN">GEO_OrganisationIdentification29</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="EN">Unique and unambiguous way to identify an organisation.</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="KA">ორგანიზაციის იდენტიფიკაციის უნიკალური და ერთმნიშვნელოვანი საშუალება.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="Othr" type="GEO_GenericOrganisationIdentification1">
+				<xs:annotation>
+					<xs:documentation source="Name" xml:lang="EN">Other</xs:documentation>
+					<xs:documentation source="Definition" xml:lang="EN">Unique identification of an account, as assigned by the account servicer, using an identification scheme.</xs:documentation>
+					<xs:documentation source="Definition" xml:lang="KA">ანგარიშის უნიკალური იდენტიფიკაცია, მინიჭებული ანგარიშის მომსახურე მხარის მიერ, იდენტიფიკაციის სქემის გამოყენებით.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="GEO_GenericOrganisationIdentification1">
+		<xs:annotation>
+			<xs:documentation source="Name" xml:lang="EN">GEO_GenericOrganisationIdentification1</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="EN">Information related to an identification of an organisation.</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="KA">ინფორმაცია, რომელიც დაკავშირებულია ორგანიზაციის იდენტიფიკაციასთან.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="Id" type="GEO_RestrictedFINXMax35Text">
+				<xs:annotation>
+					<xs:documentation source="Name" xml:lang="EN">Identification</xs:documentation>
+					<xs:documentation source="Definition" xml:lang="EN">Unique and unambiguous identification for the account between the account owner and the account servicer.</xs:documentation>
+					<xs:documentation source="Definition" xml:lang="KA">ანგარიშის უნიკალური და ერთმნიშვნელოვანი იდენტიფიკაცია ანგარიშის მფლობელსა და ანგარიშის მომსახურე მხარეს შორის.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="SchmeNm" type="GEO_OrganisationIdentificationSchemeName1Choice">
+				<xs:annotation>
+					<xs:documentation source="Name" xml:lang="EN">SchemeName</xs:documentation>
+					<xs:documentation source="Definition" xml:lang="EN">Name of the identification scheme.</xs:documentation>
+					<xs:documentation source="Definition" xml:lang="KA">იდენტიფიკაციის სქემის დასახელება.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="GEO_OrganisationIdentificationSchemeName1Choice">
+		<xs:annotation>
+			<xs:documentation source="Name" xml:lang="EN">GEO_OrganisationIdentificationSchemeName1Choice</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="EN">Sets of elements to identify a name of the organisation identification scheme.</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="KA">ელემენტების ნაკრები ორგანიზაციის იდენტიფიკაციის სქემის დასახელების იდენტიფიცირებისთვის.</xs:documentation>
+		</xs:annotation>
+		<xs:choice>
+			<xs:element name="Cd" type="ExternalOrganisationIdentification1Code">
+				<xs:annotation>
+					<xs:documentation source="Name" xml:lang="EN">Code</xs:documentation>
+					<xs:documentation source="Definition" xml:lang="EN">Name of the identification scheme, in a coded form as published in an external list.</xs:documentation>
+					<xs:documentation source="Definition" xml:lang="KA">იდენტიფიკაციის სქემის დასახელება კოდირებული ფორმით, როგორც გამოქვეყნებულია გარე სიაში.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:choice>
+	</xs:complexType>
+	<xs:simpleType name="ExternalOrganisationIdentification1Code">
+		<xs:annotation>
+			<xs:documentation source="Name" xml:lang="EN">ExternalOrganisationIdentification1Code</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="EN">
+				Specifies the external organisation identification scheme name code in the format of character string with a maximum length of 4 characters.
+				The list of valid codes is an external code list published separately.
+				External code sets can be downloaded from www.iso20022.org.
+			</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="KA">განსაზღვრავს ორგანიზაციის იდენტიფიკაციის გარე სქემის დასახელების კოდს სიმბოლოთა სტრიქონის ფორმატში, მაქსიმალური სიგრძით 4 სიმბოლო. მოქმედი კოდების სია ცალკე გამოქვეყნებული გარე კოდების სიაა. გარე კოდების ნაკრებები შეიძლება ჩამოიტვირთოს www.iso20022.org-დან.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="4"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="GEO_BranchAndFinancialInstitutionIdentification6_BicOnly">
+		<xs:annotation>
+			<xs:documentation source="Name" xml:lang="EN">GEO_BranchAndFinancialInstitutionIdentification6_BicOnly</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="EN">Unique and unambiguous identification of a financial institution or a branch of a financial institution.</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="KA">ფინანსური ინსტიტუტის ან ფინანსური ინსტიტუტის ფილიალის უნიკალური და ერთმნიშვნელოვანი იდენტიფიკაცია.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="FinInstnId" type="GEO_FinancialInstitutionIdentification18_BicFiOnly">
+				<xs:annotation>
+					<xs:documentation source="Name" xml:lang="EN">FinancialInstitutionIdentification</xs:documentation>
+					<xs:documentation source="Definition" xml:lang="EN">Unique and unambiguous identification of a financial institution, as assigned under an internationally recognised or proprietary identification scheme.</xs:documentation>
+					<xs:documentation source="Definition" xml:lang="KA">ფინანსური ინსტიტუტის უნიკალური და ერთმნიშვნელოვანი იდენტიფიკაცია, მინიჭებული საერთაშორისო აღიარებული ან საკუთარი იდენტიფიკაციის სქემის ფარგლებში.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="SignatureEnvelope">
+		<xs:sequence>
+			<xs:any namespace="http://www.w3.org/2000/09/xmldsig#" processContents="lax"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="UsageIdentifierPatternText">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[a-z0-9]{1,10}\.([a-z0-9]{1,10}\.)+\d\d"/>
+			<xs:minLength value="6"/>
+			<xs:maxLength value="35"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="YesNoIndicator">
+		<xs:annotation>
+			<xs:documentation source="Name" xml:lang="EN">YesNoIndicator</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="EN">Indicates a "Yes" or "No" type of answer for an element.</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="KA">აჩვენებს "დიახ" ან "არა" ტიპის პასუხს ელემენტისთვის.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:boolean"/>
+	</xs:simpleType>
+	<xs:simpleType name="GEO_BICFIDec2014Identifier">
+		<xs:annotation>
+			<xs:documentation source="Name" xml:lang="EN">GEO_BICFIDec2014Identifier</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="EN">Code allocated to a financial institution by the ISO 9362 Registration Authority as described in ISO 9362: 2014 - "Banking - Banking telecommunication messages - Business identifier code (BIC)".</xs:documentation>
+			<xs:documentation source="Definition" xml:lang="KA">ISO 9362 რეგისტრაციის ორგანოს მიერ ფინანსური ინსტიტუტისთვის მინიჭებული კოდი, როგორც აღწერილია ISO 9362:2014-ში — „საბანკო საქმე — საბანკო სატელეკომუნიკაციო შეტყობინებები — ბიზნეს იდენტიფიკატორის კოდი (BIC)“.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[A-Z0-9]{4,4}GE[A-Z0-9]{2,2}"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>
