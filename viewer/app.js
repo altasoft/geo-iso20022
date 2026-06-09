@@ -24,7 +24,7 @@ const state = {
     mandatoryOnly: false,
     repeatingOnly: false,
     changedOnly: false,
-    showRemoved: true,
+    showRemoved: false,
   },
   loadToken: 0,
 };
@@ -95,9 +95,9 @@ async function loadData(messageId) {
   document.getElementById("cb-removed-wrap").style.display = "none";
   document.getElementById("view-selector").style.display   = "none";
   state.filters.changedOnly = false;
-  state.filters.showRemoved = true;
+  state.filters.showRemoved = false;
   document.getElementById("cb-changed").checked = false;
-  document.getElementById("cb-removed").checked = true;
+  document.getElementById("cb-removed").checked = false;
 
   const prefix = `data/${messageId}`;
 
@@ -212,9 +212,9 @@ function switchView(mode) {
     document.getElementById("cb-changed-wrap").style.display = "none";
     document.getElementById("cb-removed-wrap").style.display = "none";
     state.filters.changedOnly = false;
-    state.filters.showRemoved = true;
+    state.filters.showRemoved = false;
     document.getElementById("cb-changed").checked = false;
-    document.getElementById("cb-removed").checked = true;
+    document.getElementById("cb-removed").checked = false;
   }
 
   _updateViewButtons();
