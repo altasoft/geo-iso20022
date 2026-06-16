@@ -294,7 +294,7 @@
 			</xs:element>
 			<xs:element maxOccurs="1" minOccurs="0" name="PmtTpInf" type="GEO_PaymentTypeInformation26">
 				<xs:annotation>
-					<xs:documentation source="Name" xml:lang="EN">GEO_PaymentTypeInformation</xs:documentation>
+					<xs:documentation source="Name" xml:lang="EN">PaymentTypeInformation</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="EN">Set of elements used to further specify the type of transaction.</xs:documentation>
 					<xs:documentation source="Definition" xml:lang="KA">ელემენტების ნაკრები, რომელიც გამოიყენება ოპერაციის ტიპის დამატებით დასაზუსტებლად.</xs:documentation>
 				</xs:annotation>
