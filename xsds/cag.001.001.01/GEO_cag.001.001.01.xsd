@@ -1,0 +1,27 @@
+<xs:schema
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:cag="urn:ge:corporate-access-gateway:xsd:cag.001.001.01"
+	xmlns:head="urn:iso:std:iso:20022:tech:xsd:head.001.001.02"
+	xmlns:pain001="urn:iso:std:iso:20022:tech:xsd:pain.001.001.09"
+	targetNamespace="urn:ge:corporate-access-gateway:xsd:cag.001.001.01"
+	elementFormDefault="qualified">
+
+	<xs:import namespace="urn:iso:std:iso:20022:tech:xsd:head.001.001.02"
+	           schemaLocation="GEO_head.001.001.02.in.xsd"/>
+
+	<xs:import namespace="urn:iso:std:iso:20022:tech:xsd:pain.001.001.09"
+	           schemaLocation="GEO_pain.001.001.09.xsd"/>
+
+	<xs:element name="BusinessMessage" type="cag:GEO_BusinessMessageEnvelopeInV01"/>
+
+	<xs:complexType name="GEO_BusinessMessageEnvelopeInV01">
+		<xs:sequence>
+			<xs:element ref="head:AppHdr"/>
+
+			<xs:choice>
+				<xs:element ref="pain001:Document"/>
+			</xs:choice>
+		</xs:sequence>
+	</xs:complexType>
+
+</xs:schema>
