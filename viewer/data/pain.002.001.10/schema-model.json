@@ -2,7 +2,7 @@
   "metadata": {
     "sourceFile": "GEO_pain.002.001.10.xsd",
     "targetNamespace": "urn:iso:std:iso:20022:tech:xsd:pain.002.001.10",
-    "generatedAt": "2026-05-25T09:45:56.753345+00:00",
+    "generatedAt": "2026-06-22T10:04:50.521097+00:00",
     "rootElement": "Document",
     "messageName": "pain.002.001.10",
     "warnings": []
@@ -254,18 +254,18 @@
       ]
     },
     {
-      "id": "9eb8986201437a40",
+      "id": "7b38f082a85e6503",
       "parentId": "16145443de3e6ff5",
       "label": "AdditionalInformation",
       "name": "AddtlInf",
       "xmlTag": "AddtlInf",
       "xmlPath": "/Document/CstmrPmtStsRpt/OrgnlGrpInfAndSts/StsRsnInf/AddtlInf",
-      "typeName": "GEO_RestrictedFINXMax105Text",
+      "typeName": "GEO_RestrictedFINXMax105Text_Ka",
       "baseType": "string",
       "nodeKind": "text",
       "minOccurs": 0,
-      "maxOccurs": "unbounded",
-      "multiplicity": "[0..∞]",
+      "maxOccurs": "4",
+      "multiplicity": "[0..4]",
       "isMandatory": false,
       "isRepeating": true,
       "isChoice": false,
@@ -294,8 +294,8 @@
       "baseType": null,
       "nodeKind": "complexType",
       "minOccurs": 0,
-      "maxOccurs": "unbounded",
-      "multiplicity": "[0..∞]",
+      "maxOccurs": "4",
+      "multiplicity": "[0..4]",
       "isMandatory": false,
       "isRepeating": true,
       "isChoice": false,
@@ -313,100 +313,7 @@
       "enumerations": [],
       "childrenIds": [
         "41190e88442317a5",
-        "9eb8986201437a40"
-      ]
-    },
-    {
-      "id": "a86ed28163b69d22",
-      "parentId": "eb5253119b05108f",
-      "label": "DetailedNumberOfTransactions",
-      "name": "DtldNbOfTxs",
-      "xmlTag": "DtldNbOfTxs",
-      "xmlPath": "/Document/CstmrPmtStsRpt/OrgnlGrpInfAndSts/NbOfTxsPerSts/DtldNbOfTxs",
-      "typeName": "Max15NumericText",
-      "baseType": "string",
-      "nodeKind": "text",
-      "minOccurs": 1,
-      "maxOccurs": "1",
-      "multiplicity": "[1..1]",
-      "isMandatory": true,
-      "isRepeating": false,
-      "isChoice": false,
-      "documentation": "Number of individual transactions contained in the message, detailed per status.",
-      "documentationKA": "მომხმარებლის მიერ შეტყობინებაში ჩართული ინდივიდუალური ტრანზაქციების რაოდენობა, დეტალურად სტატუსის მიხედვით.",
-      "restrictions": {
-        "pattern": "[0-9]{1,15}",
-        "minLength": null,
-        "maxLength": null,
-        "length": null,
-        "totalDigits": null,
-        "fractionDigits": null,
-        "minInclusive": null
-      },
-      "enumerations": [],
-      "childrenIds": []
-    },
-    {
-      "id": "486c0a14e68bd512",
-      "parentId": "eb5253119b05108f",
-      "label": "DetailedStatus",
-      "name": "DtldSts",
-      "xmlTag": "DtldSts",
-      "xmlPath": "/Document/CstmrPmtStsRpt/OrgnlGrpInfAndSts/NbOfTxsPerSts/DtldSts",
-      "typeName": "ExternalPaymentTransactionStatus1Code",
-      "baseType": "string",
-      "nodeKind": "text",
-      "minOccurs": 1,
-      "maxOccurs": "1",
-      "multiplicity": "[1..1]",
-      "isMandatory": true,
-      "isRepeating": false,
-      "isChoice": false,
-      "documentation": "Common transaction status for all individual transactions reported.",
-      "documentationKA": "მომხმარებლის მიერ შეტყობინებაში ჩართული ინდივიდუალური ტრანზაქციების საერთო სტატუსი.",
-      "restrictions": {
-        "pattern": null,
-        "minLength": "1",
-        "maxLength": "4",
-        "length": null,
-        "totalDigits": null,
-        "fractionDigits": null,
-        "minInclusive": null
-      },
-      "enumerations": [],
-      "childrenIds": []
-    },
-    {
-      "id": "eb5253119b05108f",
-      "parentId": "2319ee71937db82f",
-      "label": "NumberOfTransactionsPerStatus",
-      "name": "NbOfTxsPerSts",
-      "xmlTag": "NbOfTxsPerSts",
-      "xmlPath": "/Document/CstmrPmtStsRpt/OrgnlGrpInfAndSts/NbOfTxsPerSts",
-      "typeName": "NumberOfTransactionsPerStatus5",
-      "baseType": null,
-      "nodeKind": "complexType",
-      "minOccurs": 0,
-      "maxOccurs": "unbounded",
-      "multiplicity": "[0..∞]",
-      "isMandatory": false,
-      "isRepeating": true,
-      "isChoice": false,
-      "documentation": "Detailed information on the number of transactions for each identical transaction status.",
-      "documentationKA": "დეტალური ინფორმაცია ტრანზაქციების რაოდენობის შესახებ თითოეული იდენტური ტრანზაქციის სტატუსისთვის.",
-      "restrictions": {
-        "pattern": null,
-        "minLength": null,
-        "maxLength": null,
-        "length": null,
-        "totalDigits": null,
-        "fractionDigits": null,
-        "minInclusive": null
-      },
-      "enumerations": [],
-      "childrenIds": [
-        "a86ed28163b69d22",
-        "486c0a14e68bd512"
+        "7b38f082a85e6503"
       ]
     },
     {
@@ -441,8 +348,7 @@
         "a06398fdb461a6a1",
         "cc1c66f279359f71",
         "d3aff2699d31b71f",
-        "16145443de3e6ff5",
-        "eb5253119b05108f"
+        "16145443de3e6ff5"
       ]
     },
     {
@@ -474,284 +380,6 @@
       },
       "enumerations": [],
       "childrenIds": []
-    },
-    {
-      "id": "b44be2932e2b6ac4",
-      "parentId": "45600e7477b0da43",
-      "label": "OriginalNumberOfTransactions",
-      "name": "OrgnlNbOfTxs",
-      "xmlTag": "OrgnlNbOfTxs",
-      "xmlPath": "/Document/CstmrPmtStsRpt/OrgnlPmtInfAndSts/OrgnlNbOfTxs",
-      "typeName": "Max15NumericText",
-      "baseType": "string",
-      "nodeKind": "text",
-      "minOccurs": 0,
-      "maxOccurs": "1",
-      "multiplicity": "[0..1]",
-      "isMandatory": false,
-      "isRepeating": false,
-      "isChoice": false,
-      "documentation": "Number of individual transactions contained in the original payment information group.",
-      "documentationKA": "ორიგინალური გადახდის ინფორმაციის ჯგუფში ჩართული ინდივიდუალური ტრანზაქციების რაოდენობა.",
-      "restrictions": {
-        "pattern": "[0-9]{1,15}",
-        "minLength": null,
-        "maxLength": null,
-        "length": null,
-        "totalDigits": null,
-        "fractionDigits": null,
-        "minInclusive": null
-      },
-      "enumerations": [],
-      "childrenIds": []
-    },
-    {
-      "id": "58f66338a9074aef",
-      "parentId": "45600e7477b0da43",
-      "label": "PaymentInformationStatus",
-      "name": "PmtInfSts",
-      "xmlTag": "PmtInfSts",
-      "xmlPath": "/Document/CstmrPmtStsRpt/OrgnlPmtInfAndSts/PmtInfSts",
-      "typeName": "ExternalPaymentGroupStatus1Code",
-      "baseType": "string",
-      "nodeKind": "text",
-      "minOccurs": 0,
-      "maxOccurs": "1",
-      "multiplicity": "[0..1]",
-      "isMandatory": false,
-      "isRepeating": false,
-      "isChoice": false,
-      "documentation": "Specifies the status of the payment information group.",
-      "documentationKA": "გადახდის ინფორმაციის ჯგუფის სტატუსი.",
-      "restrictions": {
-        "pattern": null,
-        "minLength": "1",
-        "maxLength": "4",
-        "length": null,
-        "totalDigits": null,
-        "fractionDigits": null,
-        "minInclusive": null
-      },
-      "enumerations": [],
-      "childrenIds": []
-    },
-    {
-      "id": "117d6294cc376bf0",
-      "parentId": "f8796bef79b622dc",
-      "label": "Code",
-      "name": "Cd",
-      "xmlTag": "Cd",
-      "xmlPath": "/Document/CstmrPmtStsRpt/OrgnlPmtInfAndSts/StsRsnInf/Rsn/Cd",
-      "typeName": "ExternalStatusReason1Code",
-      "baseType": "string",
-      "nodeKind": "text",
-      "minOccurs": 1,
-      "maxOccurs": "1",
-      "multiplicity": "[1..1]",
-      "isMandatory": true,
-      "isRepeating": false,
-      "isChoice": false,
-      "documentation": "Reason for the status, as published in an external reason code list.",
-      "documentationKA": "სტატუსის მიზეზი, როგორც გამოქვეყნებულია გარე მიზეზების კოდების სიაში.",
-      "restrictions": {
-        "pattern": null,
-        "minLength": "1",
-        "maxLength": "4",
-        "length": null,
-        "totalDigits": null,
-        "fractionDigits": null,
-        "minInclusive": null
-      },
-      "enumerations": [],
-      "childrenIds": []
-    },
-    {
-      "id": "f8796bef79b622dc",
-      "parentId": "e33ac712b5478e43",
-      "label": "Reason",
-      "name": "Rsn",
-      "xmlTag": "Rsn",
-      "xmlPath": "/Document/CstmrPmtStsRpt/OrgnlPmtInfAndSts/StsRsnInf/Rsn",
-      "typeName": "GEO_StatusReason6Choice",
-      "baseType": null,
-      "nodeKind": "complexType",
-      "minOccurs": 0,
-      "maxOccurs": "1",
-      "multiplicity": "[0..1]",
-      "isMandatory": false,
-      "isRepeating": false,
-      "isChoice": true,
-      "documentation": "Specifies the reason for the status report.",
-      "documentationKA": "მიუთითებს სტატუსის ანგარიშის მიზეზს.",
-      "restrictions": {
-        "pattern": null,
-        "minLength": null,
-        "maxLength": null,
-        "length": null,
-        "totalDigits": null,
-        "fractionDigits": null,
-        "minInclusive": null
-      },
-      "enumerations": [],
-      "childrenIds": [
-        "117d6294cc376bf0"
-      ]
-    },
-    {
-      "id": "d8c5477860b08263",
-      "parentId": "e33ac712b5478e43",
-      "label": "AdditionalInformation",
-      "name": "AddtlInf",
-      "xmlTag": "AddtlInf",
-      "xmlPath": "/Document/CstmrPmtStsRpt/OrgnlPmtInfAndSts/StsRsnInf/AddtlInf",
-      "typeName": "GEO_RestrictedFINXMax105Text",
-      "baseType": "string",
-      "nodeKind": "text",
-      "minOccurs": 0,
-      "maxOccurs": "unbounded",
-      "multiplicity": "[0..∞]",
-      "isMandatory": false,
-      "isRepeating": true,
-      "isChoice": false,
-      "documentation": "Further details on the status reason.\n\n\t\t\t\t\t\tUsage: Additional information can be used for several purposes such as the reporting of repaired information.",
-      "documentationKA": "სტატუსის მიზეზის შესახებ დამატებითი დეტალები.\n\n\t\t\t\t\t\tგამოყენება: დამატებითი ინფორმაცია შეიძლება გამოყენებულ იქნას სხვადასხვა მიზნებისთვის, როგორიცაა შეკეთებული ინფორმაციის ანგარიშგება.",
-      "restrictions": {
-        "pattern": "[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
-        "minLength": "1",
-        "maxLength": "105",
-        "length": null,
-        "totalDigits": null,
-        "fractionDigits": null,
-        "minInclusive": null
-      },
-      "enumerations": [],
-      "childrenIds": []
-    },
-    {
-      "id": "e33ac712b5478e43",
-      "parentId": "45600e7477b0da43",
-      "label": "StatusReasonInformation",
-      "name": "StsRsnInf",
-      "xmlTag": "StsRsnInf",
-      "xmlPath": "/Document/CstmrPmtStsRpt/OrgnlPmtInfAndSts/StsRsnInf",
-      "typeName": "StatusReasonInformation12",
-      "baseType": null,
-      "nodeKind": "complexType",
-      "minOccurs": 0,
-      "maxOccurs": "unbounded",
-      "multiplicity": "[0..∞]",
-      "isMandatory": false,
-      "isRepeating": true,
-      "isChoice": false,
-      "documentation": "Provides detailed information on the status reason.",
-      "documentationKA": "სტატუსის მიზეზის შესახებ დეტალური ინფორმაცია.",
-      "restrictions": {
-        "pattern": null,
-        "minLength": null,
-        "maxLength": null,
-        "length": null,
-        "totalDigits": null,
-        "fractionDigits": null,
-        "minInclusive": null
-      },
-      "enumerations": [],
-      "childrenIds": [
-        "f8796bef79b622dc",
-        "d8c5477860b08263"
-      ]
-    },
-    {
-      "id": "3eda0ea459595803",
-      "parentId": "cbab4cbaf96ec21e",
-      "label": "DetailedNumberOfTransactions",
-      "name": "DtldNbOfTxs",
-      "xmlTag": "DtldNbOfTxs",
-      "xmlPath": "/Document/CstmrPmtStsRpt/OrgnlPmtInfAndSts/NbOfTxsPerSts/DtldNbOfTxs",
-      "typeName": "Max15NumericText",
-      "baseType": "string",
-      "nodeKind": "text",
-      "minOccurs": 1,
-      "maxOccurs": "1",
-      "multiplicity": "[1..1]",
-      "isMandatory": true,
-      "isRepeating": false,
-      "isChoice": false,
-      "documentation": "Number of individual transactions contained in the message, detailed per status.",
-      "documentationKA": "მომხმარებლის მიერ შეტყობინებაში ჩართული ინდივიდუალური ტრანზაქციების რაოდენობა, დეტალურად სტატუსის მიხედვით.",
-      "restrictions": {
-        "pattern": "[0-9]{1,15}",
-        "minLength": null,
-        "maxLength": null,
-        "length": null,
-        "totalDigits": null,
-        "fractionDigits": null,
-        "minInclusive": null
-      },
-      "enumerations": [],
-      "childrenIds": []
-    },
-    {
-      "id": "47349887890a5458",
-      "parentId": "cbab4cbaf96ec21e",
-      "label": "DetailedStatus",
-      "name": "DtldSts",
-      "xmlTag": "DtldSts",
-      "xmlPath": "/Document/CstmrPmtStsRpt/OrgnlPmtInfAndSts/NbOfTxsPerSts/DtldSts",
-      "typeName": "ExternalPaymentTransactionStatus1Code",
-      "baseType": "string",
-      "nodeKind": "text",
-      "minOccurs": 1,
-      "maxOccurs": "1",
-      "multiplicity": "[1..1]",
-      "isMandatory": true,
-      "isRepeating": false,
-      "isChoice": false,
-      "documentation": "Common transaction status for all individual transactions reported.",
-      "documentationKA": "მომხმარებლის მიერ შეტყობინებაში ჩართული ინდივიდუალური ტრანზაქციების საერთო სტატუსი.",
-      "restrictions": {
-        "pattern": null,
-        "minLength": "1",
-        "maxLength": "4",
-        "length": null,
-        "totalDigits": null,
-        "fractionDigits": null,
-        "minInclusive": null
-      },
-      "enumerations": [],
-      "childrenIds": []
-    },
-    {
-      "id": "cbab4cbaf96ec21e",
-      "parentId": "45600e7477b0da43",
-      "label": "NumberOfTransactionsPerStatus",
-      "name": "NbOfTxsPerSts",
-      "xmlTag": "NbOfTxsPerSts",
-      "xmlPath": "/Document/CstmrPmtStsRpt/OrgnlPmtInfAndSts/NbOfTxsPerSts",
-      "typeName": "NumberOfTransactionsPerStatus5",
-      "baseType": null,
-      "nodeKind": "complexType",
-      "minOccurs": 0,
-      "maxOccurs": "unbounded",
-      "multiplicity": "[0..∞]",
-      "isMandatory": false,
-      "isRepeating": true,
-      "isChoice": false,
-      "documentation": "Detailed information on the number of transactions for each identical transaction status.",
-      "documentationKA": "დეტალური ინფორმაცია ტრანზაქციების რაოდენობის შესახებ თითოეული იდენტური ტრანზაქციის სტატუსისთვის.",
-      "restrictions": {
-        "pattern": null,
-        "minLength": null,
-        "maxLength": null,
-        "length": null,
-        "totalDigits": null,
-        "fractionDigits": null,
-        "minInclusive": null
-      },
-      "enumerations": [],
-      "childrenIds": [
-        "3eda0ea459595803",
-        "47349887890a5458"
-      ]
     },
     {
       "id": "df2808ddec71bf1b",
@@ -966,18 +594,18 @@
       ]
     },
     {
-      "id": "732a7de9e1d73e79",
+      "id": "e7d732ffc632cac4",
       "parentId": "3765d79eb6433c25",
       "label": "AdditionalInformation",
       "name": "AddtlInf",
       "xmlTag": "AddtlInf",
       "xmlPath": "/Document/CstmrPmtStsRpt/OrgnlPmtInfAndSts/TxInfAndSts/StsRsnInf/AddtlInf",
-      "typeName": "GEO_RestrictedFINXMax105Text",
+      "typeName": "GEO_RestrictedFINXMax105Text_Ka",
       "baseType": "string",
       "nodeKind": "text",
       "minOccurs": 0,
-      "maxOccurs": "unbounded",
-      "multiplicity": "[0..∞]",
+      "maxOccurs": "4",
+      "multiplicity": "[0..4]",
       "isMandatory": false,
       "isRepeating": true,
       "isChoice": false,
@@ -1006,8 +634,8 @@
       "baseType": null,
       "nodeKind": "complexType",
       "minOccurs": 0,
-      "maxOccurs": "unbounded",
-      "multiplicity": "[0..∞]",
+      "maxOccurs": "4",
+      "multiplicity": "[0..4]",
       "isMandatory": false,
       "isRepeating": true,
       "isChoice": false,
@@ -1025,7 +653,7 @@
       "enumerations": [],
       "childrenIds": [
         "db231be9023b1b83",
-        "732a7de9e1d73e79"
+        "e7d732ffc632cac4"
       ]
     },
     {
@@ -1109,7 +737,7 @@
       "documentation": "Code allocated to a financial institution by the ISO 9362 Registration Authority as described in ISO 9362 \"Banking - Banking telecommunication messages - Business identifier code (BIC)\".",
       "documentationKA": "ISO 9362 რეგისტრაციის ორგანოს მიერ ფინანსური ინსტიტუტისთვის მინიჭებული კოდი, როგორც აღწერილია ISO 9362-ში „საბანკო საქმე — საბანკო სატელეკომუნიკაციო შეტყობინებები — ბიზნეს იდენტიფიკატორის კოდი (BIC)“.",
       "restrictions": {
-        "pattern": "[A-Z0-9]{4,4}GE[A-Z0-9]{2,2}([A-Z0-9]{3,3}){0,1}",
+        "pattern": "[A-Z0-9]{4,4}GE[A-Z0-9]{2,2}",
         "minLength": null,
         "maxLength": null,
         "length": null,
@@ -1139,7 +767,7 @@
       "documentation": "Identification of a member of a clearing system.",
       "documentationKA": "კლირინგის სისტემის წევრის იდენტიფიკაცია.",
       "restrictions": {
-        "pattern": "[A-Z0-9]{4,4}GE[A-Z0-9]{2,2}([A-Z0-9]{3,3}){0,1}",
+        "pattern": "[A-Z0-9]{4,4}GE[A-Z0-9]{2,2}",
         "minLength": null,
         "maxLength": null,
         "length": null,
@@ -1258,8 +886,8 @@
       "baseType": null,
       "nodeKind": "complexType",
       "minOccurs": 0,
-      "maxOccurs": "unbounded",
-      "multiplicity": "[0..∞]",
+      "maxOccurs": "4",
+      "multiplicity": "[0..4]",
       "isMandatory": false,
       "isRepeating": true,
       "isChoice": false,
@@ -1320,11 +948,11 @@
       "typeName": "GEO_PaymentTransaction105",
       "baseType": null,
       "nodeKind": "complexType",
-      "minOccurs": 0,
-      "maxOccurs": "unbounded",
-      "multiplicity": "[0..∞]",
-      "isMandatory": false,
-      "isRepeating": true,
+      "minOccurs": 1,
+      "maxOccurs": "1",
+      "multiplicity": "[1..1]",
+      "isMandatory": true,
+      "isRepeating": false,
       "isChoice": false,
       "documentation": "Provides information on the original transactions to which the status report message refers.",
       "documentationKA": "ორიგინალური ტრანზაქციის შესახებ ინფორმაცია, რომლის სტატუსის ანგარიშის შეტყობინება ეხება.",
@@ -1360,10 +988,10 @@
       "baseType": null,
       "nodeKind": "complexType",
       "minOccurs": 0,
-      "maxOccurs": "unbounded",
-      "multiplicity": "[0..∞]",
+      "maxOccurs": "1",
+      "multiplicity": "[0..1]",
       "isMandatory": false,
-      "isRepeating": true,
+      "isRepeating": false,
       "isChoice": false,
       "documentation": "Information concerning the original payment information, to which the status report message refers.",
       "documentationKA": "ორიგინალური გადახდის ინფორმაციის შესახებ ინფორმაცია, რომლის სტატუსის ანგარიშის შეტყობინება ეხება.",
@@ -1379,10 +1007,6 @@
       "enumerations": [],
       "childrenIds": [
         "9b9585dac41b0539",
-        "b44be2932e2b6ac4",
-        "58f66338a9074aef",
-        "e33ac712b5478e43",
-        "cbab4cbaf96ec21e",
         "3952a10b8c3ef35e"
       ]
     },
@@ -1538,7 +1162,7 @@
                 "xmlTag": "StsRsnInf",
                 "xmlPath": "/Document/CstmrPmtStsRpt/OrgnlGrpInfAndSts/StsRsnInf",
                 "nodeKind": "complexType",
-                "multiplicity": "[0..∞]",
+                "multiplicity": "[0..4]",
                 "children": [
                   {
                     "id": "41190e88442317a5",
@@ -1560,40 +1184,12 @@
                     ]
                   },
                   {
-                    "id": "9eb8986201437a40",
+                    "id": "7b38f082a85e6503",
                     "name": "AddtlInf",
                     "xmlTag": "AddtlInf",
                     "xmlPath": "/Document/CstmrPmtStsRpt/OrgnlGrpInfAndSts/StsRsnInf/AddtlInf",
                     "nodeKind": "text",
-                    "multiplicity": "[0..∞]",
-                    "children": []
-                  }
-                ]
-              },
-              {
-                "id": "eb5253119b05108f",
-                "name": "NbOfTxsPerSts",
-                "xmlTag": "NbOfTxsPerSts",
-                "xmlPath": "/Document/CstmrPmtStsRpt/OrgnlGrpInfAndSts/NbOfTxsPerSts",
-                "nodeKind": "complexType",
-                "multiplicity": "[0..∞]",
-                "children": [
-                  {
-                    "id": "a86ed28163b69d22",
-                    "name": "DtldNbOfTxs",
-                    "xmlTag": "DtldNbOfTxs",
-                    "xmlPath": "/Document/CstmrPmtStsRpt/OrgnlGrpInfAndSts/NbOfTxsPerSts/DtldNbOfTxs",
-                    "nodeKind": "text",
-                    "multiplicity": "[1..1]",
-                    "children": []
-                  },
-                  {
-                    "id": "486c0a14e68bd512",
-                    "name": "DtldSts",
-                    "xmlTag": "DtldSts",
-                    "xmlPath": "/Document/CstmrPmtStsRpt/OrgnlGrpInfAndSts/NbOfTxsPerSts/DtldSts",
-                    "nodeKind": "text",
-                    "multiplicity": "[1..1]",
+                    "multiplicity": "[0..4]",
                     "children": []
                   }
                 ]
@@ -1606,7 +1202,7 @@
             "xmlTag": "OrgnlPmtInfAndSts",
             "xmlPath": "/Document/CstmrPmtStsRpt/OrgnlPmtInfAndSts",
             "nodeKind": "complexType",
-            "multiplicity": "[0..∞]",
+            "multiplicity": "[0..1]",
             "children": [
               {
                 "id": "9b9585dac41b0539",
@@ -1618,96 +1214,12 @@
                 "children": []
               },
               {
-                "id": "b44be2932e2b6ac4",
-                "name": "OrgnlNbOfTxs",
-                "xmlTag": "OrgnlNbOfTxs",
-                "xmlPath": "/Document/CstmrPmtStsRpt/OrgnlPmtInfAndSts/OrgnlNbOfTxs",
-                "nodeKind": "text",
-                "multiplicity": "[0..1]",
-                "children": []
-              },
-              {
-                "id": "58f66338a9074aef",
-                "name": "PmtInfSts",
-                "xmlTag": "PmtInfSts",
-                "xmlPath": "/Document/CstmrPmtStsRpt/OrgnlPmtInfAndSts/PmtInfSts",
-                "nodeKind": "text",
-                "multiplicity": "[0..1]",
-                "children": []
-              },
-              {
-                "id": "e33ac712b5478e43",
-                "name": "StsRsnInf",
-                "xmlTag": "StsRsnInf",
-                "xmlPath": "/Document/CstmrPmtStsRpt/OrgnlPmtInfAndSts/StsRsnInf",
-                "nodeKind": "complexType",
-                "multiplicity": "[0..∞]",
-                "children": [
-                  {
-                    "id": "f8796bef79b622dc",
-                    "name": "Rsn",
-                    "xmlTag": "Rsn",
-                    "xmlPath": "/Document/CstmrPmtStsRpt/OrgnlPmtInfAndSts/StsRsnInf/Rsn",
-                    "nodeKind": "complexType",
-                    "multiplicity": "[0..1]",
-                    "children": [
-                      {
-                        "id": "117d6294cc376bf0",
-                        "name": "Cd",
-                        "xmlTag": "Cd",
-                        "xmlPath": "/Document/CstmrPmtStsRpt/OrgnlPmtInfAndSts/StsRsnInf/Rsn/Cd",
-                        "nodeKind": "text",
-                        "multiplicity": "[1..1]",
-                        "children": []
-                      }
-                    ]
-                  },
-                  {
-                    "id": "d8c5477860b08263",
-                    "name": "AddtlInf",
-                    "xmlTag": "AddtlInf",
-                    "xmlPath": "/Document/CstmrPmtStsRpt/OrgnlPmtInfAndSts/StsRsnInf/AddtlInf",
-                    "nodeKind": "text",
-                    "multiplicity": "[0..∞]",
-                    "children": []
-                  }
-                ]
-              },
-              {
-                "id": "cbab4cbaf96ec21e",
-                "name": "NbOfTxsPerSts",
-                "xmlTag": "NbOfTxsPerSts",
-                "xmlPath": "/Document/CstmrPmtStsRpt/OrgnlPmtInfAndSts/NbOfTxsPerSts",
-                "nodeKind": "complexType",
-                "multiplicity": "[0..∞]",
-                "children": [
-                  {
-                    "id": "3eda0ea459595803",
-                    "name": "DtldNbOfTxs",
-                    "xmlTag": "DtldNbOfTxs",
-                    "xmlPath": "/Document/CstmrPmtStsRpt/OrgnlPmtInfAndSts/NbOfTxsPerSts/DtldNbOfTxs",
-                    "nodeKind": "text",
-                    "multiplicity": "[1..1]",
-                    "children": []
-                  },
-                  {
-                    "id": "47349887890a5458",
-                    "name": "DtldSts",
-                    "xmlTag": "DtldSts",
-                    "xmlPath": "/Document/CstmrPmtStsRpt/OrgnlPmtInfAndSts/NbOfTxsPerSts/DtldSts",
-                    "nodeKind": "text",
-                    "multiplicity": "[1..1]",
-                    "children": []
-                  }
-                ]
-              },
-              {
                 "id": "3952a10b8c3ef35e",
                 "name": "TxInfAndSts",
                 "xmlTag": "TxInfAndSts",
                 "xmlPath": "/Document/CstmrPmtStsRpt/OrgnlPmtInfAndSts/TxInfAndSts",
                 "nodeKind": "complexType",
-                "multiplicity": "[0..∞]",
+                "multiplicity": "[1..1]",
                 "children": [
                   {
                     "id": "df2808ddec71bf1b",
@@ -1760,7 +1272,7 @@
                     "xmlTag": "StsRsnInf",
                     "xmlPath": "/Document/CstmrPmtStsRpt/OrgnlPmtInfAndSts/TxInfAndSts/StsRsnInf",
                     "nodeKind": "complexType",
-                    "multiplicity": "[0..∞]",
+                    "multiplicity": "[0..4]",
                     "children": [
                       {
                         "id": "db231be9023b1b83",
@@ -1782,12 +1294,12 @@
                         ]
                       },
                       {
-                        "id": "732a7de9e1d73e79",
+                        "id": "e7d732ffc632cac4",
                         "name": "AddtlInf",
                         "xmlTag": "AddtlInf",
                         "xmlPath": "/Document/CstmrPmtStsRpt/OrgnlPmtInfAndSts/TxInfAndSts/StsRsnInf/AddtlInf",
                         "nodeKind": "text",
-                        "multiplicity": "[0..∞]",
+                        "multiplicity": "[0..4]",
                         "children": []
                       }
                     ]
@@ -1798,7 +1310,7 @@
                     "xmlTag": "ChrgsInf",
                     "xmlPath": "/Document/CstmrPmtStsRpt/OrgnlPmtInfAndSts/TxInfAndSts/ChrgsInf",
                     "nodeKind": "complexType",
-                    "multiplicity": "[0..∞]",
+                    "multiplicity": "[0..4]",
                     "children": [
                       {
                         "id": "e886931f15f764b1",

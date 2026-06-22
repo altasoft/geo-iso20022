@@ -1,0 +1,1 @@
+window.__DIFF_MODEL__ = {"metadata": {"oldSource": "cag.001.001.01.xsd", "newSource": "GEO_cag.001.001.01.xsd", "generatedAt": "2026-06-22T10:04:48.774252+00:00"}, "summary": {"added": 0, "removed": 0, "changed": 0, "breaking": 0, "nonBreaking": 0, "informational": 0}, "changes": []};

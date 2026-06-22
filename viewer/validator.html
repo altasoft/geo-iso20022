@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>XML Validator — GEO ISO 20022</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <style>
+    body { overflow: auto; }
+
+    #header a.hdr-btn { text-decoration: none; }
+    .hdr-title { font-size: 14px; font-weight: 600; color: #90caf9; white-space: nowrap; }
+    .hdr-spacer { flex: 1; }
+
+    /* Auto-detect badge */
+    #auto-badge {
+      font-size: 10px; padding: 2px 7px; border-radius: 10px;
+      background: #e8f5e9; color: #2e7d32; font-weight: 600; display: none;
+    }
+
+    /* No-schema note */
+    #no-schema-note {
+      display: none; background: #fff3e0; border-bottom: 1px solid #ffe082;
+      padding: 6px 16px; font-size: 12px; color: #bf360c; flex-shrink: 0;
+    }
+
+    #val-main { display: flex; flex: 1; overflow: hidden; min-height: 0; }
+
+    /* ── XML editor panel ─────────────────────────────── */
+    #xml-panel {
+      flex: 1; min-width: 0;
+      display: flex; flex-direction: column;
+      border-right: 1px solid #dde1ea;
+      background: #fff;
+    }
+    .panel-bar {
+      display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+      padding: 7px 12px; background: #f5f7fa;
+      border-bottom: 1px solid #e0e4ed; flex-shrink: 0;
+    }
+    .panel-sep {
+      width: 1px; height: 20px; background: #d0d4de; flex-shrink: 0; margin: 0 4px;
+    }
+    .upload-btn {
+      padding: 5px 10px; border-radius: 4px; border: 1px solid #3f4769;
+      background: #2a2d4a; color: #e8eaf6; cursor: pointer;
+      font-size: 12px; display: inline-block; white-space: nowrap;
+    }
+    .upload-btn:hover { background: #3a3d5a; }
+    .upload-btn input { display: none; }
+
+    /* Validate button — bright green, lives in the panel-bar */
+    #btn-validate {
+      font-weight: 700; font-size: 12px;
+      padding: 5px 16px; letter-spacing: .2px;
+    }
+    #btn-validate:not(:disabled) {
+      background: #43a047; color: #fff;
+      border-color: #2e7d32;
+      box-shadow: 0 0 0 2px rgba(67,160,71,.3);
+    }
+    #btn-validate:not(:disabled):hover { background: #2e7d32; border-color: #1b5e20; }
+    #btn-validate:disabled { background: #e8e9ef; color: #aaa; border-color: #d4d6e0; cursor: not-allowed; box-shadow: none; }
+
+    /* Auto-validate checkbox */
+    .av-label {
+      display: flex; align-items: center; gap: 5px;
+      font-size: 12px; color: #555; cursor: pointer; user-select: none;
+      white-space: nowrap;
+    }
+    .av-label input { cursor: pointer; }
+
+    /* Validation result badge in toolbar */
+    #val-badge {
+      display: none; font-size: 11px; font-weight: 700;
+      padding: 2px 8px; border-radius: 10px;
+    }
+    #val-badge.vb-ok  { display: inline; background: #c8e6c9; color: #1b5e20; }
+    #val-badge.vb-err { display: inline; background: #ffcdd2; color: #b71c1c; }
+
+    /* ── Editor overlay + textarea ─────────────────────── */
+    #editor-wrap {
+      flex: 1; position: relative; overflow: hidden;
+    }
+    #editor-overlay {
+      position: absolute; top: 0; left: 0; right: 0;
+      padding: 12px; /* must match textarea padding */
+      font-family: 'Cascadia Code', 'Fira Code', 'Consolas', monospace;
+      font-size: 12.5px;
+      line-height: 1.6;
+      pointer-events: none;
+      white-space: pre;
+      will-change: transform;
+    }
+    .ov-line { display: block; height: 20px; /* 12.5px × 1.6 */ }
+    .ov-line.has-err {
+      background: rgba(229,57,53,.1);
+      border-left: 3px solid #e53935;
+      margin-left: -3px; padding-left: 3px;
+    }
+    /* Error item highlighted when cursor is on that line */
+    .err-item.cursor-active {
+      outline: 2px solid #e53935;
+      background: #fff0f0 !important;
+    }
+    #xml-input {
+      position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+      padding: 12px; resize: none; border: none; outline: none;
+      font-family: 'Cascadia Code', 'Fira Code', 'Consolas', monospace;
+      font-size: 12.5px; line-height: 1.6;
+      color: #1a1a2e; background: transparent;
+      caret-color: #1a1a2e; tab-size: 2;
+      overflow: auto;
+    }
+    #xml-input::placeholder { color: #bbb; }
+
+    /* ── Results panel ─────────────────────────────────── */
+    #results-panel {
+      width: 400px; min-width: 300px;
+      display: flex; flex-direction: column; background: #fafbfd; overflow: hidden;
+    }
+    .results-hdr {
+      padding: 8px 14px; background: #f5f7fa; border-bottom: 1px solid #e0e4ed;
+      font-size: 11px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: .5px; color: #666; flex-shrink: 0;
+      display: flex; align-items: center; gap: 8px;
+    }
+    #results-status {
+      padding: 12px 14px; border-bottom: 1px solid #edf0f7;
+      flex-shrink: 0; min-height: 50px; display: flex; align-items: center;
+    }
+    #errors-list { flex: 1; overflow-y: auto; padding: 8px; }
+
+    .st-idle    { color: #aaa; font-style: italic; font-size: 13px; }
+    .st-ok      { display: flex; align-items: center; gap: 8px; color: #2e7d32; font-weight: 600; font-size: 14px; }
+    .st-err     { display: flex; align-items: center; gap: 8px; color: #c62828; font-weight: 600; font-size: 14px; }
+    .st-info    { display: flex; align-items: center; gap: 8px; color: #1565c0; font-weight: 600; font-size: 14px; }
+    .st-loading { color: #5c6bc0; font-size: 13px; }
+    .st-icon    { font-size: 18px; line-height: 1; }
+
+    .err-item {
+      padding: 8px 10px; border-radius: 4px; margin-bottom: 6px;
+      border-left: 3px solid; font-size: 12px;
+    }
+    .err-item.lv-error   { border-color: #e53935; background: #fff5f5; }
+    .err-item.lv-warning { border-color: #fb8c00; background: #fff8f0; }
+    .err-loc { font-family: monospace; font-size: 11px; color: #888; margin-bottom: 3px;
+               display: flex; align-items: center; gap: 6px; }
+    .err-msg { color: #1a1a2e; line-height: 1.4; word-break: break-word; }
+    .err-badge { float: right; font-size: 10px; font-weight: 700;
+                 padding: 1px 5px; border-radius: 10px; margin-left: 4px; }
+    .eb-error   { background: #ffcdd2; color: #b71c1c; }
+    .eb-warning { background: #ffe0b2; color: #bf360c; }
+    .jump-btn { font-size: 10px; padding: 1px 5px; border: 1px solid #c5cae9;
+                border-radius: 3px; background: #fff; cursor: pointer; color: #3949ab; }
+    .jump-btn:hover { background: #e8eaf6; }
+
+    .cnt-chip { display: inline-flex; align-items: center; justify-content: center;
+                min-width: 22px; height: 18px; padding: 0 7px;
+                border-radius: 9px; font-size: 11px; font-weight: 700; }
+    .cnt-err { background: #ffcdd2; color: #b71c1c; }
+    .cnt-ok  { background: #c8e6c9; color: #1b5e20; }
+    .hint-msg { padding: 20px; text-align: center; color: #aaa; font-style: italic; font-size: 13px; }
+    code { font-family: monospace; background: #f0f2f5; padding: 1px 4px; border-radius: 3px; font-size: 12px; }
+  </style>
+</head>
+<body>
+
+<div id="header">
+  <a href="index.html" class="hdr-btn">← Viewer</a>
+  <span class="hdr-title">XML Validator</span>
+  <select id="xsd-selector" class="hdr-btn" style="min-width:210px">
+    <option value="">— Auto-detect from XML —</option>
+  </select>
+  <span id="auto-badge">auto-detected</span>
+</div>
+
+<div id="no-schema-note"></div>
+<div id="val-main">
+
+  <div id="xml-panel">
+    <div class="panel-bar">
+      <label class="upload-btn">
+        Upload XML <input type="file" id="xml-upload" accept=".xml,text/xml,application/xml"/>
+      </label>
+      <button id="btn-format" class="hdr-btn">Format</button>
+      <div class="panel-sep"></div>
+      <button id="btn-validate" class="hdr-btn" disabled>Validate</button>
+      <label class="av-label">
+        <input type="checkbox" id="cb-autovalidate" checked/> Auto-validate
+      </label>
+      <div class="hdr-spacer"></div>
+      <span id="val-badge"></span>
+      <span id="line-count" style="font-size:11px;color:#999"></span>
+    </div>
+    <div id="editor-wrap">
+      <div id="editor-overlay"></div>
+      <textarea id="xml-input" placeholder="Paste or upload an XML document…" spellcheck="false"></textarea>
+    </div>
+  </div>
+
+  <div id="results-panel">
+    <div class="results-hdr">
+      Validation Results
+      <div id="results-chips"></div>
+    </div>
+    <div id="results-status">
+      <span class="st-idle">Paste XML and press Validate.</span>
+    </div>
+    <div id="errors-list">
+      <div class="hint-msg">No results yet.</div>
+    </div>
+  </div>
+
+</div>
+
+<script src="data/messages.js" onerror="void(0)"></script>
+<script src="validator.js"></script>
+</body>
+</html>

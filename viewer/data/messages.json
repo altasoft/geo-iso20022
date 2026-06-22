@@ -1,12 +1,29 @@
 {
   "messages": [
     {
+      "id": "cag.001.001.01",
+      "label": "cag.001.001.01",
+      "ns": "urn:ge:corporate-access-gateway:xsd:cag.001.001.01"
+    },
+    {
+      "id": "cag.002.001.01",
+      "label": "cag.002.001.01",
+      "ns": "urn:ge:corporate-access-gateway:xsd:cag.002.001.01"
+    },
+    {
+      "id": "head.001.001.02",
+      "label": "head.001.001.02",
+      "ns": "urn:iso:std:iso:20022:tech:xsd:head.001.001.02"
+    },
+    {
       "id": "pain.001.001.09",
-      "label": "pain.001.001.09"
+      "label": "pain.001.001.09",
+      "ns": "urn:iso:std:iso:20022:tech:xsd:pain.001.001.09"
     },
     {
       "id": "pain.002.001.10",
-      "label": "pain.002.001.10"
+      "label": "pain.002.001.10",
+      "ns": "urn:iso:std:iso:20022:tech:xsd:pain.002.001.10"
     }
   ]
 }
