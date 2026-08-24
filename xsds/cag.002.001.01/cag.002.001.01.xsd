@@ -1,0 +1,42 @@
+<xs:schema
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:cag="urn:ge:corporate-access-gateway:xsd:cag.002.001.01"
+	xmlns:head="urn:iso:std:iso:20022:tech:xsd:head.001.001.02"
+	xmlns:pain002="urn:iso:std:iso:20022:tech:xsd:pain.002.001.10"
+	xmlns:camt052="urn:iso:std:iso:20022:tech:xsd:camt.052.001.08"
+	xmlns:camt053="urn:iso:std:iso:20022:tech:xsd:camt.053.001.08"
+	xmlns:camt054="urn:iso:std:iso:20022:tech:xsd:camt.054.001.08"
+	targetNamespace="urn:ge:corporate-access-gateway:xsd:cag.002.001.01"
+	elementFormDefault="qualified">
+
+	<xs:import namespace="urn:iso:std:iso:20022:tech:xsd:head.001.001.02"
+	           schemaLocation="head.001.001.02.xsd"/>
+
+	<xs:import namespace="urn:iso:std:iso:20022:tech:xsd:pain.002.001.10"
+	           schemaLocation="pain.002.001.10.xsd"/>
+
+	<xs:import namespace="urn:iso:std:iso:20022:tech:xsd:camt.052.001.08"
+	           schemaLocation="camt.052.001.08.xsd"/>
+
+	<xs:import namespace="urn:iso:std:iso:20022:tech:xsd:camt.053.001.08"
+	           schemaLocation="camt.053.001.08.xsd"/>
+
+	<xs:import namespace="urn:iso:std:iso:20022:tech:xsd:camt.054.001.08"
+	           schemaLocation="camt.054.001.08.xsd"/>
+
+	<xs:element name="BusinessMessage" type="cag:GEO_BusinessMessageEnvelopeOutV01"/>
+
+	<xs:complexType name="GEO_BusinessMessageEnvelopeOutV01">
+		<xs:sequence>
+			<xs:element ref="head:AppHdr"/>
+
+			<xs:choice>
+				<xs:element ref="pain002:Document"/>
+				<xs:element ref="camt052:Document"/>
+				<xs:element ref="camt053:Document"/>
+				<xs:element ref="camt054:Document"/>
+			</xs:choice>
+		</xs:sequence>
+	</xs:complexType>
+
+</xs:schema>

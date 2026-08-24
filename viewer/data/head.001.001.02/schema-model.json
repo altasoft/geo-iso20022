@@ -1,0 +1,1205 @@
+{
+  "metadata": {
+    "sourceFile": "GEO_head.001.001.02.xsd",
+    "targetNamespace": "urn:iso:std:iso:20022:tech:xsd:head.001.001.02",
+    "generatedAt": "2026-06-22T10:04:49.328284+00:00",
+    "rootElement": "AppHdr",
+    "messageName": "head.001.001.02",
+    "warnings": []
+  },
+  "nodesFlat": [
+    {
+      "id": "5919b7167a3265c4",
+      "parentId": "5cb45dc10753cc0b",
+      "label": "Identification",
+      "name": "Id",
+      "xmlTag": "Id",
+      "xmlPath": "/AppHdr/Fr/OrgId/Id/OrgId/Othr/Id",
+      "typeName": "GEO_RestrictedFINXMax35Text",
+      "baseType": "string",
+      "nodeKind": "text",
+      "minOccurs": 1,
+      "maxOccurs": "1",
+      "multiplicity": "[1..1]",
+      "isMandatory": true,
+      "isRepeating": false,
+      "isChoice": false,
+      "documentation": "Unique and unambiguous identification for the account between the account owner and the account servicer.",
+      "documentationKA": "ანგარიშის უნიკალური და ერთმნიშვნელოვანი იდენტიფიკაცია ანგარიშის მფლობელსა და ანგარიშის მომსახურე მხარეს შორის.",
+      "restrictions": {
+        "pattern": "[0-9a-zA-Z/\\-\\?:\\(\\)\\.,'\\+ ]+",
+        "minLength": "1",
+        "maxLength": "35",
+        "length": null,
+        "totalDigits": null,
+        "fractionDigits": null,
+        "minInclusive": null
+      },
+      "enumerations": [],
+      "childrenIds": []
+    },
+    {
+      "id": "f2c5d53a36ff2427",
+      "parentId": "4a1dd5ff2d2c2dc8",
+      "label": "Code",
+      "name": "Cd",
+      "xmlTag": "Cd",
+      "xmlPath": "/AppHdr/Fr/OrgId/Id/OrgId/Othr/SchmeNm/Cd",
+      "typeName": "ExternalOrganisationIdentification1Code",
+      "baseType": "string",
+      "nodeKind": "text",
+      "minOccurs": 1,
+      "maxOccurs": "1",
+      "multiplicity": "[1..1]",
+      "isMandatory": true,
+      "isRepeating": false,
+      "isChoice": false,
+      "documentation": "Name of the identification scheme, in a coded form as published in an external list.",
+      "documentationKA": "იდენტიფიკაციის სქემის დასახელება კოდირებული ფორმით, როგორც გამოქვეყნებულია გარე სიაში.",
+      "restrictions": {
+        "pattern": null,
+        "minLength": "1",
+        "maxLength": "4",
+        "length": null,
+        "totalDigits": null,
+        "fractionDigits": null,
+        "minInclusive": null
+      },
+      "enumerations": [],
+      "childrenIds": []
+    },
+    {
+      "id": "4a1dd5ff2d2c2dc8",
+      "parentId": "5cb45dc10753cc0b",
+      "label": "SchemeName",
+      "name": "SchmeNm",
+      "xmlTag": "SchmeNm",
+      "xmlPath": "/AppHdr/Fr/OrgId/Id/OrgId/Othr/SchmeNm",
+      "typeName": "GEO_OrganisationIdentificationSchemeName1Choice",
+      "baseType": null,
+      "nodeKind": "complexType",
+      "minOccurs": 1,
+      "maxOccurs": "1",
+      "multiplicity": "[1..1]",
+      "isMandatory": true,
+      "isRepeating": false,
+      "isChoice": true,
+      "documentation": "Name of the identification scheme.",
+      "documentationKA": "იდენტიფიკაციის სქემის დასახელება.",
+      "restrictions": {
+        "pattern": null,
+        "minLength": null,
+        "maxLength": null,
+        "length": null,
+        "totalDigits": null,
+        "fractionDigits": null,
+        "minInclusive": null
+      },
+      "enumerations": [],
+      "childrenIds": [
+        "f2c5d53a36ff2427"
+      ]
+    },
+    {
+      "id": "5cb45dc10753cc0b",
+      "parentId": "df4e696b4ce08ea8",
+      "label": "Other",
+      "name": "Othr",
+      "xmlTag": "Othr",
+      "xmlPath": "/AppHdr/Fr/OrgId/Id/OrgId/Othr",
+      "typeName": "GEO_GenericOrganisationIdentification1",
+      "baseType": null,
+      "nodeKind": "complexType",
+      "minOccurs": 1,
+      "maxOccurs": "1",
+      "multiplicity": "[1..1]",
+      "isMandatory": true,
+      "isRepeating": false,
+      "isChoice": false,
+      "documentation": "Unique identification of an account, as assigned by the account servicer, using an identification scheme.",
+      "documentationKA": "ანგარიშის უნიკალური იდენტიფიკაცია, მინიჭებული ანგარიშის მომსახურე მხარის მიერ, იდენტიფიკაციის სქემის გამოყენებით.",
+      "restrictions": {
+        "pattern": null,
+        "minLength": null,
+        "maxLength": null,
+        "length": null,
+        "totalDigits": null,
+        "fractionDigits": null,
+        "minInclusive": null
+      },
+      "enumerations": [],
+      "childrenIds": [
+        "5919b7167a3265c4",
+        "4a1dd5ff2d2c2dc8"
+      ]
+    },
+    {
+      "id": "df4e696b4ce08ea8",
+      "parentId": "bcc9953850ea8b21",
+      "label": "OrganisationIdentification",
+      "name": "OrgId",
+      "xmlTag": "OrgId",
+      "xmlPath": "/AppHdr/Fr/OrgId/Id/OrgId",
+      "typeName": "GEO_OrganisationIdentification29",
+      "baseType": null,
+      "nodeKind": "complexType",
+      "minOccurs": 1,
+      "maxOccurs": "1",
+      "multiplicity": "[1..1]",
+      "isMandatory": true,
+      "isRepeating": false,
+      "isChoice": false,
+      "documentation": "Unique and unambiguous way to identify an organisation.",
+      "documentationKA": "ორგანიზაციის იდენტიფიკაციის უნიკალური და ერთმნიშვნელოვანი საშუალება.",
+      "restrictions": {
+        "pattern": null,
+        "minLength": null,
+        "maxLength": null,
+        "length": null,
+        "totalDigits": null,
+        "fractionDigits": null,
+        "minInclusive": null
+      },
+      "enumerations": [],
+      "childrenIds": [
+        "5cb45dc10753cc0b"
+      ]
+    },
+    {
+      "id": "bcc9953850ea8b21",
+      "parentId": "6239e927ceb8bd02",
+      "label": "Identification",
+      "name": "Id",
+      "xmlTag": "Id",
+      "xmlPath": "/AppHdr/Fr/OrgId/Id",
+      "typeName": "GEO_Party38Choice_OrgOnly",
+      "baseType": null,
+      "nodeKind": "complexType",
+      "minOccurs": 1,
+      "maxOccurs": "1",
+      "multiplicity": "[1..1]",
+      "isMandatory": true,
+      "isRepeating": false,
+      "isChoice": true,
+      "documentation": "Unique and unambiguous identification for the account between the account owner and the account servicer.",
+      "documentationKA": "ანგარიშის უნიკალური და ერთმნიშვნელოვანი იდენტიფიკაცია ანგარიშის მფლობელსა და ანგარიშის მომსახურე მხარეს შორის.",
+      "restrictions": {
+        "pattern": null,
+        "minLength": null,
+        "maxLength": null,
+        "length": null,
+        "totalDigits": null,
+        "fractionDigits": null,
+        "minInclusive": null
+      },
+      "enumerations": [],
+      "childrenIds": [
+        "df4e696b4ce08ea8"
+      ]
+    },
+    {
+      "id": "6239e927ceb8bd02",
+      "parentId": "72cc22c64dda9e80",
+      "label": null,
+      "name": "OrgId",
+      "xmlTag": "OrgId",
+      "xmlPath": "/AppHdr/Fr/OrgId",
+      "typeName": "GEO_PartyIdentification135__OrgOnly",
+      "baseType": null,
+      "nodeKind": "complexType",
+      "minOccurs": 1,
+      "maxOccurs": "1",
+      "multiplicity": "[1..1]",
+      "isMandatory": true,
+      "isRepeating": false,
+      "isChoice": false,
+      "documentation": "Specifies the identification of a person or an organisation.",
+      "documentationKA": "განსაზღვრავს პირის ან ორგანიზაციის იდენტიფიკაციას.",
+      "restrictions": {
+        "pattern": null,
+        "minLength": null,
+        "maxLength": null,
+        "length": null,
+        "totalDigits": null,
+        "fractionDigits": null,
+        "minInclusive": null
+      },
+      "enumerations": [],
+      "childrenIds": [
+        "bcc9953850ea8b21"
+      ]
+    },
+    {
+      "id": "340d47e5da354229",
+      "parentId": "10a25554ce8c0333",
+      "label": null,
+      "name": "BICFI",
+      "xmlTag": "BICFI",
+      "xmlPath": "/AppHdr/Fr/FIId/FinInstnId/BICFI",
+      "typeName": "GEO_BICFIDec2014Identifier",
+      "baseType": "string",
+      "nodeKind": "text",
+      "minOccurs": 1,
+      "maxOccurs": "1",
+      "multiplicity": "[1..1]",
+      "isMandatory": true,
+      "isRepeating": false,
+      "isChoice": false,
+      "documentation": "Code allocated to a financial institution by the ISO 9362 Registration Authority as described in ISO 9362: 2014 - \"Banking - Banking telecommunication messages - Business identifier code (BIC)\".",
+      "documentationKA": "ISO 9362 რეგისტრაციის ორგანოს მიერ ფინანსური ინსტიტუტისთვის მინიჭებული კოდი, როგორც აღწერილია ISO 9362:2014-ში — „საბანკო საქმე — საბანკო სატელეკომუნიკაციო შეტყობინებები — ბიზნეს იდენტიფიკატორის კოდი (BIC)“.",
+      "restrictions": {
+        "pattern": "[A-Z0-9]{4,4}GE[A-Z0-9]{2,2}",
+        "minLength": null,
+        "maxLength": null,
+        "length": null,
+        "totalDigits": null,
+        "fractionDigits": null,
+        "minInclusive": null
+      },
+      "enumerations": [],
+      "childrenIds": []
+    },
+    {
+      "id": "10a25554ce8c0333",
+      "parentId": "ab3b16f10734f0f0",
+      "label": "FinancialInstitutionIdentification",
+      "name": "FinInstnId",
+      "xmlTag": "FinInstnId",
+      "xmlPath": "/AppHdr/Fr/FIId/FinInstnId",
+      "typeName": "GEO_FinancialInstitutionIdentification18_BicFiOnly",
+      "baseType": null,
+      "nodeKind": "complexType",
+      "minOccurs": 1,
+      "maxOccurs": "1",
+      "multiplicity": "[1..1]",
+      "isMandatory": true,
+      "isRepeating": false,
+      "isChoice": false,
+      "documentation": "Unique and unambiguous identification of a financial institution, as assigned under an internationally recognised or proprietary identification scheme.",
+      "documentationKA": "ფინანსური ინსტიტუტის უნიკალური და ერთმნიშვნელოვანი იდენტიფიკაცია, მინიჭებული საერთაშორისო აღიარებული ან საკუთარი იდენტიფიკაციის სქემის ფარგლებში.",
+      "restrictions": {
+        "pattern": null,
+        "minLength": null,
+        "maxLength": null,
+        "length": null,
+        "totalDigits": null,
+        "fractionDigits": null,
+        "minInclusive": null
+      },
+      "enumerations": [],
+      "childrenIds": [
+        "340d47e5da354229"
+      ]
+    },
+    {
+      "id": "ab3b16f10734f0f0",
+      "parentId": "72cc22c64dda9e80",
+      "label": null,
+      "name": "FIId",
+      "xmlTag": "FIId",
+      "xmlPath": "/AppHdr/Fr/FIId",
+      "typeName": "GEO_BranchAndFinancialInstitutionIdentification6_BicOnly",
+      "baseType": null,
+      "nodeKind": "complexType",
+      "minOccurs": 1,
+      "maxOccurs": "1",
+      "multiplicity": "[1..1]",
+      "isMandatory": true,
+      "isRepeating": false,
+      "isChoice": false,
+      "documentation": "Unique and unambiguous identification of a financial institution or a branch of a financial institution.",
+      "documentationKA": "ფინანსური ინსტიტუტის ან ფინანსური ინსტიტუტის ფილიალის უნიკალური და ერთმნიშვნელოვანი იდენტიფიკაცია.",
+      "restrictions": {
+        "pattern": null,
+        "minLength": null,
+        "maxLength": null,
+        "length": null,
+        "totalDigits": null,
+        "fractionDigits": null,
+        "minInclusive": null
+      },
+      "enumerations": [],
+      "childrenIds": [
+        "10a25554ce8c0333"
+      ]
+    },
+    {
+      "id": "72cc22c64dda9e80",
+      "parentId": "0853074d2bdb8b9b",
+      "label": null,
+      "name": "Fr",
+      "xmlTag": "Fr",
+      "xmlPath": "/AppHdr/Fr",
+      "typeName": "GEO_Party44Choice",
+      "baseType": null,
+      "nodeKind": "complexType",
+      "minOccurs": 1,
+      "maxOccurs": "1",
+      "multiplicity": "[1..1]",
+      "isMandatory": true,
+      "isRepeating": false,
+      "isChoice": true,
+      "documentation": null,
+      "documentationKA": null,
+      "restrictions": {
+        "pattern": null,
+        "minLength": null,
+        "maxLength": null,
+        "length": null,
+        "totalDigits": null,
+        "fractionDigits": null,
+        "minInclusive": null
+      },
+      "enumerations": [],
+      "childrenIds": [
+        "6239e927ceb8bd02",
+        "ab3b16f10734f0f0"
+      ]
+    },
+    {
+      "id": "26a2d612222bb170",
+      "parentId": "f97e3b0dcc9ca48a",
+      "label": "Identification",
+      "name": "Id",
+      "xmlTag": "Id",
+      "xmlPath": "/AppHdr/To/OrgId/Id/OrgId/Othr/Id",
+      "typeName": "GEO_RestrictedFINXMax35Text",
+      "baseType": "string",
+      "nodeKind": "text",
+      "minOccurs": 1,
+      "maxOccurs": "1",
+      "multiplicity": "[1..1]",
+      "isMandatory": true,
+      "isRepeating": false,
+      "isChoice": false,
+      "documentation": "Unique and unambiguous identification for the account between the account owner and the account servicer.",
+      "documentationKA": "ანგარიშის უნიკალური და ერთმნიშვნელოვანი იდენტიფიკაცია ანგარიშის მფლობელსა და ანგარიშის მომსახურე მხარეს შორის.",
+      "restrictions": {
+        "pattern": "[0-9a-zA-Z/\\-\\?:\\(\\)\\.,'\\+ ]+",
+        "minLength": "1",
+        "maxLength": "35",
+        "length": null,
+        "totalDigits": null,
+        "fractionDigits": null,
+        "minInclusive": null
+      },
+      "enumerations": [],
+      "childrenIds": []
+    },
+    {
+      "id": "16dac7f0c2ea8f73",
+      "parentId": "d1bfad8a2e62a247",
+      "label": "Code",
+      "name": "Cd",
+      "xmlTag": "Cd",
+      "xmlPath": "/AppHdr/To/OrgId/Id/OrgId/Othr/SchmeNm/Cd",
+      "typeName": "ExternalOrganisationIdentification1Code",
+      "baseType": "string",
+      "nodeKind": "text",
+      "minOccurs": 1,
+      "maxOccurs": "1",
+      "multiplicity": "[1..1]",
+      "isMandatory": true,
+      "isRepeating": false,
+      "isChoice": false,
+      "documentation": "Name of the identification scheme, in a coded form as published in an external list.",
+      "documentationKA": "იდენტიფიკაციის სქემის დასახელება კოდირებული ფორმით, როგორც გამოქვეყნებულია გარე სიაში.",
+      "restrictions": {
+        "pattern": null,
+        "minLength": "1",
+        "maxLength": "4",
+        "length": null,
+        "totalDigits": null,
+        "fractionDigits": null,
+        "minInclusive": null
+      },
+      "enumerations": [],
+      "childrenIds": []
+    },
+    {
+      "id": "d1bfad8a2e62a247",
+      "parentId": "f97e3b0dcc9ca48a",
+      "label": "SchemeName",
+      "name": "SchmeNm",
+      "xmlTag": "SchmeNm",
+      "xmlPath": "/AppHdr/To/OrgId/Id/OrgId/Othr/SchmeNm",
+      "typeName": "GEO_OrganisationIdentificationSchemeName1Choice",
+      "baseType": null,
+      "nodeKind": "complexType",
+      "minOccurs": 1,
+      "maxOccurs": "1",
+      "multiplicity": "[1..1]",
+      "isMandatory": true,
+      "isRepeating": false,
+      "isChoice": true,
+      "documentation": "Name of the identification scheme.",
+      "documentationKA": "იდენტიფიკაციის სქემის დასახელება.",
+      "restrictions": {
+        "pattern": null,
+        "minLength": null,
+        "maxLength": null,
+        "length": null,
+        "totalDigits": null,
+        "fractionDigits": null,
+        "minInclusive": null
+      },
+      "enumerations": [],
+      "childrenIds": [
+        "16dac7f0c2ea8f73"
+      ]
+    },
+    {
+      "id": "f97e3b0dcc9ca48a",
+      "parentId": "4db311dbfe598bb8",
+      "label": "Other",
+      "name": "Othr",
+      "xmlTag": "Othr",
+      "xmlPath": "/AppHdr/To/OrgId/Id/OrgId/Othr",
+      "typeName": "GEO_GenericOrganisationIdentification1",
+      "baseType": null,
+      "nodeKind": "complexType",
+      "minOccurs": 1,
+      "maxOccurs": "1",
+      "multiplicity": "[1..1]",
+      "isMandatory": true,
+      "isRepeating": false,
+      "isChoice": false,
+      "documentation": "Unique identification of an account, as assigned by the account servicer, using an identification scheme.",
+      "documentationKA": "ანგარიშის უნიკალური იდენტიფიკაცია, მინიჭებული ანგარიშის მომსახურე მხარის მიერ, იდენტიფიკაციის სქემის გამოყენებით.",
+      "restrictions": {
+        "pattern": null,
+        "minLength": null,
+        "maxLength": null,
+        "length": null,
+        "totalDigits": null,
+        "fractionDigits": null,
+        "minInclusive": null
+      },
+      "enumerations": [],
+      "childrenIds": [
+        "26a2d612222bb170",
+        "d1bfad8a2e62a247"
+      ]
+    },
+    {
+      "id": "4db311dbfe598bb8",
+      "parentId": "6108a51bb7fe54d7",
+      "label": "OrganisationIdentification",
+      "name": "OrgId",
+      "xmlTag": "OrgId",
+      "xmlPath": "/AppHdr/To/OrgId/Id/OrgId",
+      "typeName": "GEO_OrganisationIdentification29",
+      "baseType": null,
+      "nodeKind": "complexType",
+      "minOccurs": 1,
+      "maxOccurs": "1",
+      "multiplicity": "[1..1]",
+      "isMandatory": true,
+      "isRepeating": false,
+      "isChoice": false,
+      "documentation": "Unique and unambiguous way to identify an organisation.",
+      "documentationKA": "ორგანიზაციის იდენტიფიკაციის უნიკალური და ერთმნიშვნელოვანი საშუალება.",
+      "restrictions": {
+        "pattern": null,
+        "minLength": null,
+        "maxLength": null,
+        "length": null,
+        "totalDigits": null,
+        "fractionDigits": null,
+        "minInclusive": null
+      },
+      "enumerations": [],
+      "childrenIds": [
+        "f97e3b0dcc9ca48a"
+      ]
+    },
+    {
+      "id": "6108a51bb7fe54d7",
+      "parentId": "401bb811e2649ff9",
+      "label": "Identification",
+      "name": "Id",
+      "xmlTag": "Id",
+      "xmlPath": "/AppHdr/To/OrgId/Id",
+      "typeName": "GEO_Party38Choice_OrgOnly",
+      "baseType": null,
+      "nodeKind": "complexType",
+      "minOccurs": 1,
+      "maxOccurs": "1",
+      "multiplicity": "[1..1]",
+      "isMandatory": true,
+      "isRepeating": false,
+      "isChoice": true,
+      "documentation": "Unique and unambiguous identification for the account between the account owner and the account servicer.",
+      "documentationKA": "ანგარიშის უნიკალური და ერთმნიშვნელოვანი იდენტიფიკაცია ანგარიშის მფლობელსა და ანგარიშის მომსახურე მხარეს შორის.",
+      "restrictions": {
+        "pattern": null,
+        "minLength": null,
+        "maxLength": null,
+        "length": null,
+        "totalDigits": null,
+        "fractionDigits": null,
+        "minInclusive": null
+      },
+      "enumerations": [],
+      "childrenIds": [
+        "4db311dbfe598bb8"
+      ]
+    },
+    {
+      "id": "401bb811e2649ff9",
+      "parentId": "a2525cdfca016408",
+      "label": null,
+      "name": "OrgId",
+      "xmlTag": "OrgId",
+      "xmlPath": "/AppHdr/To/OrgId",
+      "typeName": "GEO_PartyIdentification135__OrgOnly",
+      "baseType": null,
+      "nodeKind": "complexType",
+      "minOccurs": 1,
+      "maxOccurs": "1",
+      "multiplicity": "[1..1]",
+      "isMandatory": true,
+      "isRepeating": false,
+      "isChoice": false,
+      "documentation": "Specifies the identification of a person or an organisation.",
+      "documentationKA": "განსაზღვრავს პირის ან ორგანიზაციის იდენტიფიკაციას.",
+      "restrictions": {
+        "pattern": null,
+        "minLength": null,
+        "maxLength": null,
+        "length": null,
+        "totalDigits": null,
+        "fractionDigits": null,
+        "minInclusive": null
+      },
+      "enumerations": [],
+      "childrenIds": [
+        "6108a51bb7fe54d7"
+      ]
+    },
+    {
+      "id": "4765e4a347036a83",
+      "parentId": "24f793c9eb8c3ec9",
+      "label": null,
+      "name": "BICFI",
+      "xmlTag": "BICFI",
+      "xmlPath": "/AppHdr/To/FIId/FinInstnId/BICFI",
+      "typeName": "GEO_BICFIDec2014Identifier",
+      "baseType": "string",
+      "nodeKind": "text",
+      "minOccurs": 1,
+      "maxOccurs": "1",
+      "multiplicity": "[1..1]",
+      "isMandatory": true,
+      "isRepeating": false,
+      "isChoice": false,
+      "documentation": "Code allocated to a financial institution by the ISO 9362 Registration Authority as described in ISO 9362: 2014 - \"Banking - Banking telecommunication messages - Business identifier code (BIC)\".",
+      "documentationKA": "ISO 9362 რეგისტრაციის ორგანოს მიერ ფინანსური ინსტიტუტისთვის მინიჭებული კოდი, როგორც აღწერილია ISO 9362:2014-ში — „საბანკო საქმე — საბანკო სატელეკომუნიკაციო შეტყობინებები — ბიზნეს იდენტიფიკატორის კოდი (BIC)“.",
+      "restrictions": {
+        "pattern": "[A-Z0-9]{4,4}GE[A-Z0-9]{2,2}",
+        "minLength": null,
+        "maxLength": null,
+        "length": null,
+        "totalDigits": null,
+        "fractionDigits": null,
+        "minInclusive": null
+      },
+      "enumerations": [],
+      "childrenIds": []
+    },
+    {
+      "id": "24f793c9eb8c3ec9",
+      "parentId": "32585b2d98a97e02",
+      "label": "FinancialInstitutionIdentification",
+      "name": "FinInstnId",
+      "xmlTag": "FinInstnId",
+      "xmlPath": "/AppHdr/To/FIId/FinInstnId",
+      "typeName": "GEO_FinancialInstitutionIdentification18_BicFiOnly",
+      "baseType": null,
+      "nodeKind": "complexType",
+      "minOccurs": 1,
+      "maxOccurs": "1",
+      "multiplicity": "[1..1]",
+      "isMandatory": true,
+      "isRepeating": false,
+      "isChoice": false,
+      "documentation": "Unique and unambiguous identification of a financial institution, as assigned under an internationally recognised or proprietary identification scheme.",
+      "documentationKA": "ფინანსური ინსტიტუტის უნიკალური და ერთმნიშვნელოვანი იდენტიფიკაცია, მინიჭებული საერთაშორისო აღიარებული ან საკუთარი იდენტიფიკაციის სქემის ფარგლებში.",
+      "restrictions": {
+        "pattern": null,
+        "minLength": null,
+        "maxLength": null,
+        "length": null,
+        "totalDigits": null,
+        "fractionDigits": null,
+        "minInclusive": null
+      },
+      "enumerations": [],
+      "childrenIds": [
+        "4765e4a347036a83"
+      ]
+    },
+    {
+      "id": "32585b2d98a97e02",
+      "parentId": "a2525cdfca016408",
+      "label": null,
+      "name": "FIId",
+      "xmlTag": "FIId",
+      "xmlPath": "/AppHdr/To/FIId",
+      "typeName": "GEO_BranchAndFinancialInstitutionIdentification6_BicOnly",
+      "baseType": null,
+      "nodeKind": "complexType",
+      "minOccurs": 1,
+      "maxOccurs": "1",
+      "multiplicity": "[1..1]",
+      "isMandatory": true,
+      "isRepeating": false,
+      "isChoice": false,
+      "documentation": "Unique and unambiguous identification of a financial institution or a branch of a financial institution.",
+      "documentationKA": "ფინანსური ინსტიტუტის ან ფინანსური ინსტიტუტის ფილიალის უნიკალური და ერთმნიშვნელოვანი იდენტიფიკაცია.",
+      "restrictions": {
+        "pattern": null,
+        "minLength": null,
+        "maxLength": null,
+        "length": null,
+        "totalDigits": null,
+        "fractionDigits": null,
+        "minInclusive": null
+      },
+      "enumerations": [],
+      "childrenIds": [
+        "24f793c9eb8c3ec9"
+      ]
+    },
+    {
+      "id": "a2525cdfca016408",
+      "parentId": "0853074d2bdb8b9b",
+      "label": null,
+      "name": "To",
+      "xmlTag": "To",
+      "xmlPath": "/AppHdr/To",
+      "typeName": "GEO_Party44Choice",
+      "baseType": null,
+      "nodeKind": "complexType",
+      "minOccurs": 1,
+      "maxOccurs": "1",
+      "multiplicity": "[1..1]",
+      "isMandatory": true,
+      "isRepeating": false,
+      "isChoice": true,
+      "documentation": null,
+      "documentationKA": null,
+      "restrictions": {
+        "pattern": null,
+        "minLength": null,
+        "maxLength": null,
+        "length": null,
+        "totalDigits": null,
+        "fractionDigits": null,
+        "minInclusive": null
+      },
+      "enumerations": [],
+      "childrenIds": [
+        "401bb811e2649ff9",
+        "32585b2d98a97e02"
+      ]
+    },
+    {
+      "id": "60a13c9fcd9bdf82",
+      "parentId": "0853074d2bdb8b9b",
+      "label": null,
+      "name": "BizMsgIdr",
+      "xmlTag": "BizMsgIdr",
+      "xmlPath": "/AppHdr/BizMsgIdr",
+      "typeName": "GEO_RestrictedFINXMax35Text",
+      "baseType": "string",
+      "nodeKind": "text",
+      "minOccurs": 1,
+      "maxOccurs": "1",
+      "multiplicity": "[1..1]",
+      "isMandatory": true,
+      "isRepeating": false,
+      "isChoice": false,
+      "documentation": "Specifies a character string with a minimum length of 1, and a maximum length of 35 characters, and limited to character set X, that is, 0-9 a-z A-Z / - ? : ( ) . , ‘ + .",
+      "documentationKA": "განსაზღვრავს სიმბოლოთა სტრიქონს მინიმალური სიგრძით 1 და მაქსიმალური სიგრძით 35 სიმბოლო, და შეზღუდულია სიმბოლოების ნაკრებით X, ანუ 0-9 a-z A-Z / - ? : ( ) . , ‘ + .",
+      "restrictions": {
+        "pattern": "[0-9a-zA-Z/\\-\\?:\\(\\)\\.,'\\+ ]+",
+        "minLength": "1",
+        "maxLength": "35",
+        "length": null,
+        "totalDigits": null,
+        "fractionDigits": null,
+        "minInclusive": null
+      },
+      "enumerations": [],
+      "childrenIds": []
+    },
+    {
+      "id": "f38cf4d0916f7c2e",
+      "parentId": "0853074d2bdb8b9b",
+      "label": null,
+      "name": "MsgDefIdr",
+      "xmlTag": "MsgDefIdr",
+      "xmlPath": "/AppHdr/MsgDefIdr",
+      "typeName": "GEO_RestrictedFINXMax35Text",
+      "baseType": "string",
+      "nodeKind": "text",
+      "minOccurs": 1,
+      "maxOccurs": "1",
+      "multiplicity": "[1..1]",
+      "isMandatory": true,
+      "isRepeating": false,
+      "isChoice": false,
+      "documentation": "Specifies a character string with a minimum length of 1, and a maximum length of 35 characters, and limited to character set X, that is, 0-9 a-z A-Z / - ? : ( ) . , ‘ + .",
+      "documentationKA": "განსაზღვრავს სიმბოლოთა სტრიქონს მინიმალური სიგრძით 1 და მაქსიმალური სიგრძით 35 სიმბოლო, და შეზღუდულია სიმბოლოების ნაკრებით X, ანუ 0-9 a-z A-Z / - ? : ( ) . , ‘ + .",
+      "restrictions": {
+        "pattern": "[0-9a-zA-Z/\\-\\?:\\(\\)\\.,'\\+ ]+",
+        "minLength": "1",
+        "maxLength": "35",
+        "length": null,
+        "totalDigits": null,
+        "fractionDigits": null,
+        "minInclusive": null
+      },
+      "enumerations": [],
+      "childrenIds": []
+    },
+    {
+      "id": "d2eb5c27a3e7d717",
+      "parentId": "0853074d2bdb8b9b",
+      "label": null,
+      "name": "BizSvc",
+      "xmlTag": "BizSvc",
+      "xmlPath": "/AppHdr/BizSvc",
+      "typeName": "UsageIdentifierPatternText",
+      "baseType": "string",
+      "nodeKind": "text",
+      "minOccurs": 1,
+      "maxOccurs": "1",
+      "multiplicity": "[1..1]",
+      "isMandatory": true,
+      "isRepeating": false,
+      "isChoice": false,
+      "documentation": null,
+      "documentationKA": null,
+      "restrictions": {
+        "pattern": "[a-z0-9]{1,10}\\.([a-z0-9]{1,10}\\.)+\\d\\d",
+        "minLength": "6",
+        "maxLength": "35",
+        "length": null,
+        "totalDigits": null,
+        "fractionDigits": null,
+        "minInclusive": null
+      },
+      "enumerations": [],
+      "childrenIds": []
+    },
+    {
+      "id": "89fa69fd268cce0a",
+      "parentId": "0853074d2bdb8b9b",
+      "label": null,
+      "name": "CreDt",
+      "xmlTag": "CreDt",
+      "xmlPath": "/AppHdr/CreDt",
+      "typeName": "GEO_ISODateTime",
+      "baseType": "dateTime",
+      "nodeKind": "date",
+      "minOccurs": 1,
+      "maxOccurs": "1",
+      "multiplicity": "[1..1]",
+      "isMandatory": true,
+      "isRepeating": false,
+      "isChoice": false,
+      "documentation": "GEO_ISODateTime",
+      "documentationKA": null,
+      "restrictions": {
+        "pattern": ".*(\\+|-)((0[0-9])|(1[0-3])):[0-5][0-9]",
+        "minLength": null,
+        "maxLength": null,
+        "length": null,
+        "totalDigits": null,
+        "fractionDigits": null,
+        "minInclusive": null
+      },
+      "enumerations": [],
+      "childrenIds": []
+    },
+    {
+      "id": "fa1360026a7d1ab7",
+      "parentId": "0853074d2bdb8b9b",
+      "label": null,
+      "name": "PssblDplct",
+      "xmlTag": "PssblDplct",
+      "xmlPath": "/AppHdr/PssblDplct",
+      "typeName": "YesNoIndicator",
+      "baseType": "boolean",
+      "nodeKind": "boolean",
+      "minOccurs": 0,
+      "maxOccurs": "1",
+      "multiplicity": "[0..1]",
+      "isMandatory": false,
+      "isRepeating": false,
+      "isChoice": false,
+      "documentation": "Indicates a \"Yes\" or \"No\" type of answer for an element.",
+      "documentationKA": "აჩვენებს \"დიახ\" ან \"არა\" ტიპის პასუხს ელემენტისთვის.",
+      "restrictions": {
+        "pattern": null,
+        "minLength": null,
+        "maxLength": null,
+        "length": null,
+        "totalDigits": null,
+        "fractionDigits": null,
+        "minInclusive": null
+      },
+      "enumerations": [],
+      "childrenIds": []
+    },
+    {
+      "id": "be139a7fdb56772e",
+      "parentId": "0853074d2bdb8b9b",
+      "label": null,
+      "name": "Sgntr",
+      "xmlTag": "Sgntr",
+      "xmlPath": "/AppHdr/Sgntr",
+      "typeName": "SignatureEnvelope",
+      "baseType": null,
+      "nodeKind": "simpleType",
+      "minOccurs": 1,
+      "maxOccurs": "1",
+      "multiplicity": "[1..1]",
+      "isMandatory": true,
+      "isRepeating": false,
+      "isChoice": false,
+      "documentation": null,
+      "documentationKA": null,
+      "restrictions": {
+        "pattern": null,
+        "minLength": null,
+        "maxLength": null,
+        "length": null,
+        "totalDigits": null,
+        "fractionDigits": null,
+        "minInclusive": null
+      },
+      "enumerations": [],
+      "childrenIds": []
+    },
+    {
+      "id": "0853074d2bdb8b9b",
+      "parentId": null,
+      "label": null,
+      "name": "AppHdr",
+      "xmlTag": "AppHdr",
+      "xmlPath": "/AppHdr",
+      "typeName": "GEO_BusinessApplicationHeaderV02",
+      "baseType": null,
+      "nodeKind": "root",
+      "minOccurs": 1,
+      "maxOccurs": "1",
+      "multiplicity": "[1..1]",
+      "isMandatory": true,
+      "isRepeating": false,
+      "isChoice": false,
+      "documentation": null,
+      "documentationKA": null,
+      "restrictions": {
+        "pattern": null,
+        "minLength": null,
+        "maxLength": null,
+        "length": null,
+        "totalDigits": null,
+        "fractionDigits": null,
+        "minInclusive": null
+      },
+      "enumerations": [],
+      "childrenIds": [
+        "72cc22c64dda9e80",
+        "a2525cdfca016408",
+        "60a13c9fcd9bdf82",
+        "f38cf4d0916f7c2e",
+        "d2eb5c27a3e7d717",
+        "89fa69fd268cce0a",
+        "fa1360026a7d1ab7",
+        "be139a7fdb56772e"
+      ]
+    }
+  ],
+  "tree": {
+    "id": "0853074d2bdb8b9b",
+    "name": "AppHdr",
+    "xmlTag": "AppHdr",
+    "xmlPath": "/AppHdr",
+    "nodeKind": "root",
+    "multiplicity": "[1..1]",
+    "children": [
+      {
+        "id": "72cc22c64dda9e80",
+        "name": "Fr",
+        "xmlTag": "Fr",
+        "xmlPath": "/AppHdr/Fr",
+        "nodeKind": "complexType",
+        "multiplicity": "[1..1]",
+        "children": [
+          {
+            "id": "6239e927ceb8bd02",
+            "name": "OrgId",
+            "xmlTag": "OrgId",
+            "xmlPath": "/AppHdr/Fr/OrgId",
+            "nodeKind": "complexType",
+            "multiplicity": "[1..1]",
+            "children": [
+              {
+                "id": "bcc9953850ea8b21",
+                "name": "Id",
+                "xmlTag": "Id",
+                "xmlPath": "/AppHdr/Fr/OrgId/Id",
+                "nodeKind": "complexType",
+                "multiplicity": "[1..1]",
+                "children": [
+                  {
+                    "id": "df4e696b4ce08ea8",
+                    "name": "OrgId",
+                    "xmlTag": "OrgId",
+                    "xmlPath": "/AppHdr/Fr/OrgId/Id/OrgId",
+                    "nodeKind": "complexType",
+                    "multiplicity": "[1..1]",
+                    "children": [
+                      {
+                        "id": "5cb45dc10753cc0b",
+                        "name": "Othr",
+                        "xmlTag": "Othr",
+                        "xmlPath": "/AppHdr/Fr/OrgId/Id/OrgId/Othr",
+                        "nodeKind": "complexType",
+                        "multiplicity": "[1..1]",
+                        "children": [
+                          {
+                            "id": "5919b7167a3265c4",
+                            "name": "Id",
+                            "xmlTag": "Id",
+                            "xmlPath": "/AppHdr/Fr/OrgId/Id/OrgId/Othr/Id",
+                            "nodeKind": "text",
+                            "multiplicity": "[1..1]",
+                            "children": []
+                          },
+                          {
+                            "id": "4a1dd5ff2d2c2dc8",
+                            "name": "SchmeNm",
+                            "xmlTag": "SchmeNm",
+                            "xmlPath": "/AppHdr/Fr/OrgId/Id/OrgId/Othr/SchmeNm",
+                            "nodeKind": "complexType",
+                            "multiplicity": "[1..1]",
+                            "children": [
+                              {
+                                "id": "f2c5d53a36ff2427",
+                                "name": "Cd",
+                                "xmlTag": "Cd",
+                                "xmlPath": "/AppHdr/Fr/OrgId/Id/OrgId/Othr/SchmeNm/Cd",
+                                "nodeKind": "text",
+                                "multiplicity": "[1..1]",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "ab3b16f10734f0f0",
+            "name": "FIId",
+            "xmlTag": "FIId",
+            "xmlPath": "/AppHdr/Fr/FIId",
+            "nodeKind": "complexType",
+            "multiplicity": "[1..1]",
+            "children": [
+              {
+                "id": "10a25554ce8c0333",
+                "name": "FinInstnId",
+                "xmlTag": "FinInstnId",
+                "xmlPath": "/AppHdr/Fr/FIId/FinInstnId",
+                "nodeKind": "complexType",
+                "multiplicity": "[1..1]",
+                "children": [
+                  {
+                    "id": "340d47e5da354229",
+                    "name": "BICFI",
+                    "xmlTag": "BICFI",
+                    "xmlPath": "/AppHdr/Fr/FIId/FinInstnId/BICFI",
+                    "nodeKind": "text",
+                    "multiplicity": "[1..1]",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "a2525cdfca016408",
+        "name": "To",
+        "xmlTag": "To",
+        "xmlPath": "/AppHdr/To",
+        "nodeKind": "complexType",
+        "multiplicity": "[1..1]",
+        "children": [
+          {
+            "id": "401bb811e2649ff9",
+            "name": "OrgId",
+            "xmlTag": "OrgId",
+            "xmlPath": "/AppHdr/To/OrgId",
+            "nodeKind": "complexType",
+            "multiplicity": "[1..1]",
+            "children": [
+              {
+                "id": "6108a51bb7fe54d7",
+                "name": "Id",
+                "xmlTag": "Id",
+                "xmlPath": "/AppHdr/To/OrgId/Id",
+                "nodeKind": "complexType",
+                "multiplicity": "[1..1]",
+                "children": [
+                  {
+                    "id": "4db311dbfe598bb8",
+                    "name": "OrgId",
+                    "xmlTag": "OrgId",
+                    "xmlPath": "/AppHdr/To/OrgId/Id/OrgId",
+                    "nodeKind": "complexType",
+                    "multiplicity": "[1..1]",
+                    "children": [
+                      {
+                        "id": "f97e3b0dcc9ca48a",
+                        "name": "Othr",
+                        "xmlTag": "Othr",
+                        "xmlPath": "/AppHdr/To/OrgId/Id/OrgId/Othr",
+                        "nodeKind": "complexType",
+                        "multiplicity": "[1..1]",
+                        "children": [
+                          {
+                            "id": "26a2d612222bb170",
+                            "name": "Id",
+                            "xmlTag": "Id",
+                            "xmlPath": "/AppHdr/To/OrgId/Id/OrgId/Othr/Id",
+                            "nodeKind": "text",
+                            "multiplicity": "[1..1]",
+                            "children": []
+                          },
+                          {
+                            "id": "d1bfad8a2e62a247",
+                            "name": "SchmeNm",
+                            "xmlTag": "SchmeNm",
+                            "xmlPath": "/AppHdr/To/OrgId/Id/OrgId/Othr/SchmeNm",
+                            "nodeKind": "complexType",
+                            "multiplicity": "[1..1]",
+                            "children": [
+                              {
+                                "id": "16dac7f0c2ea8f73",
+                                "name": "Cd",
+                                "xmlTag": "Cd",
+                                "xmlPath": "/AppHdr/To/OrgId/Id/OrgId/Othr/SchmeNm/Cd",
+                                "nodeKind": "text",
+                                "multiplicity": "[1..1]",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "32585b2d98a97e02",
+            "name": "FIId",
+            "xmlTag": "FIId",
+            "xmlPath": "/AppHdr/To/FIId",
+            "nodeKind": "complexType",
+            "multiplicity": "[1..1]",
+            "children": [
+              {
+                "id": "24f793c9eb8c3ec9",
+                "name": "FinInstnId",
+                "xmlTag": "FinInstnId",
+                "xmlPath": "/AppHdr/To/FIId/FinInstnId",
+                "nodeKind": "complexType",
+                "multiplicity": "[1..1]",
+                "children": [
+                  {
+                    "id": "4765e4a347036a83",
+                    "name": "BICFI",
+                    "xmlTag": "BICFI",
+                    "xmlPath": "/AppHdr/To/FIId/FinInstnId/BICFI",
+                    "nodeKind": "text",
+                    "multiplicity": "[1..1]",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "60a13c9fcd9bdf82",
+        "name": "BizMsgIdr",
+        "xmlTag": "BizMsgIdr",
+        "xmlPath": "/AppHdr/BizMsgIdr",
+        "nodeKind": "text",
+        "multiplicity": "[1..1]",
+        "children": []
+      },
+      {
+        "id": "f38cf4d0916f7c2e",
+        "name": "MsgDefIdr",
+        "xmlTag": "MsgDefIdr",
+        "xmlPath": "/AppHdr/MsgDefIdr",
+        "nodeKind": "text",
+        "multiplicity": "[1..1]",
+        "children": []
+      },
+      {
+        "id": "d2eb5c27a3e7d717",
+        "name": "BizSvc",
+        "xmlTag": "BizSvc",
+        "xmlPath": "/AppHdr/BizSvc",
+        "nodeKind": "text",
+        "multiplicity": "[1..1]",
+        "children": []
+      },
+      {
+        "id": "89fa69fd268cce0a",
+        "name": "CreDt",
+        "xmlTag": "CreDt",
+        "xmlPath": "/AppHdr/CreDt",
+        "nodeKind": "date",
+        "multiplicity": "[1..1]",
+        "children": []
+      },
+      {
+        "id": "fa1360026a7d1ab7",
+        "name": "PssblDplct",
+        "xmlTag": "PssblDplct",
+        "xmlPath": "/AppHdr/PssblDplct",
+        "nodeKind": "boolean",
+        "multiplicity": "[0..1]",
+        "children": []
+      },
+      {
+        "id": "be139a7fdb56772e",
+        "name": "Sgntr",
+        "xmlTag": "Sgntr",
+        "xmlPath": "/AppHdr/Sgntr",
+        "nodeKind": "simpleType",
+        "multiplicity": "[1..1]",
+        "children": []
+      }
+    ]
+  }
+}

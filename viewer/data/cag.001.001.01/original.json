@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "sourceFile": "cag.001.001.01.xsd",
+    "targetNamespace": "urn:ge:corporate-access-gateway:xsd:cag.001.001.01",
+    "generatedAt": "2026-06-22T10:04:48.574021+00:00",
+    "rootElement": "BusinessMessage",
+    "messageName": "cag.001.001.01",
+    "warnings": [
+      "Unresolved type reference: 'cag:GEO_BusinessMessageEnvelopeInV01'"
+    ]
+  },
+  "nodesFlat": [
+    {
+      "id": "29fcab90b4876d7b",
+      "parentId": null,
+      "label": null,
+      "name": "BusinessMessage",
+      "xmlTag": "BusinessMessage",
+      "xmlPath": "/BusinessMessage",
+      "typeName": "cag:GEO_BusinessMessageEnvelopeInV01",
+      "baseType": null,
+      "nodeKind": "root",
+      "minOccurs": 1,
+      "maxOccurs": "1",
+      "multiplicity": "[1..1]",
+      "isMandatory": true,
+      "isRepeating": false,
+      "isChoice": false,
+      "documentation": null,
+      "documentationKA": null,
+      "restrictions": {
+        "pattern": null,
+        "minLength": null,
+        "maxLength": null,
+        "length": null,
+        "totalDigits": null,
+        "fractionDigits": null,
+        "minInclusive": null
+      },
+      "enumerations": [],
+      "childrenIds": []
+    }
+  ],
+  "tree": {
+    "id": "29fcab90b4876d7b",
+    "name": "BusinessMessage",
+    "xmlTag": "BusinessMessage",
+    "xmlPath": "/BusinessMessage",
+    "nodeKind": "root",
+    "multiplicity": "[1..1]",
+    "children": []
+  }
+}

@@ -168,7 +168,9 @@ async function init() {
   }
   populateSelector(manifest.messages);
   bindUI();
-  await loadData(manifest.messages[0].id);
+  const defaultMsg = manifest.messages.find(m => m.id.startsWith("pain.001")) ?? manifest.messages[0];
+  document.getElementById("message-selector").value = defaultMsg.id;
+  await loadData(defaultMsg.id);
 }
 
 function setupViewSelector() {
@@ -490,21 +492,16 @@ function buildRemovedRow(origNode, depth, showTag) {
 
   const indent = document.createElement("span");
   indent.className = "tree-indent";
-  indent.style.width = `${depth * 16}px`;
+  indent.style.width = `${depth * 16 + 3}px`;
   nameCell.appendChild(indent);
-
-  // Empty toggle placeholder (no expand)
-  const toggle = document.createElement("span");
-  toggle.className = "toggle-btn";
-  nameCell.appendChild(toggle);
-
-  const badge = getBadge(origNode);
-  if (badge) nameCell.appendChild(badge);
 
   const nameSpan = document.createElement("span");
   nameSpan.className = "node-name";
   nameSpan.textContent = origNode.label || origNode.name;
   nameCell.appendChild(nameSpan);
+
+  const badge = getBadge(origNode);
+  if (badge) nameCell.appendChild(badge);
 
   const removedBadge = document.createElement("span");
   removedBadge.className = "diff-badge db-removed";
@@ -563,24 +560,20 @@ function buildRow(node, depth, showTag, flatSearch) {
   if (!flatSearch) {
     const indent = document.createElement("span");
     indent.className = "tree-indent";
-    indent.style.width = `${depth * 16}px`;
+    indent.style.width = `${depth * 16 + (hasChildren ? 0 : 3)}px`;
     nameCell.appendChild(indent);
   }
 
-  const toggle = document.createElement("span");
-  toggle.className = "toggle-btn";
   if (hasChildren) {
+    const toggle = document.createElement("span");
+    toggle.className = "toggle-btn";
     toggle.textContent = isExpanded ? "▼" : "▶";
     toggle.addEventListener("click", e => {
       e.stopPropagation();
       toggleNode(node.id);
     });
+    nameCell.appendChild(toggle);
   }
-  nameCell.appendChild(toggle);
-
-  // Badge
-  const badge = getBadge(node);
-  if (badge) nameCell.appendChild(badge);
 
   // Name text — prefer ISO label (source="Name" annotation) over abbreviated XML tag
   const displayName = node.label || node.name;
@@ -589,6 +582,10 @@ function buildRow(node, depth, showTag, flatSearch) {
   nameSpan.textContent = displayName;
   if (state.searchQuery) highlight(nameSpan, state.searchQuery);
   nameCell.appendChild(nameSpan);
+
+  // Badge
+  const badge = getBadge(node);
+  if (badge) nameCell.appendChild(badge);
 
   // Documentation indicator
   if (node.documentation || node.documentationKA) {

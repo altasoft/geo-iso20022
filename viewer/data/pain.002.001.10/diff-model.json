@@ -2,15 +2,15 @@
   "metadata": {
     "oldSource": "pain.002.001.10.xsd",
     "newSource": "GEO_pain.002.001.10.xsd",
-    "generatedAt": "2026-05-25T09:45:56.877052+00:00"
+    "generatedAt": "2026-06-22T10:04:50.696500+00:00"
   },
   "summary": {
     "added": 0,
-    "removed": 2413,
-    "changed": 46,
+    "removed": 2425,
+    "changed": 51,
     "breaking": 0,
-    "nonBreaking": 46,
-    "informational": 2413
+    "nonBreaking": 51,
+    "informational": 2425
   },
   "changes": [
     {
@@ -2654,12 +2654,20 @@
       "description": "Type changed from 'StatusReason6Choice' to 'GEO_StatusReason6Choice'"
     },
     {
+      "changeType": "MaxOccursChanged",
+      "severity": "NonBreaking",
+      "xmlPath": "/Document/CstmrPmtStsRpt/OrgnlGrpInfAndSts/StsRsnInf/AddtlInf",
+      "oldValue": "unbounded",
+      "newValue": "4",
+      "description": "maxOccurs changed from unbounded to 4"
+    },
+    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrPmtStsRpt/OrgnlGrpInfAndSts/StsRsnInf/AddtlInf",
       "oldValue": "Max105Text",
-      "newValue": "GEO_RestrictedFINXMax105Text",
-      "description": "Type changed from 'Max105Text' to 'GEO_RestrictedFINXMax105Text'"
+      "newValue": "GEO_RestrictedFINXMax105Text_Ka",
+      "description": "Type changed from 'Max105Text' to 'GEO_RestrictedFINXMax105Text_Ka'"
     },
     {
       "changeType": "RestrictionChanged",
@@ -2670,12 +2678,44 @@
       "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
     },
     {
+      "changeType": "MaxOccursChanged",
+      "severity": "NonBreaking",
+      "xmlPath": "/Document/CstmrPmtStsRpt/OrgnlGrpInfAndSts/StsRsnInf",
+      "oldValue": "unbounded",
+      "newValue": "4",
+      "description": "maxOccurs changed from unbounded to 4"
+    },
+    {
+      "changeType": "RemovedNode",
+      "severity": "Informational",
+      "xmlPath": "/Document/CstmrPmtStsRpt/OrgnlGrpInfAndSts/NbOfTxsPerSts/DtldNbOfTxs",
+      "oldValue": "[1..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrPmtStsRpt/OrgnlGrpInfAndSts/NbOfTxsPerSts/DtldNbOfTxs"
+    },
+    {
+      "changeType": "RemovedNode",
+      "severity": "Informational",
+      "xmlPath": "/Document/CstmrPmtStsRpt/OrgnlGrpInfAndSts/NbOfTxsPerSts/DtldSts",
+      "oldValue": "[1..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrPmtStsRpt/OrgnlGrpInfAndSts/NbOfTxsPerSts/DtldSts"
+    },
+    {
       "changeType": "RemovedNode",
       "severity": "Informational",
       "xmlPath": "/Document/CstmrPmtStsRpt/OrgnlGrpInfAndSts/NbOfTxsPerSts/DtldCtrlSum",
       "oldValue": "[0..1]",
       "newValue": null,
       "description": "Node removed: /Document/CstmrPmtStsRpt/OrgnlGrpInfAndSts/NbOfTxsPerSts/DtldCtrlSum"
+    },
+    {
+      "changeType": "RemovedNode",
+      "severity": "Informational",
+      "xmlPath": "/Document/CstmrPmtStsRpt/OrgnlGrpInfAndSts/NbOfTxsPerSts",
+      "oldValue": "[0..∞]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrPmtStsRpt/OrgnlGrpInfAndSts/NbOfTxsPerSts"
     },
     {
       "changeType": "TypeChanged",
@@ -2704,10 +2744,26 @@
     {
       "changeType": "RemovedNode",
       "severity": "Informational",
+      "xmlPath": "/Document/CstmrPmtStsRpt/OrgnlPmtInfAndSts/OrgnlNbOfTxs",
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrPmtStsRpt/OrgnlPmtInfAndSts/OrgnlNbOfTxs"
+    },
+    {
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrPmtStsRpt/OrgnlPmtInfAndSts/OrgnlCtrlSum",
       "oldValue": "[0..1]",
       "newValue": null,
       "description": "Node removed: /Document/CstmrPmtStsRpt/OrgnlPmtInfAndSts/OrgnlCtrlSum"
+    },
+    {
+      "changeType": "RemovedNode",
+      "severity": "Informational",
+      "xmlPath": "/Document/CstmrPmtStsRpt/OrgnlPmtInfAndSts/PmtInfSts",
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrPmtStsRpt/OrgnlPmtInfAndSts/PmtInfSts"
     },
     {
       "changeType": "RemovedNode",
@@ -3208,34 +3264,58 @@
     {
       "changeType": "RemovedNode",
       "severity": "Informational",
+      "xmlPath": "/Document/CstmrPmtStsRpt/OrgnlPmtInfAndSts/StsRsnInf/Rsn/Cd",
+      "oldValue": "[1..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrPmtStsRpt/OrgnlPmtInfAndSts/StsRsnInf/Rsn/Cd"
+    },
+    {
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrPmtStsRpt/OrgnlPmtInfAndSts/StsRsnInf/Rsn/Prtry",
       "oldValue": "[1..1]",
       "newValue": null,
       "description": "Node removed: /Document/CstmrPmtStsRpt/OrgnlPmtInfAndSts/StsRsnInf/Rsn/Prtry"
     },
     {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrPmtStsRpt/OrgnlPmtInfAndSts/StsRsnInf/Rsn",
-      "oldValue": "StatusReason6Choice",
-      "newValue": "GEO_StatusReason6Choice",
-      "description": "Type changed from 'StatusReason6Choice' to 'GEO_StatusReason6Choice'"
+      "oldValue": "[0..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrPmtStsRpt/OrgnlPmtInfAndSts/StsRsnInf/Rsn"
     },
     {
-      "changeType": "TypeChanged",
-      "severity": "NonBreaking",
+      "changeType": "RemovedNode",
+      "severity": "Informational",
       "xmlPath": "/Document/CstmrPmtStsRpt/OrgnlPmtInfAndSts/StsRsnInf/AddtlInf",
-      "oldValue": "Max105Text",
-      "newValue": "GEO_RestrictedFINXMax105Text",
-      "description": "Type changed from 'Max105Text' to 'GEO_RestrictedFINXMax105Text'"
+      "oldValue": "[0..∞]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrPmtStsRpt/OrgnlPmtInfAndSts/StsRsnInf/AddtlInf"
     },
     {
-      "changeType": "RestrictionChanged",
-      "severity": "NonBreaking",
-      "xmlPath": "/Document/CstmrPmtStsRpt/OrgnlPmtInfAndSts/StsRsnInf/AddtlInf",
-      "oldValue": "pattern=None",
-      "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
-      "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+      "changeType": "RemovedNode",
+      "severity": "Informational",
+      "xmlPath": "/Document/CstmrPmtStsRpt/OrgnlPmtInfAndSts/StsRsnInf",
+      "oldValue": "[0..∞]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrPmtStsRpt/OrgnlPmtInfAndSts/StsRsnInf"
+    },
+    {
+      "changeType": "RemovedNode",
+      "severity": "Informational",
+      "xmlPath": "/Document/CstmrPmtStsRpt/OrgnlPmtInfAndSts/NbOfTxsPerSts/DtldNbOfTxs",
+      "oldValue": "[1..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrPmtStsRpt/OrgnlPmtInfAndSts/NbOfTxsPerSts/DtldNbOfTxs"
+    },
+    {
+      "changeType": "RemovedNode",
+      "severity": "Informational",
+      "xmlPath": "/Document/CstmrPmtStsRpt/OrgnlPmtInfAndSts/NbOfTxsPerSts/DtldSts",
+      "oldValue": "[1..1]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrPmtStsRpt/OrgnlPmtInfAndSts/NbOfTxsPerSts/DtldSts"
     },
     {
       "changeType": "RemovedNode",
@@ -3244,6 +3324,14 @@
       "oldValue": "[0..1]",
       "newValue": null,
       "description": "Node removed: /Document/CstmrPmtStsRpt/OrgnlPmtInfAndSts/NbOfTxsPerSts/DtldCtrlSum"
+    },
+    {
+      "changeType": "RemovedNode",
+      "severity": "Informational",
+      "xmlPath": "/Document/CstmrPmtStsRpt/OrgnlPmtInfAndSts/NbOfTxsPerSts",
+      "oldValue": "[0..∞]",
+      "newValue": null,
+      "description": "Node removed: /Document/CstmrPmtStsRpt/OrgnlPmtInfAndSts/NbOfTxsPerSts"
     },
     {
       "changeType": "TypeChanged",
@@ -3830,12 +3918,20 @@
       "description": "Type changed from 'StatusReason6Choice' to 'GEO_StatusReason6Choice'"
     },
     {
+      "changeType": "MaxOccursChanged",
+      "severity": "NonBreaking",
+      "xmlPath": "/Document/CstmrPmtStsRpt/OrgnlPmtInfAndSts/TxInfAndSts/StsRsnInf/AddtlInf",
+      "oldValue": "unbounded",
+      "newValue": "4",
+      "description": "maxOccurs changed from unbounded to 4"
+    },
+    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrPmtStsRpt/OrgnlPmtInfAndSts/TxInfAndSts/StsRsnInf/AddtlInf",
       "oldValue": "Max105Text",
-      "newValue": "GEO_RestrictedFINXMax105Text",
-      "description": "Type changed from 'Max105Text' to 'GEO_RestrictedFINXMax105Text'"
+      "newValue": "GEO_RestrictedFINXMax105Text_Ka",
+      "description": "Type changed from 'Max105Text' to 'GEO_RestrictedFINXMax105Text_Ka'"
     },
     {
       "changeType": "RestrictionChanged",
@@ -3844,6 +3940,14 @@
       "oldValue": "pattern=None",
       "newValue": "pattern=[0-9a-zA-Zა-ჰ/\\-\\?:\\(\\)\\.,'\\+ ]+",
       "description": "Restriction pattern changed from None to \"[0-9a-zA-Zა-ჰ/\\\\-\\\\?:\\\\(\\\\)\\\\.,'\\\\+ ]+\""
+    },
+    {
+      "changeType": "MaxOccursChanged",
+      "severity": "NonBreaking",
+      "xmlPath": "/Document/CstmrPmtStsRpt/OrgnlPmtInfAndSts/TxInfAndSts/StsRsnInf",
+      "oldValue": "unbounded",
+      "newValue": "4",
+      "description": "maxOccurs changed from unbounded to 4"
     },
     {
       "changeType": "MinOccursChanged",
@@ -3866,8 +3970,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrPmtStsRpt/OrgnlPmtInfAndSts/TxInfAndSts/ChrgsInf/Agt/FinInstnId/BICFI",
       "oldValue": "pattern=[A-Z0-9]{4,4}[A-Z]{2,2}[A-Z0-9]{2,2}([A-Z0-9]{3,3}){0,1}",
-      "newValue": "pattern=[A-Z0-9]{4,4}GE[A-Z0-9]{2,2}([A-Z0-9]{3,3}){0,1}",
-      "description": "Restriction pattern changed from '[A-Z0-9]{4,4}[A-Z]{2,2}[A-Z0-9]{2,2}([A-Z0-9]{3,3}){0,1}' to '[A-Z0-9]{4,4}GE[A-Z0-9]{2,2}([A-Z0-9]{3,3}){0,1}'"
+      "newValue": "pattern=[A-Z0-9]{4,4}GE[A-Z0-9]{2,2}",
+      "description": "Restriction pattern changed from '[A-Z0-9]{4,4}[A-Z]{2,2}[A-Z0-9]{2,2}([A-Z0-9]{3,3}){0,1}' to '[A-Z0-9]{4,4}GE[A-Z0-9]{2,2}'"
     },
     {
       "changeType": "RemovedNode",
@@ -3906,8 +4010,8 @@
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrPmtStsRpt/OrgnlPmtInfAndSts/TxInfAndSts/ChrgsInf/Agt/FinInstnId/ClrSysMmbId/MmbId",
       "oldValue": "pattern=None",
-      "newValue": "pattern=[A-Z0-9]{4,4}GE[A-Z0-9]{2,2}([A-Z0-9]{3,3}){0,1}",
-      "description": "Restriction pattern changed from None to '[A-Z0-9]{4,4}GE[A-Z0-9]{2,2}([A-Z0-9]{3,3}){0,1}'"
+      "newValue": "pattern=[A-Z0-9]{4,4}GE[A-Z0-9]{2,2}",
+      "description": "Restriction pattern changed from None to '[A-Z0-9]{4,4}GE[A-Z0-9]{2,2}'"
     },
     {
       "changeType": "RestrictionChanged",
@@ -4396,6 +4500,14 @@
       "oldValue": "BranchAndFinancialInstitutionIdentification6",
       "newValue": "GEO_BranchAndFinancialInstitutionIdentification6",
       "description": "Type changed from 'BranchAndFinancialInstitutionIdentification6' to 'GEO_BranchAndFinancialInstitutionIdentification6'"
+    },
+    {
+      "changeType": "MaxOccursChanged",
+      "severity": "NonBreaking",
+      "xmlPath": "/Document/CstmrPmtStsRpt/OrgnlPmtInfAndSts/TxInfAndSts/ChrgsInf",
+      "oldValue": "unbounded",
+      "newValue": "4",
+      "description": "maxOccurs changed from unbounded to 4"
     },
     {
       "changeType": "TypeChanged",
@@ -19638,12 +19750,36 @@
       "description": "Node removed: /Document/CstmrPmtStsRpt/OrgnlPmtInfAndSts/TxInfAndSts/SplmtryData"
     },
     {
+      "changeType": "MinOccursChanged",
+      "severity": "NonBreaking",
+      "xmlPath": "/Document/CstmrPmtStsRpt/OrgnlPmtInfAndSts/TxInfAndSts",
+      "oldValue": "0",
+      "newValue": "1",
+      "description": "minOccurs changed from 0 to 1"
+    },
+    {
+      "changeType": "MaxOccursChanged",
+      "severity": "NonBreaking",
+      "xmlPath": "/Document/CstmrPmtStsRpt/OrgnlPmtInfAndSts/TxInfAndSts",
+      "oldValue": "unbounded",
+      "newValue": "1",
+      "description": "maxOccurs changed from unbounded to 1"
+    },
+    {
       "changeType": "TypeChanged",
       "severity": "NonBreaking",
       "xmlPath": "/Document/CstmrPmtStsRpt/OrgnlPmtInfAndSts/TxInfAndSts",
       "oldValue": "PaymentTransaction105",
       "newValue": "GEO_PaymentTransaction105",
       "description": "Type changed from 'PaymentTransaction105' to 'GEO_PaymentTransaction105'"
+    },
+    {
+      "changeType": "MaxOccursChanged",
+      "severity": "NonBreaking",
+      "xmlPath": "/Document/CstmrPmtStsRpt/OrgnlPmtInfAndSts",
+      "oldValue": "unbounded",
+      "newValue": "1",
+      "description": "maxOccurs changed from unbounded to 1"
     },
     {
       "changeType": "TypeChanged",
