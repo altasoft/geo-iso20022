@@ -126,6 +126,7 @@ class TypeRegistry:
     def __init__(self, warnings: list):
         self._types: dict[str, TypeInfo] = {}
         self._warnings = warnings
+        self._anon_counter = 0
 
     def load_tree(self, schema_el) -> None:
         for child in schema_el:
@@ -198,7 +199,7 @@ class TypeRegistry:
             if local == "element":
                 children.append(ChildDef(
                     tag=child.get("name", ""),
-                    type_name=_strip_ns(child.get("type")),
+                    type_name=self._resolve_inline_type(child),
                     min_occurs=int(child.get("minOccurs", 1)),
                     max_occurs=child.get("maxOccurs", "1"),
                     documentation=self._get_doc(child),
@@ -209,13 +210,33 @@ class TypeRegistry:
                 children.extend(self._parse_container(child))
         return children
 
-    @staticmethod
-    def _parse_attr(el) -> AttributeDef:
+    def _parse_attr(self, el) -> AttributeDef:
         return AttributeDef(
             name=el.get("name", ""),
-            type_name=_strip_ns(el.get("type")),
+            type_name=self._resolve_inline_type(el),
             use=el.get("use", "optional"),
         )
+
+    def _resolve_inline_type(self, el) -> str | None:
+        """Return the referenced type name, or register+return a synthetic name
+        for an inline anonymous <simpleType>/<complexType> defined directly under
+        this <element>/<attribute> (used when there is no `type` attribute)."""
+        type_name = _strip_ns(el.get("type"))
+        if type_name is not None:
+            return type_name
+        inline_ct = el.find(_xs("complexType"))
+        if inline_ct is not None:
+            return self._register_anonymous(self._parse_complex(inline_ct))
+        inline_st = el.find(_xs("simpleType"))
+        if inline_st is not None:
+            return self._register_anonymous(self._parse_simple(inline_st))
+        return None
+
+    def _register_anonymous(self, info: TypeInfo) -> str:
+        self._anon_counter += 1
+        name = f"__anon{self._anon_counter}"
+        self._types[name] = info
+        return name
 
     @staticmethod
     def _get_doc(el, lang: str | None = None) -> str | None:

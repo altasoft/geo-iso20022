@@ -16,7 +16,7 @@ from pathlib import Path
 from lxml import etree
 
 sys.path.insert(0, str(Path(__file__).parent))
-from schema_model import TypeRegistry, NodeBuilder
+from schema_model import TypeRegistry, NodeBuilder, _strip_ns
 
 XS = "http://www.w3.org/2001/XMLSchema"
 
@@ -67,7 +67,7 @@ def find_root_element(schema_el) -> tuple[str, str] | None:
         if etree.QName(child.tag).localname == "element":
             name = child.get("name")
             if name:
-                return name, child.get("type", name)
+                return name, _strip_ns(child.get("type", name))
     return None
 
 
