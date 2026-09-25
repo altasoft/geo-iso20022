@@ -1,9 +1,9 @@
-<xs:schema
+﻿<xs:schema
 	xmlns:xs="http://www.w3.org/2001/XMLSchema"
-	xmlns:cag="urn:ge:corporate-access-gateway:xsd:cag.001.001.01"
+	xmlns:bcon="urn:ge:bankconnect:xsd:bcon.001.001.01"
 	xmlns:head="urn:iso:std:iso:20022:tech:xsd:head.001.001.02"
 	xmlns:pain001="urn:iso:std:iso:20022:tech:xsd:pain.001.001.09"
-	targetNamespace="urn:ge:corporate-access-gateway:xsd:cag.001.001.01"
+	targetNamespace="urn:ge:bankconnect:xsd:bcon.001.001.01"
 	elementFormDefault="qualified">
 
 	<xs:import namespace="urn:iso:std:iso:20022:tech:xsd:head.001.001.02"
@@ -12,7 +12,7 @@
 	<xs:import namespace="urn:iso:std:iso:20022:tech:xsd:pain.001.001.09"
 	           schemaLocation="GEO_pain.001.001.09.xsd"/>
 
-	<xs:element name="BusinessMessage" type="cag:GEO_BusinessMessageEnvelopeInV01"/>
+	<xs:element name="BusinessMessage" type="bcon:GEO_BusinessMessageEnvelopeInV01"/>
 
 	<xs:complexType name="GEO_BusinessMessageEnvelopeInV01">
 		<xs:sequence>
